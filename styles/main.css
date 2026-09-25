@@ -486,9 +486,18 @@ a { color: inherit; text-decoration: none; }
 .carousel-btn:disabled { opacity: .38; cursor: default; }
 .carousel-btn[data-dir="-1"] svg { transform: rotate(180deg); }
 .carousel-btn svg { width: 18px; height: 18px; stroke-width: 2.2; }
-@media (hover: none) and (pointer: coarse) {
-    .carousel-nav { display: none; }
+/* 마우스로 끄는 동안 — 잡는 손 모양, 스냅·부드러운 스크롤을 잠시 끈다 */
+@media (hover: hover) and (pointer: fine) {
+    .carousel-track { cursor: grab; }
 }
+.carousel-track.is-dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.carousel-track.is-dragging a { pointer-events: none; }
 
 /* 카드 — 폰 틀 속 실제 화면(또는 큰 아이콘) + 이름 + 한 줄 */
 .ccard {

@@ -393,9 +393,51 @@ function carousel(host, cardsHtml, label) {
         if (e.key === 'ArrowLeft') { e.preventDefault(); page(-1); }
     });
     window.addEventListener('resize', update);
+    enableDragScroll(track, page);
     update();
     // 이미지가 늦게 들어와 폭이 바뀌어도 버튼 상태가 맞도록 한 번 더.
     setTimeout(update, 600);
+}
+
+/**
+ * 마우스로 잡아 끌어서 넘기기. 터치·트랙패드는 브라우저가 이미 해 주므로 마우스일 때만 붙는다.
+ * 끄는 동안은 스크롤 스냅을 잠시 끄고, 놓으면 가장 가까운 카드에 맞춰 멈춘다(빠르게 튕기면 한 칸 더).
+ * 끌고 난 직후의 클릭은 막아서, 끌다 놓았을 때 카드 링크가 열리지 않게 한다.
+ */
+function enableDragScroll(track, page) {
+    let down = false, moved = false, startX = 0, startLeft = 0, lastX = 0, lastT = 0, v = 0;
+    track.addEventListener('dragstart', (e) => e.preventDefault());
+    track.addEventListener('pointerdown', (e) => {
+        if (e.pointerType !== 'mouse' || e.button !== 0) return;
+        down = true; moved = false;
+        startX = lastX = e.clientX; startLeft = track.scrollLeft; lastT = performance.now(); v = 0;
+    });
+    window.addEventListener('pointermove', (e) => {
+        if (!down) return;
+        const dx = e.clientX - startX;
+        if (!moved && Math.abs(dx) > 5) {
+            moved = true;
+            track.classList.add('is-dragging');
+            try { track.setPointerCapture(e.pointerId); } catch (_) { /* 합성 이벤트 등 */ }
+        }
+        if (!moved) return;
+        track.scrollLeft = startLeft - dx;
+        const now = performance.now();
+        v = (e.clientX - lastX) / Math.max(1, now - lastT);
+        lastX = e.clientX; lastT = now;
+    });
+    const end = () => {
+        if (!down) return;
+        down = false;
+        if (!moved) return;
+        track.classList.remove('is-dragging');
+        // 빠르게 튕겼으면 그 방향으로 한 칸, 아니면 스냅이 가까운 카드에 맞춘다.
+        if (Math.abs(v) > 0.6) page(v < 0 ? 1 : -1);
+        setTimeout(() => { moved = false; }, 0);
+    };
+    window.addEventListener('pointerup', end);
+    window.addEventListener('pointercancel', end);
+    track.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
 }
 
 function renderLineup() {
@@ -549,7 +591,7 @@ function setupRing() {
     window.addEventListener('pointermove', (e) => {
         if (!dragging) return;
         const dx = e.clientX - startX;
-        if (!moved && Math.abs(dx) > 6) { moved = true; viewport.classList.add('dragging'); viewport.setPointerCapture?.(e.pointerId); }
+        if (!moved && Math.abs(dx) > 6) { moved = true; viewport.classList.add('dragging'); try { viewport.setPointerCapture(e.pointerId); } catch (_) { /* 합성 이벤트 등 */ } }
         if (!moved) return;
         const w = items[0].getBoundingClientRect().width || 200;
         rot = startRot - dx * (step / (w * 0.9));
