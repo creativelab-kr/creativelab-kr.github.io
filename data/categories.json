@@ -1,0 +1,124 @@
+[
+  {
+    "id": "ai",
+    "group": "domain",
+    "name": "AI · 인프라",
+    "vision": "지능을, 손안에.",
+    "lede": "인식과 추론이 기기 안에서 일어납니다. 연결이 끊겨도 생각은 멈추지 않고, 당신의 말과 사진은 당신 곁에 남습니다.",
+    "image": "assets/areas/ai.webp"
+  },
+  {
+    "id": "platform",
+    "group": "domain",
+    "name": "플랫폼 · 서비스",
+    "vision": "보이지 않는 곳까지, 단단하게.",
+    "lede": "사람과 사람, 조직 안의 일을 잇는 바탕. 화면 뒤의 구조까지 같은 기준으로 다듬습니다.",
+    "image": "assets/areas/platform.webp"
+  },
+  {
+    "id": "fintech",
+    "group": "domain",
+    "name": "핀테크 · 투자",
+    "vision": "숫자를, 읽히게.",
+    "lede": "시세와 가계의 숫자를 누구나 읽을 수 있는 모양으로. 계산은 정확하게, 설명은 간결하게.",
+    "image": "assets/areas/fintech.webp"
+  },
+  {
+    "id": "chain",
+    "group": "domain",
+    "name": "블록체인 · 분산",
+    "vision": "신뢰를, 구조로.",
+    "lede": "기록이 서로를 증명하는 방식. 분산된 기술을 일상의 도구로 옮겨 옵니다.",
+    "image": "assets/areas/chain.webp"
+  },
+  {
+    "id": "security",
+    "group": "domain",
+    "name": "보안 · 프라이버시",
+    "vision": "모으지 않으면, 새지 않습니다.",
+    "lede": "회원가입도, 서버에 쌓이는 개인정보도 없는 설계. 지키는 가장 좋은 방법은 처음부터 갖지 않는 것입니다.",
+    "image": "assets/areas/security.webp"
+  },
+  {
+    "id": "quantum",
+    "group": "domain",
+    "name": "양자보안",
+    "vision": "다음 시대의 암호를, 오늘.",
+    "lede": "양자 컴퓨터가 오는 날에도 오늘의 비밀이 비밀로 남도록. 암호의 다음 세대를 바라봅니다.",
+    "image": "assets/areas/quantum.webp"
+  },
+  {
+    "id": "gameai",
+    "group": "domain",
+    "name": "게임 AI",
+    "vision": "생각하는 상대를, 주머니에.",
+    "lede": "바둑과 체스, 장기의 엔진이 휴대폰 안에서 수를 읽습니다. 서버를 부르지 않아도 한 판이 끝까지 이어집니다.",
+    "image": "assets/areas/gameai.webp"
+  },
+  {
+    "id": "language",
+    "group": "domain",
+    "name": "언어 · 음성",
+    "vision": "말이, 기기 안에서 풀립니다.",
+    "lede": "받아 적고, 옮기고, 소리 내어 읽는 일. 목소리와 문장은 네트워크 밖으로 나가지 않습니다.",
+    "image": "assets/areas/language.webp"
+  },
+  {
+    "id": "media",
+    "group": "domain",
+    "name": "미디어 · 음악",
+    "vision": "화면과 소리를, 원하는 자리로.",
+    "lede": "작은 화면의 영상을 큰 화면으로, 거실을 무대로. 중계 서버 없이 기기와 기기를 잇습니다.",
+    "image": "assets/areas/media.webp"
+  },
+  {
+    "id": "care",
+    "group": "domain",
+    "name": "헬스케어",
+    "vision": "매일의 건강을, 조용히 곁에서.",
+    "lede": "재고, 챙기고, 깨우는 일. 기록은 기기 안에만 남고, 큰 글씨와 단순한 조작으로 다듬었습니다.",
+    "image": "assets/areas/care.webp"
+  },
+  {
+    "id": "life",
+    "group": "app",
+    "name": "생활·미디어",
+    "vision": "매일 여는 것들.",
+    "lede": "날짜와 길, 음악과 큰 화면. 하루의 가장 가까운 자리에 놓이는 앱."
+  },
+  {
+    "id": "work",
+    "group": "app",
+    "name": "업무·생산성",
+    "vision": "일은 덜고, 생각은 더.",
+    "lede": "받아 적고, 정리하고, 건네는 일을 더 가볍게."
+  },
+  {
+    "id": "game",
+    "group": "app",
+    "name": "게임·두뇌",
+    "vision": "판 위의 깊이.",
+    "lede": "바둑과 장기, 체스와 오락실, 그리고 도시 하나. 깊게 생각하고 가볍게 즐기는 판."
+  },
+  {
+    "id": "learn",
+    "group": "app",
+    "name": "학습·시험",
+    "vision": "배움이 멈추지 않도록.",
+    "lede": "어학과 시험, 기타와 진로까지. 어디서든 이어지는 배움."
+  },
+  {
+    "id": "health",
+    "group": "app",
+    "name": "건강·기록",
+    "vision": "몸의 기록은, 당신 곁에.",
+    "lede": "재고, 적고, 한눈에 봅니다. 기록은 기기 안에만 남습니다."
+  },
+  {
+    "id": "shop",
+    "group": "app",
+    "name": "쇼핑·가격비교",
+    "vision": "고르는 시간을 짧게.",
+    "lede": "흩어진 값을 한곳에 모아, 조건에 맞는 것만."
+  }
+]

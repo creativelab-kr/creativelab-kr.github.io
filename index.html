@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="필요한 것만 남긴 화면, 기기 안에서 움직이는 지능. CreativeLab의 제품과 비전.">
+    <meta name="keywords" content="AI, 플랫폼, 핀테크, 블록체인, 보안, 양자보안, 모바일 앱, 포트폴리오">
+    <meta name="author" content="CreativeLab">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CreativeLab">
+    <meta property="og:description" content="필요한 것만 남긴 화면, 기기 안에서 움직이는 지능.">
+    <meta property="og:url" content="https://creativelab-kr.github.io/">
+
+    <title>CreativeLab</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">본문으로 건너뛰기</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo-text" id="logoLink">CreativeLab</a>
+            <ul class="nav-menu">
+                <li><a href="#products" class="nav-link">제품</a></li>
+                <li><a href="#areas" class="nav-link">사업 영역</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- ==================== VIEW 1 : HOME ==================== -->
+        <div class="view" id="viewHome">
+            <!-- 첫 화면: 한 문장, 그리고 실제 앱 화면 세 장 -->
+            <section id="home" class="hero">
+                <div class="container hero-inner">
+                    <p class="hero-eyebrow">CreativeLab</p>
+                    <h1 class="hero-title">
+                        작은 화면 안에,<br>
+                        <span class="hero-accent">깊은 생각을.</span>
+                    </h1>
+                    <p class="hero-lede">
+                        필요한 것만 남긴 화면. 기기 안에서 움직이는 지능.
+                        매일 손이 가는 것들을 새로 상상합니다.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">제품 보기</a>
+                        <a href="#areas" class="btn btn-ghost">사업 영역</a>
+                    </div>
+                </div>
+                <!-- 출시한 앱 전부를 원통 모양으로 둘러 세운다. 좌우로 밀면 돌면서 앱이 하나씩 앞으로 온다.
+                     사진은 main.js 가 projects.json 의 shot(없으면 아이콘)으로 채운다. -->
+                <div class="ring" id="heroRing" role="region" aria-roledescription="회전 캐러셀" aria-label="모든 제품">
+                    <div class="ring-viewport" id="ringViewport" tabindex="0" aria-label="좌우 방향키로 돌려 보세요">
+                        <div class="ring-track" id="ringTrack"></div>
+                    </div>
+                    <div class="ring-caption" id="ringCaption" aria-live="polite"></div>
+                    <div class="ring-controls">
+                        <button class="ring-btn" id="ringPrev" type="button" aria-label="이전 앱">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="ring-btn" id="ringNext" type="button" aria-label="다음 앱">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 대표 제품: 큰 타일 두 개 -->
+            <section id="products" class="products" aria-label="대표 제품">
+                <div id="featureTiles"></div>
+            </section>
+
+            <!-- 나머지 제품: 좌우로 넘기는 캐러셀 -->
+            <section id="lineup" class="lineup" aria-labelledby="lineupTitle">
+                <div class="container">
+                    <header class="lineup-head">
+                        <h2 class="section-title" id="lineupTitle">모든 제품.</h2>
+                        <p class="section-sub">옆으로 넘기며 하나씩 만나 보세요.</p>
+                    </header>
+                </div>
+                <div class="carousel" id="lineupCarousel"></div>
+            </section>
+
+            <!-- 사업 영역: 3D 이미지 타일 -->
+            <section id="areas" class="section section-areas" aria-labelledby="areasTitle">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="section-eyebrow">사업 영역</p>
+                        <h2 class="section-title" id="areasTitle">기술이 향하는 곳.</h2>
+                    </header>
+                </div>
+                <!-- 영역 타일은 좌우로 넘기는 한 줄. main.js 가 categories.json 의 domain 으로 채운다. -->
+                <div class="carousel carousel-areas" id="areaGrid"></div>
+            </section>
+        </div>
+
+        <!-- ==================== VIEW 2 : CATEGORY ==================== -->
+        <div class="view" id="viewCategory" hidden>
+            <div class="container detail-container" id="categoryBody"></div>
+        </div>
+
+        <!-- ==================== VIEW 3 : PROJECT ==================== -->
+        <div class="view" id="viewProject" hidden>
+            <div class="container detail-container" id="projectBody"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-text">&copy; 2026 CreativeLab</p>
+            <!-- 연락은 조용한 링크 하나. 주소는 화면에 글자로 보이지 않고, main.js 가 실행 중에 href 만 채운다. -->
+            <nav class="footer-links" aria-label="바깥 링크">
+                <a href="https://apps.apple.com/kr/developer/inphil-choi/id6785766361" target="_blank" rel="noopener noreferrer">App Store</a>
+                <a href="https://inphilchoi.github.io/" target="_blank" rel="noopener noreferrer">앱 안내</a>
+                <a id="contactLink" hidden>문의</a>
+            </nav>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

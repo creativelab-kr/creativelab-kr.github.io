@@ -1,0 +1,403 @@
+[
+ {
+  "id": 1,
+  "title": "대한민국 달력",
+  "category": "life",
+  "status": "출시",
+  "summary": "음력·공휴일·간지·절기를 한 화면에서 보는 한국형 달력. 음력 변환과 공휴일 규칙을 서버 없이 기기 안에서 계산해 비행기 모드에서도 동작합니다.",
+  "headline": "음력, 공휴일, 절기. 한 화면에.",
+  "pitch": "날짜 계산을 기기 안에서 끝내 비행기 모드에서도 그대로 동작합니다.",
+  "icon": "assets/icons/calendar.png",
+  "shot": "assets/shots/calendar.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6786585716",
+   "googleplay": "https://play.google.com/store/apps/details?id=com.modeun.kookmin_calendar"
+  },
+  "story": {
+   "why": "음력과 공휴일, 간지, 24절기를 한 화면에서 넘겨 보는 한국형 달력입니다. 달력은 통신이 되지 않는 곳에서도 열립니다. 그러니 날짜 계산이 서버에 기대면 안 된다고 보았습니다."
+  }
+ },
+ {
+  "id": 2,
+  "title": "오늘의 노래",
+  "category": "life",
+  "status": "출시",
+  "summary": "날씨·기분·취향으로 하루에 한 곡을 골라 주는 음악 추천. 국가별 인기 차트를 공개된 음악 정보에서 직접 조합해 자체 서버 없이 운영하고, '끝까지 듣기' 한 번이면 추천곡을 유튜브에서 전곡으로 이어 듣습니다.",
+  "headline": "오늘 들을 한 곡.",
+  "pitch": "날씨와 기분과 취향으로 하루에 한 곡을 골라 줍니다.",
+  "icon": "assets/icons/song.png",
+  "shot": "assets/shots/song.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6785766359",
+   "googleplay": "https://play.google.com/store/apps/details?id=com.creativelab.todays_song"
+  },
+  "story": {
+   "why": "날씨와 기분, 취향으로 하루에 한 곡을 골라 주는 음악 추천 앱입니다. 국가별 인기 차트를 공개된 음악 정보에서 직접 조합해 자체 서버 없이 운영하고, 1.0.14부터는 30초 미리듣기 대신 '끝까지 듣기' 한 번으로 추천곡을 유튜브에서 전곡 재생합니다."
+  }
+ },
+ {
+  "id": 3,
+  "title": "myTV",
+  "category": "life",
+  "status": "출시",
+  "summary": "웹에서 보던 영상을 스마트TV로 바로 띄워 주는 캐스팅 앱. TV 종류마다 다른 세 가지 연결 방식을 각각 직접 구현해, 화면 미러링이 아니라 원본 스트림을 넘깁니다.",
+  "headline": "웹에서 보던 영상을 TV로.",
+  "icon": "assets/icons/mytv.png",
+  "shot": "assets/shots/mytv.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6792300908"
+  },
+  "story": {
+   "why": "웹에서 보던 영상을 TV로 바로 띄워 주는 캐스팅 앱입니다. 화면을 그대로 비추는 미러링이 아니라 영상 주소 자체를 TV에 넘기기 때문에, 폰을 꺼도 재생이 이어지고 화질이 떨어지지 않습니다."
+  }
+ },
+ {
+  "id": 4,
+  "title": "음성노트",
+  "category": "work",
+  "status": "출시",
+  "summary": "녹음하면 곧바로 글로 받아 적어 회의록을 만드는 노트. 음성 인식이 전부 기기 안에서 돌아 오디오가 네트워크로 나가지 않고, 인터넷 없이도 동작합니다.",
+  "headline": "말하면 받아 적습니다.",
+  "pitch": "음성 인식이 기기 안에서 돌아, 녹음이 밖으로 나가지 않습니다.",
+  "icon": "assets/icons/voicenotes.png",
+  "shot": "assets/shots/voicenotes.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6795930564"
+  },
+  "story": {
+   "why": "녹음하면 곧바로 글로 받아 적어 회의록을 만드는 노트입니다. 회의 내용은 대개 남에게 보이면 안 되는 것이라, 음성 인식을 전부 기기 안에서 돌려 오디오가 네트워크로 나가지 않게 했습니다. 인터넷이 없어도 받아쓰기가 됩니다."
+  }
+ },
+ {
+  "id": 5,
+  "title": "Cardly",
+  "category": "work",
+  "status": "출시",
+  "summary": "명함을 찍으면 이름·연락처를 읽어 정리해 주는 명함 관리. 문자 인식을 기기 안에서 처리하고, 연락처 저장과 엑셀 내보내기까지 오프라인으로 끝냅니다.",
+  "headline": "명함을 찍으면 정리됩니다.",
+  "icon": "assets/icons/cardly.png",
+  "shot": "assets/shots/cardly.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6802890268"
+  },
+  "story": {
+   "why": "명함을 찍으면 이름과 연락처를 읽어 정리해 주는 명함 관리 앱입니다. 명함은 남의 개인정보입니다. 그래서 이 앱은 네트워크 요청이 한 곳도 없도록 설계했습니다. 백업도 서버가 아니라 사용자가 파일로 주고받습니다."
+  }
+ },
+ {
+  "id": 6,
+  "title": "DailyMap",
+  "category": "life",
+  "status": "출시",
+  "summary": "내 주변 가게·시설을 찾는 가벼운 지도 앱. 누구나 쓸 수 있는 공개 지도를 앱이 직접 조회하고 추천은 2단계로 기기 안에서 처리해, 중계 서버가 아예 없습니다.",
+  "headline": "내 주변을 찾는 가벼운 지도.",
+  "icon": "assets/icons/dailymap.png",
+  "shot": "assets/shots/dailymap.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6802897224"
+  },
+  "story": {
+   "why": "내 주변 가게와 시설을 찾는 가벼운 지도 앱입니다. 설계 기준은 한 문장이었습니다. 키가 없으니 숨길 것이 없고, 숨길 것이 없으니 중계 서버가 필요 없고, 중계 서버가 없으니 App Store 개인정보 표시를 \"데이터 수집 없음\"으로 낼 수 있다는 것입니다."
+  }
+ },
+ {
+  "id": 7,
+  "title": "AI 메일답장",
+  "category": "work",
+  "status": "출시",
+  "summary": "받은 메일에 맞는 답장 초안을 대신 써 주는 도구. 무료로 쓸 수 있는 인공지능 두 곳을 이중으로 두고, 둘 다 안 되면 기기 안의 초안 틀로 자동 전환됩니다.",
+  "headline": "답장 초안을 대신 씁니다.",
+  "icon": "assets/icons/aiemailreply.png",
+  "shot": "assets/shots/mailreply.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6802934901"
+  },
+  "story": {
+   "why": "받은 메일에 맞는 답장 초안을 대신 써 주는 도구입니다. 유료 모델을 쓰면 사용자가 늘수록 적자가 나므로, 무료 등급 언어 모델만 쓰기로 정하고 유료 백엔드는 제거했습니다."
+  }
+ },
+ {
+  "id": 8,
+  "title": "증명사진관",
+  "category": "work",
+  "status": "출시",
+  "summary": "사진 한 장을 여권·주민등록증·이력서 등 39가지 규격으로 만들어 주는 증명사진 편집기. 얼굴을 인식해 자동 크롭하고 배경을 단색으로 바꾼 뒤, 머리 높이·눈높이 등 11개 항목을 규격 대비로 점검합니다.",
+  "headline": "사진 한 장이면 증명사진.",
+  "pitch": "얼굴을 인식해 규격에 맞게 자르고, 배경을 단색으로 바꾸고, 규격 대비로 점검합니다.",
+  "icon": "assets/icons/idphoto.png",
+  "shot": "assets/shots/idphoto.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6805292038"
+  },
+  "story": {
+   "why": "사진 한 장을 여권·주민등록증·이력서 등 39가지 규격으로 만들어 주는 증명사진 편집기입니다. 규격은 밀리미터 기준으로 다루고 픽셀은 출력할 때만 계산합니다. 광고도 결제도 없이 전면 무료입니다."
+  }
+ },
+ {
+  "id": 9,
+  "title": "말모이",
+  "category": "learn",
+  "status": "출시",
+  "summary": "외국인을 위한 한국어능력시험(TOPIK) 어휘·발음 학습. 국립국어원 한국어기초사전 어휘 44,391개를 내장하고, 표준 발음법을 규칙 엔진으로 구현했습니다(정확도 94.0%).",
+  "headline": "적는 대로 읽지 않는 한국어.",
+  "pitch": "외국인을 위한 TOPIK 어휘와 발음. 표준 발음법을 규칙으로 구현했습니다.",
+  "icon": "assets/icons/malmoi.png",
+  "shot": "assets/shots/malmoi.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6804689666"
+  },
+  "story": {
+   "why": "외국인이 한국어능력시험(TOPIK)을 준비할 때 쓰는 학습 앱입니다. 이름은 주시경이 만든 최초의 우리말 사전에서 가져왔습니다. 일본어 시험 앱에서 검증한 \"서버 없이, 계정 없이\" 구조를 한국어 학습으로 옮긴 것입니다."
+  }
+ },
+ {
+  "id": 10,
+  "title": "코토바",
+  "category": "learn",
+  "status": "출시",
+  "summary": "JLPT 일본어 단어·한자와 문장 청해를 한 앱에서 연습. 문제 은행과 음성 재생까지 앱에 넣어 계정 없이, 인터넷 없이 학습이 이어집니다.",
+  "headline": "JLPT 단어와 한자, 문장 청해를 한 앱에서.",
+  "icon": "assets/icons/kotoba.png",
+  "shot": "assets/shots/kotoba.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6804533682"
+  },
+  "story": {
+   "why": "JLPT 일본어 단어·한자와 문장 청해를 한 앱에서 연습합니다. 시험 앱을 고른 이유는 분명했습니다. 복습과 모의고사가 전부 기기 안에서 돌면 사용자가 늘어도 운영비가 늘지 않습니다."
+  }
+ },
+ {
+  "id": 11,
+  "title": "Voca 통역",
+  "category": "work",
+  "status": "출시",
+  "summary": "인터넷이 없는 곳에서도 쓰는 대면 통역기. 두 사람이 마주 보고 쓰는 화면과 상황별 회화집을 넣고, 번역 모델을 기기에 올려 오프라인에서 돌립니다.",
+  "headline": "인터넷 없이, 마주 보고 통역.",
+  "icon": "assets/icons/voca.png",
+  "shot": "assets/shots/voca.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6807239009"
+  },
+  "story": {
+   "why": "인터넷이 없는 곳에서도 쓰는 대면 통역기입니다. 음성 인식, 번역, 언어 식별, 문자 인식을 모두 기기 안에서 돌립니다. 네트워크는 언어팩을 내려받을 때만 쓰고, 한 번 받고 나면 비행기 모드에서도 통역됩니다."
+  }
+ },
+ {
+  "id": 12,
+  "title": "유학생활",
+  "category": "life",
+  "status": "출시",
+  "summary": "한국에 온 유학생이 비자·생활 절차를 혼자 처리하도록 돕는 안내 앱. 절차 정보를 앱에 담아 6개 언어로 제공하며, 로그인도 서버 조회도 없습니다.",
+  "headline": "유학 생활의 절차를 혼자서.",
+  "icon": "assets/icons/studentlife.png",
+  "shot": "assets/shots/student.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6807406672"
+  },
+  "story": {
+   "why": "한국에 온 유학생이 비자와 생활 절차를 혼자 처리하도록 돕는 안내 앱입니다. 체류 만료일 계산, 시간제 취업 시간 계산, 정착 체크리스트 18항목, 학점 변환, 필수 연락처를 담았고 6개 언어를 지원합니다."
+  }
+ },
+ {
+  "id": 13,
+  "title": "진로나침반",
+  "category": "learn",
+  "status": "출시",
+  "summary": "성격 유형으로 맞는 전공과 직업을 좁혀 주는 진로 탐색. 검사 결과를 서버로 보내지 않고 기기 안에서 매칭하며 5개 언어를 지원합니다.",
+  "headline": "성격 유형으로 좁히는 전공과 직업.",
+  "icon": "assets/icons/careercompass.png",
+  "shot": "assets/shots/mbti.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6807407170"
+  },
+  "story": {
+   "why": "성격 유형 검사로 맞는 전공과 직업, 공부법을 좁혀 주는 진로 탐색 앱입니다. 검사 결과를 서버로 보내지 않고 기기 안에서 매칭하며 5개 언어를 지원합니다."
+  }
+ },
+ {
+  "id": 14,
+  "title": "Fretwise",
+  "category": "learn",
+  "status": "출시",
+  "summary": "기타 코드 운지와 코드 진행을 단계별로 익히는 연습 앱. 학습 이론을 그대로 구현한 코치가 오늘 연습할 코드를 골라 줍니다. 전부 기기 안에서 계산합니다.",
+  "headline": "오늘 연습할 코드를 골라 주는 코치.",
+  "pitch": "기타 코드 운지와 진행을 단계별로 익힙니다.",
+  "icon": "assets/icons/fretwise.png",
+  "shot": "assets/shots/fretwise.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6797015161"
+  },
+  "story": {
+   "why": "기타 코드 운지와 코드 진행을 단계별로 익히는 연습 앱입니다. 판단 기준은 분명했습니다. 연습은 오프라인에서 일어나고, 서버를 두는 순간 개인정보 수집이 시작돼 \"데이터 수집 없음\" 표시를 포기하게 됩니다. 1인 개발에서 서버는 갚아야 할 빚입니다."
+  }
+ },
+ {
+  "id": 15,
+  "title": "씽온",
+  "category": "life",
+  "status": "출시",
+  "summary": "폰을 마이크로 써서 거실을 노래방으로 만드는 앱. 음정·박자 등 4개 축으로 채점하고 키를 추천합니다. 서버를 쓰지 않고 단일 페이지 안에서 완결됩니다.",
+  "headline": "거실이 노래방이 됩니다.",
+  "pitch": "폰을 마이크로 쓰고, 음정과 박자를 채점하고, 맞는 키를 추천합니다.",
+  "icon": "assets/icons/singon.png",
+  "shot": "assets/shots/singon.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6801400420"
+  },
+  "story": {
+   "why": "폰 하나를 마이크로 써서 거실을 노래방으로 만드는 앱입니다. 서버를 두지 않는다는 것이 이 앱의 설계 조건이었습니다. 화면 파일 하나로 완결되고 보컬 프로필은 폰 안에만 남습니다. 로그인과 구독, 소셜 피드처럼 서버가 필요한 기능은 처음부터 뺐습니다."
+  }
+ },
+ {
+  "id": 16,
+  "title": "수담(手談)",
+  "category": "game",
+  "status": "출시",
+  "summary": "인터넷 없이 두는 AI 바둑 — 대국·복기·사활 문제. 공개된 바둑 AI 엔진을 휴대폰 안에 올려 오프라인 대국과 승률 그래프 복기를 돌립니다. 사활 320제 수록.",
+  "headline": "인터넷 없이, AI와 한 판.",
+  "pitch": "바둑 AI 엔진을 휴대폰 안에 올렸습니다. 대국과 복기, 사활 문제까지.",
+  "icon": "assets/icons/sudam.png",
+  "shot": "assets/shots/sudam.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6795918519",
+   "googleplay": "https://play.google.com/store/apps/details?id=com.creativelab.sudam"
+  },
+  "story": {
+   "why": "바둑 AI는 대개 서버에서 돌아갑니다. 계정을 만들고 인터넷에 연결돼야 한 판을 둘 수 있습니다. 공개된 바둑 AI 엔진을 폰 안에 통째로 올려, 계정도 통신도 없이 대국과 복기, 사활 문제까지 끝나도록 만들었습니다."
+  }
+ },
+ {
+  "id": 17,
+  "title": "체스코치",
+  "category": "game",
+  "status": "출시",
+  "summary": "상대 없이도 두고 배우는 체스 대국·퍼즐 앱. 체스 엔진과 퍼즐 1,000문제를 앱에 넣어 서버 호출이 0회입니다. 5개 언어 지원.",
+  "headline": "상대 없이 두고 배우는 체스.",
+  "pitch": "체스 엔진과 퍼즐을 앱 안에 넣었습니다.",
+  "icon": "assets/icons/chesscoach.png",
+  "shot": "assets/shots/chess.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6807283401"
+  },
+  "story": {
+   "why": "상대 없이도 두고 배우는 체스 앱입니다. 온라인 대전과 서버 코드를 모두 없애 네트워크 요청이 0건이고, 화면 파일 하나로 완결됩니다."
+  }
+ },
+ {
+  "id": 18,
+  "title": "AI 장기",
+  "category": "game",
+  "status": "출시",
+  "summary": "한국 전통 장기를 정식 규칙 그대로 두는 앱 — 차림 4종·한수쉼·점수제. 규칙을 서로 다른 두 벌로 구현하고 두 결과가 같은지 자동으로 대조해, 규칙 오류가 조용히 새지 않게 막았습니다.",
+  "headline": "장기, 정식 규칙 그대로.",
+  "pitch": "차림과 한수쉼, 점수제까지.",
+  "icon": "assets/icons/janggi.png",
+  "shot": "assets/shots/janggi.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6807261608"
+  },
+  "story": {
+   "why": "한국 전통 장기를 정식 규칙 그대로 두는 앱입니다. 차림 4종, 한수쉼, 점수제까지 갖췄고 5개 언어를 지원합니다. 서버와 로그인, 클라우드를 모두 걷어내 외부로 나가는 통신이 한 건도 없습니다."
+  }
+ },
+ {
+  "id": 19,
+  "title": "또랑",
+  "category": "game",
+  "status": "출시",
+  "summary": "기억력·집중력을 깨우는 어르신용 두뇌 훈련 게임 모음. 큰 글씨와 단순한 조작으로 다시 설계했고 기록은 기기에만 남습니다. 4개 언어 지원.",
+  "headline": "기억력과 집중력을 깨우는 두뇌 훈련.",
+  "icon": "assets/icons/ttorang.png",
+  "shot": "assets/shots/ttorang.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6802948321"
+  },
+  "story": {
+   "why": "기억력과 집중력을 깨우는 어르신용 두뇌 훈련 게임 모음입니다. 큰 글씨와 단순한 조작으로 다시 설계했고, 기록은 기기에만 남습니다. 계정도 서버도 없습니다."
+  }
+ },
+ {
+  "id": 20,
+  "title": "Q-City",
+  "category": "game",
+  "status": "출시",
+  "summary": "구역을 놓고 전력·수도·교통·예산을 굴리는 도시 건설 시뮬레이션. 시뮬레이션 로직을 세 벌로 나눠 유지하고 저장 파일이 한 글자까지 같은지 검증합니다. 5개 언어.",
+  "headline": "도시 하나를 손끝에서.",
+  "pitch": "구역을 놓고 전력·수도·교통·예산을 굴리는 도시 건설 시뮬레이션.",
+  "icon": "assets/icons/qcity.png",
+  "shot": "assets/shots/qcity.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6811327268"
+  },
+  "story": {
+   "why": "구역을 놓고 전력과 수도, 교통, 예산을 굴리는 도시 건설 시뮬레이션입니다. 서버도 계정도 순위표도 없이, 도시 하나가 기기 안에서 완결됩니다."
+  }
+ },
+ {
+  "id": 21,
+  "title": "로또랩",
+  "category": "life",
+  "status": "출시",
+  "summary": "역대 당첨 데이터를 통계로 분석해 번호를 뽑고 관리하는 로또 도우미. 당첨 데이터가 앱에 내장돼 인터넷 없이 분석이 돌아갑니다.",
+  "headline": "역대 당첨 데이터로 보는 번호 통계.",
+  "icon": "assets/icons/lottolab.png",
+  "shot": "assets/shots/lotto.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/us/app/id6796949878"
+  },
+  "story": {
+   "why": "역대 당첨 데이터를 통계로 분석해 번호를 뽑고 관리하는 도우미입니다. 설계 전제는 정직함이었습니다. 로또는 독립 무작위라 AI가 확률을 높일 수 없습니다. 그래서 예측 성능이 아니라 입력 편의와 해석, 그리고 정직한 표현으로만 가치를 만들기로 했습니다."
+  }
+ },
+ {
+  "id": 31,
+  "title": "혈압수첩",
+  "category": "health",
+  "status": "출시",
+  "summary": "진료 전 7일 동안 아침·저녁 가정혈압을 재도록 안내하고, 의사가 보는 평균을 한 줄로 만들어 주는 기록 수첩. 7·30·90일 평균과 추이를 진료실 화면 하나로 보고, 기록은 기기 안에만 남습니다.",
+  "headline": "진료실에 가져갈 한 줄.",
+  "pitch": "진료 전 일주일의 가정혈압을 의사가 보는 평균으로 정리합니다.",
+  "icon": "assets/icons/bpdiary.png",
+  "shot": "assets/shots/bpdiary.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6813703005"
+  },
+  "story": {
+   "why": "진료 전 7일 동안 가정혈압을 제대로 재도록 안내하는 기록 수첩입니다. 기존 혈압 앱 리뷰를 모아 보니 불만이 한곳에 몰려 있었습니다. 잴 때가 됐는지 알려 주는 줄 알았다, 모르는 사이에 결제됐다, 기록이 사라졌다, 글씨가 작다. 그중 하나만 골랐습니다. 진료 전 7일 코스입니다."
+  }
+ },
+ {
+  "id": 34,
+  "title": "추억의 오락실",
+  "category": "game",
+  "status": "출시",
+  "summary": "직접 만든 오리지널 아케이드 게임 27종을 모은 오락실(1.1.0). 남의 게임 파일을 쓰지 않고 전부 자작했으며, 광고도 결제도 계정도 없습니다. 175개 지역에서 받을 수 있습니다.",
+  "headline": "직접 만든 오락실.",
+  "pitch": "오리지널 아케이드 게임을 모았습니다. 광고도 결제도 계정도 없이.",
+  "icon": "assets/icons/retroarcade.png",
+  "shot": "assets/shots/arcade.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6814755524"
+  },
+  "story": {
+   "why": "원래는 옛 게임기 흉내를 내는 앱이었지만, 남의 게임 파일을 쓰는 구조여서 방향을 바꿨습니다. 게임을 전부 직접 만들고, 같은 엔진으로 웹에서도 그대로 돌아가는 아케이드 모음으로 다시 지었습니다. 1.0의 7종에서 시작해 1.1.0에서 27종이 됐습니다."
+  }
+ },
+ {
+  "id": 72,
+  "title": "수담 사활",
+  "category": "game",
+  "status": "출시",
+  "summary": "정답이 하나뿐임을 증명한 바둑 사활 318문제를 입문부터 최상급까지 6단계로 푸는 앱. 1–2단계 106문제는 무료이고, 틀린 문제는 자동으로 모아 다시 풉니다. 광고·회원가입 없이 인터넷 없이 풀립니다.",
+  "headline": "정답이 하나뿐인 사활.",
+  "pitch": "입문부터 최상급까지 단계별로. 틀린 문제는 다시 모아 풉니다.",
+  "icon": "assets/icons/tsumego.png",
+  "shot": "assets/shots/tsumego.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6815160889"
+  },
+  "story": {
+   "why": "바둑 사활 문제를 매일 조금씩 풀고 싶다는 데서 시작했습니다. 수담(手談)의 사활 문제를 따로 떼어, 광고·회원가입·하루 문제 수 제한 없이 인터넷 없이 풀리는 문제집으로 만들었습니다."
+  }
+ }
+]
