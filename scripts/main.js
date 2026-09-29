@@ -237,7 +237,7 @@ function shippedOf(categoryId) {
  */
 const FEATURED_IDS = [1, 16];
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
-const LINEUP_LEAD = [15, 72, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
+const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
 function byId(id) {
     return state.projects.find(p => p.id === id);
@@ -873,7 +873,7 @@ function getDefaultCategories() {
         {"id": "care", "group": "domain", "name": "헬스케어", "vision": "매일의 건강을, 조용히 곁에서.", "lede": "재고, 챙기고, 깨우는 일. 기록은 기기 안에만 남고, 큰 글씨와 단순한 조작으로 다듬었습니다.", "image": "assets/areas/care.webp"},
         {"id": "life", "group": "app", "name": "생활·미디어", "vision": "매일 여는 것들.", "lede": "날짜와 길, 음악과 큰 화면. 하루의 가장 가까운 자리에 놓이는 앱."},
         {"id": "work", "group": "app", "name": "업무·생산성", "vision": "일은 덜고, 생각은 더.", "lede": "받아 적고, 정리하고, 건네는 일을 더 가볍게."},
-        {"id": "game", "group": "app", "name": "게임·두뇌", "vision": "판 위의 깊이.", "lede": "바둑과 장기, 체스와 오락실, 그리고 도시 하나. 깊게 생각하고 가볍게 즐기는 판."},
+        {"id": "game", "group": "app", "name": "게임·두뇌", "vision": "판 위의 깊이.", "lede": "바둑과 장기, 체스와 오락실, 삼국의 천하와 도시 하나. 깊게 생각하고 가볍게 즐기는 판."},
         {"id": "learn", "group": "app", "name": "학습·시험", "vision": "배움이 멈추지 않도록.", "lede": "어학과 시험, 기타와 진로까지. 어디서든 이어지는 배움."},
         {"id": "health", "group": "app", "name": "건강·기록", "vision": "몸의 기록은, 당신 곁에.", "lede": "재고, 적고, 한눈에 봅니다. 기록은 기기 안에만 남습니다."},
         {"id": "shop", "group": "app", "name": "쇼핑·가격비교", "vision": "고르는 시간을 짧게.", "lede": "흩어진 값을 한곳에 모아, 조건에 맞는 것만."}
@@ -887,7 +887,7 @@ function getDefaultCategories() {
 function getDefaultProjects() {
     return [
         { id: 1, title: '대한민국 달력', category: 'life', status: '출시',
-          summary: '음력·공휴일·간지·절기를 한 화면에서 보는 한국형 달력. 음력 변환과 공휴일 규칙을 서버 없이 기기 안에서 계산해 비행기 모드에서도 동작합니다.',
+          summary: '음력·공휴일·간지·절기를 한 화면에서 보는 한국형 달력. 음력 변환과 공휴일 규칙을 서버 없이 기기 안에서 계산해 비행기 모드에서도 동작하고, 홈 화면 위젯도 음력을 직접 계산해 보여 줍니다.',
           icon: 'assets/icons/calendar.png', links: {'appstore':'https://apps.apple.com/app/id6786585716','googleplay':'https://play.google.com/store/apps/details?id=com.modeun.kookmin_calendar'} },
         { id: 2, title: '오늘의 노래', category: 'life', status: '출시',
           summary: '날씨·기분·취향으로 하루에 한 곡을 골라 주는 음악 추천. 국가별 인기 차트를 공개된 음악 정보에서 직접 조합해 자체 서버 없이 운영하고, \'끝까지 듣기\' 한 번이면 추천곡을 유튜브에서 전곡으로 이어 듣습니다.',
@@ -908,7 +908,7 @@ function getDefaultProjects() {
           summary: '받은 메일에 맞는 답장 초안을 대신 써 주는 도구. 무료로 쓸 수 있는 인공지능 두 곳을 이중으로 두고, 둘 다 안 되면 기기 안의 초안 틀로 자동 전환됩니다.',
           icon: 'assets/icons/aiemailreply.png', links: {'appstore':'https://apps.apple.com/app/id6802934901'} },
         { id: 8, title: '증명사진관', category: 'work', status: '출시',
-          summary: '사진 한 장을 여권·주민등록증·이력서 등 39가지 규격으로 만들어 주는 증명사진 편집기. 얼굴을 인식해 자동 크롭하고 배경을 단색으로 바꾼 뒤, 머리 높이·눈높이 등 11개 항목을 규격 대비로 점검합니다.',
+          summary: '사진 한 장을 35×45mm·반명함 같은 규격 크기 수십 가지로 만들어 주는 증명사진 편집기. 얼굴을 인식해 자동 크롭하고 배경을 단색으로 바꾼 뒤, 머리 높이·눈높이 등 11개 항목을 규격 대비로 점검합니다.',
           icon: 'assets/icons/idphoto.png', links: {'appstore':'https://apps.apple.com/app/id6805292038'} },
         { id: 9, title: '말모이', category: 'learn', status: '출시',
           summary: '외국인을 위한 한국어능력시험(TOPIK) 어휘·발음 학습. 국립국어원 한국어기초사전 어휘 44,391개를 내장하고, 표준 발음법을 규칙 엔진으로 구현했습니다(정확도 94.0%).',
@@ -926,25 +926,25 @@ function getDefaultProjects() {
           summary: '성격 유형으로 맞는 전공과 직업을 좁혀 주는 진로 탐색. 검사 결과를 서버로 보내지 않고 기기 안에서 매칭하며 5개 언어를 지원합니다.',
           icon: 'assets/icons/careercompass.png', links: {'appstore':'https://apps.apple.com/app/id6807407170'} },
         { id: 14, title: 'Fretwise', category: 'learn', status: '출시',
-          summary: '기타 코드 운지와 코드 진행을 단계별로 익히는 연습 앱. 학습 이론을 그대로 구현한 코치가 오늘 연습할 코드를 골라 줍니다. 전부 기기 안에서 계산합니다.',
+          summary: '기타와 우쿨렐레의 코드 운지와 진행을 단계별로 익히는 연습 앱. 학습 이론을 그대로 구현한 코치가 오늘 연습할 코드를 골라 주고, 곡집의 반주를 앱이 박자에 맞춰 들려줘 함께 칠 수 있습니다. 전부 기기 안에서 계산합니다.',
           icon: 'assets/icons/fretwise.png', links: {'appstore':'https://apps.apple.com/app/id6797015161'} },
         { id: 15, title: '씽온', category: 'life', status: '출시',
           summary: '폰을 마이크로 써서 거실을 노래방으로 만드는 앱. 음정·박자 등 4개 축으로 채점하고 키를 추천합니다. 서버를 쓰지 않고 단일 페이지 안에서 완결됩니다.',
           icon: 'assets/icons/singon.png', links: {'appstore':'https://apps.apple.com/app/id6801400420'} },
         { id: 16, title: '수담(手談)', category: 'game', status: '출시',
-          summary: '인터넷 없이 두는 AI 바둑 — 대국·복기·사활 문제. 공개된 바둑 AI 엔진을 휴대폰 안에 올려 오프라인 대국과 승률 그래프 복기를 돌립니다. 사활 320제 수록.',
+          summary: '인터넷 없이 두는 AI 바둑 — 대국·복기·사활 문제·사활 분석. 공개된 바둑 AI 엔진을 휴대폰 안에 올려 오프라인 대국과 승률 그래프 복기를 돌리고, 판에 놓은 돌 무리마다 삶과 죽음, 급소와 수순을 판정합니다. 확신이 낮으면 억지로 정하지 않고 불확실로 표시합니다.',
           icon: 'assets/icons/sudam.png', links: {'appstore':'https://apps.apple.com/app/id6795918519','googleplay':'https://play.google.com/store/apps/details?id=com.creativelab.sudam'} },
         { id: 17, title: '체스코치', category: 'game', status: '출시',
           summary: '상대 없이도 두고 배우는 체스 대국·퍼즐 앱. 체스 엔진과 퍼즐 1,000문제를 앱에 넣어 서버 호출이 0회입니다. 5개 언어 지원.',
           icon: 'assets/icons/chesscoach.png', links: {'appstore':'https://apps.apple.com/app/id6807283401'} },
         { id: 18, title: 'AI 장기', category: 'game', status: '출시',
-          summary: '한국 전통 장기를 정식 규칙 그대로 두는 앱 — 차림 4종·한수쉼·점수제. 규칙을 서로 다른 두 벌로 구현하고 두 결과가 같은지 자동으로 대조해, 규칙 오류가 조용히 새지 않게 막았습니다.',
+          summary: '한국 전통 장기를 정식 규칙 그대로 두는 앱 — 차림 4종·한수쉼·점수제. 새 엔진은 난이도가 높을수록 실제로 더 깊이 읽고, 대국 화면에는 AI가 방금 읽은 깊이를 그대로 보여 줍니다. 규칙은 서로 다른 두 벌로 구현해 결과를 자동으로 대조합니다.',
           icon: 'assets/icons/janggi.png', links: {'appstore':'https://apps.apple.com/app/id6807261608'} },
         { id: 19, title: '또랑', category: 'game', status: '출시',
-          summary: '기억력·집중력을 깨우는 어르신용 두뇌 훈련 게임 모음. 큰 글씨와 단순한 조작으로 다시 설계했고 기록은 기기에만 남습니다. 4개 언어 지원.',
+          summary: '기억력·집중력을 깨우는 어르신용 두뇌 훈련 게임 모음. 큰 글씨와 단순한 조작으로 다시 설계했고 기록은 기기에만 남습니다. 5개 언어 지원.',
           icon: 'assets/icons/ttorang.png', links: {'appstore':'https://apps.apple.com/app/id6802948321'} },
         { id: 20, title: 'Q-City', category: 'game', status: '출시',
-          summary: '구역을 놓고 전력·수도·교통·예산을 굴리는 도시 건설 시뮬레이션. 시뮬레이션 로직을 세 벌로 나눠 유지하고 저장 파일이 한 글자까지 같은지 검증합니다. 5개 언어.',
+          summary: '구역을 놓고 전력·수도·교통·예산을 굴리는 도시 건설 시뮬레이션. 지도를 네 방향으로 돌려 건물 뒤까지 살피고, 불난 곳으로 한 번에 이동합니다. 시뮬레이션 로직을 세 벌로 나눠 유지하고 저장 파일이 한 글자까지 같은지 검증합니다. 5개 언어.',
           icon: 'assets/icons/qcity.png', links: {'appstore':'https://apps.apple.com/app/id6811327268'} },
         { id: 21, title: '로또랩', category: 'life', status: '출시',
           summary: '역대 당첨 데이터를 통계로 분석해 번호를 뽑고 관리하는 로또 도우미. 당첨 데이터가 앱에 내장돼 인터넷 없이 분석이 돌아갑니다.',
@@ -957,7 +957,19 @@ function getDefaultProjects() {
           icon: 'assets/icons/retroarcade.png', links: {'appstore':'https://apps.apple.com/app/id6814755524'} },
         { id: 72, title: '수담 사활', category: 'game', status: '출시',
           summary: '정답이 하나뿐임을 증명한 바둑 사활 318문제를 입문부터 최상급까지 6단계로 푸는 앱. 1–2단계 106문제는 무료이고, 틀린 문제는 자동으로 모아 다시 풉니다. 광고·회원가입 없이 인터넷 없이 풀립니다.',
-          icon: 'assets/icons/tsumego.png', links: {'appstore':'https://apps.apple.com/app/id6815160889'} }
+          icon: 'assets/icons/tsumego.png', links: {'appstore':'https://apps.apple.com/app/id6815160889'} },
+        { id: 32, title: '우리동네마켓', category: 'life', status: '출시',
+          summary: '회사 서버 없이 이웃과 초대 코드를 주고받아 기기끼리 직접 연결하는 동네 중고거래·나눔 앱. 물건 목록과 1:1 채팅은 서로의 기기에만 남고, 신고·차단과 6개 언어를 지원합니다.',
+          icon: 'assets/icons/dongnemarket.png', links: {'appstore':'https://apps.apple.com/app/id6807415086'} },
+        { id: 33, title: '한자급수', category: 'learn', status: '출시',
+          summary: '8급~4급 배정한자 1,000자와 한자어를 훈음·부수·총획과 함께 익히는 급수 한자 학습 앱. 실제 시험 구성 그대로의 모의시험, 따라 쓰며 획수를 맞히는 쓰기 연습, 틀린 것만 다시 묻는 간격 반복 복습까지 기기 안에서 끝납니다.',
+          icon: 'assets/icons/hanja.png', links: {'appstore':'https://apps.apple.com/app/id6807291189'} },
+        { id: 36, title: '영어시험 트레이너', category: 'learn', status: '출시',
+          summary: 'TOEIC 유형 LC·RC를 자체 제작 문항과 한국어 해설로 연습하는 영어시험 학습 앱. 받아쓰기 훈련, 간격 반복 단어장, 자동으로 쌓이는 오답노트까지 회원가입 없이 기기 안에서 동작합니다.',
+          icon: 'assets/icons/englishtrainer.png', links: {'appstore':'https://apps.apple.com/app/id6807410596'} },
+        { id: 41, title: '군웅천하', category: 'game', status: '출시',
+          summary: '후한 말 중원을 무대로 내정·외교·계략·전투를 한 달씩 두는 턴제 전략 시뮬레이션. 초상과 능력치는 자체 제작이고, 뽑기·광고·결제·계정 없이 비행기 모드에서도 한 판이 끝까지 이어집니다. 5개 언어.',
+          icon: 'assets/icons/warlords.png', links: {'appstore':'https://apps.apple.com/app/id6815300497'} }
     ];
 }
 
