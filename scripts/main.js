@@ -887,10 +887,10 @@ function getDefaultCategories() {
 function getDefaultProjects() {
     return [
         { id: 1, title: '대한민국 달력', category: 'life', status: '출시',
-          summary: '음력·공휴일·간지·절기를 한 화면에서 보는 한국형 달력. 음력 변환과 공휴일 규칙을 서버 없이 기기 안에서 계산해 비행기 모드에서도 동작하고, 홈 화면 위젯도 음력을 직접 계산해 보여 줍니다.',
+          summary: '음력·공휴일·간지·절기를 한 화면에서 보는 한국형 달력. 음력 변환과 공휴일 규칙을 서버 없이 기기 안에서 계산해 비행기 모드에서도 동작하고, 홈 화면 위젯도 음력을 직접 계산해 보여 줍니다. iPhone 위젯에는 30일 안에 다가오는 기념일이 나오고 공휴일·대체공휴일은 빨간색으로 표시됩니다.',
           icon: 'assets/icons/calendar.png', links: {'appstore':'https://apps.apple.com/app/id6786585716','googleplay':'https://play.google.com/store/apps/details?id=com.modeun.kookmin_calendar'} },
         { id: 2, title: '오늘의 노래', category: 'life', status: '출시',
-          summary: '날씨·기분·취향으로 하루에 한 곡을 골라 주는 음악 추천. 국가별 인기 차트를 공개된 음악 정보에서 직접 조합해 자체 서버 없이 운영하고, \'끝까지 듣기\' 한 번이면 추천곡을 유튜브에서 전곡으로 이어 듣습니다.',
+          summary: '날씨·기분·취향으로 하루에 한 곡을 골라 주는 음악 추천. 국가별 인기 차트를 공개된 음악 정보에서 직접 조합해 자체 서버 없이 운영하고, \'끝까지 듣기\' 한 번이면 추천곡을 유튜브에서 전곡으로 이어 듣습니다. iPhone 홈 화면·잠금 화면 위젯으로 앱을 열지 않아도 오늘의 곡을 보고, 누르면 그 곡이 열립니다.',
           icon: 'assets/icons/song.png', links: {'appstore':'https://apps.apple.com/app/id6785766359','googleplay':'https://play.google.com/store/apps/details?id=com.creativelab.todays_song'} },
         { id: 3, title: 'myTV', category: 'life', status: '출시',
           summary: '웹에서 보던 영상을 스마트TV로 바로 띄워 주는 캐스팅 앱. TV 종류마다 다른 세 가지 연결 방식을 각각 직접 구현해, 화면 미러링이 아니라 원본 스트림을 넘깁니다.',
@@ -902,7 +902,7 @@ function getDefaultProjects() {
           summary: '명함을 찍으면 이름·연락처를 읽어 정리해 주는 명함 관리. 문자 인식을 기기 안에서 처리하고, 연락처 저장과 엑셀 내보내기까지 오프라인으로 끝냅니다.',
           icon: 'assets/icons/cardly.png', links: {'appstore':'https://apps.apple.com/app/id6802890268'} },
         { id: 6, title: 'DailyMap', category: 'life', status: '출시',
-          summary: '내 주변 가게·시설을 찾는 가벼운 지도 앱. 누구나 쓸 수 있는 공개 지도를 앱이 직접 조회하고 추천은 2단계로 기기 안에서 처리해, 중계 서버가 아예 없습니다.',
+          summary: '내 주변 가게·시설을 찾는 가벼운 지도 앱. 누구나 쓸 수 있는 공개 지도를 앱이 직접 조회하고 추천은 2단계로 기기 안에서 처리해, 중계 서버가 아예 없습니다. 러닝 탭에서는 거리를 고르면 지금 있는 곳에서 출발해 돌아오는 코스를 만들고, 달리는 동안 음성으로 길을 안내합니다.',
           icon: 'assets/icons/dailymap.png', links: {'appstore':'https://apps.apple.com/app/id6802897224'} },
         { id: 7, title: 'AI 메일답장', category: 'work', status: '출시',
           summary: '받은 메일에 맞는 답장 초안을 대신 써 주는 도구. 무료로 쓸 수 있는 인공지능 두 곳을 이중으로 두고, 둘 다 안 되면 기기 안의 초안 틀로 자동 전환됩니다.',
@@ -926,7 +926,7 @@ function getDefaultProjects() {
           summary: '성격 유형으로 맞는 전공과 직업을 좁혀 주는 진로 탐색. 검사 결과를 서버로 보내지 않고 기기 안에서 매칭하며 5개 언어를 지원합니다.',
           icon: 'assets/icons/careercompass.png', links: {'appstore':'https://apps.apple.com/app/id6807407170'} },
         { id: 14, title: 'Fretwise', category: 'learn', status: '출시',
-          summary: '기타와 우쿨렐레의 코드 운지와 진행을 단계별로 익히는 연습 앱. 학습 이론을 그대로 구현한 코치가 오늘 연습할 코드를 골라 주고, 곡집의 반주를 앱이 박자에 맞춰 들려줘 함께 칠 수 있습니다. 전부 기기 안에서 계산합니다.',
+          summary: '기타와 우쿨렐레의 코드 운지와 진행을 단계별로 익히는 연습 앱. 학습 이론을 그대로 구현한 코치가 오늘 연습할 코드를 골라 주고, 곡집의 반주를 앱이 박자에 맞춰 들려줘 함께 칠 수 있습니다. 코치가 고른 오늘의 연습은 홈 화면·잠금 화면 위젯에 보이고, 곡마다 YouTube에서 연주 영상을 찾아 열 수 있습니다. 연습 계산은 전부 기기 안에서 합니다.',
           icon: 'assets/icons/fretwise.png', links: {'appstore':'https://apps.apple.com/app/id6797015161'} },
         { id: 15, title: '씽온', category: 'life', status: '출시',
           summary: '폰을 마이크로 써서 거실을 노래방으로 만드는 앱. 음정·박자 등 4개 축으로 채점하고 키를 추천합니다. 서버를 쓰지 않고 단일 페이지 안에서 완결됩니다.',
@@ -964,12 +964,18 @@ function getDefaultProjects() {
         { id: 33, title: '한자급수', category: 'learn', status: '출시',
           summary: '8급~4급 배정한자 1,000자와 한자어를 훈음·부수·총획과 함께 익히는 급수 한자 학습 앱. 실제 시험 구성 그대로의 모의시험, 따라 쓰며 획수를 맞히는 쓰기 연습, 틀린 것만 다시 묻는 간격 반복 복습까지 기기 안에서 끝납니다.',
           icon: 'assets/icons/hanja.png', links: {'appstore':'https://apps.apple.com/app/id6807291189'} },
+        { id: 35, title: '한국사 트레이너', category: 'learn', status: '출시',
+          summary: '한국사능력검정시험(기본·심화)과 9급 공무원 한국사를 준비하는 학습 앱. 자체 제작 문항마다 해설을 붙이고, 사건 카드를 시대순으로 놓는 연표 게임과 저절로 쌓이는 오답노트까지 회원가입 없이 기기 안에서 동작합니다.',
+          icon: 'assets/icons/history.png', links: {'appstore':'https://apps.apple.com/app/id6807291252'} },
         { id: 36, title: '영어시험 트레이너', category: 'learn', status: '출시',
           summary: 'TOEIC 유형 LC·RC를 자체 제작 문항과 한국어 해설로 연습하는 영어시험 학습 앱. 받아쓰기 훈련, 간격 반복 단어장, 자동으로 쌓이는 오답노트까지 회원가입 없이 기기 안에서 동작합니다.',
           icon: 'assets/icons/englishtrainer.png', links: {'appstore':'https://apps.apple.com/app/id6807410596'} },
         { id: 41, title: '군웅천하', category: 'game', status: '출시',
           summary: '후한 말 중원을 무대로 내정·외교·계략·전투를 한 달씩 두는 턴제 전략 시뮬레이션. 초상과 능력치는 자체 제작이고, 뽑기·광고·결제·계정 없이 비행기 모드에서도 한 판이 끝까지 이어집니다. 5개 언어.',
-          icon: 'assets/icons/warlords.png', links: {'appstore':'https://apps.apple.com/app/id6815300497'} }
+          icon: 'assets/icons/warlords.png', links: {'appstore':'https://apps.apple.com/app/id6815300497'} },
+        { id: 73, title: '펼침', category: 'life', status: '출시',
+          summary: '내 TXT·만화·PDF 파일을 깨진 글자 없이 여는 뷰어. EUC-KR·Shift_JIS 같은 옛 인코딩을 스스로 알아내 열고, 제목을 찾아 목차를 만들며, ZIP·CBZ 만화를 1·2·10화 순서로 정렬합니다. 서버 없이 파일과 읽은 위치는 기기 안에만 남습니다.',
+          icon: 'assets/icons/unfold.png', links: {'appstore':'https://apps.apple.com/app/id6816378821'} }
     ];
 }
 
