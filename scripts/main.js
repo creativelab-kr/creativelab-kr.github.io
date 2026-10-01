@@ -975,7 +975,10 @@ function getDefaultProjects() {
           icon: 'assets/icons/warlords.png', links: {'appstore':'https://apps.apple.com/app/id6815300497'} },
         { id: 73, title: '펼침', category: 'life', status: '출시',
           summary: '내 TXT·만화·PDF 파일을 깨진 글자 없이 여는 뷰어. EUC-KR·Shift_JIS 같은 옛 인코딩을 스스로 알아내 열고, 제목을 찾아 목차를 만들며, ZIP·CBZ 만화를 1·2·10화 순서로 정렬합니다. 서버 없이 파일과 읽은 위치는 기기 안에만 남습니다.',
-          icon: 'assets/icons/unfold.png', links: {'appstore':'https://apps.apple.com/app/id6816378821'} }
+          icon: 'assets/icons/unfold.png', links: {'appstore':'https://apps.apple.com/app/id6816378821'} },
+        { id: 74, title: '하루 - AI 비서', category: 'work', status: '출시',
+          summary: '말로 맡기면 일정·할 일·가계부·메일 초안·알람을 챙겨 주는 비서. 회원가입 없이 iPhone 안의 Apple Intelligence가 판단하고, 하루가 한 일은 카드로 먼저 보여 준 뒤 실행을 눌러야 반영됩니다. 컴퓨터에 하루 PC를 설치하면 폰에서 PC 작업도 맡기고 승인할 수 있습니다.',
+          icon: 'assets/icons/haru.png', links: {'appstore':'https://apps.apple.com/kr/app/id6816367324'} }
     ];
 }
 
