@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="31.5 36 880 880" width="64" height="64">
+<!-- 원본: brand/creativelab-ci-symbol-white.svg(10/11 12:03 수정본) — 배경 사각형·배치 변환을 빼고 심벌만 잘라냄 -->
+<title>CreativeLab</title>
+<defs>
+  <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="0.4"><stop offset="0" stop-color="#1E8FFF"/><stop offset="1" stop-color="#2F86FF"/></linearGradient>
+  <linearGradient id="gMid" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#1D5BF0"/><stop offset="1" stop-color="#4A4FF2"/></linearGradient>
+  <linearGradient id="gPur" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6D4EF7"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+  <linearGradient id="gPlay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B8CFF"/><stop offset="1" stop-color="#3A6EF6"/></linearGradient>
+  <clipPath id="cSil"><path d="M450 48 L690 48 C738 48 765 92 762 138 C760 178 735 198 700 218 L650 250 C640 256 632 258 622 258 L440 262 C340 272 262 330 243 440 C238 520 262 600 320 660 C370 705 430 725 490 718 C520 714 540 700 560 686 L700 580 C730 560 760 548 790 552 C815 556 840 570 862 590 C885 610 892 640 884 668 C878 690 862 708 840 722 L650 860 C620 880 585 890 540 896 C470 910 390 905 320 870 C170 800 55 640 55 490 C55 250 215 95 450 48 Z"/></clipPath>
+</defs>
+<g clip-path="url(#cSil)">
+  <rect x="0" y="0" width="940" height="960" fill="url(#gTop)"/>
+  <path d="M40 450 C110 340 225 292 335 290 C290 303 254 372 254 460 C258 545 292 614 338 666 C420 745 540 800 625 880 L700 960 L0 960 Z" fill="url(#gMid)"/>
+  <path d="M335 662 C420 745 540 800 625 880 L880 740 L900 500 L690 500 L560 686 C520 715 480 726 440 722 C400 712 365 690 335 662 Z" fill="url(#gPur)"/>
+</g>
+<path d="M420 345 C420 322 442 308 466 312 C482 316 562 362 576 382 C588 398 586 414 586 432 L586 560 C586 585 575 600 560 610 L480 665 C455 680 420 668 420 640 Z" fill="url(#gPlay)"/>
+</svg>

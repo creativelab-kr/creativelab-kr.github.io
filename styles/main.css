@@ -18,6 +18,13 @@
      · 3D 는 첫 화면 폰 세 장에만, 몇 도 안쪽으로. 움직임 줄이기 설정이면 멈춘다.
      · 몇 개를 만들었는지는 쓰지 않는다.
 
+   2026-10-11 회사 CI 적용(대표님 지시 "홈페이지도 적용해")
+     · 색 — Primary #2563EB(버튼·링크·강조), Deep Navy #0F172A(글자), Light Gray #F3F4F6(옅은 면).
+       Accent Purple #8B5CF6 은 심벌 그라데이션 안에만 쓴다(그라데이션은 로고에만).
+     · 로고 — SVG 심벌 + 살아 있는 글자 "CreativeLab"('Creative' 굵게, 'Lab' 가늘게, Montserrat) + "Ideas to Reality".
+       Montserrat 는 로고 글자만 담은 부분 글꼴(OFL)을 자체 호스팅한다. 한글은 그대로 Pretendard.
+     · 본문 글자 대비는 WCAG AA 4.5:1 이상. 항상 밝게 — 다크 모드에서도 브랜드 색이 바뀌지 않는다.
+
    클래스 이름은 scripts/main.js 가 그리는 것과 맞춰 둔 것이라 바꾸지 않는다.
    ============================================= */
 
@@ -28,21 +35,27 @@
     --bg:            #ffffff;
     --bg-soft:       #fbfbfd;
     --surface:       #ffffff;
-    --surface-2:     #f5f5f7;
+    --surface-2:     #f3f4f6; /* CI Light Gray */
     --border:        rgba(0, 0, 0, .09);
     --border-strong: rgba(0, 0, 0, .16);
 
-    /* 글자 */
-    --text:       #1d1d1f;
-    --text-mid:   #424245;
-    --text-muted: #6e6e73;
+    /* 글자 — CI Deep Navy 계열. 흰 면·옅은 면 모두 4.5:1 이상 */
+    --text:       #0f172a; /* 17.9:1 */
+    --text-mid:   #334155; /* 10.4:1 */
+    --text-muted: #5b6577; /* 흰 면 5.9:1, #f3f4f6 위 5.3:1 */
 
-    /* 파랑 하나 */
-    --accent:       #0071e3;
-    --accent-hover: #0077ed;
-    --accent-link:  #0066cc;
-    --accent-soft:  #f0f6ff;
+    /* 강조색 하나 — CI Primary Blue */
+    --accent:       #2563eb; /* 흰 면 5.2:1, 흰 글자 5.2:1 */
+    --accent-hover: #1d4ed8; /* 6.7:1 */
+    --accent-link:  #2563eb;
+    --accent-soft:  #eff4ff;
     --accent-ink:   #ffffff;
+
+    /* 브랜드 — 심벌 그라데이션에만 쓴다 */
+    --brand-navy:   #0f172a;
+    --brand-purple: #8b5cf6;
+    --font-brand:   'Montserrat CI', 'Montserrat', 'Pretendard', -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', 'Helvetica Neue', sans-serif;
 
     /* 상태 */
     --live:      #0a7d45;
@@ -83,6 +96,14 @@
 
     --ease: cubic-bezier(.28, .11, .32, 1);
 }
+
+/* ---------- 워드마크 글꼴 — 로고 글자만 담은 부분 글꼴(Montserrat, SIL OFL 1.1, assets/brand/fonts/OFL.txt) ---------- */
+@font-face { font-family: 'Montserrat CI'; font-weight: 300; font-display: swap;
+             src: url('../assets/brand/fonts/montserrat-300.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat CI'; font-weight: 500; font-display: swap;
+             src: url('../assets/brand/fonts/montserrat-500.woff2') format('woff2'); }
+@font-face { font-family: 'Montserrat CI'; font-weight: 700; font-display: swap;
+             src: url('../assets/brand/fonts/montserrat-700.woff2') format('woff2'); }
 
 /* ---------- 바탕 ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -158,9 +179,27 @@ a { color: inherit; text-decoration: none; }
     display: flex; align-items: center; justify-content: space-between;
     gap: var(--sp-4);
 }
-.logo-text {
-    font-size: 1.0625rem; font-weight: 600; letter-spacing: -.02em;
-    color: var(--text);
+/* 로고 — 심벌 + 워드마크 + 태그라인. 좁은 화면에서는 태그라인을 접는다(첫 화면 머리글에 있다). */
+.brand {
+    display: inline-flex; align-items: center; gap: 9px;
+    min-height: 44px; min-width: 0;
+    color: var(--brand-navy);
+    font-family: var(--font-brand);
+    white-space: nowrap;
+}
+.brand-mark { width: 28px; height: 28px; flex: none; }
+.brand-word {
+    font-size: 1.125rem; font-weight: 300; letter-spacing: -.01em; line-height: 1;
+}
+.brand-word b { font-weight: 700; }
+.brand-tag {
+    margin-left: 6px; padding-left: 12px;
+    border-left: 1px solid var(--border-strong);
+    font-size: .8125rem; font-weight: 500; letter-spacing: .08em; line-height: 1;
+    color: var(--text-muted);
+}
+@media (max-width: 640px) {
+    .brand-tag { display: none; }
 }
 .nav-menu {
     list-style: none; margin: 0; padding: 0;
@@ -199,8 +238,9 @@ a { color: inherit; text-decoration: none; }
 .hero-inner { max-width: 860px; }
 .hero-eyebrow {
     margin: 0 0 var(--sp-4);
-    font-size: var(--fs-xs); font-weight: 600;
-    letter-spacing: .14em; text-transform: uppercase;
+    font-family: var(--font-brand);
+    font-size: var(--fs-sm); font-weight: 500;
+    letter-spacing: .16em;
     color: var(--text-muted);
 }
 .hero-title {
@@ -209,14 +249,8 @@ a { color: inherit; text-decoration: none; }
     font-weight: 700; letter-spacing: -.035em; line-height: 1.04;
     text-wrap: balance;
 }
-.hero-accent {
-    background: linear-gradient(95deg, var(--accent) 10%, #8e5cf7 95%);
-    -webkit-background-clip: text; background-clip: text;
-    color: transparent;
-}
-@media (prefers-contrast: more) {
-    .hero-accent { background: none; color: var(--accent); }
-}
+/* 그라데이션은 로고 심벌에만 — 강조 글자는 Primary 한 색 */
+.hero-accent { color: var(--accent); }
 .hero-lede {
     margin: clamp(20px, 3vw, 30px) auto 0;
     max-width: 40ch;
