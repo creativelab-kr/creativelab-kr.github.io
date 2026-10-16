@@ -94,6 +94,11 @@ function applyStatic() {
             if (attr && key) el.setAttribute(attr, t(key));
         });
     });
+    const vid = document.getElementById('brandVideo');
+    if (vid) {
+        const src = state.lang === 'ko' ? vid.dataset.srcKo : vid.dataset.srcEn;
+        if (vid.getAttribute('src') !== src) vid.setAttribute('src', src);
+    }
     document.title = t('page_title');
     const setMeta = (sel, v) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', v); };
     setMeta('meta[name="description"]', t('meta_description'));
