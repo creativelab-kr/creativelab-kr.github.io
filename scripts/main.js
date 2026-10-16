@@ -365,6 +365,8 @@ function shippedOf(categoryId) {
  */
 const FEATURED_IDS = [74, 85, 41, 20, 1, 2, 16, 6]; // 하루 AI, Tidal Kart(출시 준비 중), 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap (대표님 10/16 최종)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
+/** 아래 "모든 제품" 목록 맨 앞 8개(대표님 10/16 22:5x): 큰 구역 순서와 다르다. */
+const LINEUP_TOP = [74, 41, 20, 1, 2, 16, 6, 85];
 const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
 function byId(id) {
@@ -494,7 +496,7 @@ function productCard(project) {
 
 function lineupProjects() {
     // 대표 5개가 같은 순서로 맨 앞, 그다음 기존 앞줄·나머지
-    const top = FEATURED_IDS.map(byId).filter(p => isShipped(p) || isComing(p));
+    const top = LINEUP_TOP.map(byId).filter(p => isShipped(p) || isComing(p));
     const featured = new Set(top.map(p => p.id));
     const lead = top.concat(LINEUP_LEAD.map(byId).filter(p => isShipped(p) && !featured.has(p.id)));
     const seen = new Set(lead.map(p => p.id));
