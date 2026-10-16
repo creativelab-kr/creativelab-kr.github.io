@@ -88,6 +88,7 @@
   "6": {
    "title": "DailyMap",
    "headline": "A light map for finding what's nearby.",
+   "pitch": "The app reads an open public map directly, with no relay server, to find what's nearby and build running loops.",
    "summary": "A light map app for finding shops and places near you. The app queries an openly available public map directly, and recommendations are handled on the device in two steps, so there is no relay server at all. In the Running tab, pick a distance and it builds a loop route from where you are, with voice guidance as you run.",
    "why": "A light map app for finding shops and places near you. The design rule fit in one sentence. With no key, there is nothing to hide. With nothing to hide, no relay server is needed. And with no relay server, the App Store privacy label can read \"Data Not Collected.\""
   },

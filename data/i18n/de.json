@@ -88,6 +88,7 @@
   "6": {
    "title": "DailyMap",
    "headline": "Eine leichte Karte für alles in Ihrer Nähe.",
+   "pitch": "Die App fragt eine offene öffentliche Karte direkt ab, ohne Relay-Server, findet Orte in der Nähe und erstellt Laufrouten.",
    "summary": "Eine leichte Karten-App, um Geschäfte und Einrichtungen in Ihrer Nähe zu finden. Die App fragt eine frei zugängliche öffentliche Karte direkt ab, und Empfehlungen werden in zwei Schritten auf dem Gerät berechnet, daher gibt es überhaupt keinen Relay-Server. Im Lauf-Tab wählen Sie eine Strecke, und die App plant von Ihrem Standort aus eine Rundstrecke mit Sprachführung während des Laufens.",
    "why": "Eine leichte Karten-App, um Geschäfte und Einrichtungen in Ihrer Nähe zu finden. Die Entwurfsregel passte in einen Satz. Ohne Schlüssel gibt es nichts zu verbergen, ohne etwas zu verbergen braucht es keinen Relay-Server, und ohne Relay-Server kann das Datenschutzlabel im App Store „Daten werden nicht erfasst“ lauten."
   },

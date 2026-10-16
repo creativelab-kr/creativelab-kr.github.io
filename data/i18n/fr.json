@@ -88,6 +88,7 @@
   "6": {
    "title": "DailyMap",
    "headline": "Une carte légère pour explorer les environs.",
+   "pitch": "L’app interroge directement une carte publique ouverte, sans serveur relais, pour trouver ce qui est proche et créer des parcours de course.",
    "summary": "Une carte légère pour trouver les commerces et les lieux autour de vous. L’app interroge directement une carte publique ouverte à tous, et les recommandations se font en deux étapes sur l’appareil : il n’y a aucun serveur relais. Dans l’onglet Course, choisissez une distance et l’app crée un parcours en boucle depuis votre position, avec un guidage vocal pendant que vous courez.",
    "why": "Une carte légère pour trouver les commerces et les lieux autour de vous. Notre règle de conception tenait en une phrase. Sans clé, rien à cacher. Rien à cacher, donc pas besoin de serveur relais. Et sans serveur relais, l’étiquette de confidentialité de l’App Store peut indiquer « Aucune donnée collectée »."
   },

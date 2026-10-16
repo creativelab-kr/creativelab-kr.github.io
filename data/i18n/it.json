@@ -88,6 +88,7 @@
   "6": {
    "title": "DailyMap",
    "headline": "Una mappa leggera per trovare ciò che hai intorno.",
+   "pitch": "L’app interroga direttamente una mappa pubblica aperta, senza server intermedio, per trovare ciò che è vicino e creare percorsi di corsa.",
    "summary": "Un'app di mappe leggera per trovare negozi e luoghi vicino a te. L'app interroga direttamente una mappa pubblica aperta a tutti e i consigli vengono elaborati sul dispositivo in due passaggi, quindi non c'è alcun server intermedio. Nella scheda Corsa scegli una distanza e l'app crea un percorso ad anello a partire da dove ti trovi, con indicazioni vocali mentre corri.",
    "why": "Un'app di mappe leggera per trovare negozi e luoghi vicino a te. La regola di progetto stava in una frase. Senza chiave non c'è nulla da nascondere. Senza nulla da nascondere non serve un server intermedio. E senza server intermedio, l'etichetta privacy dell'App Store può dire «Dati non raccolti»."
   },

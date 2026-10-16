@@ -88,6 +88,7 @@
   "6": {
    "title": "DailyMap",
    "headline": "Un mapa ligero para encontrar lo que tiene cerca.",
+   "pitch": "La app consulta directamente un mapa público abierto, sin servidor intermedio, para encontrar lo cercano y crear rutas de carrera.",
    "summary": "Una app de mapas ligera para encontrar comercios y lugares cercanos. La app consulta directamente un mapa público de acceso abierto y las recomendaciones se procesan en el dispositivo en dos pasos, de modo que no existe ningún servidor intermedio. En la pestaña de carrera, elija una distancia y la app crea un circuito de ida y vuelta desde donde está, con indicaciones por voz mientras corre.",
    "why": "Una app de mapas ligera para encontrar comercios y lugares cercanos. El criterio de diseño cabía en una frase. Sin clave no hay nada que ocultar; sin nada que ocultar no hace falta un servidor intermedio; y sin servidor intermedio, la etiqueta de privacidad del App Store puede indicar «Datos no recopilados»."
   },
