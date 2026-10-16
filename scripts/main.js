@@ -365,7 +365,7 @@ function shippedOf(categoryId) {
  */
 const FEATURED_IDS = [74, 41, 20, 1, 2, 16, 6, 85]; // 하루 AI, 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap, Tidal Kart(출시 준비 중) (대표님 10/16 최종)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
-/** 아래 "모든 제품" 목록 맨 앞 8개(대표님 10/16 22:5x): 큰 구역 순서와 다르다. */
+/** 아래 "모든 제품" 목록 맨 끝 8개(대표님 10/16 22:5x). */
 const LINEUP_TOP = [74, 41, 20, 1, 2, 16, 6, 85];
 const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
@@ -495,15 +495,15 @@ function productCard(project) {
 }
 
 function lineupProjects() {
-    // 대표 5개가 같은 순서로 맨 앞, 그다음 기존 앞줄·나머지
+    // 나머지 앱은 원래 순서(앞줄 → 화면 사진 있는 순), 대표 8개는 그 뒤 맨 끝에 정해진 순서로
     const top = LINEUP_TOP.map(byId).filter(p => isShipped(p) || isComing(p));
-    const featured = new Set(top.map(p => p.id));
-    const lead = top.concat(LINEUP_LEAD.map(byId).filter(p => isShipped(p) && !featured.has(p.id)));
-    const seen = new Set(lead.map(p => p.id));
+    const topIds = new Set(top.map(p => p.id));
+    const lead = LINEUP_LEAD.map(byId).filter(p => isShipped(p) && !topIds.has(p.id));
+    const seen = new Set([...topIds, ...lead.map(p => p.id)]);
     const rest = state.projects
         .filter(p => isShipped(p) && !seen.has(p.id))
         .sort((a, b) => (b.shot ? 1 : 0) - (a.shot ? 1 : 0) || a.id - b.id);
-    return lead.concat(rest);
+    return lead.concat(rest, top);
 }
 
 /**
