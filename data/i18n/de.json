@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "Bildschirme mit nur dem, was Sie brauchen. Intelligenz, die auf dem Gerät läuft. Die Produkte und die Vision von CreativeLab.",
-  "og_description": "Bildschirme mit nur dem, was Sie brauchen. Intelligenz, die auf dem Gerät läuft.",
+  "meta_description": "CreativeLab ist ein KI-Produktunternehmen, das Menschen und Technologie verbindet und Ideen Wirklichkeit werden lässt. Hier stellen wir unsere Produkte und unsere Vision vor.",
+  "og_description": "Ein KI-Produktunternehmen, das Menschen und Technologie verbindet und Ideen Wirklichkeit werden lässt.",
   "skip": "Zum Hauptinhalt springen",
   "brand_aria": "CreativeLab Startseite",
   "nav_products": "Produkte",
@@ -23,6 +23,8 @@
   "lineup_sub": "Seitlich wischen und eines nach dem anderen entdecken.",
   "areas_eyebrow": "Geschäftsfelder",
   "areas_title": "Wohin die Technik führt.",
+  "vision_text": "Wir streben eine dezentrale Welt an, die Menschen, Geräte, KI und die weite Welt miteinander verbindet und jedem Menschen ermöglicht, sein eigenes Universum frei zu erweitern.",
+  "mission_text": "Wir entwickeln Technologie und Produkte, die die Freiheit des Menschen und die persönliche Souveränität über Identität, Daten und KI respektieren, und helfen mehr Menschen dabei, ihre Ideen und ihr Potenzial Wirklichkeit werden zu lassen.",
   "footer_links_label": "Externe Links",
   "footer_social_label": "Soziale Medien",
   "footer_guide": "App-Hilfe",

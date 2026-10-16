@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "必要なものだけを残した画面と、デバイスの中で動く知能。CreativeLab のプロダクトとビジョン。",
-  "og_description": "必要なものだけを残した画面と、デバイスの中で動く知能。",
+  "meta_description": "CreativeLabは、人とテクノロジーをつなぎ、アイデアを現実にするAIプロダクト企業です。 プロダクトとビジョンをご紹介します。",
+  "og_description": "人とテクノロジーをつなぎ、アイデアを現実にするAIプロダクト企業。",
   "skip": "本文へスキップ",
   "brand_aria": "CreativeLab ホーム",
   "nav_products": "プロダクト",
@@ -23,6 +23,8 @@
   "lineup_sub": "横にスワイプして、ひとつずつご覧ください。",
   "areas_eyebrow": "事業領域",
   "areas_title": "技術が向かう先。",
+  "vision_text": "人とデバイス、AIと世界をつなぎ、誰もが自分の宇宙を自由に広げられる分散型の世界を目指します。",
+  "mission_text": "人の自由と、アイデンティティ・データ・AIに対する個人の主権を尊重する技術と製品をつくり、より多くの人が自分のアイデアや可能性を現実のものにできるよう支援します。",
   "footer_links_label": "外部リンク",
   "footer_social_label": "SNS",
   "footer_guide": "アプリ案内",

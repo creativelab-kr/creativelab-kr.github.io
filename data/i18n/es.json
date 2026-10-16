@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "Pantallas con solo lo necesario. Inteligencia que funciona en su dispositivo. Los productos y la visión de CreativeLab.",
-  "og_description": "Pantallas con solo lo necesario. Inteligencia que funciona en su dispositivo.",
+  "meta_description": "CreativeLab es una empresa de productos de IA que conecta a las personas con la tecnología y convierte las ideas en realidad. Conoce nuestros productos y nuestra visión.",
+  "og_description": "Una empresa de productos de IA que conecta a las personas con la tecnología y convierte las ideas en realidad.",
   "skip": "Saltar al contenido principal",
   "brand_aria": "Inicio de CreativeLab",
   "nav_products": "Productos",
@@ -23,6 +23,8 @@
   "lineup_sub": "Deslice hacia los lados para conocerlos uno a uno.",
   "areas_eyebrow": "Áreas de negocio",
   "areas_title": "Hacia dónde va la tecnología.",
+  "vision_text": "Imaginamos un mundo descentralizado que conecta a las personas, los dispositivos, la IA y el mundo en general, y que permite a cada persona expandir libremente su propio universo.",
+  "mission_text": "Creamos tecnología y productos que respetan la libertad humana y la soberanía de cada persona sobre su identidad, sus datos y la IA, para ayudar a que más personas hagan realidad sus ideas y su potencial.",
   "footer_links_label": "Enlaces externos",
   "footer_social_label": "Redes sociales",
   "footer_guide": "Guía de las apps",

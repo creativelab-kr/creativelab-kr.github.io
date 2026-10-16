@@ -229,6 +229,8 @@ a { color: inherit; text-decoration: none; }
     max-width: 44ch;
 }
 
+.section-statement { max-width: 56ch; font-size: var(--fs-body, 1.0625rem); line-height: 1.6; }
+
 /* ---------- 첫 화면 — 글자가 곧 화면이다 ---------- */
 .hero {
     padding-block: clamp(72px, 12vw, 160px) clamp(56px, 8vw, 110px);

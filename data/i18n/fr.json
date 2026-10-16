@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "Des écrans réduits à l’essentiel. Une intelligence qui fonctionne sur votre appareil. Les produits et la vision de CreativeLab.",
-  "og_description": "Des écrans réduits à l’essentiel. Une intelligence qui fonctionne sur votre appareil.",
+  "meta_description": "CreativeLab est une entreprise de produits d'IA qui relie les personnes et la technologie, et transforme les idées en réalité. Découvrez nos produits et notre vision.",
+  "og_description": "Une entreprise de produits d'IA qui relie les personnes et la technologie, et transforme les idées en réalité.",
   "skip": "Passer au contenu principal",
   "brand_aria": "Accueil CreativeLab",
   "nav_products": "Produits",
@@ -23,6 +23,8 @@
   "lineup_sub": "Faites défiler sur le côté pour les découvrir un à un.",
   "areas_eyebrow": "Domaines d’activité",
   "areas_title": "Là où va la technologie.",
+  "vision_text": "Nous imaginons un monde décentralisé qui relie les personnes, les appareils, l'IA et le monde au sens large, afin que chacun puisse étendre librement son propre univers.",
+  "mission_text": "Nous concevons des technologies et des produits qui respectent la liberté humaine et la souveraineté de chacun sur son identité, ses données et l'IA, pour aider davantage de personnes à concrétiser leurs idées et leur potentiel.",
   "footer_links_label": "Liens externes",
   "footer_social_label": "Réseaux sociaux",
   "footer_guide": "Guide des apps",

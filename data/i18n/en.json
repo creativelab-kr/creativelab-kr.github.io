@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "Screens with only what you need. Intelligence that runs on your device. The products and vision of CreativeLab.",
-  "og_description": "Screens with only what you need. Intelligence that runs on your device.",
+  "meta_description": "CreativeLab is an AI product company connecting people and technology, turning ideas into reality. Introducing our products and vision.",
+  "og_description": "An AI product company connecting people and technology, turning ideas into reality.",
   "skip": "Skip to main content",
   "brand_aria": "CreativeLab home",
   "nav_products": "Products",
@@ -23,6 +23,8 @@
   "lineup_sub": "Swipe sideways to meet them one by one.",
   "areas_eyebrow": "Focus areas",
   "areas_title": "Where technology is headed.",
+  "vision_text": "We envision a decentralized world that connects people, devices, AI, and the wider world, empowering everyone to freely expand their own universe.",
+  "mission_text": "We build technology and products that respect human freedom and individual sovereignty over identity, data, and AI, helping more people turn their ideas and potential into reality.",
   "footer_links_label": "External links",
   "footer_social_label": "Social media",
   "footer_guide": "App guide",

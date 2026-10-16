@@ -1,8 +1,8 @@
 {
  "ui": {
   "page_title": "CreativeLab",
-  "meta_description": "只留下需要的界面，在设备上运行的智能。了解 CreativeLab 的产品与愿景。",
-  "og_description": "只留下需要的界面，在设备上运行的智能。",
+  "meta_description": "CreativeLab 是一家连接人与技术、将创意变为现实的 AI 产品公司。 欢迎了解我们的产品与愿景。",
+  "og_description": "连接人与技术、将创意变为现实的 AI 产品公司。",
   "skip": "跳到正文",
   "brand_aria": "CreativeLab 首页",
   "nav_products": "产品",
@@ -23,6 +23,8 @@
   "lineup_sub": "左右滑动，逐个了解。",
   "areas_eyebrow": "业务领域",
   "areas_title": "技术的方向。",
+  "vision_text": "我们致力于连接人与设备、AI与世界，构建一个人人都能自由拓展自己宇宙的去中心化世界。",
+  "mission_text": "打造尊重个人自由、尊重个人对身份、数据与 AI 的自主权的技术与产品，帮助更多人将自己的想法与潜能变为现实。",
   "footer_links_label": "外部链接",
   "footer_social_label": "社交媒体",
   "footer_guide": "应用指南",
