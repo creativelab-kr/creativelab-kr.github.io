@@ -363,7 +363,7 @@ function shippedOf(categoryId) {
  * 앱 사진은 전부 실제 스토어 스크린샷을 줄인 것(assets/shots),
  * 영역 이미지는 tools/render-areas 로 렌더링한 것(assets/areas)이다.
  */
-const FEATURED_IDS = [74, 85, 41, 20, 1, 2, 16, 6]; // 하루 AI, Tidal Kart(출시 준비 중), 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap (대표님 10/16 최종)
+const FEATURED_IDS = [74, 41, 20, 1, 2, 16, 6, 85]; // 하루 AI, 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap, Tidal Kart(출시 준비 중) (대표님 10/16 최종)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
 /** 아래 "모든 제품" 목록 맨 앞 8개(대표님 10/16 22:5x): 큰 구역 순서와 다르다. */
 const LINEUP_TOP = [74, 41, 20, 1, 2, 16, 6, 85];
