@@ -47,7 +47,8 @@ const LINK_LABELS = {
 // =============================================
 
 const LANGS = [
-    ['ko', '한국어'], ['en', 'English'], ['ja', '日本語'], ['zh-Hans', '简体中文'], ['zh-Hant', '繁體中文']
+    ['ko', '한국어'], ['en', 'English'], ['ja', '日本語'], ['zh-Hans', '简体中文'], ['zh-Hant', '繁體中文'],
+    ['fr', 'Français'], ['de', 'Deutsch'], ['it', 'Italiano'], ['es', 'Español'], ['pt', 'Português']
 ];
 const LANG_KEY = 'creativelab.lang';
 
@@ -68,6 +69,11 @@ function pickLang() {
         if (l.startsWith('ja')) return 'ja';
         if (l.startsWith('zh')) return /hant|tw|hk|mo/.test(l) ? 'zh-Hant' : 'zh-Hans';
         if (l.startsWith('en')) return 'en';
+        if (l.startsWith('fr')) return 'fr';
+        if (l.startsWith('de')) return 'de';
+        if (l.startsWith('it')) return 'it';
+        if (l.startsWith('es')) return 'es';
+        if (l.startsWith('pt')) return 'pt';
     }
     return 'ko';
 }

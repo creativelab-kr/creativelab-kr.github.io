@@ -1,0 +1,506 @@
+{
+ "ui": {
+  "page_title": "CreativeLab",
+  "meta_description": "Pantallas con solo lo necesario. Inteligencia que funciona en su dispositivo. Los productos y la visión de CreativeLab.",
+  "og_description": "Pantallas con solo lo necesario. Inteligencia que funciona en su dispositivo.",
+  "skip": "Saltar al contenido principal",
+  "brand_aria": "Inicio de CreativeLab",
+  "nav_products": "Productos",
+  "nav_areas": "Áreas de negocio",
+  "lang_label": "Idioma",
+  "hero_line1": "Ideas profundas,",
+  "hero_line2": "en una pantalla pequeña.",
+  "hero_lede": "Pantallas con solo lo necesario. Inteligencia que funciona en su dispositivo. Reimaginamos lo que usa todos los días.",
+  "btn_products": "Ver productos",
+  "btn_areas": "Áreas de negocio",
+  "ring_region": "Carrusel giratorio",
+  "ring_region_label": "Todos los productos",
+  "ring_viewport": "Gire con las flechas izquierda y derecha",
+  "ring_prev": "App anterior",
+  "ring_next": "App siguiente",
+  "featured_label": "Producto destacado",
+  "lineup_title": "Todos los productos.",
+  "lineup_sub": "Deslice hacia los lados para conocerlos uno a uno.",
+  "areas_eyebrow": "Áreas de negocio",
+  "areas_title": "Hacia dónde va la tecnología.",
+  "footer_links_label": "Enlaces externos",
+  "footer_guide": "Guía de las apps",
+  "footer_contact": "Contacto",
+  "link_appstore": "Descargar en el App Store",
+  "link_googleplay": "Disponible en Google Play",
+  "link_web": "Ver en la web",
+  "more": "Más información",
+  "detail": "Detalles",
+  "prev": "Anterior",
+  "next": "Siguiente",
+  "carousel_products": "Lista de productos",
+  "carousel_areas": "Áreas de negocio",
+  "carousel_prev": "Anterior",
+  "carousel_next": "Siguiente",
+  "back_home": "Volver al inicio",
+  "home": "Inicio",
+  "back_to": "Volver a {name}",
+  "works_title": "Lo que hemos creado.",
+  "why_title": "Por qué lo creamos",
+  "alt_screen": "Pantalla de la app {name}",
+  "alt_icon": "Icono de la app {name}",
+  "aria_appstore": "Ver {name} en el App Store"
+ },
+ "projects": {
+  "1": {
+   "title": "Korea Calendar",
+   "headline": "Calendario lunar, festivos, términos solares. En una pantalla.",
+   "pitch": "Los cálculos de fechas se hacen en el dispositivo, así que funciona incluso en modo avión.",
+   "summary": "Un calendario coreano que muestra en una sola pantalla el calendario lunar, los festivos, el ciclo sexagesimal y los términos solares. La conversión lunar y las reglas de los festivos se calculan en el dispositivo, sin servidor, por lo que funciona en modo avión, y el widget de la pantalla de inicio calcula por sí mismo la fecha lunar. El widget del iPhone muestra los aniversarios de los próximos 30 días, y los festivos y festivos sustitutivos aparecen en rojo.",
+   "why": "Un calendario coreano que reúne en una sola pantalla el calendario lunar, los festivos, el ciclo sexagesimal y los 24 términos solares. Un calendario debe abrirse incluso donde no hay señal. Por eso decidimos que el cálculo de fechas no debía depender de un servidor."
+  },
+  "2": {
+   "title": "Song of the Day",
+   "headline": "Una canción para escuchar hoy.",
+   "pitch": "Elige una canción al día según el clima, el ánimo y sus gustos.",
+   "summary": "Recomendación musical que elige una canción al día según el clima, el ánimo y sus gustos. Las listas de éxitos de cada país se arman directamente a partir de información musical pública, sin servidor propio, y con un solo toque en «Escuchar hasta el final» la canción continúa completa en YouTube. Los widgets de la pantalla de inicio y de la pantalla de bloqueo del iPhone muestran la canción de hoy sin abrir la app, y al tocarlos se abre esa canción.",
+   "why": "Una app de recomendación musical que elige una canción al día según el clima, el ánimo y sus gustos. Las listas de éxitos de cada país se arman directamente a partir de información musical pública, sin servidor propio. Desde la versión 1.0.14, en lugar de una vista previa de 30 segundos, un solo toque en «Escuchar hasta el final» reproduce la canción recomendada completa en YouTube."
+  },
+  "3": {
+   "title": "myTV",
+   "headline": "El vídeo que ve en la web, en su TV.",
+   "summary": "Una app de transmisión que envía a su smart TV los vídeos que ve en la web. Implementamos por separado los tres métodos de conexión que requieren los distintos televisores, y entrega el flujo original en lugar de duplicar la pantalla.",
+   "why": "Una app de transmisión que envía a la TV los vídeos que ve en la web. Como pasa a la TV la dirección del propio vídeo en lugar de duplicar la pantalla, la reproducción continúa aunque apague el teléfono y la calidad no baja."
+  },
+  "4": {
+   "title": "Voice Notes",
+   "headline": "Hable y se escribe solo.",
+   "pitch": "El reconocimiento de voz funciona en el dispositivo, así que las grabaciones no salen de él.",
+   "summary": "Un bloc de notas que convierte la grabación en texto al instante para crear actas de reuniones. El reconocimiento de voz funciona por completo en el dispositivo, por lo que el audio no sale a la red, y también funciona sin internet.",
+   "why": "Un bloc de notas que convierte la grabación en texto al instante para crear actas de reuniones. Lo que se dice en una reunión suele ser privado, así que todo el reconocimiento de voz se ejecuta en el dispositivo y el audio no sale a la red. El dictado funciona incluso sin internet."
+  },
+  "5": {
+   "title": "Cardly",
+   "headline": "Fotografíe una tarjeta y queda organizada.",
+   "summary": "Un gestor de tarjetas de visita que lee el nombre y los datos de contacto de la foto y los organiza. El reconocimiento de texto se hace en el dispositivo, y tanto guardar el contacto como exportar a una hoja de cálculo se completan sin conexión.",
+   "why": "Un gestor de tarjetas de visita que lee el nombre y los datos de contacto de la foto y los organiza. Una tarjeta de visita contiene datos personales de otra persona. Por eso diseñamos esta app para que no haga ninguna solicitud de red. Las copias de seguridad tampoco pasan por un servidor: usted mismo intercambia los archivos."
+  },
+  "6": {
+   "title": "DailyMap",
+   "headline": "Un mapa ligero para encontrar lo que tiene cerca.",
+   "summary": "Una app de mapas ligera para encontrar comercios y lugares cercanos. La app consulta directamente un mapa público de acceso abierto y las recomendaciones se procesan en el dispositivo en dos pasos, de modo que no existe ningún servidor intermedio. En la pestaña de carrera, elija una distancia y la app crea un circuito de ida y vuelta desde donde está, con indicaciones por voz mientras corre.",
+   "why": "Una app de mapas ligera para encontrar comercios y lugares cercanos. El criterio de diseño cabía en una frase. Sin clave no hay nada que ocultar; sin nada que ocultar no hace falta un servidor intermedio; y sin servidor intermedio, la etiqueta de privacidad del App Store puede indicar «Datos no recopilados»."
+  },
+  "7": {
+   "title": "AI Mail Reply",
+   "headline": "Redacta sus borradores de respuesta.",
+   "summary": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Usa dos servicios de inteligencia artificial gratuitos como respaldo mutuo y, si ninguno está disponible, cambia automáticamente a una plantilla de borrador del dispositivo.",
+   "why": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Un modelo de pago generaría pérdidas a medida que crecieran los usuarios, así que decidimos usar solo modelos de lenguaje de nivel gratuito y eliminamos el servicio de pago."
+  },
+  "9": {
+   "title": "Malmoi",
+   "headline": "El coreano no se lee como se escribe.",
+   "pitch": "Vocabulario y pronunciación del TOPIK para extranjeros. Las reglas de pronunciación estándar, implementadas como un motor.",
+   "summary": "Estudio de vocabulario y pronunciación para extranjeros que preparan el examen de coreano (TOPIK). Incluye 44 391 palabras del Diccionario Básico de Coreano del Instituto Nacional de la Lengua Coreana e implementa las reglas de pronunciación estándar como un motor de reglas (precisión del 94,0 %).",
+   "why": "Una app de estudio para extranjeros que preparan el examen de coreano (TOPIK). El nombre proviene del primer diccionario de la lengua coreana, creado por Ju Si-gyeong. Trasladamos al aprendizaje del coreano la estructura «sin servidor, sin cuenta» que ya habíamos probado en nuestra app de examen de japonés."
+  },
+  "10": {
+   "title": "Kotoba",
+   "headline": "Vocabulario y kanji del JLPT, y comprensión auditiva, en una sola app.",
+   "summary": "Practique en una sola app el vocabulario y los kanji del JLPT, además de la comprensión auditiva de frases. El banco de preguntas y la reproducción de audio vienen incluidos en la app, así que puede seguir estudiando sin cuenta y sin internet.",
+   "why": "Practique en una sola app el vocabulario y los kanji del JLPT, además de la comprensión auditiva de frases. Elegimos las apps de examen por una razón clara. Si el repaso y los simulacros se ejecutan por completo en el dispositivo, los costes de funcionamiento no aumentan aunque crezcan los usuarios."
+  },
+  "11": {
+   "title": "Voca Interpreter",
+   "headline": "Interpretación cara a cara, sin internet.",
+   "summary": "Un intérprete cara a cara que funciona donde no hay internet. Incluye una pantalla para dos personas frente a frente y guías de conversación por situaciones, y ejecuta los modelos de traducción en el dispositivo, sin conexión.",
+   "why": "Un intérprete cara a cara que funciona donde no hay internet. El reconocimiento de voz, la traducción, la identificación de idioma y el reconocimiento de texto se ejecutan en el dispositivo. La red solo se usa para descargar los paquetes de idioma y, una vez descargados, interpreta incluso en modo avión."
+  },
+  "12": {
+   "title": "Study in Korea",
+   "headline": "Los trámites de estudiar en el extranjero, por su cuenta.",
+   "summary": "Una app de orientación que ayuda a los estudiantes internacionales en Corea a resolver por sí mismos los trámites de visado y de la vida diaria. La información de los trámites viene incluida en la app, en 6 idiomas, sin inicio de sesión y sin consultas a servidores.",
+   "why": "Una app de orientación que ayuda a los estudiantes internacionales en Corea a resolver por sí mismos los trámites de visado y de la vida diaria. Incluye el cálculo de la fecha de vencimiento de la estancia, el cálculo de horas de trabajo a tiempo parcial, una lista de verificación de instalación con 18 puntos, la conversión de créditos y los contactos esenciales, en 6 idiomas."
+  },
+  "13": {
+   "title": "Career Compass",
+   "headline": "Carreras y profesiones según su tipo de personalidad.",
+   "summary": "Una app de orientación profesional que acota las carreras y profesiones que van con su tipo de personalidad. Los resultados del test se comparan en el dispositivo, sin enviarlos a ningún servidor, y está disponible en 5 idiomas.",
+   "why": "Una app de orientación profesional que, mediante un test de tipo de personalidad, acota las carreras, profesiones y métodos de estudio que le convienen. Los resultados del test se comparan en el dispositivo, sin enviarlos a ningún servidor, y está disponible en 5 idiomas."
+  },
+  "14": {
+   "title": "Fretwise",
+   "headline": "Un entrenador que elige los acordes de hoy.",
+   "pitch": "Digitación y progresiones de acordes de guitarra y ukelele, paso a paso. La app toca el acompañamiento.",
+   "summary": "Una app de práctica para aprender paso a paso la digitación y las progresiones de acordes de guitarra y ukelele. Un entrenador basado fielmente en la teoría del aprendizaje elige los acordes que practicar hoy, y la app toca al compás el acompañamiento del cancionero para que pueda tocar junto con ella. La práctica del día elegida por el entrenador aparece en los widgets de la pantalla de inicio y de bloqueo, y en cada canción puede buscar y abrir un vídeo de interpretación en YouTube. Todos los cálculos de la práctica se hacen en el dispositivo.",
+   "why": "Una app de práctica para aprender paso a paso la digitación y las progresiones de acordes de guitarra. El criterio era claro. La práctica ocurre sin conexión, y en el momento en que se añade un servidor empieza la recopilación de datos personales y se renuncia a la etiqueta «Datos no recopilados». Para un desarrollador independiente, un servidor es una deuda que hay que pagar."
+  },
+  "15": {
+   "title": "Singon",
+   "headline": "Su sala se convierte en un karaoke.",
+   "pitch": "Use el teléfono como micrófono, reciba puntuación de afinación y ritmo, y vea qué tono le conviene.",
+   "summary": "Una app que convierte su sala en un karaoke usando el teléfono como micrófono. Puntúa en 4 ejes, como la afinación y el ritmo, y recomienda un tono. No usa servidor y funciona por completo dentro de una sola página.",
+   "why": "Una app que convierte su sala en un karaoke usando un teléfono como micrófono. No usar servidor fue la condición de diseño de esta app. Se completa en un único archivo de pantalla y su perfil vocal permanece solo en el teléfono. Las funciones que necesitan un servidor, como el inicio de sesión, las suscripciones y los feeds sociales, se dejaron fuera desde el principio."
+  },
+  "16": {
+   "title": "Sudam",
+   "headline": "Una partida de Go con la IA, sin internet.",
+   "pitch": "Un motor de IA de Go dentro del teléfono. Partidas, repaso y análisis de vida y muerte.",
+   "summary": "Go con IA sin internet: partidas, repaso, problemas de vida y muerte y análisis de vida y muerte. Un motor de IA de Go de acceso abierto funciona dentro del teléfono para jugar sin conexión y repasar con un gráfico de probabilidad de victoria, y para cada grupo de piedras en el tablero determina si vive o muere, sus puntos vitales y la secuencia de jugadas. Cuando la confianza es baja, no fuerza una respuesta y marca el resultado como incierto.",
+   "why": "La IA de Go suele funcionar en un servidor. Para jugar una partida hay que crear una cuenta y conectarse a internet. Instalamos por completo un motor de IA de Go de acceso abierto dentro del teléfono, de modo que las partidas, los repasos e incluso los problemas de vida y muerte funcionan sin cuenta y sin conexión."
+  },
+  "17": {
+   "title": "Chess Coach",
+   "headline": "Juegue y aprenda ajedrez, sin necesidad de rival.",
+   "pitch": "Un motor de ajedrez y problemas, integrados en la app.",
+   "summary": "Una app de partidas y problemas de ajedrez para jugar y aprender sin rival. Con un motor de ajedrez y 1000 problemas incluidos en la app, hace cero llamadas a servidores. Disponible en 5 idiomas.",
+   "why": "Una app de ajedrez para jugar y aprender sin rival. Eliminamos las partidas en línea y todo el código de servidor, por lo que no hace ninguna solicitud de red y se completa en un único archivo de pantalla."
+  },
+  "18": {
+   "title": "AI Janggi",
+   "headline": "Janggi, con las reglas oficiales.",
+   "pitch": "Disposiciones iniciales, paso de turno y puntuación incluidos.",
+   "summary": "Una app para jugar al janggi, el ajedrez tradicional coreano, con las reglas oficiales: 4 disposiciones iniciales, paso de turno y puntuación. El nuevo motor realmente calcula con más profundidad cuanto mayor es la dificultad, y la pantalla de la partida muestra la profundidad que la IA acaba de calcular. Las reglas se implementan en dos versiones independientes cuyos resultados se comparan automáticamente.",
+   "why": "Una app para jugar al janggi, el ajedrez tradicional coreano, con las reglas oficiales. Incluye 4 disposiciones iniciales, paso de turno y puntuación, en 5 idiomas. Eliminamos servidores, inicio de sesión y nube, de modo que ni un solo dato sale del dispositivo."
+  },
+  "19": {
+   "title": "Ttorang",
+   "headline": "Entrenamiento mental para despertar la memoria y la concentración.",
+   "summary": "Una colección de juegos de entrenamiento mental para personas mayores que despierta la memoria y la concentración. Rediseñada con letra grande y controles sencillos, con los registros guardados solo en el dispositivo. Disponible en 5 idiomas.",
+   "why": "Una colección de juegos de entrenamiento mental para personas mayores que despierta la memoria y la concentración. Rediseñada con letra grande y controles sencillos, con los registros guardados solo en el dispositivo. Sin cuenta y sin servidor."
+  },
+  "20": {
+   "title": "Q-City",
+   "headline": "Una ciudad entera en la punta de los dedos.",
+   "pitch": "Un simulador de construcción de ciudades en el que zonifica y equilibra energía, agua, tráfico y presupuesto.",
+   "summary": "Un simulador de construcción de ciudades en el que zonifica y equilibra energía, agua, tráfico y presupuesto. Gire el mapa en cuatro direcciones para ver detrás de los edificios y vaya de un salto al lugar del incendio. La lógica de la simulación se mantiene en tres versiones separadas y se verifica que los archivos guardados coincidan carácter por carácter. En 5 idiomas.",
+   "why": "Un simulador de construcción de ciudades en el que zonifica y equilibra energía, agua, tráfico y presupuesto. Sin servidor, sin cuenta y sin clasificación: una ciudad completa dentro de su dispositivo."
+  },
+  "21": {
+   "title": "Lotto Lab",
+   "headline": "Estadísticas de números a partir de los resultados históricos.",
+   "summary": "Un asistente de lotería que analiza estadísticamente los resultados históricos para generar y administrar sus números. Los datos de los sorteos vienen incluidos en la app, así que el análisis funciona sin internet.",
+   "why": "Un asistente que analiza estadísticamente los resultados históricos para generar y administrar sus números. La premisa del diseño fue la honestidad. Los sorteos de lotería son independientes y aleatorios, por lo que la IA no puede aumentar las probabilidades. Por eso decidimos aportar valor solo con la comodidad de uso, la interpretación y una redacción honesta, no con una capacidad de predicción."
+  },
+  "31": {
+   "title": "BP Diary",
+   "headline": "Una línea para llevar a la consulta.",
+   "pitch": "Resume la semana de tensión arterial en casa previa a su cita en el promedio que mira su médico.",
+   "summary": "Un cuaderno de registro que le guía para medir la tensión arterial en casa por la mañana y por la noche durante los 7 días previos a la consulta, y crea en una línea el promedio que mira su médico. Vea los promedios de 7, 30 y 90 días y la tendencia en una sola pantalla de consulta; los registros se guardan solo en el dispositivo.",
+   "why": "Un cuaderno de registro que le guía para medir correctamente la tensión arterial en casa durante los 7 días previos a la consulta. Al reunir las reseñas de las apps de tensión arterial existentes, las quejas se concentraban en pocos puntos. Pensé que me avisaría cuándo medir. Me cobraron sin darme cuenta. Mis registros desaparecieron. La letra es pequeña. Elegimos resolver solo uno: el programa de 7 días antes de la consulta."
+  },
+  "34": {
+   "title": "Retro Arcade",
+   "headline": "Un salón recreativo creado por nosotros.",
+   "pitch": "Una colección de juegos arcade originales. Sin anuncios, sin compras y sin cuenta.",
+   "summary": "Un salón recreativo con 27 juegos arcade originales que creamos nosotros mismos (1.1.0). No usamos archivos de juegos de terceros: todo es de creación propia, sin anuncios, sin compras y sin cuenta. Disponible en 175 regiones.",
+   "why": "Empezó como una app que imitaba consolas antiguas, pero dependía de archivos de juegos de terceros, así que cambiamos de rumbo. Creamos todos los juegos nosotros mismos y lo reconstruimos como una colección arcade que, con el mismo motor, funciona igual en la web. Empezó con 7 juegos en la 1.0 y llegó a 27 en la 1.1.0."
+  },
+  "72": {
+   "title": "Sudam Life & Death",
+   "headline": "Problemas de vida y muerte con una única respuesta.",
+   "pitch": "De principiante a nivel superior, paso a paso. Los problemas fallados se reúnen para resolverlos de nuevo.",
+   "summary": "Una app con 318 problemas de vida y muerte de Go, cuya respuesta única está demostrada, en 6 niveles de principiante a nivel superior. Los 106 problemas de los niveles 1 y 2 son gratuitos, y los problemas fallados se reúnen automáticamente para resolverlos de nuevo. Sin anuncios, sin registro y sin necesidad de internet.",
+   "why": "Empezó con el deseo de resolver un poco cada día problemas de vida y muerte de Go. Separamos los problemas de vida y muerte de Sudam y creamos un libro de problemas que funciona sin internet, sin anuncios, sin registro y sin límite diario de problemas."
+  },
+  "32": {
+   "title": "Neighborhood Market",
+   "headline": "Sin servidor. Directo con sus vecinos.",
+   "pitch": "Conéctese con sus vecinos con un solo código de invitación para comprar, vender y compartir.",
+   "summary": "Una app vecinal de segunda mano e intercambio donde los vecinos se pasan códigos de invitación y conectan sus dispositivos directamente, sin servidor de la empresa. Los anuncios y los chats individuales se quedan solo en los dispositivos de ambos, y admite denuncias, bloqueos y 6 idiomas.",
+   "why": "Un mercado donde los vecinos se compran y venden directamente artículos de segunda mano, sin servidor, sin cuenta y sin base de datos. Los dispositivos se conectan directamente, y el código que establece la conexión lo copian y comparten los propios usuarios. Admite 6 idiomas, por lo que también pueden usarlo los residentes extranjeros."
+  },
+  "33": {
+   "title": "Hanja Levels",
+   "headline": "Hanja por niveles, hasta que la mano los recuerde.",
+   "pitch": "Caracteres asignados, simulacros y práctica de escritura en una sola app.",
+   "summary": "Una app de estudio de hanja por niveles que enseña los 1000 caracteres asignados del nivel 8 al 4, además de palabras sinocoreanas, con su lectura, radical y total de trazos. Todo funciona en el dispositivo: simulacros con la misma estructura del examen real, práctica de escritura en la que se traza y se acierta el número de trazos, y un repaso con repetición espaciada que pregunta solo lo que falló."
+  },
+  "35": {
+   "title": "Korean History Trainer",
+   "headline": "Historia de Corea que se aprende con las manos, hasta el orden de los sucesos.",
+   "pitch": "Preguntas propias con explicaciones, un juego de cronología y un cuaderno de errores en una sola app.",
+   "summary": "Una app de estudio para preparar el Examen de Competencia en Historia de Corea (básico y avanzado) y la historia de Corea del examen de funcionario público de grado 9. Cada pregunta propia incluye una explicación, y hay un juego de cronología en el que se ordenan tarjetas de sucesos por época, además de un cuaderno de errores que se completa solo. Funciona en el dispositivo y sin registro."
+  },
+  "36": {
+   "title": "English Test Trainer",
+   "headline": "Escuche, escriba y vuelva a resolver.",
+   "pitch": "Preguntas con el formato real del examen, dictados y repaso de vocabulario.",
+   "summary": "Una app de estudio para exámenes de inglés que practica las secciones LC y RC al estilo del TOEIC con preguntas propias y explicaciones en coreano. El entrenamiento de dictado, el vocabulario con repetición espaciada y el cuaderno de errores que se completa solo funcionan en el dispositivo y sin registro."
+  },
+  "41": {
+   "title": "Rival Kingdoms",
+   "headline": "Unificar el reino, sin gacha.",
+   "pitch": "Asuntos internos, diplomacia, intrigas y batallas. Estrategia por turnos de los Tres Reinos, un mes por turno.",
+   "summary": "Una simulación de estrategia por turnos ambientada en las Llanuras Centrales a finales de la dinastía Han, en la que gestiona los asuntos internos, la diplomacia, las intrigas y las batallas un mes por turno. Los retratos y las estadísticas son originales y, sin gacha, anuncios, compras ni cuentas, una partida completa llega hasta el final incluso en modo avión. En 5 idiomas.",
+   "why": "Al investigar, encontramos un hueco en los móviles. Un juego por turnos de los Tres Reinos que funciona sin conexión, sin gacha, ligero y en varios idiomas. Sin servidor, tampoco hay cierre del servicio."
+  },
+  "73": {
+   "title": "Unfold",
+   "headline": "Abra sus archivos sin caracteres rotos.",
+   "pitch": "Un visor de TXT, cómics y PDF. La codificación y el índice se resuelven solos.",
+   "summary": "Un visor que abre sus archivos TXT, de cómics y PDF sin caracteres rotos. Detecta por sí mismo codificaciones antiguas como EUC-KR y Shift_JIS, crea un índice buscando los títulos y ordena los cómics ZIP y CBZ en el orden 1, 2, 10. Sin servidor, sus archivos y la posición de lectura se quedan solo en el dispositivo."
+  },
+  "74": {
+   "title": "Haru - AI Assistant",
+   "headline": "Encárguelo con la voz, confírmelo con una tarjeta.",
+   "pitch": "Encargue su agenda, tareas y gastos. Nada cambia hasta que usted toque.",
+   "summary": "Un asistente que se ocupa de su agenda, tareas, registro de gastos, borradores de correo y alarmas cuando se lo pide con la voz. Sin registro, Apple Intelligence en su iPhone se encarga de decidir, y Haru muestra primero en una tarjeta lo que hizo, de modo que nada se aplica hasta que toque «Ejecutar». Si instala Haru PC en su computadora, también puede encargar y aprobar desde el teléfono tareas del PC."
+  }
+ },
+ "categories": {
+  "ai": {
+   "name": "IA e infraestructura",
+   "vision": "La inteligencia, en la palma de su mano.",
+   "lede": "El reconocimiento y el razonamiento ocurren en el dispositivo. Aunque se corte la conexión, el pensamiento no se detiene, y sus palabras y fotos se quedan con usted."
+  },
+  "platform": {
+   "name": "Plataformas y servicios",
+   "vision": "Sólido, incluso donde no se ve.",
+   "lede": "La base que conecta a las personas y el trabajo dentro de las organizaciones. Pulimos con el mismo criterio la estructura que hay detrás de la pantalla."
+  },
+  "fintech": {
+   "name": "Fintech e inversión",
+   "vision": "Números que se entienden.",
+   "lede": "Las cifras del mercado y de la economía doméstica, en una forma que cualquiera pueda leer. Cálculo preciso, explicación concisa."
+  },
+  "chain": {
+   "name": "Blockchain y sistemas distribuidos",
+   "vision": "La confianza, en la estructura.",
+   "lede": "Una manera en que los registros se prueban unos a otros. Llevamos la tecnología distribuida a las herramientas de todos los días."
+  },
+  "security": {
+   "name": "Seguridad y privacidad",
+   "vision": "Lo que no se recopila, no se filtra.",
+   "lede": "Un diseño sin registro y sin datos personales acumulados en servidores. La mejor manera de proteger algo es no tenerlo desde el principio."
+  },
+  "quantum": {
+   "name": "Seguridad cuántica",
+   "vision": "La criptografía del mañana, hoy.",
+   "lede": "Para que los secretos de hoy sigan siendo secretos el día que lleguen los ordenadores cuánticos. Miramos hacia la próxima generación de la criptografía."
+  },
+  "gameai": {
+   "name": "IA para juegos",
+   "vision": "Un rival que piensa, en su bolsillo.",
+   "lede": "Los motores de Go, ajedrez y janggi calculan las jugadas dentro del teléfono. Una partida llega hasta el final sin llamar a ningún servidor."
+  },
+  "language": {
+   "name": "Idiomas y voz",
+   "vision": "La palabra, resuelta en el dispositivo.",
+   "lede": "Transcribir, traducir, leer en voz alta. Su voz y sus frases no salen de la red del dispositivo."
+  },
+  "media": {
+   "name": "Medios y música",
+   "vision": "Imagen y sonido, donde usted quiera.",
+   "lede": "De la pantalla pequeña a la grande, con la sala como escenario. Los dispositivos se conectan entre sí sin servidor intermedio."
+  },
+  "care": {
+   "name": "Salud y cuidado",
+   "vision": "La salud de cada día, en silencio a su lado.",
+   "lede": "Medir, recordar y avisar. Los registros se quedan solo en el dispositivo, con letra grande y controles sencillos."
+  },
+  "life": {
+   "name": "Vida diaria y medios",
+   "vision": "Lo que abre todos los días.",
+   "lede": "La fecha y el camino, la música y la pantalla grande. Apps que se colocan en el lugar más cercano a su día."
+  },
+  "work": {
+   "name": "Trabajo y productividad",
+   "vision": "Menos trabajo, más ideas.",
+   "lede": "Escribir, organizar y entregar, con menos esfuerzo."
+  },
+  "game": {
+   "name": "Juegos y mente",
+   "vision": "La profundidad sobre el tablero.",
+   "lede": "Go y janggi, ajedrez y salón recreativo, el reino de los Tres Reinos y una sola ciudad. Tableros para pensar a fondo y jugar con ligereza."
+  },
+  "learn": {
+   "name": "Estudio y exámenes",
+   "vision": "Para que aprender no se detenga.",
+   "lede": "Idiomas y exámenes, guitarra y orientación profesional. Un aprendizaje que continúa en cualquier lugar."
+  },
+  "health": {
+   "name": "Salud y registros",
+   "vision": "Los registros de su cuerpo, a su lado.",
+   "lede": "Mida, anote y véalo de un vistazo. Los registros se quedan solo en el dispositivo."
+  },
+  "shop": {
+   "name": "Compras y comparador de precios",
+   "vision": "Menos tiempo eligiendo.",
+   "lede": "Los precios dispersos reunidos en un solo lugar, mostrando solo lo que se ajusta a sus condiciones."
+  }
+ },
+ "works": {
+  "ai": [
+   {
+    "name": "Panel de control unificado",
+    "title": "Todos los servicios, en una pantalla.",
+    "body": "Lee directamente de cada servicio el generador de vídeo, los programas en ejecución, las tarjetas gráficas y los eventos de seguridad, y los reúne en un solo lugar. Está creado sin herramientas externas, por lo que actualizar una herramienta nunca detiene el panel.",
+    "alt": "Pantalla del panel de control unificado: tarjetas de uso, memoria, temperatura y consumo de la tarjeta gráfica, y gráficos en tiempo real"
+   },
+   {
+    "name": "Monitor de GPU",
+    "title": "El estado del equipo, cada segundo.",
+    "body": "Vigila a intervalos de un segundo la memoria, el uso, la temperatura y el consumo de los servidores que ejecutan modelos de IA, y muestra una alerta cuando se alcanza un nivel de riesgo. Los valores llegan directamente al navegador, así que los gráficos se mueven sin recargar la página.",
+    "alt": "Pantalla del monitor de GPU: barras de uso, memoria, temperatura y consumo, y gráfico por horas"
+   }
+  ],
+  "platform": [
+   {
+    "name": "Matching internacional",
+    "title": "Aunque el idioma sea distinto, la conversación continúa.",
+    "body": "Un servicio de emparejamiento que conecta a usuarios de Corea y Japón. Cada conversación incluye traducción y también hay videollamadas. La aplicación web, el servidor de chat y el servidor de señalización de videollamadas están separados en tres, para que la carga de uno no arrastre a los demás.",
+    "alt": "Pantalla de chat de un servicio de emparejamiento coreano-japonés: cada mensaje se muestra con su traducción al coreano y al japonés"
+   },
+   {
+    "name": "Mini ERP",
+    "title": "El día de una organización, en una pantalla.",
+    "body": "Un sistema interno para gestionar permisos, asistencia, vacaciones, proyectos, tareas y carga de trabajo. Diseñamos primero la estructura de datos y creamos un panel distinto para cada rol.",
+    "alt": "Panel del mini ERP: entradas y salidas de hoy, mis tareas y fechas límite, y vacaciones restantes"
+   },
+   {
+    "name": "Foro de la comunidad",
+    "title": "Un lugar donde van y vienen mensajes y comentarios.",
+    "body": "Una comunidad para compartir y debatir técnicas de producción de vídeo con IA. Creamos las pantallas con publicaciones, comentarios, «me gusta», categorías y perfiles.",
+    "alt": "Lista de publicaciones del foro de la comunidad, con categorías, orden y tarjetas de publicaciones"
+   }
+  ],
+  "fintech": [
+   {
+    "name": "Panel de acciones",
+    "title": "Indicadores, calculados por nosotros.",
+    "body": "El precio, los resultados y los indicadores técnicos de un valor, reunidos en una sola pantalla. Calculamos directamente las medias móviles y los indicadores de tendencia en lugar de delegarlos en una biblioteca externa, para poder explicar por qué un valor resulta así.",
+    "alt": "Pantalla del gráfico de precios del panel de acciones (datos de demostración): selección de periodo y gráficos de velas y de volumen"
+   },
+   {
+    "name": "Laboratorio de trading cuantitativo",
+    "title": "El juicio, repartido por funciones.",
+    "body": "Una plataforma de investigación en la que agentes distintos se encargan del análisis de mercado, la estrategia, la gestión de riesgos, la ejecución de órdenes y el análisis del rendimiento. Primero pasan por backtests y operaciones simuladas, y los límites de pérdida quedan escritos explícitamente en el sistema.",
+    "alt": "Pantalla de datos de mercado del laboratorio de trading cuantitativo: gráfico de precios trazado con cotizaciones públicas"
+   }
+  ],
+  "chain": [
+   {
+    "name": "Control de minería",
+    "title": "Ver y detener, en una pantalla.",
+    "body": "Encienda y apague los mineros con tarjeta gráfica y vea en una pantalla la tasa de hash, la temperatura y el estado del pool. El servidor controla directamente el programa de minería y lo detiene por sí mismo cuando la temperatura supera el límite.",
+    "alt": "Pantalla de control de minería: tarjetas de tasa de hash, temperatura y consumo, y gráficos en tiempo real de tasa de hash y temperatura"
+   },
+   {
+    "name": "CoinPilot",
+    "title": "Las reglas, primero en simulación.",
+    "body": "Una herramienta que solo permite pasar a operaciones reales las reglas de compraventa ya definidas una vez verificadas con fondos virtuales. El motor hace cumplir a la fuerza el stop loss, los límites de inversión y la parada de emergencia, y tras un apagado y encendido retoma el estado anterior tal cual.",
+    "alt": "Pantalla de CoinPilot: condiciones de backtest, operación simulada con fondos virtuales, paso de confirmación antes de operar en real y parada de emergencia"
+   }
+  ],
+  "security": [
+   {
+    "name": "Whispr",
+    "title": "Las conversaciones no quedan en el servidor.",
+    "body": "Un mensajero que conecta los dispositivos directamente y cifra de extremo a extremo. El servidor solo intermedia la conexión y no guarda el contenido de los mensajes, y las pruebas lo comprueban directamente.",
+    "alt": "Pantalla de conversación de Whispr: conexión directa P2P, aviso de cifrado de extremo a extremo y mensajes intercambiados"
+   },
+   {
+    "name": "Bóveda de almacenamiento distribuido",
+    "title": "La llave está solo en el enlace.",
+    "body": "Los archivos se cifran primero en el navegador y después se suben a una red de almacenamiento distribuido. La llave para abrirlos va en la parte del enlace compartido que no se envía a ningún servidor, de modo que quien almacena no puede ver el contenido.",
+    "alt": "Lista de archivos de la bóveda de almacenamiento distribuido: marca de cifrado y resultado de verificación de integridad en cada archivo"
+   },
+   {
+    "name": "Detección de accesos anómalos",
+    "title": "Los accesos fuera de lo normal, primero.",
+    "body": "Vigila los registros de inicio de sesión del servidor de autenticación y puntúa cada uno combinando reglas propias y el juicio de un modelo de detección de anomalías. Si el riesgo es alto, bloquea la cuenta automáticamente, y los resultados llegan directamente al panel.",
+    "alt": "Panel de detección de accesos anómalos: inicios de sesión correctos y fallidos, cifras de alertas, distribución por horas y eventos en tiempo real"
+   }
+  ],
+  "quantum": [
+   {
+    "name": "Monitor de firmas poscuánticas",
+    "title": "Qué cuentas siguen usando la criptografía antigua.",
+    "body": "Registra qué método de firma se usó en cada inicio de sesión y marca aparte los métodos diseñados para resistir a los ordenadores cuánticos. Las cuentas que siguen con el método antiguo se ven de un vistazo.",
+    "alt": "Tabla de eventos de inicio de sesión: en la columna del algoritmo del token, las firmas poscuánticas como DILITHIUM y FALCON aparecen en morado"
+   },
+   {
+    "name": "Intercambio de claves híbrido",
+    "title": "Aunque uno de los dos se rompa.",
+    "body": "Usa a la vez el método de intercambio de claves actual (X25519) y un método poscuántico (ML-KEM-768), de modo que la clave de sesión no quede expuesta aunque uno de ellos se rompa. Las firmas también combinan Ed25519 y ML-DSA-65.",
+    "alt": "Salida de la demostración del intercambio de claves híbrido: tamaños de clave, verificación de firmas, bloqueo del ataque de intermediario y resultado de un ataque que supone roto X25519"
+   }
+  ],
+  "gameai": [
+   {
+    "name": "Sudam",
+    "title": "Una partida de Go con la IA, sin internet.",
+    "body": "Un motor de IA de Go de acceso abierto funciona dentro del teléfono para jugar sin conexión, y puede repasar la partida jugada a jugada con un gráfico de probabilidad de victoria.",
+    "alt": "Pantalla de partida de Sudam: tablero de Go e indicadores de análisis de la IA"
+   },
+   {
+    "name": "Chess Coach",
+    "title": "Juegue y aprenda ajedrez, sin necesidad de rival.",
+    "body": "Un motor de ajedrez y problemas vienen incluidos en la app, así que tanto las partidas como los problemas funcionan sin llamar a ningún servidor.",
+    "alt": "Pantalla de partida contra la IA de Chess Coach"
+   },
+   {
+    "name": "AI Janggi",
+    "title": "Las reglas oficiales, tal cual.",
+    "body": "Se juega con las reglas oficiales, incluidas las disposiciones iniciales, el paso de turno y la puntuación. Las reglas se implementan en dos versiones independientes y sus resultados se comparan automáticamente, para que un error de reglas no pase inadvertido.",
+    "alt": "Pantalla de partida de AI Janggi"
+   }
+  ],
+  "language": [
+   {
+    "name": "Voice Notes",
+    "title": "Hable y se escribe solo.",
+    "body": "Al grabar, convierte la voz en texto al instante y la organiza como acta de reunión. El reconocimiento de voz funciona por completo en el dispositivo, así que el audio no sale a la red.",
+    "alt": "Pantalla de Voice Notes"
+   },
+   {
+    "name": "Voca Interpreter",
+    "title": "Cara a cara, sin internet.",
+    "body": "Los modelos de traducción funcionan en el dispositivo para interpretar sin conexión. Incluye una pantalla para dos personas frente a frente y guías de conversación por situaciones.",
+    "alt": "Pantalla del intérprete cara a cara de Voca"
+   },
+   {
+    "name": "Malmoi",
+    "title": "El coreano no se lee como se escribe.",
+    "body": "Implementa las reglas de pronunciación estándar como un motor de reglas y señala cómo suenan realmente las letras. Incluye en la app el vocabulario del diccionario básico del Instituto Nacional de la Lengua Coreana.",
+    "alt": "Pantalla de estudio de vocabulario y pronunciación de Malmoi"
+   }
+  ],
+  "media": [
+   {
+    "name": "myTV",
+    "title": "El vídeo que ve en la web, en su TV.",
+    "body": "Implementamos por separado los tres métodos de conexión que requieren los distintos televisores, y entrega el flujo original en lugar de duplicar la pantalla.",
+    "alt": "Pantalla de transmisión de myTV"
+   },
+   {
+    "name": "Singon",
+    "title": "Su sala se convierte en un karaoke.",
+    "body": "Use el teléfono como micrófono, reciba una puntuación en cuatro ejes, como la afinación y el ritmo, y vea qué tono le conviene. Funciona completo en una sola página, sin servidor.",
+    "alt": "Pantalla de búsqueda y lista de canciones de Singon"
+   },
+   {
+    "name": "Song of the Day",
+    "title": "Una canción para escuchar hoy.",
+    "body": "Elige una canción al día según el clima, el ánimo y sus gustos. Las listas de éxitos de cada país se arman directamente a partir de información musical pública, sin servidor propio.",
+    "alt": "Pantalla de recomendación de Song of the Day"
+   }
+  ],
+  "care": [
+   {
+    "name": "BP Diary",
+    "title": "Una línea para llevar a la consulta.",
+    "body": "Le guía para medir la tensión arterial en casa por la mañana y por la noche durante los 7 días previos a la consulta, y crea en una línea el promedio que mira su médico. Los registros se guardan solo en el dispositivo.",
+    "alt": "Pantalla de BP Diary"
+   },
+   {
+    "name": "Medication Time",
+    "title": "Regístrelo desde la propia notificación.",
+    "body": "Le avisa de la hora de la medicación y, sin abrir la app, un botón de la notificación registra si la tomó. Las notificaciones y las acciones de los botones se gestionan mediante una cola.",
+    "alt": "Pantalla de inicio de Medication Time: hora de la próxima toma y lista de medicación de hoy"
+   },
+   {
+    "name": "Ttorang",
+    "title": "Memoria y concentración, cada día.",
+    "body": "Una colección de juegos de entrenamiento mental para personas mayores. Rediseñada con letra grande y controles sencillos, con los registros guardados solo en el dispositivo.",
+    "alt": "Pantalla de entrenamiento mental de Ttorang"
+   }
+  ]
+ }
+}
