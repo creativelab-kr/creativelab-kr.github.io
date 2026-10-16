@@ -93,6 +93,12 @@
    "summary": "A tool that drafts a reply that fits the email you received. It uses two free AI services as backups for each other, and if neither is available, it switches automatically to an on-device draft template.",
    "why": "A tool that drafts a reply that fits the email you received. A paid model would run at a loss as users grow, so we chose to use only free-tier language models and removed the paid backend."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "One photo is all you need for an ID photo.",
+   "summary": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. It detects the face to crop automatically, swaps the background for a solid color, then checks 11 items such as head height and eye level against the standard.",
+   "why": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. Sizes are handled in millimeters, and pixels are calculated only at export."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "Korean isn't read the way it's written.",

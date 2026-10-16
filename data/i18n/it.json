@@ -93,6 +93,12 @@
    "summary": "Uno strumento che scrive una bozza di risposta adatta all'email ricevuta. Usa due servizi di intelligenza artificiale gratuiti che si sostituiscono a vicenda e, se nessuno dei due è disponibile, passa automaticamente a un modello di bozza sul dispositivo.",
    "why": "Uno strumento che scrive una bozza di risposta adatta all'email ricevuta. Un modello a pagamento andrebbe in perdita al crescere degli utenti, quindi abbiamo scelto di usare solo modelli linguistici di livello gratuito e abbiamo eliminato il backend a pagamento."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Basta una foto per la foto tessera.",
+   "summary": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. Riconosce il volto per ritagliare in automatico, sostituisce lo sfondo con un colore uniforme e poi verifica 11 voci, come l'altezza della testa e degli occhi, rispetto allo standard.",
+   "why": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. I formati sono gestiti in millimetri e i pixel vengono calcolati solo all'esportazione."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "Il coreano non si legge come si scrive.",

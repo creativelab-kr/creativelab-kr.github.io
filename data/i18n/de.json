@@ -93,6 +93,12 @@
    "summary": "Ein Werkzeug, das zur empfangenen E-Mail einen passenden Antwortentwurf schreibt. Zwei kostenlos nutzbare KI-Dienste sichern sich gegenseitig ab, und wenn beide ausfallen, wechselt die App automatisch zu einer Entwurfsvorlage auf dem Gerät.",
    "why": "Ein Werkzeug, das zur empfangenen E-Mail einen passenden Antwortentwurf schreibt. Ein kostenpflichtiges Modell würde mit wachsender Nutzerzahl Verluste machen. Deshalb setzen wir nur Sprachmodelle der kostenlosen Stufe ein und haben das kostenpflichtige Backend entfernt."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Ein Foto genügt für das Passbild.",
+   "summary": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Er erkennt das Gesicht und schneidet automatisch zu, ersetzt den Hintergrund durch eine einfarbige Fläche und prüft anschließend 11 Punkte wie Kopfhöhe und Augenhöhe anhand der Norm.",
+   "why": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Die Formate werden in Millimetern verarbeitet, Pixel werden erst beim Export berechnet."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "Koreanisch wird nicht so gelesen, wie es geschrieben steht.",

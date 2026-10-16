@@ -93,6 +93,12 @@
    "summary": "Uma ferramenta que escreve um rascunho de resposta adequado ao e-mail recebido. Usa dois serviços de IA gratuitos, um como reserva do outro, e se nenhum estiver disponível, passa automaticamente para um modelo de rascunho no aparelho.",
    "why": "Uma ferramenta que escreve um rascunho de resposta adequado ao e-mail recebido. Um modelo pago daria prejuízo a cada novo usuário, então decidimos usar apenas modelos de linguagem de nível gratuito e removemos o backend pago."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Uma foto basta para a foto de documento.",
+   "summary": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Detecta o rosto para recortar automaticamente, troca o fundo por uma cor lisa e depois confere 11 itens, como a altura da cabeça e dos olhos, com a norma.",
+   "why": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Os tamanhos são tratados em milímetros e os pixels só são calculados na exportação."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "O coreano não se lê como se escreve.",

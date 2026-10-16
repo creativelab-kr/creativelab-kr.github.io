@@ -93,6 +93,12 @@
    "summary": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Usa dos servicios de inteligencia artificial gratuitos como respaldo mutuo y, si ninguno está disponible, cambia automáticamente a una plantilla de borrador del dispositivo.",
    "why": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Un modelo de pago generaría pérdidas a medida que crecieran los usuarios, así que decidimos usar solo modelos de lenguaje de nivel gratuito y eliminamos el servicio de pago."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Con una sola foto, tu foto de carné.",
+   "summary": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Detecta el rostro para recortar automáticamente, cambia el fondo por un color liso y luego comprueba 11 puntos, como la altura de la cabeza y de los ojos, frente a la norma.",
+   "why": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Los tamaños se manejan en milímetros y los píxeles solo se calculan al exportar."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "El coreano no se lee como se escribe.",

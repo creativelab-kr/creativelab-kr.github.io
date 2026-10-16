@@ -93,6 +93,12 @@
    "summary": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Il s’appuie sur deux services d’IA gratuits qui se relaient, et si aucun n’est disponible, il bascule automatiquement sur un modèle de brouillon intégré à l’appareil.",
    "why": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Un modèle payant serait déficitaire à mesure que les utilisateurs augmentent : nous avons donc choisi de n’utiliser que des modèles de langage en offre gratuite et supprimé le service payant."
   },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Une seule photo suffit pour une photo d'identité.",
+   "summary": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Il détecte le visage pour recadrer automatiquement, remplace l'arrière-plan par une couleur unie, puis vérifie 11 critères, dont la hauteur de la tête et celle des yeux, par rapport à la norme.",
+   "why": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Les formats sont gérés en millimètres, et les pixels ne sont calculés qu'à l'export."
+  },
   "9": {
    "title": "Malmoi",
    "headline": "Le coréen ne se lit pas comme il s’écrit.",
