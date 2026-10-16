@@ -420,8 +420,7 @@ function krStoreNote(project) {
  * — 첫 화면과 그 아래 타일에 같은 화면이 연달아 보이지 않게.
  */
 function ringProjects() {
-    const featured = FEATURED_IDS.map(byId).filter(p => p && isShipped(p));
-    return lineupProjects().concat(featured);
+    return lineupProjects();
 }
 
 /** 폰 틀 한 장. 화면 사진이 없는 앱은 같은 틀 안에 앱 아이콘을 크게 세운다. */
@@ -451,19 +450,17 @@ function renderRing() {
 function renderProducts() {
     const feature = document.getElementById('featureTiles');
     if (!feature) return;
-    feature.innerHTML = withShot(FEATURED_IDS).map((p, i) => {
-        const category = categoryOf(p);
-        return `<article class="ftile ${i % 2 ? '' : 'ftile-soft'}">
-            <div class="ftile-copy">
-                <p class="ftile-eyebrow">${escapeHtml(category ? category.name : '')}</p>
-                <h2 class="ftile-name">${escapeHtml(p.title)}</h2>
-                <p class="ftile-headline">${escapeHtml(p.headline || '')}</p>
-                <p class="ftile-pitch">${escapeHtml(p.pitch || '')}</p>
-                ${tileLinks(p)}
-            </div>
-            <div class="ftile-media">${phone(p)}</div>
-        </article>`;
-    }).join('');
+    // 대표 제품 5개 — 작은 카드 한 줄(데스크톱 5칸·태블릿 3칸·휴대폰 가로 스와이프)
+    feature.innerHTML = `<div class="container"><div class="fcards" role="list">${FEATURED_IDS.map(byId).filter(p => p && isShipped(p)).map(p => `
+        <article class="fcard" role="listitem">
+            <a class="fcard-hit" href="#/p/${p.id}" aria-label="${escapeHtml(p.title)}">
+                <span class="fcard-icon"><img src="${encodeURI(p.icon)}" alt="" width="72" height="72" loading="lazy" decoding="async"></span>
+                <span class="fcard-name">${escapeHtml(p.title)}</span>
+                <span class="fcard-line">${escapeHtml(p.headline || '')}</span>
+            </a>
+            <p class="fcard-links">${appStoreLink(p)}${playLink(p)}</p>
+            ${krStoreNote(p).replace('tile-note', 'tile-note fcard-note')}
+        </article>`).join('')}</div></div>`;
 }
 
 /** 캐러셀 카드 하나. 화면 사진이 있으면 폰 틀, 없으면 앱 아이콘을 크게. */
@@ -487,9 +484,8 @@ function productCard(project) {
 }
 
 function lineupProjects() {
-    const featured = new Set(FEATURED_IDS);
-    const lead = LINEUP_LEAD.map(byId).filter(p => isShipped(p) && !featured.has(p.id));
-    const seen = new Set([...featured, ...lead.map(p => p.id)]);
+    const lead = LINEUP_LEAD.map(byId).filter(p => isShipped(p));
+    const seen = new Set(lead.map(p => p.id));
     const rest = state.projects
         .filter(p => isShipped(p) && !seen.has(p.id))
         .sort((a, b) => (b.shot ? 1 : 0) - (a.shot ? 1 : 0) || a.id - b.id);
