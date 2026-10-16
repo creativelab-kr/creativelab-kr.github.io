@@ -358,7 +358,7 @@ function shippedOf(categoryId) {
  * 앱 사진은 전부 실제 스토어 스크린샷을 줄인 것(assets/shots),
  * 영역 이미지는 tools/render-areas 로 렌더링한 것(assets/areas)이다.
  */
-const FEATURED_IDS = [74, 1, 16, 6, 2]; // 하루 - AI 비서, 대한민국 달력, 수담, DailyMap, 오늘의 노래 (대표님 10/16 지시)
+const FEATURED_IDS = [74, 1, 2, 16, 6]; // 하루 AI, 달력, 오늘의 노래, 수담, DailyMap (대표님 10/16 지시)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
 const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
