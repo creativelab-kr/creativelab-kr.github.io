@@ -31,6 +31,7 @@
   "footer_contact": "Contatti",
   "link_appstore": "Scarica dall'App Store",
   "note_kr_store": "Disponibile nell’App Store coreano.",
+  "coming_soon": "Prossimamente",
   "link_googleplay": "Scarica da Google Play",
   "link_web": "Apri sul web",
   "more": "Scopri di più",
@@ -321,6 +322,12 @@
    "pitch": "Guarda la giornata su un quadrante da 24 ore, con abitudini e diario in un'unica app.",
    "summary": "Un'app di gestione personale che aiuta a concentrarsi ogni giorno sulle tre cose più importanti. Dispone sonno, esercizio e lavoro a colori su un quadrante circolare da 24 ore, e riunisce in un posto solo le spunte delle abitudini, l'umore con un breve diario e le statistiche settimanali e mensili. Funziona senza registrazione né internet e i dati restano sul dispositivo.",
    "why": "Un'app di gestione personale nata dall'idea di scegliere solo le tre cose da fare oggi invece di accumulare compiti senza fine. I tuoi dati vengono gestiti solo sul tuo telefono, così ogni nuovo giorno può ripartire da zero."
+  },
+  "85": {
+   "title": "Tidal Kart",
+   "headline": "Kart 3D con piloti animali.",
+   "pitch": "Scegli uno degli otto piloti animali e vai in pista. Derapa e usa gli oggetti per ribaltare la gara.",
+   "summary": "Kart 3D con piloti animali. Scegli uno degli otto piloti animali e vai in pista. Derapa e usa gli oggetti per ribaltare la gara."
   }
  },
  "categories": {

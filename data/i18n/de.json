@@ -31,6 +31,7 @@
   "footer_contact": "Kontakt",
   "link_appstore": "Laden im App Store",
   "note_kr_store": "Im koreanischen App Store erhältlich.",
+  "coming_soon": "Demnächst verfügbar",
   "link_googleplay": "Jetzt bei Google Play",
   "link_web": "Im Web ansehen",
   "more": "Mehr erfahren",
@@ -321,6 +322,12 @@
    "pitch": "Den Tag auf einem 24-Stunden-Ziffernblatt sehen, dazu Gewohnheiten und Rückblick in einer App.",
    "summary": "Eine Selbstmanagement-App, die hilft, sich jeden Tag auf die drei wichtigsten Dinge zu konzentrieren. Schlaf, Sport und Arbeit werden farbig auf einem runden 24-Stunden-Ziffernblatt angeordnet, und Gewohnheiten, Stimmung samt kurzem Rückblick sowie Wochen- und Monatsstatistiken sehen Sie an einem Ort. Sie funktioniert ohne Anmeldung und Internet, die Einträge bleiben auf dem Gerät.",
    "why": "Eine Selbstmanagement-App nach dem Gedanken, statt endlos Aufgaben anzuhäufen nur die drei Dinge zu wählen, die heute sein müssen. Ihre Einträge werden nur auf Ihrem Telefon verarbeitet, damit jeder neue Tag frisch beginnen kann."
+  },
+  "85": {
+   "title": "Tidal Kart",
+   "headline": "3D-Kart-Rennen mit Tierfahrern.",
+   "pitch": "Wähle einen von acht Tierfahrern und starte durch. Mit Driften und Items drehst du das Rennen.",
+   "summary": "3D-Kart-Rennen mit Tierfahrern. Wähle einen von acht Tierfahrern und starte durch. Mit Driften und Items drehst du das Rennen."
   }
  },
  "categories": {

@@ -31,6 +31,7 @@
   "footer_contact": "Contact",
   "link_appstore": "Télécharger sur l’App Store",
   "note_kr_store": "Disponible sur l’App Store coréen.",
+  "coming_soon": "Bientôt disponible",
   "link_googleplay": "Disponible sur Google Play",
   "link_web": "Voir sur le web",
   "more": "En savoir plus",
@@ -321,6 +322,12 @@
    "pitch": "Voyez votre journée sur un cadran de 24 heures, avec habitudes et journal dans une seule application.",
    "summary": "Une application d'organisation personnelle qui aide à se concentrer chaque jour sur les trois choses les plus importantes. Elle place sommeil, sport et travail en couleur sur un cadran circulaire de 24 heures, et réunit au même endroit le suivi des habitudes, l'humeur avec un court journal, et les statistiques hebdomadaires et mensuelles. Elle fonctionne sans inscription ni internet et les données restent sur l'appareil.",
    "why": "Une application d'organisation personnelle fondée sur l'idée de choisir seulement les trois choses à accomplir aujourd'hui plutôt que d'empiler des tâches sans fin. Vos données ne sont traitées que sur votre téléphone, pour que chaque nouvelle journée reparte de zéro."
+  },
+  "85": {
+   "title": "Tidal Kart",
+   "headline": "Du kart 3D avec des pilotes animaux.",
+   "pitch": "Choisissez l’un des huit pilotes animaux et lancez-vous. Dérapez et utilisez des objets pour renverser la course.",
+   "summary": "Du kart 3D avec des pilotes animaux. Choisissez l’un des huit pilotes animaux et lancez-vous. Dérapez et utilisez des objets pour renverser la course."
   }
  },
  "categories": {

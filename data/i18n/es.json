@@ -31,6 +31,7 @@
   "footer_contact": "Contacto",
   "link_appstore": "Descargar en el App Store",
   "note_kr_store": "Disponible en la App Store de Corea.",
+  "coming_soon": "Próximamente",
   "link_googleplay": "Disponible en Google Play",
   "link_web": "Ver en la web",
   "more": "Más información",
@@ -321,6 +322,12 @@
    "pitch": "Mira tu día en un dial de 24 horas, con hábitos y diario en una sola app.",
    "summary": "Una app de autogestión que te ayuda a centrarte cada día en las tres cosas más importantes. Coloca el sueño, el ejercicio y el trabajo en color sobre un dial circular de 24 horas, y reúne las marcas de hábitos, el ánimo y un breve diario, y las estadísticas semanales y mensuales en un solo lugar. Funciona sin registro ni internet, y los datos se quedan en el dispositivo.",
    "why": "Una app de autogestión basada en la idea de elegir solo las tres cosas que sí o sí harás hoy, en lugar de acumular tareas sin fin. Tus registros se gestionan solo en tu teléfono para que cada día nuevo empiece de cero."
+  },
+  "85": {
+   "title": "Tidal Kart",
+   "headline": "Karts 3D con pilotos animales.",
+   "pitch": "Elige uno de ocho pilotos animales y sal a la pista. Derrapa y usa objetos para remontar.",
+   "summary": "Karts 3D con pilotos animales. Elige uno de ocho pilotos animales y sal a la pista. Derrapa y usa objetos para remontar."
   }
  },
  "categories": {

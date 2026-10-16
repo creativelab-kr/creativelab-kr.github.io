@@ -338,6 +338,11 @@ function showView(id) {
  * 나머지 항목은 data/projects.json 에 그대로 두되 어디에도 그리지 않는다.
  * 상태 이름(출시·준비 중 따위)도 화면 글자로는 쓰지 않는다.
  */
+/** 출시 전이지만 홈페이지에 미리 소개하는 앱(스토어 링크 없음, 출시 수치에는 넣지 않는다). */
+function isComing(project) {
+    return Boolean(project && project.status === '출시 준비 중');
+}
+
 function isShipped(project) {
     return Boolean(project && project.status === '출시' && project.links && project.links.appstore);
 }
@@ -358,7 +363,7 @@ function shippedOf(categoryId) {
  * 앱 사진은 전부 실제 스토어 스크린샷을 줄인 것(assets/shots),
  * 영역 이미지는 tools/render-areas 로 렌더링한 것(assets/areas)이다.
  */
-const FEATURED_IDS = [74, 1, 2, 16, 6]; // 하루 AI, 달력, 오늘의 노래, 수담, DailyMap (대표님 10/16 지시)
+const FEATURED_IDS = [74, 85, 41, 20, 1, 2, 16, 6]; // 하루 AI, Tidal Kart(출시 준비 중), 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap (대표님 10/16 최종)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
 const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
@@ -367,7 +372,7 @@ function byId(id) {
 }
 
 function withShot(ids) {
-    return ids.map(byId).filter(p => p && p.shot && isShipped(p));
+    return ids.map(byId).filter(p => p && (isShipped(p) ? p.shot : isComing(p)));
 }
 
 function categoryOf(project) {
@@ -392,6 +397,7 @@ function appStoreLink(project, label = 'App Store') {
 }
 
 function tileLinks(project) {
+    if (isComing(project)) return `<p class="tile-note tile-soon">${escapeHtml(t('coming_soon'))}</p>`;
     return `<p class="tile-links">
         <a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('more'))} ${ICONS.chevronSmall}</a>
         ${appStoreLink(project)}
@@ -420,7 +426,7 @@ function krStoreNote(project) {
  * — 첫 화면과 그 아래 타일에 같은 화면이 연달아 보이지 않게.
  */
 function ringProjects() {
-    return lineupProjects();
+    return lineupProjects().filter(isShipped);
 }
 
 /** 폰 틀 한 장. 화면 사진이 없는 앱은 같은 틀 안에 앱 아이콘을 크게 세운다. */
@@ -460,7 +466,7 @@ function renderProducts() {
                 <p class="ftile-pitch">${escapeHtml(p.pitch || '')}</p>
                 ${tileLinks(p)}
             </div>
-            <div class="ftile-media">${phone(p)}</div>
+            <div class="ftile-media">${p.shot ? phone(p) : ringPhone(p, false)}</div>
         </article>`;
     }).join('');
 }
@@ -472,22 +478,23 @@ function productCard(project) {
         ? phone(project, { extra: 'phone-card' })
         : `<span class="ccard-icon"><img src="${encodeURI(project.icon)}" alt="${escapeHtml(t('alt_icon', {name: project.title}))}"
                width="132" height="132" loading="lazy" decoding="async"></span>`;
+    const soon = isComing(project);
     return `<article class="ccard ${project.shot ? '' : 'ccard-iconic'}">
-        <a class="ccard-hit" href="#/p/${project.id}">
+        <${soon ? 'div' : 'a'} class="ccard-hit"${soon ? '' : ` href="#/p/${project.id}"`}>
             <span class="ccard-media">${media}</span>
             <span class="ccard-copy">
                 <span class="ccard-cat">${escapeHtml(category ? category.name : '')}</span>
                 <span class="ccard-name">${escapeHtml(project.title)}</span>
                 <span class="ccard-line">${escapeHtml(project.headline || '')}</span>
             </span>
-        </a>
-        <p class="ccard-links">${appStoreLink(project)}</p>
+        </${soon ? 'div' : 'a'}>
+        <p class="ccard-links">${soon ? `<span class="tile-note tile-soon">${escapeHtml(t('coming_soon'))}</span>` : appStoreLink(project)}</p>
     </article>`;
 }
 
 function lineupProjects() {
     // 대표 5개가 같은 순서로 맨 앞, 그다음 기존 앞줄·나머지
-    const top = FEATURED_IDS.map(byId).filter(p => p && isShipped(p));
+    const top = FEATURED_IDS.map(byId).filter(p => isShipped(p) || isComing(p));
     const featured = new Set(top.map(p => p.id));
     const lead = top.concat(LINEUP_LEAD.map(byId).filter(p => isShipped(p) && !featured.has(p.id)));
     const seen = new Set(lead.map(p => p.id));

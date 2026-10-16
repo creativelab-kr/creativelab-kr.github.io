@@ -31,6 +31,7 @@
   "footer_contact": "Contact",
   "link_appstore": "Get it on the App Store",
   "note_kr_store": "Available on the Korean App Store.",
+  "coming_soon": "Coming soon",
   "link_googleplay": "Get it on Google Play",
   "link_web": "View on the web",
   "more": "Learn more",
@@ -321,6 +322,12 @@
    "pitch": "See your day on a 24-hour dial, with habits and journaling in one app.",
    "summary": "A self-care app that helps you focus on the three most important things each day. It places sleep, exercise, and work in color on a circular 24-hour dial, and shows habit checks, mood and short journal entries, and weekly and monthly stats in one place. It works without sign-up or internet, and records stay on the device.",
    "why": "A self-care app built on the idea of picking just the three things you must do today instead of piling up tasks forever. Your records are handled only on your phone, so each new day can start fresh."
+  },
+  "85": {
+   "title": "Tidal Kart",
+   "headline": "Race 3D karts as an animal racer.",
+   "pitch": "Pick one of eight animal racers and hit the course. Drift and use items to turn the race around.",
+   "summary": "Race 3D karts as an animal racer. Pick one of eight animal racers and hit the course. Drift and use items to turn the race around."
   }
  },
  "categories": {
