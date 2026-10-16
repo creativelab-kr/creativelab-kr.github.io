@@ -914,3 +914,21 @@ a { color: inherit; text-decoration: none; }
     .pd-icon { width: 62px; height: 62px; border-radius: 14px; }
     .footer-inner { flex-direction: column; }
 }
+
+
+/* ---------- 언어 선택 + 언어별 글꼴 ---------- */
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.lang-item { display: flex; align-items: center; }
+.lang-select {
+    appearance: none; -webkit-appearance: none;
+    font: inherit; font-size: var(--fs-xs); color: var(--text);
+    background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none' stroke='%235B6577' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='m1 1 4 4 4-4'/></svg>") no-repeat right 8px center;
+    border: 1px solid var(--border-strong); border-radius: 999px;
+    min-height: 32px; padding: 4px 26px 4px 12px; cursor: pointer; opacity: .9;
+}
+.lang-select:hover { opacity: 1; }
+.lang-select:focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; }
+:lang(ja) { --font-main: 'Pretendard', 'Inter', -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', sans-serif; }
+:lang(zh-Hans) { --font-main: 'Inter', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+:lang(zh-Hant) { --font-main: 'Inter', -apple-system, 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif; }
+@media (max-width: 640px) { .nav-menu { gap: 12px; } .lang-select { padding-left: 8px; } }

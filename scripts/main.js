@@ -17,6 +17,8 @@
 // =============================================
 
 const state = {
+    lang: 'ko',
+    ui: {},
     projects: [],
     categories: [],
     works: {},
@@ -35,10 +37,118 @@ function contactEmail() {
 const DEVELOPER_PAGE = 'https://apps.apple.com/kr/developer/inphil-choi/id6785766361';
 
 const LINK_LABELS = {
-    appstore: 'App Store에서 받기',
-    googleplay: 'Google Play에서 받기',
-    web: '웹에서 보기'
+    appstore: 'link_appstore',
+    googleplay: 'link_googleplay',
+    web: 'link_web'
 };
+
+// =============================================
+// I18N  (ko 는 원본 데이터, 나머지는 data/i18n/<언어>.json 이 글자만 덮어쓴다)
+// =============================================
+
+const LANGS = [
+    ['ko', '한국어'], ['en', 'English'], ['ja', '日本語'], ['zh-Hans', '简体中文'], ['zh-Hant', '繁體中文']
+];
+const LANG_KEY = 'creativelab.lang';
+
+function pickLang() {
+    const codes = LANGS.map(l => l[0]);
+    try {
+        const q = new URLSearchParams(location.search).get('lang');
+        if (codes.includes(q)) return q;
+    } catch (_) { /* 무시 */ }
+    try {
+        const s = localStorage.getItem(LANG_KEY);
+        if (codes.includes(s)) return s;
+    } catch (_) { /* 저장소를 못 쓰는 환경 */ }
+    const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'ko']);
+    for (const raw of prefs) {
+        const l = String(raw).toLowerCase();
+        if (l.startsWith('ko')) return 'ko';
+        if (l.startsWith('ja')) return 'ja';
+        if (l.startsWith('zh')) return /hant|tw|hk|mo/.test(l) ? 'zh-Hant' : 'zh-Hans';
+        if (l.startsWith('en')) return 'en';
+    }
+    return 'ko';
+}
+
+/** 화면 문구. 현재 언어에 없으면 한국어, 그것도 없으면 키 그대로. */
+function t(key, vars) {
+    let s = (state.ui && state.ui[key]) != null ? state.ui[key] : (state.uiKo && state.uiKo[key] != null ? state.uiKo[key] : key);
+    if (vars) Object.keys(vars).forEach(k => { s = s.split('{' + k + '}').join(vars[k]); });
+    return s;
+}
+
+function applyStatic() {
+    document.documentElement.lang = state.lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-attr]').forEach(el => {
+        el.dataset.i18nAttr.split(';').forEach(pair => {
+            const [attr, key] = pair.split(':');
+            if (attr && key) el.setAttribute(attr, t(key));
+        });
+    });
+    document.title = t('page_title');
+    const setMeta = (sel, v) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', v); };
+    setMeta('meta[name="description"]', t('meta_description'));
+    setMeta('meta[property="og:description"]', t('og_description'));
+    const select = document.getElementById('langSelect');
+    if (select) {
+        select.setAttribute('aria-label', t('lang_label'));
+        select.innerHTML = LANGS.map(([code, name]) =>
+            `<option value="${code}" lang="${code}"${code === state.lang ? ' selected' : ''}>${name}</option>`).join('');
+        select.onchange = () => {
+            try { localStorage.setItem(LANG_KEY, select.value); } catch (_) { /* 무시 */ }
+            const url = new URL(location.href);
+            url.searchParams.set('lang', select.value);
+            location.replace(url.toString());
+        };
+    }
+}
+
+async function loadI18n() {
+    state.lang = pickLang();
+    let ko = {};
+    try { ko = await loadJson('data/i18n/ko.json'); } catch (e) { console.error('ko.json', e); }
+    state.uiKo = ko.ui || {};
+    state.ui = state.uiKo;
+    if (state.lang === 'ko') return null;
+    try {
+        const pack = await loadJson('data/i18n/' + state.lang + '.json');
+        state.ui = Object.assign({}, state.uiKo, pack.ui || {});
+        return pack;
+    } catch (e) {
+        console.error('번역을 읽지 못했습니다:', e);
+        state.lang = 'ko';
+        return null;
+    }
+}
+
+/** 번역 묶음의 글자만 원본 위에 덮는다(그림·링크·순서는 그대로). */
+function localize(pack) {
+    if (!pack) return;
+    const P = pack.projects || {}, C = pack.categories || {}, W = pack.works || {};
+    state.projects = state.projects.map(p => {
+        const o = P[String(p.id)];
+        if (!o) return p;
+        const q = Object.assign({}, p);
+        ['title', 'headline', 'pitch', 'summary', 'lede'].forEach(k => { if (o[k]) q[k] = o[k]; });
+        if (o.why) q.story = Object.assign({}, p.story, { why: o.why });
+        return q;
+    });
+    state.categories = state.categories.map(c => {
+        const o = C[c.id];
+        return o ? Object.assign({}, c, { name: o.name || c.name, vision: o.vision || c.vision, lede: o.lede || c.lede }) : c;
+    });
+    Object.keys(state.works).forEach(area => {
+        const list = state.works[area], tr = W[area];
+        if (!Array.isArray(list) || !Array.isArray(tr)) return;
+        state.works[area] = list.map((w, i) => {
+            const o = tr[i];
+            return o ? Object.assign({}, w, { name: o.name || w.name, title: o.title || w.title, body: o.body || w.body, alt: o.alt || w.alt }) : w;
+        });
+    });
+}
 
 // =============================================
 // INLINE SVG ICONS (no emoji, no icon font)
@@ -78,7 +188,9 @@ const ICONS = {
 // =============================================
 
 async function initializeApp() {
-    await Promise.all([loadProjects(), loadCategories(), loadWorks()]);
+    const [, , , pack] = await Promise.all([loadProjects(), loadCategories(), loadWorks(), loadI18n()]);
+    localize(pack);
+    applyStatic();
 
     renderRing();
     renderProducts();
@@ -255,7 +367,7 @@ function categoryOf(project) {
 function phone(project, { eager = false, extra = '' } = {}) {
     return `<figure class="phone ${extra}">
         <span class="phone-screen"><img src="${encodeURI(project.shot)}"
-            alt="${escapeHtml(project.title)} 앱 화면" width="600" height="1304"
+            alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="600" height="1304"
             ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></span>
     </figure>`;
 }
@@ -264,13 +376,13 @@ function appStoreLink(project, label = 'App Store') {
     const href = project.links && project.links.appstore;
     return href
         ? `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer"
-              aria-label="${escapeHtml(project.title)} App Store에서 보기">${label} ${ICONS.chevronSmall}</a>`
+              aria-label="${escapeHtml(t('aria_appstore', {name: project.title}))}">${label} ${ICONS.chevronSmall}</a>`
         : '';
 }
 
 function tileLinks(project) {
     return `<p class="tile-links">
-        <a class="tile-link" href="#/p/${project.id}">더 알아보기 ${ICONS.chevronSmall}</a>
+        <a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('more'))} ${ICONS.chevronSmall}</a>
         ${appStoreLink(project)}
     </p>`;
 }
@@ -290,7 +402,7 @@ function ringPhone(project, eager) {
     if (project.shot) return phone(project, { eager });
     return `<figure class="phone">
         <span class="phone-screen phone-iconic"><img src="${encodeURI(project.icon)}"
-            alt="${escapeHtml(project.title)} 앱 아이콘" width="192" height="192"
+            alt="${escapeHtml(t('alt_icon', {name: project.title}))}" width="192" height="192"
             ${eager ? '' : 'loading="lazy"'} decoding="async"></span>
     </figure>`;
 }
@@ -332,7 +444,7 @@ function productCard(project) {
     const category = categoryOf(project);
     const media = project.shot
         ? phone(project, { extra: 'phone-card' })
-        : `<span class="ccard-icon"><img src="${encodeURI(project.icon)}" alt="${escapeHtml(project.title)} 앱 아이콘"
+        : `<span class="ccard-icon"><img src="${encodeURI(project.icon)}" alt="${escapeHtml(t('alt_icon', {name: project.title}))}"
                width="132" height="132" loading="lazy" decoding="async"></span>`;
     return `<article class="ccard ${project.shot ? '' : 'ccard-iconic'}">
         <a class="ccard-hit" href="#/p/${project.id}">
@@ -366,8 +478,8 @@ function carousel(host, cardsHtml, label) {
     host.innerHTML = `
         <div class="carousel-track" tabindex="0" role="group" aria-label="${escapeHtml(label)}">${cardsHtml}</div>
         <div class="carousel-nav container">
-            <button class="carousel-btn" type="button" data-dir="-1" aria-label="이전">${ICONS.chevron}</button>
-            <button class="carousel-btn" type="button" data-dir="1" aria-label="다음">${ICONS.chevron}</button>
+            <button class="carousel-btn" type="button" data-dir="-1" aria-label="${escapeHtml(t('carousel_prev'))}">${ICONS.chevron}</button>
+            <button class="carousel-btn" type="button" data-dir="1" aria-label="${escapeHtml(t('carousel_next'))}">${ICONS.chevron}</button>
         </div>`;
     const track = host.querySelector('.carousel-track');
     const [prev, next] = host.querySelectorAll('.carousel-btn');
@@ -443,7 +555,7 @@ function enableDragScroll(track, page) {
 function renderLineup() {
     const host = document.getElementById('lineupCarousel');
     if (!host) return;
-    carousel(host, lineupProjects().map(productCard).join(''), '제품 목록');
+    carousel(host, lineupProjects().map(productCard).join(''), t('carousel_products'));
 }
 
 /**
@@ -459,7 +571,7 @@ function areaTile(category) {
             <span class="atile-name">${escapeHtml(category.name)}</span>
             <span class="atile-vision">${escapeHtml(category.vision)}</span>
             ${names.length ? `<span class="atile-works">${names.join('<span class="atile-dot" aria-hidden="true"></span>')}</span>` : ''}
-            <span class="tile-link">자세히 ${ICONS.chevronSmall}</span>
+            <span class="tile-link">${escapeHtml(t('detail'))} ${ICONS.chevronSmall}</span>
         </span>
     </a>`;
 }
@@ -474,7 +586,7 @@ function domains() {
  */
 function renderAreas() {
     const host = document.getElementById('areaGrid');
-    if (host) carousel(host, domains().map(areaTile).join(''), '사업 영역');
+    if (host) carousel(host, domains().map(areaTile).join(''), t('carousel_areas'));
 }
 
 /**
@@ -547,7 +659,7 @@ function setupRing() {
             <p class="ring-name">${escapeHtml(p.title)}</p>
             <p class="ring-line">${escapeHtml(p.headline || '')}</p>
             <p class="tile-links ring-links">
-                <a class="tile-link" href="#/p/${p.id}">더 알아보기 ${ICONS.chevronSmall}</a>
+                <a class="tile-link" href="#/p/${p.id}">${escapeHtml(t('more'))} ${ICONS.chevronSmall}</a>
                 ${appStoreLink(p)}
             </p>`;
     }
@@ -705,7 +817,7 @@ function renderCategoryView(categoryId) {
         const i = list.findIndex(c => c.id === category.id);
         const prev = list[i - 1], next = list[i + 1];
         body.innerHTML = `
-            <a class="back-link" href="#areas">${ICONS.arrowLeft} 홈으로</a>
+            <a class="back-link" href="#areas">${ICONS.arrowLeft} ${escapeHtml(t('back_home'))}</a>
             <header class="detail-head detail-head-center">
                 <p class="detail-eyebrow">${escapeHtml(category.name)}</p>
                 <h1 class="detail-title">${escapeHtml(category.vision)}</h1>
@@ -715,8 +827,8 @@ function renderCategoryView(categoryId) {
                 width="1440" height="900" fetchpriority="high" decoding="async"></div>` : ''}
             ${worksSection(category.id)}
             <nav class="pd-nav">
-                ${prev ? `<a href="#/c/${prev.id}"><span class="pd-nav-label">이전</span>${escapeHtml(prev.name)}</a>` : '<span></span>'}
-                ${next ? `<a href="#/c/${next.id}" style="text-align:right"><span class="pd-nav-label">다음</span>${escapeHtml(next.name)}</a>` : '<span></span>'}
+                ${prev ? `<a href="#/c/${prev.id}"><span class="pd-nav-label">${escapeHtml(t('prev'))}</span>${escapeHtml(prev.name)}</a>` : '<span></span>'}
+                ${next ? `<a href="#/c/${next.id}" style="text-align:right"><span class="pd-nav-label">${escapeHtml(t('next'))}</span>${escapeHtml(next.name)}</a>` : '<span></span>'}
             </nav>`;
         return true;
     }
@@ -725,7 +837,7 @@ function renderCategoryView(categoryId) {
     const items = shippedOf(categoryId);
     if (!items.length) return false;
     body.innerHTML = `
-        <a class="back-link" href="#lineup">${ICONS.arrowLeft} 홈으로</a>
+        <a class="back-link" href="#lineup">${ICONS.arrowLeft} ${escapeHtml(t('back_home'))}</a>
         <header class="detail-head detail-head-center">
             <p class="detail-eyebrow">${escapeHtml(category.name)}</p>
             <h1 class="detail-title">${escapeHtml(category.vision)}</h1>
@@ -745,7 +857,7 @@ function worksSection(categoryId) {
     const works = worksOf(categoryId).slice(0, 4);
     if (!works.length) return '';
     return `<section class="works" aria-labelledby="worksTitle">
-        <h2 class="works-title" id="worksTitle">그동안 만든 것.</h2>
+        <h2 class="works-title" id="worksTitle">${escapeHtml(t('works_title'))}</h2>
         <div class="works-grid" data-n="${works.length}">
             ${works.map(workCard).join('')}
         </div>
@@ -783,11 +895,11 @@ function renderProjectView(projectId) {
     const story = project.story || {};
     const links = project.links || {};
     const linkKeys = Object.keys(LINK_LABELS).filter(key => links[key]);
-    const backLabel = category ? category.name : '홈';
+    const backLabel = category ? category.name : t('home');
 
     body.innerHTML = `
         <a class="back-link" href="#/c/${encodeURIComponent(project.category)}">
-            ${ICONS.arrowLeft} ${escapeHtml(backLabel)}${toParticle(backLabel)}
+            ${ICONS.arrowLeft} ${escapeHtml(state.lang === 'ko' ? backLabel + toParticle(backLabel) : t('back_to', {name: backLabel}))}
         </a>
 
         <div class="pd-top ${project.shot ? 'pd-top-shot' : ''}">
@@ -803,19 +915,19 @@ function renderProjectView(projectId) {
                 <p class="pd-lede">${escapeHtml(project.summary)}</p>
                 ${linkKeys.length ? `<div class="pd-links">${linkKeys.map((key, i) =>
                     `<a class="btn ${i === 0 ? 'btn-primary' : 'btn-ghost'}" href="${encodeURI(links[key])}"
-                        target="_blank" rel="noopener noreferrer">${LINK_LABELS[key]}</a>`).join('')}</div>` : ''}
+                        target="_blank" rel="noopener noreferrer">${escapeHtml(t(LINK_LABELS[key]))}</a>`).join('')}</div>` : ''}
             </div>
             ${project.shot ? `<div class="pd-media">${phone(project, { eager: true })}</div>` : ''}
         </div>
 
         ${story.why ? `<section class="pd-why">
-            <p class="story-q">왜 만들었나</p>
+            <p class="story-q">${escapeHtml(t('why_title'))}</p>
             <p>${escapeHtml(story.why)}</p>
         </section>` : ''}
 
         <nav class="pd-nav">
-            ${prev ? `<a href="#/p/${prev.id}"><span class="pd-nav-label">이전</span>${escapeHtml(prev.title)}</a>` : '<span></span>'}
-            ${next ? `<a href="#/p/${next.id}" style="text-align:right"><span class="pd-nav-label">다음</span>${escapeHtml(next.title)}</a>` : '<span></span>'}
+            ${prev ? `<a href="#/p/${prev.id}"><span class="pd-nav-label">${escapeHtml(t('prev'))}</span>${escapeHtml(prev.title)}</a>` : '<span></span>'}
+            ${next ? `<a href="#/p/${next.id}" style="text-align:right"><span class="pd-nav-label">${escapeHtml(t('next'))}</span>${escapeHtml(next.title)}</a>` : '<span></span>'}
         </nav>
     `;
     return true;

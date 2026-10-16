@@ -1,0 +1,506 @@
+{
+ "ui": {
+  "page_title": "CreativeLab",
+  "meta_description": "Screens with only what you need. Intelligence that runs on your device. The products and vision of CreativeLab.",
+  "og_description": "Screens with only what you need. Intelligence that runs on your device.",
+  "skip": "Skip to main content",
+  "brand_aria": "CreativeLab home",
+  "nav_products": "Products",
+  "nav_areas": "Focus areas",
+  "lang_label": "Language",
+  "hero_line1": "Deep thought,",
+  "hero_line2": "in a small screen.",
+  "hero_lede": "Screens with only what you need. Intelligence that runs on your device. We reimagine the things you reach for every day.",
+  "btn_products": "See products",
+  "btn_areas": "Focus areas",
+  "ring_region": "Rotating carousel",
+  "ring_region_label": "All products",
+  "ring_viewport": "Use the left and right arrow keys to rotate",
+  "ring_prev": "Previous app",
+  "ring_next": "Next app",
+  "featured_label": "Featured",
+  "lineup_title": "All products.",
+  "lineup_sub": "Swipe sideways to meet them one by one.",
+  "areas_eyebrow": "Focus areas",
+  "areas_title": "Where technology is headed.",
+  "footer_links_label": "External links",
+  "footer_guide": "App guide",
+  "footer_contact": "Contact",
+  "link_appstore": "Get it on the App Store",
+  "link_googleplay": "Get it on Google Play",
+  "link_web": "View on the web",
+  "more": "Learn more",
+  "detail": "Details",
+  "prev": "Previous",
+  "next": "Next",
+  "carousel_products": "Product list",
+  "carousel_areas": "Focus areas",
+  "carousel_prev": "Previous",
+  "carousel_next": "Next",
+  "back_home": "Back to home",
+  "home": "Home",
+  "back_to": "Back to {name}",
+  "works_title": "What we've built.",
+  "why_title": "Why we built it",
+  "alt_screen": "{name} app screen",
+  "alt_icon": "{name} app icon",
+  "aria_appstore": "View {name} on the App Store"
+ },
+ "projects": {
+  "1": {
+   "title": "Korea Calendar",
+   "headline": "Lunar dates, holidays, solar terms. One screen.",
+   "pitch": "Date calculations finish on your device, so it works in airplane mode too.",
+   "summary": "A Korean calendar that shows lunar dates, public holidays, the sexagenary cycle, and solar terms on one screen. Lunar conversion and holiday rules are calculated on the device with no server, so it works in airplane mode, and the Home Screen widget calculates the lunar date itself. The iPhone widget shows anniversaries coming up within 30 days, and public holidays and substitute holidays appear in red.",
+   "why": "A Korean calendar that puts lunar dates, holidays, the sexagenary cycle, and the 24 solar terms on one screen. A calendar should open even where there is no signal. So we decided date calculations must never depend on a server."
+  },
+  "2": {
+   "title": "Song of the Day",
+   "headline": "One song to hear today.",
+   "pitch": "Picks one song a day based on weather, mood, and taste.",
+   "summary": "Music recommendations that pick one song a day from the weather, your mood, and your taste. National popularity charts are assembled directly from public music data, with no server of our own, and a single tap on Listen to the End continues the song in full on YouTube. Home Screen and Lock Screen widgets on iPhone show today's song without opening the app, and tapping opens that song.",
+   "why": "A music recommendation app that picks one song a day from the weather, your mood, and your taste. National popularity charts are assembled directly from public music data, with no server of our own. Since 1.0.14, instead of a 30-second preview, one tap on Listen to the End plays the recommended song in full on YouTube."
+  },
+  "3": {
+   "title": "myTV",
+   "headline": "Videos from the web, on your TV.",
+   "summary": "A casting app that sends videos you watch on the web straight to your smart TV. We built each of the three connection methods that different TVs require, and it hands over the original stream rather than mirroring your screen.",
+   "why": "A casting app that sends videos you watch on the web straight to your TV. Because it passes the video address itself to the TV instead of mirroring the screen, playback continues even after you turn off your phone, and quality does not drop."
+  },
+  "4": {
+   "title": "Voice Notes",
+   "headline": "Speak, and it writes it down.",
+   "pitch": "Speech recognition runs on your device, so recordings never leave it.",
+   "summary": "A notes app that turns recordings straight into text for meeting minutes. Speech recognition runs entirely on your device, so audio never goes over the network, and it works without internet.",
+   "why": "A notes app that turns recordings straight into text for meeting minutes. Meetings are usually not meant for other eyes, so we run all speech recognition on the device and keep audio off the network. Dictation works even without internet."
+  },
+  "5": {
+   "title": "Cardly",
+   "headline": "Snap a business card. It's organized.",
+   "summary": "A business card manager that reads names and contact details from a photo and organizes them. Text recognition runs on the device, and saving to Contacts and exporting to a spreadsheet both work offline.",
+   "why": "A business card manager that reads names and contact details from a photo and organizes them. A business card is someone else's personal information. So we designed this app to make no network requests at all. Backups are exchanged by you as files, not through a server."
+  },
+  "6": {
+   "title": "DailyMap",
+   "headline": "A light map for finding what's nearby.",
+   "summary": "A light map app for finding shops and places near you. The app queries an openly available public map directly, and recommendations are handled on the device in two steps, so there is no relay server at all. In the Running tab, pick a distance and it builds a loop route from where you are, with voice guidance as you run.",
+   "why": "A light map app for finding shops and places near you. The design rule fit in one sentence. With no key, there is nothing to hide. With nothing to hide, no relay server is needed. And with no relay server, the App Store privacy label can read \"Data Not Collected.\""
+  },
+  "7": {
+   "title": "AI Mail Reply",
+   "headline": "Drafts your replies for you.",
+   "summary": "A tool that drafts a reply that fits the email you received. It uses two free AI services as backups for each other, and if neither is available, it switches automatically to an on-device draft template.",
+   "why": "A tool that drafts a reply that fits the email you received. A paid model would run at a loss as users grow, so we chose to use only free-tier language models and removed the paid backend."
+  },
+  "9": {
+   "title": "Malmoi",
+   "headline": "Korean isn't read the way it's written.",
+   "pitch": "TOPIK vocabulary and pronunciation for learners. Standard pronunciation rules, built as an engine.",
+   "summary": "Vocabulary and pronunciation study for non-native learners preparing for the Test of Proficiency in Korean (TOPIK). It includes 44,391 words from the National Institute of Korean Language's Basic Korean Dictionary, and implements the standard pronunciation rules as a rule engine (94.0% accuracy).",
+   "why": "A study app for non-native learners preparing for the Test of Proficiency in Korean (TOPIK). The name comes from the first Korean-language dictionary, compiled by Ju Si-gyeong. We carried the \"no server, no account\" structure proven in our Japanese exam app over to learning Korean."
+  },
+  "10": {
+   "title": "Kotoba",
+   "headline": "JLPT words, kanji, and listening in one app.",
+   "summary": "Practice JLPT Japanese vocabulary, kanji, and sentence listening in one app. The question bank and audio playback are built into the app, so you can keep studying without an account or an internet connection.",
+   "why": "Practice JLPT Japanese vocabulary, kanji, and sentence listening in one app. We chose exam prep for a clear reason. When review and mock tests run entirely on the device, running costs do not grow as users do."
+  },
+  "11": {
+   "title": "Voca Interpreter",
+   "headline": "Face to face, with no internet.",
+   "summary": "A face-to-face interpreter that works where there is no internet. It includes a screen for two people facing each other and situational phrasebooks, and runs translation models on the device, offline.",
+   "why": "A face-to-face interpreter that works where there is no internet. Speech recognition, translation, language identification, and text recognition all run on the device. The network is used only to download language packs, and once downloaded, it interprets even in airplane mode."
+  },
+  "12": {
+   "title": "Study in Korea",
+   "headline": "Student life in Korea, on your own.",
+   "summary": "A guide app that helps international students in Korea handle visa and daily-life procedures on their own. The procedure information is built into the app in 6 languages, with no sign-in and no server lookups.",
+   "why": "A guide app that helps international students in Korea handle visa and daily-life procedures on their own. It includes a stay expiry date calculator, a part-time work hours calculator, an 18-item settling-in checklist, a credit converter, and essential contacts, in 6 languages."
+  },
+  "13": {
+   "title": "Career Compass",
+   "headline": "Narrow down majors and careers by personality type.",
+   "summary": "Career exploration that narrows down majors and jobs that suit your personality type. Test results are matched on the device and never sent to a server, in 5 languages.",
+   "why": "A career exploration app that uses a personality type test to narrow down suitable majors, jobs, and study methods. Test results are matched on the device and never sent to a server, in 5 languages."
+  },
+  "14": {
+   "title": "Fretwise",
+   "headline": "A coach that picks today's chords.",
+   "pitch": "Guitar and ukulele chord fingering and progressions, step by step. The app plays the accompaniment.",
+   "summary": "A practice app for learning guitar and ukulele chord fingering and progressions step by step. A coach built directly on learning theory picks the chords to practice today, and the app plays the songbook accompaniment in time so you can play along. Today's practice, chosen by the coach, appears in Home Screen and Lock Screen widgets, and for each song you can find and open a performance video on YouTube. All practice calculations happen on the device.",
+   "why": "A practice app for learning guitar chord fingering and chord progressions step by step. The reasoning was clear. Practice happens offline, and the moment you add a server, personal data collection begins and you give up the \"Data Not Collected\" label. For a solo developer, a server is a debt to be repaid."
+  },
+  "15": {
+   "title": "Singon",
+   "headline": "Your living room becomes a karaoke room.",
+   "pitch": "Use your phone as a microphone, get scored on pitch and timing, and see which key suits you.",
+   "summary": "An app that turns your living room into a karaoke room, with your phone as the microphone. It scores along 4 axes including pitch and timing, and recommends a key. It uses no server and runs entirely within a single page.",
+   "why": "An app that turns your living room into a karaoke room, with one phone as the microphone. Using no server was the design condition for this app. It is complete in a single screen file, and your vocal profile stays only on your phone. Features that need a server, such as sign-in, subscriptions, and social feeds, were left out from the start."
+  },
+  "16": {
+   "title": "Sudam",
+   "headline": "A game of Go with AI, no internet needed.",
+   "pitch": "A Go AI engine inside your phone. Play, review, and analyze life and death.",
+   "summary": "AI Go without internet: play, review, life-and-death problems, and life-and-death analysis. An openly available Go AI engine runs inside your phone for offline games and win-rate graph reviews, and for each group of stones on the board it judges life and death, vital points, and move order. When confidence is low, it doesn't force an answer and marks the result as uncertain.",
+   "why": "Go AI usually runs on a server. You have to make an account and connect to the internet to play a single game. We put an openly available Go AI engine entirely inside the phone, so games, reviews, and even life-and-death problems work with no account and no connection."
+  },
+  "17": {
+   "title": "Chess Coach",
+   "headline": "Play and learn chess, no opponent needed.",
+   "pitch": "A chess engine and puzzles, built right into the app.",
+   "summary": "A chess game and puzzle app for playing and learning without an opponent. With a chess engine and 1,000 puzzles built in, it makes zero server calls. Available in 5 languages.",
+   "why": "A chess app for playing and learning without an opponent. We removed online matches and all server code, so it makes zero network requests and is complete in a single screen file."
+  },
+  "18": {
+   "title": "AI Janggi",
+   "headline": "Janggi, with the official rules.",
+   "pitch": "Setup variants, passing, and point scoring included.",
+   "summary": "An app for playing traditional Korean Janggi with the official rules, including 4 setup variants, passing, and point scoring. The new engine genuinely reads deeper at higher difficulty levels, and the game screen shows the depth the AI just calculated. The rules are implemented in two independent versions whose results are compared automatically.",
+   "why": "An app for playing traditional Korean Janggi with the official rules. It has 4 setup variants, passing, and point scoring, in 5 languages. We stripped out servers, sign-in, and the cloud, so not a single piece of data leaves the device."
+  },
+  "19": {
+   "title": "Ttorang",
+   "headline": "Brain training to wake up memory and focus.",
+   "summary": "A collection of brain training games for older adults that wakes up memory and focus. Redesigned with large text and simple controls, with records kept only on the device. Available in 5 languages.",
+   "why": "A collection of brain training games for older adults that wakes up memory and focus. Redesigned with large text and simple controls, with records kept only on the device. No account and no server."
+  },
+  "20": {
+   "title": "Q-City",
+   "headline": "A whole city at your fingertips.",
+   "pitch": "A city-building simulation where you zone land and balance power, water, traffic, and budget.",
+   "summary": "A city-building simulation where you zone land and balance power, water, traffic, and budget. Rotate the map in four directions to see behind buildings, and jump straight to a fire. The simulation logic is maintained in three separate versions, and save files are verified to match character for character. In 5 languages.",
+   "why": "A city-building simulation where you zone land and balance power, water, traffic, and budget. No server, no account, no leaderboard. One city, complete on your device."
+  },
+  "21": {
+   "title": "Lotto Lab",
+   "headline": "Number statistics from past winning data.",
+   "summary": "A lottery helper that analyzes past winning data statistically to generate and manage your numbers. The winning data is built into the app, so analysis runs without internet.",
+   "why": "A helper that analyzes past winning data statistically to generate and manage your numbers. Honesty was the starting point of the design. Lotto draws are independent and random, so AI cannot raise the odds. So we chose to create value only through easy input, interpretation, and honest wording, not predictive performance."
+  },
+  "31": {
+   "title": "BP Diary",
+   "headline": "One line to take to the clinic.",
+   "pitch": "Turns the week of home readings before your visit into the average your doctor looks at.",
+   "summary": "A logbook that guides you to measure home blood pressure morning and evening for 7 days before a visit, and turns it into the one-line average your doctor looks at. See the 7-, 30-, and 90-day averages and trends on a single clinic screen, with records kept only on the device.",
+   "why": "A logbook that guides you to measure home blood pressure properly for the 7 days before a visit. When we gathered reviews of existing blood pressure apps, the complaints clustered in a few places. I thought it would remind me when to measure. I was charged without realizing it. My records disappeared. The text is too small. We chose just one to solve: the 7-day pre-visit course."
+  },
+  "34": {
+   "title": "Retro Arcade",
+   "headline": "An arcade we made ourselves.",
+   "pitch": "A collection of original arcade games. No ads, no purchases, no account.",
+   "summary": "An arcade of 27 original arcade games we made ourselves (1.1.0). We use no one else's game files, and every game is our own, with no ads, no purchases, and no account. Available in 175 regions.",
+   "why": "It began as an app that imitated old game consoles, but it relied on other people's game files, so we changed direction. We built every game ourselves and rebuilt it as an arcade collection that runs the same way on the web with the same engine. It started with 7 games in 1.0 and grew to 27 in 1.1.0."
+  },
+  "72": {
+   "title": "Sudam Life & Death",
+   "headline": "Life-and-death problems with exactly one answer.",
+   "pitch": "From beginner to top level, step by step. Missed problems come back to solve again.",
+   "summary": "An app with 318 Go life-and-death problems, each proven to have exactly one answer, in 6 levels from beginner to top level. The 106 problems in levels 1 and 2 are free, and missed problems are collected automatically to solve again. No ads, no sign-up, and no internet needed.",
+   "why": "It started from wanting to solve a few Go life-and-death problems every day. We separated the life-and-death problems from Sudam and made a problem book that works without internet, with no ads, no sign-up, and no daily limit on problems."
+  },
+  "32": {
+   "title": "Neighborhood Market",
+   "headline": "No server. Just you and your neighbors.",
+   "pitch": "Connect with neighbors using one invite code to buy, sell, and share.",
+   "summary": "A neighborhood secondhand and sharing app where neighbors exchange invite codes and connect device to device, with no company server. Item listings and one-to-one chats stay only on the devices involved, and it supports reporting, blocking, and 6 languages.",
+   "why": "A marketplace where neighbors trade secondhand items directly, with no server, no account, and no database. Devices connect directly, and the code that creates the connection is copied and shared by users themselves. It supports 6 languages, so international residents can use it too."
+  },
+  "33": {
+   "title": "Hanja Levels",
+   "headline": "Level-test Hanja, until your hand remembers.",
+   "pitch": "Assigned characters, mock tests, and writing practice in one app.",
+   "summary": "A study app for Hanja proficiency levels that teaches the 1,000 assigned characters from level 8 to level 4, plus Sino-Korean words, with readings, radicals, and total strokes. Mock tests that match the real exam format, writing practice where you trace and match stroke counts, and spaced-repetition review that asks only what you missed all work on the device."
+  },
+  "35": {
+   "title": "Korean History Trainer",
+   "headline": "Learn Korean history by hand, down to the order of events.",
+   "pitch": "Original questions with explanations, a timeline game, and a mistake notebook in one app.",
+   "summary": "A study app for the Korean History Proficiency Test (Basic and Advanced) and Korean history for the civil service Grade 9 exam. Every original question comes with an explanation, and there is a timeline game where you place event cards in chronological order, plus a mistake notebook that fills itself. It works on the device with no sign-up."
+  },
+  "36": {
+   "title": "English Test Trainer",
+   "headline": "Listen, write, and try again.",
+   "pitch": "Questions in the real test format, dictation, and vocabulary review.",
+   "summary": "An English test study app that practices TOEIC-style LC and RC with original questions and Korean explanations. Dictation training, a spaced-repetition word list, and an automatically built mistake notebook all work on the device with no sign-up."
+  },
+  "41": {
+   "title": "Rival Kingdoms",
+   "headline": "Unify the realm, no gacha.",
+   "pitch": "Domestic affairs, diplomacy, schemes, and battle. A turn-based Three Kingdoms strategy played one month at a time.",
+   "summary": "A turn-based strategy simulation set in the Central Plains at the end of the Han dynasty, where you handle domestic affairs, diplomacy, schemes, and battle one month at a time. Portraits and stats are original, and with no gacha, ads, purchases, or accounts, a full game runs to the end even in airplane mode. In 5 languages.",
+   "why": "When we researched, we found a gap on mobile. A turn-based Three Kingdoms game that runs offline, has no gacha, is lightweight, and supports many languages. With no server, there is no shutdown either."
+  },
+  "73": {
+   "title": "Unfold",
+   "headline": "Open your own files, without garbled text.",
+   "pitch": "A viewer for TXT, comics, and PDF. It handles encoding and table of contents on its own.",
+   "summary": "A viewer that opens your own TXT, comic, and PDF files without garbled text. It figures out older encodings such as EUC-KR and Shift_JIS by itself, builds a table of contents by finding titles, and sorts ZIP and CBZ comics in the order 1, 2, 10. With no server, your files and reading position stay only on the device."
+  },
+  "74": {
+   "title": "Haru - AI Assistant",
+   "headline": "Hand it off by voice, confirm with a card.",
+   "pitch": "Hand off your schedule, to-dos, and expenses. Nothing changes until you tap.",
+   "summary": "An assistant that handles your schedule, to-dos, expense log, email drafts, and alarms when you ask by voice. With no sign-up, Apple Intelligence on your iPhone does the thinking, and Haru shows what it did on a card first, so nothing is applied until you tap Run. Install Haru PC on your computer to hand off and approve PC tasks from your phone."
+  }
+ },
+ "categories": {
+  "ai": {
+   "name": "AI and Infrastructure",
+   "vision": "Intelligence, in your hand.",
+   "lede": "Recognition and reasoning happen on the device. Even when the connection drops, thinking doesn't stop, and your words and photos stay with you."
+  },
+  "platform": {
+   "name": "Platforms and Services",
+   "vision": "Solid, even where you can't see.",
+   "lede": "The foundation that connects people and the work inside organizations. We refine the structure behind the screen to the same standard."
+  },
+  "fintech": {
+   "name": "Fintech and Investing",
+   "vision": "Numbers, made readable.",
+   "lede": "Market prices and household numbers, in a form anyone can read. Precise calculation, concise explanation."
+  },
+  "chain": {
+   "name": "Blockchain and Distributed Systems",
+   "vision": "Trust, built into the structure.",
+   "lede": "A way for records to prove one another. We bring distributed technology into everyday tools."
+  },
+  "security": {
+   "name": "Security and Privacy",
+   "vision": "What you don't collect can't leak.",
+   "lede": "A design with no sign-up and no personal data piling up on servers. The best way to protect something is never to hold it in the first place."
+  },
+  "quantum": {
+   "name": "Quantum Security",
+   "vision": "Tomorrow's cryptography, today.",
+   "lede": "So that today's secrets stay secret even when quantum computers arrive. We look ahead to the next generation of cryptography."
+  },
+  "gameai": {
+   "name": "Game AI",
+   "vision": "A thinking opponent, in your pocket.",
+   "lede": "Engines for Go, chess, and Janggi read moves inside your phone. A game goes all the way through without calling a server."
+  },
+  "language": {
+   "name": "Language and Voice",
+   "vision": "Speech, unlocked on the device.",
+   "lede": "Transcribing, translating, reading aloud. Your voice and sentences never leave the device."
+  },
+  "media": {
+   "name": "Media and Music",
+   "vision": "Screen and sound, wherever you want them.",
+   "lede": "From a small screen to a big one, with the living room as your stage. Devices connect to each other with no relay server."
+  },
+  "care": {
+   "name": "Healthcare",
+   "vision": "Everyday health, quietly by your side.",
+   "lede": "Measuring, keeping up, and waking you. Records stay on the device, refined with large text and simple controls."
+  },
+  "life": {
+   "name": "Daily Life and Media",
+   "vision": "Things you open every day.",
+   "lede": "Dates and directions, music and the big screen. Apps that sit closest to your day."
+  },
+  "work": {
+   "name": "Work and Productivity",
+   "vision": "Less work, more thinking.",
+   "lede": "Making it lighter to write down, organize, and hand off."
+  },
+  "game": {
+   "name": "Games and Brain Training",
+   "vision": "Depth on the board.",
+   "lede": "Go and Janggi, chess and the arcade, the realm of the Three Kingdoms and a single city. Boards for thinking deeply and playing lightly."
+  },
+  "learn": {
+   "name": "Learning and Exams",
+   "vision": "So learning never stops.",
+   "lede": "Languages and exams, guitar and career paths. Learning that continues anywhere."
+  },
+  "health": {
+   "name": "Health and Records",
+   "vision": "Your body's records, beside you.",
+   "lede": "Measure, note, and see at a glance. Records stay only on the device."
+  },
+  "shop": {
+   "name": "Shopping and Price Comparison",
+   "vision": "Spend less time choosing.",
+   "lede": "Scattered prices gathered in one place, showing only what fits your conditions."
+  }
+ },
+ "works": {
+  "ai": [
+   {
+    "name": "Unified Control Board",
+    "title": "Every service, on one screen.",
+    "body": "It reads the video generator, running programs, graphics cards, and security events directly from each service and gathers them in one place. Built without outside tools, so updating a tool can never stop the board.",
+    "alt": "Unified control board screen with graphics card usage, memory, temperature, and power cards and live graphs"
+   },
+   {
+    "name": "GPU Monitor",
+    "title": "Your hardware's state, every second.",
+    "body": "It watches the memory, usage, temperature, and power of servers running AI models at one-second intervals, and raises a warning when a danger level is reached. Values go straight to the browser, so graphs move without refreshing.",
+    "alt": "GPU monitor screen with usage, memory, temperature, and power bars and a time-based graph"
+   }
+  ],
+  "platform": [
+   {
+    "name": "International Matchmaking",
+    "title": "Different languages, one conversation.",
+    "body": "A matchmaking service connecting users in Korea and Japan. Every conversation is translated, and video calls are supported. The web app, chat server, and video call signaling server are split into three so that load on one never drags down the others.",
+    "alt": "Chat screen of a Korea-Japan matchmaking service, with each message shown alongside its Korean and Japanese translation"
+   },
+   {
+    "name": "Mini ERP",
+    "title": "An organization's day, on one screen.",
+    "body": "An internal system for permissions, attendance, leave, projects, tasks, and workload. We designed the data structure first and built a separate dashboard for each role.",
+    "alt": "Mini ERP dashboard showing today's check-in and check-out, my tasks and deadlines, and remaining leave"
+   },
+   {
+    "name": "Community Board",
+    "title": "A place for posts and replies.",
+    "body": "A community for sharing and discussing AI video production techniques. We built screens with posts, comments, likes, categories, and profiles.",
+    "alt": "Community board post list with categories, sorting, and post cards"
+   }
+  ],
+  "fintech": [
+   {
+    "name": "Stock Dashboard",
+    "title": "Indicators, calculated by hand.",
+    "body": "A single stock's price, earnings, and technical indicators on one screen. Moving averages and trend indicators are calculated directly rather than left to an outside library, so we can explain why a value comes out the way it does.",
+    "alt": "Stock dashboard price chart screen (demo data) with period selection and candlestick and volume charts"
+   },
+   {
+    "name": "Quant Trading Lab",
+    "title": "Judgment, divided by role.",
+    "body": "A research platform where separate agents handle market analysis, strategy, risk management, order execution, and performance analysis. Backtests and paper trading come first, and loss limits are written explicitly into the system.",
+    "alt": "Market data screen of the quant trading lab, with a price chart drawn from public quotes"
+   }
+  ],
+  "chain": [
+   {
+    "name": "Mining Control",
+    "title": "Watching and stopping, on one screen.",
+    "body": "Turn graphics card miners on and off, and see hash rate, temperature, and pool status on one screen. The server controls the mining program directly and stops it on its own when temperature passes the limit.",
+    "alt": "Mining control screen with hash rate, temperature, and power cards and live hash rate and temperature graphs"
+   },
+   {
+    "name": "CoinPilot",
+    "title": "Rules go through paper trading first.",
+    "body": "A tool that lets preset trading rules move to real trading only after they have been verified with virtual funds. Stop-loss, investment limits, and the emergency stop are enforced by the engine, and after a restart it picks up exactly where it left off.",
+    "alt": "CoinPilot screen with backtest conditions, virtual-fund paper trading, the confirmation step before live trading, and the emergency stop"
+   }
+  ],
+  "security": [
+   {
+    "name": "Whispr",
+    "title": "Conversations don't stay on a server.",
+    "body": "A messenger that connects devices directly and encrypts end to end. The server only brokers the connection and never stores message content, and tests check that directly.",
+    "alt": "Whispr chat screen with a direct peer-to-peer connection, an end-to-end encryption notice, and exchanged messages"
+   },
+   {
+    "name": "Distributed Storage Vault",
+    "title": "The key lives only in the link.",
+    "body": "Files are encrypted in the browser first, then uploaded to a distributed storage network. The key to unlock them sits in the part of the share link that is never sent to a server, so the storage side cannot see the contents.",
+    "alt": "File list of the distributed storage vault, with an encryption mark and integrity check result for each file"
+   },
+   {
+    "name": "Login Anomaly Detection",
+    "title": "Spot unusual access first.",
+    "body": "It watches the login records of the authentication server and scores each one with both hand-built rules and the judgment of an anomaly detection model. When risk is high, the account is locked automatically, and results go straight to the dashboard.",
+    "alt": "Login anomaly detection dashboard with successful and failed logins, alert counts, hourly distribution, and live events"
+   }
+  ],
+  "quantum": [
+   {
+    "name": "Post-Quantum Signature Monitor",
+    "title": "Which accounts still use old cryptography.",
+    "body": "It records which signature method was used for each login, and marks methods built to withstand quantum computers separately. Accounts still on the old method are visible at a glance.",
+    "alt": "Login events table where post-quantum signatures such as DILITHIUM and FALCON are shown in purple in the token algorithm column"
+   },
+   {
+    "name": "Hybrid Key Exchange",
+    "title": "Even if one of the two breaks.",
+    "body": "It uses today's key exchange method (X25519) together with a post-quantum method (ML-KEM-768), so the session key stays safe even if one is broken. Signatures likewise combine Ed25519 and ML-DSA-65.",
+    "alt": "Hybrid key exchange demo output showing key sizes, signature verification, man-in-the-middle blocking, and the result of an attack that assumes X25519 is broken"
+   }
+  ],
+  "gameai": [
+   {
+    "name": "Sudam",
+    "title": "A game of Go with AI, no internet needed.",
+    "body": "An openly available Go AI engine runs inside your phone for offline games, and you can review move by move with a win-rate graph.",
+    "alt": "Sudam game screen with a Go board and AI analysis markers"
+   },
+   {
+    "name": "Chess Coach",
+    "title": "Play and learn chess, no opponent needed.",
+    "body": "A chess engine and puzzle problems are built into the app, so both games and puzzles run without calling a server.",
+    "alt": "Chess Coach AI game screen"
+   },
+   {
+    "name": "AI Janggi",
+    "title": "The official rules, as they are.",
+    "body": "Play with the official rules, including setup variants, passing, and point scoring. The rules are implemented in two independent versions and their results compared automatically, so a rules error can't slip through unnoticed.",
+    "alt": "AI Janggi game screen"
+   }
+  ],
+  "language": [
+   {
+    "name": "Voice Notes",
+    "title": "Speak, and it writes it down.",
+    "body": "Recordings turn straight into text and are organized as meeting minutes. Speech recognition runs entirely on the device, so audio never goes over the network.",
+    "alt": "Voice Notes screen"
+   },
+   {
+    "name": "Voca Interpreter",
+    "title": "Face to face, no internet.",
+    "body": "Translation models run on the device to interpret offline. It includes a screen for two people facing each other and situational phrasebooks.",
+    "alt": "Voca face-to-face interpreter screen"
+   },
+   {
+    "name": "Malmoi",
+    "title": "Korean isn't read the way it's written.",
+    "body": "The standard pronunciation rules are built as a rule engine, pointing out how the letters actually sound. The vocabulary of the National Institute of Korean Language's basic dictionary is built into the app.",
+    "alt": "Malmoi vocabulary and pronunciation study screen"
+   }
+  ],
+  "media": [
+   {
+    "name": "myTV",
+    "title": "Videos from the web, on your TV.",
+    "body": "We built each of the three connection methods that different TVs require, and it hands over the original stream rather than mirroring your screen.",
+    "alt": "myTV casting screen"
+   },
+   {
+    "name": "Singon",
+    "title": "Your living room becomes a karaoke room.",
+    "body": "Use your phone as the microphone, get scored along four axes including pitch and timing, and see which key suits you. It runs complete in a single page with no server.",
+    "alt": "Singon song search and list screen"
+   },
+   {
+    "name": "Song of the Day",
+    "title": "One song to hear today.",
+    "body": "Picks one song a day from the weather, your mood, and your taste. National popularity charts are assembled directly from public music data, with no server of our own.",
+    "alt": "Song of the Day recommendation screen"
+   }
+  ],
+  "care": [
+   {
+    "name": "BP Diary",
+    "title": "One line to take to the clinic.",
+    "body": "It guides you to measure home blood pressure morning and evening for 7 days before a visit, and turns it into the one-line average your doctor looks at. Records stay only on the device.",
+    "alt": "BP Diary screen"
+   },
+   {
+    "name": "Medication Time",
+    "title": "Log it right from the notification.",
+    "body": "It reminds you when to take your medication, and a button on the notification logs whether you took it without opening the app. Notifications and button actions are handled through a queue.",
+    "alt": "Medication Time home screen with the next dose time and today's medication list"
+   },
+   {
+    "name": "Ttorang",
+    "title": "Memory and focus, every day.",
+    "body": "A collection of brain training games for older adults. Redesigned with large text and simple controls, with records kept only on the device.",
+    "alt": "Ttorang brain training screen"
+   }
+  ]
+ }
+}
