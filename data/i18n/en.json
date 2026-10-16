@@ -248,6 +248,76 @@
    "headline": "Hand it off by voice, confirm with a card.",
    "pitch": "Hand off your schedule, to-dos, and expenses. Nothing changes until you tap.",
    "summary": "An assistant that handles your schedule, to-dos, expense log, email drafts, and alarms when you ask by voice. With no sign-up, Apple Intelligence on your iPhone does the thinking, and Haru shows what it did on a card first, so nothing is applied until you tap Run. Install Haru PC on your computer to hand off and approve PC tasks from your phone."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "The ingredient list, from one photo.",
+   "pitch": "Reads the label on the device and flags the ingredients you avoid in red.",
+   "summary": "An app that explains what each ingredient on a cosmetics label does from a single photo of the back, and tells you whether it contains anything you avoid. It reads the label text on the device rather than a barcode, so new products work too, and 14 groups such as fragrance, ethanol, and parabens are marked in red in the results.",
+   "why": "An app that explains what each ingredient on a cosmetics label does from one photo of the back. It reads the label text instead of relying on a product database, so products missing from a database still work, and the photo is deleted right after recognition."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "The answer, in textbook form.",
+   "pitch": "Shows fractions, roots, and π in exact form instead of converting them to decimals.",
+   "summary": "A scientific calculator that shows 1÷3+√8 as 1/3 + 2√2, not 3.16…. It computes fractions, roots, and π in textbook form with the decimal value right below, and includes trigonometric and logarithmic functions, unit conversion, and base calculation. No ads and no sign-up.",
+   "why": "A scientific calculator that gives 1/3 + 2√2 instead of a decimal when you enter 1÷3+√8. It calculates without decimal error, so 0.1+0.2 comes out as exactly 0.3, and the history stays only on the device."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Rehearse out loud before you go.",
+   "pitch": "Talk through everyday situations and see which words came across.",
+   "summary": "A conversation app for role-playing 10 situations in English, Japanese, and Chinese, from ordering at a café to passport control and interviews. You speak with a partner and see in color how clearly each word came across, and sentences you stumbled on return as review cards. Speech recognition runs on the device and no recordings are saved.",
+   "why": "A conversation app built on the idea that if you worry about freezing up abroad, you should rehearse before you go. It turns real situations into scripts you speak through with a partner, with no account and everything on the device."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Answer questions, get a patent draft.",
+   "pitch": "From drafting claims to comparing prior art and calculating filing deadlines, on the device.",
+   "summary": "An app that turns your invention idea into a patent specification draft with claims as you answer questions. It checks claim wording, compares your elements against prior art, and calculates filing deadlines such as grace period, priority, and examination request. There is no server, and your ideas are stored only on this device.",
+   "why": "An app that organizes an invention into a patent specification draft. So that ideas not yet filed do not leak, it has no sign-up and no server."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "A scanner you search by the words inside.",
+   "pitch": "Reads scanned text on the device, so a single word finds the paper.",
+   "summary": "A scanner that turns contracts and receipts into clean PDFs and reads the text on the device. Type a word like “lease” and it finds that paper, suggests a title from the first line, and shares as PDF or JPG. No watermarks, no sign-up, and no server.",
+   "why": "People often scan contracts and receipts and then cannot find them later. So we made the text readable on the device, so you can find a paper by a word inside it."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Never miss a dose time.",
+   "pitch": "Reminds you on time and records the dose right from the notification.",
+   "summary": "A medication reminder app that alerts you at set times and records “taken” right from the notification. It counts down the pills left and warns you before they run out, with weekly and monthly dose reports and a large-text simple mode. No sign-up, and every record stays on the device.",
+   "why": "A medication reminder app made to be the easiest way to remember when to take your medicine. You can record a dose from the notification without opening the app, and a large-text mode makes it easy for older adults too."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "Don't just read proofs. Build them.",
+   "pitch": "Stack shuffled proof-step cards in order and weed out the trap cards.",
+   "summary": "A study app that teaches math-major proofs by assembling them from step cards. You weed out plausible but wrong trap cards, and grading shows the first step that went off. It covers 8 subjects including calculus, analysis, and linear algebra, and concepts you got wrong come back for review at growing intervals.",
+   "why": "A study app that starts from the idea that merely reading proofs leaves you stuck on exams. The concept cards, examples, and practice problems are all written in-house, and with no account your progress stays only on the device."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "The housing aid you may qualify for, in one place.",
+   "pitch": "A few questions to pre-check, and post-lease deadlines turned into dates.",
+   "summary": "A housing aid guide that pre-checks Happy Housing, national rental housing, housing benefit, and youth monthly rent support from a few questions, and turns legal deadlines after signing, such as move-in and fixed-date registration, into dates. It shows routes by residence status and reminds you of upcoming dates with home screen and lock screen widgets. No sign-up, and your answers stay on the device.",
+   "why": "A guide that puts the support you can get when finding a home in Korea and the tasks after signing a lease in one place. It serves Korean citizens, young people, and foreign residents in five languages, and your answers are never sent to a server."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Learn chains with one problem a day.",
+   "pitch": "When you miss, it points out what actually happened on the board.",
+   "summary": "An app for learning chain-making puzzles with falling blocks through a problem set. When you miss, it points out what happened on the board, such as a group popped too early, a chain that stopped at 3, or where the starting point was. It has 210 problems in 7 units, a new problem of the day, an easy-on-the-eyes paper-tone screen, and a home screen widget.",
+   "why": "An app for learning chain puzzles from a problem set instead of by feel. It shows why you were wrong on the board itself, and the explanations are generated on the device without internet."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "Today's most important three.",
+   "pitch": "See your day on a 24-hour dial, with habits and journaling in one app.",
+   "summary": "A self-care app that helps you focus on the three most important things each day. It places sleep, exercise, and work in color on a circular 24-hour dial, and shows habit checks, mood and short journal entries, and weekly and monthly stats in one place. It works without sign-up or internet, and records stay on the device.",
+   "why": "A self-care app built on the idea of picking just the three things you must do today instead of piling up tasks forever. Your records are handled only on your phone, so each new day can start fresh."
   }
  },
  "categories": {

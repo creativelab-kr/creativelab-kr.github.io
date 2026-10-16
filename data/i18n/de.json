@@ -248,6 +248,76 @@
    "headline": "Per Sprache beauftragen, per Karte bestätigen.",
    "pitch": "Übergeben Sie Termine, Aufgaben und Ausgaben. Nichts ändert sich, bevor Sie tippen.",
    "summary": "Ein Assistent, der auf Zuruf Termine, Aufgaben, Haushaltsbuch, E-Mail-Entwürfe und Wecker erledigt. Ohne Registrierung denkt Apple Intelligence auf Ihrem iPhone mit, und Haru zeigt zuerst auf einer Karte, was es getan hat. Erst wenn Sie auf Ausführen tippen, wird etwas übernommen. Wenn Sie Haru PC auf Ihrem Computer installieren, können Sie auch PC-Aufgaben vom Telefon aus übergeben und freigeben."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "Die Inhaltsliste, mit einem Foto.",
+   "pitch": "Liest das Etikett auf dem Gerät und markiert Stoffe, die Sie meiden, rot.",
+   "summary": "Eine App, die anhand eines Fotos von der Rückseite erklärt, was jeder Inhaltsstoff eines Kosmetikprodukts bewirkt, und anzeigt, ob etwas enthalten ist, das Sie meiden. Sie liest den Etikettentext auf dem Gerät statt eines Barcodes, sodass auch neue Produkte funktionieren; 14 Gruppen wie Duftstoffe, Ethanol und Parabene werden im Ergebnis rot markiert.",
+   "why": "Eine App, die mit einem Foto der Rückseite erklärt, was jeder Inhaltsstoff bewirkt. Sie liest den Etikettentext, statt sich auf eine Produktdatenbank zu stützen, daher funktionieren auch Produkte, die dort fehlen; das Foto wird direkt nach der Erkennung gelöscht."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "Die Antwort in Lehrbuchform.",
+   "pitch": "Zeigt Brüche, Wurzeln und π exakt, statt sie in Dezimalzahlen umzuwandeln.",
+   "summary": "Ein wissenschaftlicher Taschenrechner, der 1÷3+√8 als 1/3 + 2√2 anzeigt und nicht als 3,16…. Brüche, Wurzeln und π werden in Lehrbuchform berechnet, der Dezimalwert steht direkt darunter; dazu kommen Winkel- und Logarithmusfunktionen, Einheitenumrechnung und Zahlensysteme. Ohne Werbung und ohne Anmeldung.",
+   "why": "Ein wissenschaftlicher Taschenrechner, der bei 1÷3+√8 den Wert 1/3 + 2√2 statt einer Dezimalzahl liefert. Er rechnet ohne Dezimalfehler, sodass 0,1+0,2 genau 0,3 ergibt, und der Verlauf bleibt nur auf dem Gerät."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Vor der Reise laut proben.",
+   "pitch": "Alltagssituationen sprechend durchspielen und Wort für Wort sehen, was ankam.",
+   "summary": "Eine Konversations-App für Rollenspiele in 10 Situationen auf Englisch, Japanisch und Chinesisch, vom Café bis zur Passkontrolle und zum Vorstellungsgespräch. Sie sprechen mit einem Gegenüber und sehen farbig, wie deutlich jedes Wort ankam; Sätze, an denen Sie hängen geblieben sind, kehren als Wiederholungskarten zurück. Die Spracherkennung läuft auf dem Gerät, Aufnahmen werden nicht gespeichert.",
+   "why": "Eine Konversations-App nach dem Gedanken: Wer im Ausland Hemmungen hat, probt vorher. Echte Situationen werden zu Skripten, die Sie mit einem Gegenüber sprechen, ohne Konto und komplett auf dem Gerät."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Fragen beantworten, Patententwurf erhalten.",
+   "pitch": "Vom Formulieren der Ansprüche über den Stand-der-Technik-Vergleich bis zu den Anmeldefristen, auf dem Gerät.",
+   "summary": "Eine App, die Ihre Erfindungsidee beim Beantworten von Fragen zu einem Patentbeschreibungsentwurf mit Ansprüchen ordnet. Sie prüft die Form der Ansprüche, vergleicht Ihre Merkmale mit dem Stand der Technik und berechnet Anmeldefristen wie Neuheitsschonfrist, Priorität und Prüfungsantrag. Es gibt keinen Server, Ihre Ideen bleiben nur auf diesem Gerät.",
+   "why": "Eine App, die eine Erfindung zu einem Entwurf der Patentbeschreibung ordnet. Damit noch nicht angemeldete Ideen nicht nach außen gelangen, gibt es weder Anmeldung noch Server."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "Ein Scanner, den Sie nach Wörtern im Dokument durchsuchen.",
+   "pitch": "Liest gescannten Text auf dem Gerät, ein Wort genügt, um das Blatt zu finden.",
+   "summary": "Ein Scanner, der Verträge und Quittungen in saubere PDFs verwandelt und den Text auf dem Gerät liest. Geben Sie ein Wort wie „Mietvertrag“ ein, und er findet das Blatt, schlägt aus der ersten Zeile einen Titel vor und teilt als PDF oder JPG. Ohne Wasserzeichen, ohne Anmeldung und ohne Server.",
+   "why": "Man scannt Verträge und Quittungen und findet sie später nicht wieder. Deshalb wird der Text auf dem Gerät gelesen, sodass sich ein Blatt über ein Wort darin finden lässt."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Keine Einnahmezeit mehr verpassen.",
+   "pitch": "Erinnert pünktlich und hält die Einnahme direkt in der Mitteilung fest.",
+   "summary": "Eine Erinnerungs-App für Medikamente, die zu festgelegten Zeiten benachrichtigt und die Einnahme direkt in der Mitteilung als „genommen“ festhält. Sie zählt den Restvorrat herunter und warnt, bevor er aufgebraucht ist, mit Wochen- und Monatsberichten und einem einfachen Modus mit großer Schrift. Ohne Anmeldung, alle Einträge bleiben auf dem Gerät.",
+   "why": "Eine Erinnerungs-App, die es so einfach wie möglich machen soll, die Einnahmezeit nicht zu vergessen. Die Einnahme lässt sich in der Mitteilung festhalten, ohne die App zu öffnen, und ein Modus mit großer Schrift hilft auch älteren Menschen."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "Beweise nicht nur lesen, sondern bauen.",
+   "pitch": "Durchmischte Beweisschritt-Karten ordnen und Fallenkarten aussortieren.",
+   "summary": "Eine Lern-App, die Beweise des Mathematikstudiums durch das Zusammensetzen von Schrittkarten vermittelt. Sie sortieren plausibel wirkende, aber falsche Fallenkarten aus, und die Auswertung zeigt den ersten fehlerhaften Schritt. Sie deckt 8 Fächer wie Analysis und Lineare Algebra ab, und falsch beantwortete Konzepte kehren in wachsenden Abständen zur Wiederholung zurück.",
+   "why": "Eine Lern-App, die von der Erfahrung ausgeht, dass man in Prüfungen stecken bleibt, wenn man Beweise nur liest. Konzeptkarten, Beispiele und Übungsaufgaben sind selbst verfasst, und ohne Konto bleibt der Lernstand nur auf dem Gerät."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "Alle Wohnhilfen, die infrage kommen, an einem Ort.",
+   "pitch": "Mit wenigen Fragen vorprüfen, Fristen nach dem Mietvertrag werden zu Terminen.",
+   "summary": "Ein Leitfaden für Wohnhilfen in Korea: Mit wenigen Fragen prüft er Happy Housing, staatliche Mietwohnungen, Wohngeld und die monatliche Mietförderung für junge Menschen vor und macht gesetzliche Fristen nach Vertragsabschluss, etwa Ummeldung und Festdatum, zu Terminen. Er zeigt Wege je nach Aufenthaltstitel und erinnert über Widgets auf Home- und Sperrbildschirm an anstehende Termine. Ohne Anmeldung, Antworten bleiben auf dem Gerät.",
+   "why": "Ein Leitfaden, der die Hilfen bei der Wohnungssuche in Korea und die Aufgaben nach dem Mietvertrag an einem Ort bündelt. Er richtet sich an Koreaner, junge Menschen und in Korea lebende Ausländer, ist in fünf Sprachen verfügbar und sendet Antworten nie an einen Server."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Ketten lernen, eine Aufgabe pro Tag.",
+   "pitch": "Bei einem Fehler zeigt es, was auf dem Spielfeld wirklich passiert ist.",
+   "summary": "Eine App, in der Sie Kettenpuzzles mit fallenden Blöcken anhand einer Aufgabensammlung lernen. Bei einem Fehler zeigt sie, was auf dem Spielfeld geschah, etwa eine zu früh aufgelöste Gruppe, eine bei 3 Steinen abgebrochene Kette oder wo der Startpunkt lag. Sie bietet 210 Aufgaben in 7 Einheiten, eine neue Tagesaufgabe, einen augenschonenden Bildschirm in Papiertönen und ein Widget für den Home-Bildschirm.",
+   "why": "Eine App, mit der man Kettenpuzzles anhand von Aufgaben statt nach Gefühl lernt. Sie zeigt auf dem Spielfeld, warum es falsch war, und die Erklärungen entstehen ohne Internet auf dem Gerät."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "Die drei wichtigsten Dinge von heute.",
+   "pitch": "Den Tag auf einem 24-Stunden-Ziffernblatt sehen, dazu Gewohnheiten und Rückblick in einer App.",
+   "summary": "Eine Selbstmanagement-App, die hilft, sich jeden Tag auf die drei wichtigsten Dinge zu konzentrieren. Schlaf, Sport und Arbeit werden farbig auf einem runden 24-Stunden-Ziffernblatt angeordnet, und Gewohnheiten, Stimmung samt kurzem Rückblick sowie Wochen- und Monatsstatistiken sehen Sie an einem Ort. Sie funktioniert ohne Anmeldung und Internet, die Einträge bleiben auf dem Gerät.",
+   "why": "Eine Selbstmanagement-App nach dem Gedanken, statt endlos Aufgaben anzuhäufen nur die drei Dinge zu wählen, die heute sein müssen. Ihre Einträge werden nur auf Ihrem Telefon verarbeitet, damit jeder neue Tag frisch beginnen kann."
   }
  },
  "categories": {

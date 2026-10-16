@@ -248,6 +248,76 @@
    "headline": "Peça por voz, confirme num cartão.",
    "pitch": "Entregue agenda, tarefas e finanças. Nada muda até você tocar.",
    "summary": "Um assistente que cuida de agenda, tarefas, controle de gastos, rascunhos de e-mail e alarmes quando você pede por voz. Sem cadastro, a Apple Intelligence do seu iPhone faz o raciocínio, e o Haru mostra primeiro o que fez em um cartão, então nada é aplicado até você tocar em Executar. Instale o Haru PC no computador para pedir e aprovar tarefas do PC pelo celular."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "A lista de ingredientes, com uma foto.",
+   "pitch": "Lê o rótulo no aparelho e marca em vermelho os ingredientes que você evita.",
+   "summary": "Um app que explica o que cada ingrediente de um cosmético faz a partir de uma foto do verso e avisa se há algo que você evita. Ele lê o texto do rótulo no aparelho, não o código de barras, então também funciona com produtos novos; 14 grupos como fragrância, etanol e parabenos aparecem em vermelho no resultado.",
+   "why": "Um app que explica o que cada ingrediente de um cosmético faz com uma única foto do verso. Ele lê o texto do rótulo sem depender de um banco de produtos, e a foto é apagada logo após o reconhecimento."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "A resposta, como no livro.",
+   "pitch": "Mostra frações, raízes e π em forma exata em vez de decimais.",
+   "summary": "Uma calculadora científica que mostra 1÷3+√8 como 1/3 + 2√2 e não como 3,16…. Calcula frações, raízes e π na forma do livro didático, com o valor decimal logo abaixo, e inclui funções trigonométricas e logarítmicas, conversão de unidades e cálculo em várias bases. Sem anúncios e sem cadastro.",
+   "why": "Uma calculadora científica que, ao digitar 1÷3+√8, dá 1/3 + 2√2 em vez de um decimal. Ela calcula sem erro decimal, de modo que 0,1+0,2 é exatamente 0,3, e o histórico fica apenas no aparelho."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Ensaie em voz alta antes de viajar.",
+   "pitch": "Pratique situações do dia a dia falando e veja quais palavras foram entendidas.",
+   "summary": "Um app de conversação para encenar 10 situações em inglês, japonês e chinês, de pedir num café ao controle de passaportes e entrevistas. Você fala com um interlocutor e vê em cores o quanto cada palavra foi entendida; as frases em que você travou voltam como cartões de revisão. O reconhecimento de voz acontece no aparelho e nenhuma gravação é guardada.",
+   "why": "Um app de conversação baseado na ideia de que, se você teme travar no exterior, deve ensaiar antes de ir. Ele transforma situações reais em roteiros que você fala com um interlocutor, sem conta e tudo no aparelho."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Responda perguntas, receba um rascunho de patente.",
+   "pitch": "Da redação das reivindicações à comparação com o estado da técnica e aos prazos, no aparelho.",
+   "summary": "Um app que transforma sua ideia de invenção em um rascunho de relatório descritivo de patente com reivindicações enquanto você responde perguntas. Ele verifica a forma das reivindicações, compara seus elementos com o estado da técnica e calcula prazos como período de graça, prioridade e pedido de exame. Não há servidor, e suas ideias ficam apenas neste aparelho.",
+   "why": "Um app que organiza uma invenção em um rascunho de relatório descritivo de patente. Para que ideias ainda não depositadas não vazem, ele não tem cadastro nem servidor."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "Um scanner que você busca pelas palavras do documento.",
+   "pitch": "Lê o texto escaneado no aparelho; uma palavra basta para achar o papel.",
+   "summary": "Um scanner que transforma contratos e recibos em PDFs limpos e lê o texto no aparelho. Digite uma palavra como “aluguel” e ele encontra aquele papel, sugere um título a partir da primeira linha e compartilha em PDF ou JPG. Sem marca d'água, sem cadastro e sem servidor.",
+   "why": "É comum escanear contratos e recibos e depois não achá-los. Por isso o texto é lido no aparelho e dá para encontrar um papel por uma palavra que ele contém."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Nunca perca a hora do remédio.",
+   "pitch": "Avisa na hora certa e registra a dose direto pela notificação.",
+   "summary": "Um app de lembrete de medicação que avisa nos horários definidos e registra «tomado» direto pela notificação. Ele desconta os comprimidos restantes e avisa antes de acabarem, com relatórios semanais e mensais e um modo simples de letras grandes. Sem cadastro, e todos os registros ficam no aparelho.",
+   "why": "Um app de lembrete feito para tornar o mais simples possível lembrar a hora do remédio. Dá para registrar a dose pela notificação sem abrir o app, e um modo de letras grandes ajuda também os mais velhos."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "Não apenas leia demonstrações: monte-as.",
+   "pitch": "Ordene cartões de passos embaralhados e descarte os cartões armadilha.",
+   "summary": "Um app de estudo que ensina as demonstrações do curso de matemática montando-as com cartões de passos. Você descarta cartões armadilha, plausíveis mas errados, e a correção mostra o primeiro passo que falhou. Cobre 8 disciplinas como cálculo, análise e álgebra linear, e os conceitos errados voltam para revisão em intervalos crescentes.",
+   "why": "Um app de estudo que parte da ideia de que apenas ler demonstrações trava você nas provas. Os cartões de conceitos, os exemplos e os exercícios são escritos por nós e, sem conta, seu progresso fica só no aparelho."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "Os auxílios de moradia possíveis, em um só lugar.",
+   "pitch": "Poucas perguntas para uma verificação prévia e os prazos após o contrato viram datas.",
+   "summary": "Um guia de auxílios de moradia na Coreia que, com poucas perguntas, verifica antecipadamente Happy Housing, locação pública nacional, auxílio-moradia e apoio mensal de aluguel para jovens, e transforma em datas os prazos legais após a assinatura, como a declaração de residência e a data fixa. Mostra caminhos conforme o status de residência e avisa os próximos prazos com widgets da tela inicial e de bloqueio. Sem cadastro, e as respostas ficam no aparelho.",
+   "why": "Um guia que reúne em um só lugar os auxílios disponíveis ao procurar moradia na Coreia e as tarefas após o contrato. Atende cidadãos coreanos, jovens e estrangeiros residentes, em cinco idiomas, e suas respostas nunca são enviadas a um servidor."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Aprenda encadeamentos com um problema por dia.",
+   "pitch": "Se errar, mostra o que realmente aconteceu no tabuleiro.",
+   "summary": "Um app para aprender quebra-cabeças de encadeamento com blocos que caem por meio de uma coleção de problemas. Quando você erra, ele mostra o que aconteceu no tabuleiro, como um grupo estourado cedo demais, um encadeamento que parou em 3 ou onde ficava o ponto de partida. Tem 210 problemas em 7 unidades, um problema novo por dia, uma tela em tons de papel confortável para os olhos e um widget para a tela inicial.",
+   "why": "Um app para aprender quebra-cabeças de encadeamento com problemas em vez de no instinto. Ele mostra no próprio tabuleiro por que você errou, e as explicações são geradas no aparelho sem internet."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "As três coisas mais importantes de hoje.",
+   "pitch": "Veja o dia num mostrador de 24 horas, com hábitos e diário em um só app.",
+   "summary": "Um app de autogestão que ajuda a focar todo dia nas três coisas mais importantes. Ele coloca sono, exercício e trabalho em cores num mostrador circular de 24 horas, e reúne em um só lugar as marcações de hábitos, o humor com um breve diário e as estatísticas semanais e mensais. Funciona sem cadastro nem internet, e os registros ficam no aparelho.",
+   "why": "Um app de autogestão baseado na ideia de escolher apenas as três coisas que você precisa fazer hoje, em vez de acumular tarefas sem fim. Seus registros são tratados só no seu celular, para que cada novo dia comece do zero."
   }
  },
  "categories": {

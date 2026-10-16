@@ -248,6 +248,76 @@
    "headline": "Encárguelo con la voz, confírmelo con una tarjeta.",
    "pitch": "Encargue su agenda, tareas y gastos. Nada cambia hasta que usted toque.",
    "summary": "Un asistente que se ocupa de su agenda, tareas, registro de gastos, borradores de correo y alarmas cuando se lo pide con la voz. Sin registro, Apple Intelligence en su iPhone se encarga de decidir, y Haru muestra primero en una tarjeta lo que hizo, de modo que nada se aplica hasta que toque «Ejecutar». Si instala Haru PC en su computadora, también puede encargar y aprobar desde el teléfono tareas del PC."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "La lista de ingredientes, con una foto.",
+   "pitch": "Lee la etiqueta en el dispositivo y marca en rojo los ingredientes que evitas.",
+   "summary": "Una app que explica qué hace cada ingrediente de un cosmético a partir de una foto de la parte trasera y te avisa si contiene algo que evitas. Lee el texto de la etiqueta en el dispositivo, no el código de barras, así que también sirve para productos nuevos; 14 grupos como fragancia, etanol y parabenos se marcan en rojo en el resultado.",
+   "why": "Una app que explica qué hace cada ingrediente de un cosmético con una sola foto de la parte trasera. Lee el texto de la etiqueta en lugar de depender de una base de datos de productos, y la foto se borra justo después del reconocimiento."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "La respuesta, tal como en el libro.",
+   "pitch": "Muestra fracciones, raíces y π en forma exacta en vez de decimales.",
+   "summary": "Una calculadora científica que muestra 1÷3+√8 como 1/3 + 2√2 y no como 3,16…. Calcula fracciones, raíces y π con la forma del libro de texto, con el valor decimal justo debajo, e incluye funciones trigonométricas y logarítmicas, conversión de unidades y cálculo en distintas bases. Sin anuncios ni registro.",
+   "why": "Una calculadora científica que, al introducir 1÷3+√8, da 1/3 + 2√2 en lugar de un decimal. Calcula sin error decimal, de modo que 0,1+0,2 es exactamente 0,3, y el historial se guarda solo en el dispositivo."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Ensaya en voz alta antes de viajar.",
+   "pitch": "Practica situaciones cotidianas hablando y ve qué palabras se entendieron.",
+   "summary": "Una app de conversación para representar 10 situaciones en inglés, japonés y chino, desde pedir en una cafetería hasta el control de pasaportes y las entrevistas. Hablas con un interlocutor y ves en color qué tan claro llegó cada palabra; las frases en las que te trabaste vuelven como tarjetas de repaso. El reconocimiento de voz se hace en el dispositivo y no se guarda ninguna grabación.",
+   "why": "Una app de conversación basada en la idea de que, si te da miedo bloquearte en el extranjero, ensayes antes de ir. Convierte situaciones reales en guiones que hablas con un interlocutor, sin cuenta y todo en el dispositivo."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Responde preguntas y obtén un borrador de patente.",
+   "pitch": "De redactar las reivindicaciones a comparar el estado de la técnica y calcular plazos, en el dispositivo.",
+   "summary": "Una app que convierte tu idea de invención en un borrador de memoria de patente con reivindicaciones mientras respondes preguntas. Revisa el formato de las reivindicaciones, compara tus elementos con el estado de la técnica y calcula plazos como el período de gracia, la prioridad y la solicitud de examen. No hay servidor, y tus ideas se guardan solo en este dispositivo.",
+   "why": "Una app que organiza una invención en un borrador de memoria de patente. Para que las ideas aún no presentadas no se filtren, no tiene registro ni servidor."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "Un escáner que se busca por las palabras del documento.",
+   "pitch": "Lee el texto escaneado en el dispositivo; una palabra basta para encontrar el papel.",
+   "summary": "Un escáner que convierte contratos y recibos en PDF limpios y lee el texto en el dispositivo. Escribe una palabra como «alquiler» y encuentra ese papel, sugiere un título a partir de la primera línea y comparte en PDF o JPG. Sin marcas de agua, sin registro y sin servidor.",
+   "why": "Es común escanear contratos y recibos y luego no encontrarlos. Por eso el texto se lee en el dispositivo y puedes hallar un papel por una palabra que contiene."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Que no se te pase la hora de la medicina.",
+   "pitch": "Te avisa a tiempo y registra la toma desde la propia notificación.",
+   "summary": "Una app de recordatorio de medicación que avisa a la hora indicada y registra «tomado» desde la notificación. Descuenta las pastillas que quedan y avisa antes de que se acaben, con informes semanales y mensuales y un modo sencillo de letra grande. Sin registro, y todos los datos se quedan en el dispositivo.",
+   "why": "Una app de recordatorio hecha para que recordar la hora de la medicina sea lo más fácil posible. Puedes registrar la toma desde la notificación sin abrir la app, y un modo de letra grande la hace cómoda también para personas mayores."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "No solo leas demostraciones: constrúyelas.",
+   "pitch": "Ordena tarjetas de pasos desordenadas y descarta las tarjetas trampa.",
+   "summary": "Una app de estudio que enseña las demostraciones de la carrera de matemáticas montándolas con tarjetas de pasos. Descartas tarjetas trampa que parecen plausibles pero son erróneas, y la corrección te indica el primer paso que falló. Cubre 8 asignaturas como cálculo, análisis y álgebra lineal, y los conceptos fallados vuelven a repasarse a intervalos crecientes.",
+   "why": "Una app de estudio que parte de la idea de que solo leer demostraciones te bloquea en los exámenes. Las tarjetas de conceptos, los ejemplos y los ejercicios están escritos por nosotros, y sin cuenta tu progreso queda solo en el dispositivo."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "Las ayudas de vivienda que te pueden corresponder, en un lugar.",
+   "pitch": "Unas preguntas para una comprobación previa y los plazos tras el contrato hechos fechas.",
+   "summary": "Una guía de ayudas a la vivienda en Corea que, con unas pocas preguntas, comprueba de antemano Happy Housing, alquiler público nacional, subsidio de vivienda y ayuda mensual de alquiler para jóvenes, y convierte en fechas los plazos legales tras firmar, como el registro de residencia y la fecha fija. Muestra rutas según el estatus de residencia y avisa de las próximas fechas con widgets de inicio y de pantalla de bloqueo. Sin registro, y tus respuestas se quedan en el dispositivo.",
+   "why": "Una guía que reúne en un solo lugar las ayudas disponibles al buscar vivienda en Corea y las tareas posteriores al contrato. Está pensada para ciudadanos coreanos, jóvenes y extranjeros residentes, en cinco idiomas, y tus respuestas nunca se envían a un servidor."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Aprende cadenas con un problema al día.",
+   "pitch": "Si fallas, señala lo que realmente ocurrió en el tablero.",
+   "summary": "Una app para aprender puzles de cadenas con bloques que caen mediante una colección de problemas. Cuando fallas, señala lo que pasó en el tablero, como un grupo explotado demasiado pronto, una cadena que se detuvo en 3 o dónde estaba el punto de inicio. Tiene 210 problemas en 7 unidades, un problema nuevo cada día, una pantalla de tonos de papel cómoda para la vista y un widget para la pantalla de inicio.",
+   "why": "Una app para aprender puzles de cadenas con problemas en lugar de por intuición. Muestra en el propio tablero por qué fallaste, y las explicaciones se generan en el dispositivo sin internet."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "Las tres cosas más importantes de hoy.",
+   "pitch": "Mira tu día en un dial de 24 horas, con hábitos y diario en una sola app.",
+   "summary": "Una app de autogestión que te ayuda a centrarte cada día en las tres cosas más importantes. Coloca el sueño, el ejercicio y el trabajo en color sobre un dial circular de 24 horas, y reúne las marcas de hábitos, el ánimo y un breve diario, y las estadísticas semanales y mensuales en un solo lugar. Funciona sin registro ni internet, y los datos se quedan en el dispositivo.",
+   "why": "Una app de autogestión basada en la idea de elegir solo las tres cosas que sí o sí harás hoy, en lugar de acumular tareas sin fin. Tus registros se gestionan solo en tu teléfono para que cada día nuevo empiece de cero."
   }
  },
  "categories": {

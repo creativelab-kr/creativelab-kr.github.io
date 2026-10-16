@@ -248,6 +248,76 @@
    "headline": "Confiez-le à la voix, confirmez sur une carte.",
    "pitch": "Confiez-lui agenda, tâches et dépenses. Rien ne change tant que vous n’avez pas appuyé.",
    "summary": "Un assistant qui s’occupe de votre agenda, de vos tâches, de vos dépenses, de vos brouillons d’e-mails et de vos alarmes quand vous le lui demandez à la voix. Sans inscription, c’est Apple Intelligence sur votre iPhone qui réfléchit, et Haru présente d’abord ce qu’il a fait sur une carte : rien n’est appliqué tant que vous n’avez pas appuyé sur Exécuter. Installez Haru PC sur votre ordinateur pour confier et approuver depuis votre téléphone des tâches sur le PC."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "La liste d'ingrédients, en une photo.",
+   "pitch": "Lit l'étiquette sur l'appareil et signale en rouge les ingrédients que vous évitez.",
+   "summary": "Une application qui explique le rôle de chaque ingrédient d'un cosmétique à partir d'une photo du dos du produit et indique s'il contient ce que vous évitez. Elle lit le texte de l'étiquette sur l'appareil, pas le code-barres, ce qui fonctionne aussi pour les nouveautés ; 14 groupes comme le parfum, l'éthanol et les parabènes sont marqués en rouge dans le résultat.",
+   "why": "Une application qui explique le rôle de chaque ingrédient d'un cosmétique à partir d'une seule photo du dos du produit. Elle lit le texte de l'étiquette sans dépendre d'une base de produits, et la photo est supprimée juste après la reconnaissance."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "La réponse, comme dans le manuel.",
+   "pitch": "Affiche fractions, racines et π sous forme exacte plutôt qu'en décimales.",
+   "summary": "Une calculatrice scientifique qui affiche 1÷3+√8 sous la forme 1/3 + 2√2 et non 3,16…. Elle calcule fractions, racines et π comme dans un manuel, avec la valeur décimale juste en dessous, et propose fonctions trigonométriques et logarithmiques, conversion d'unités et calcul en plusieurs bases. Sans publicité ni inscription.",
+   "why": "Une calculatrice scientifique qui donne 1/3 + 2√2 plutôt qu'un décimal quand on saisit 1÷3+√8. Elle calcule sans erreur décimale, donc 0,1+0,2 vaut exactement 0,3, et l'historique reste uniquement sur l'appareil."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Répétez à voix haute avant de partir.",
+   "pitch": "Jouez des situations du quotidien à l'oral et voyez quels mots sont passés.",
+   "summary": "Une application de conversation pour jouer 10 situations en anglais, japonais et chinois, de la commande au café au contrôle des passeports et aux entretiens. Vous parlez avec un partenaire et voyez en couleur à quel point chaque mot est passé ; les phrases qui ont accroché reviennent sous forme de cartes de révision. La reconnaissance vocale se fait sur l'appareil et aucun enregistrement n'est conservé.",
+   "why": "Une application de conversation née d'une idée simple : si l'on craint de rester muet à l'étranger, on répète avant de partir. Elle transforme des situations réelles en scripts à dire avec un partenaire, sans compte et entièrement sur l'appareil."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Répondez aux questions, obtenez un brouillon de brevet.",
+   "pitch": "De la rédaction des revendications à la comparaison avec l'état de la technique et au calcul des délais, sur l'appareil.",
+   "summary": "Une application qui transforme votre idée d'invention en brouillon de description de brevet avec revendications au fil de vos réponses. Elle vérifie la forme des revendications, compare vos éléments à l'état de la technique et calcule les délais de dépôt comme le délai de grâce, la priorité et la requête en examen. Il n'y a pas de serveur et vos idées restent uniquement sur cet appareil.",
+   "why": "Une application qui organise une invention en brouillon de description de brevet. Pour que les idées non encore déposées ne fuient pas, elle n'a ni inscription ni serveur."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "Un scanner qu'on interroge par les mots du document.",
+   "pitch": "Lit le texte numérisé sur l'appareil : un mot suffit pour retrouver la feuille.",
+   "summary": "Un scanner qui transforme contrats et reçus en PDF propres et lit le texte sur l'appareil. Tapez un mot comme « bail » et il retrouve la feuille, propose un titre d'après la première ligne et partage en PDF ou JPG. Sans filigrane, sans inscription et sans serveur.",
+   "why": "On numérise souvent contrats et reçus sans pouvoir les retrouver ensuite. Le texte est donc lu sur l'appareil, pour retrouver une feuille grâce à un mot qu'elle contient."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Ne manquez plus l'heure de votre traitement.",
+   "pitch": "Vous prévient à l'heure et enregistre la prise depuis la notification.",
+   "summary": "Une application de rappel de médicaments qui prévient aux heures choisies et enregistre « pris » directement depuis la notification. Elle décompte les comprimés restants et prévient avant la fin du stock, avec des bilans hebdomadaires et mensuels et un mode simple en gros caractères. Sans inscription, toutes les données restent sur l'appareil.",
+   "why": "Une application de rappel conçue pour que penser à ses médicaments soit le plus simple possible. On enregistre la prise depuis la notification sans ouvrir l'application, et un mode en gros caractères convient aussi aux personnes âgées."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "Ne lisez pas les preuves, construisez-les.",
+   "pitch": "Remettez dans l'ordre des cartes d'étapes mélangées et écartez les cartes pièges.",
+   "summary": "Une application d'étude qui enseigne les démonstrations du cursus de mathématiques en les assemblant avec des cartes d'étapes. Vous écartez les cartes pièges, plausibles mais fausses, et la correction indique la première étape fautive. Elle couvre 8 matières dont l'analyse et l'algèbre linéaire, et les notions ratées reviennent en révision à intervalles croissants.",
+   "why": "Une application d'étude partie du constat qu'en se contentant de lire les démonstrations, on bute aux examens. Les cartes de notions, exemples et exercices sont rédigés par nos soins et, sans compte, votre progression reste uniquement sur l'appareil."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "Les aides au logement possibles, au même endroit.",
+   "pitch": "Quelques questions pour une pré-vérification, et les délais après le bail transformés en dates.",
+   "summary": "Un guide des aides au logement en Corée qui, en quelques questions, pré-vérifie Happy Housing, le logement locatif national, l'allocation logement et l'aide au loyer mensuel pour les jeunes, et transforme en dates les délais légaux après la signature, comme la déclaration de domicile et la date certaine. Il montre les parcours selon le statut de séjour et signale les échéances par des widgets d'écran d'accueil et de verrouillage. Sans inscription, vos réponses restent sur l'appareil.",
+   "why": "Un guide qui réunit au même endroit les aides disponibles pour trouver un logement en Corée et les démarches après la signature du bail. Il s'adresse aux Coréens, aux jeunes et aux étrangers résidents, en cinq langues, et vos réponses ne sont jamais envoyées à un serveur."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Apprenez les enchaînements, un problème par jour.",
+   "pitch": "En cas d'erreur, il montre ce qui s'est réellement passé sur le plateau.",
+   "summary": "Une application pour apprendre les puzzles d'enchaînements de blocs qui tombent grâce à un recueil de problèmes. En cas d'erreur, elle montre ce qui s'est passé sur le plateau : un groupe éclaté trop tôt, un enchaînement arrêté à 3, ou l'endroit du point de départ. Elle propose 210 problèmes en 7 unités, un nouveau problème chaque jour, un écran aux tons de papier reposant et un widget d'écran d'accueil.",
+   "why": "Une application pour apprendre les puzzles d'enchaînements avec des problèmes plutôt qu'à l'instinct. Elle montre sur le plateau pourquoi vous vous êtes trompé, et les explications sont générées sur l'appareil sans internet."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "Les trois choses les plus importantes d'aujourd'hui.",
+   "pitch": "Voyez votre journée sur un cadran de 24 heures, avec habitudes et journal dans une seule application.",
+   "summary": "Une application d'organisation personnelle qui aide à se concentrer chaque jour sur les trois choses les plus importantes. Elle place sommeil, sport et travail en couleur sur un cadran circulaire de 24 heures, et réunit au même endroit le suivi des habitudes, l'humeur avec un court journal, et les statistiques hebdomadaires et mensuelles. Elle fonctionne sans inscription ni internet et les données restent sur l'appareil.",
+   "why": "Une application d'organisation personnelle fondée sur l'idée de choisir seulement les trois choses à accomplir aujourd'hui plutôt que d'empiler des tâches sans fin. Vos données ne sont traitées que sur votre téléphone, pour que chaque nouvelle journée reparte de zéro."
   }
  },
  "categories": {

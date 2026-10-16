@@ -248,6 +248,76 @@
    "headline": "Lo affidi con la voce, lo confermi con una scheda.",
    "pitch": "Affida impegni, cose da fare e spese. Niente cambia finché non tocchi.",
    "summary": "Un assistente che gestisce impegni, cose da fare, registro delle spese, bozze di email e sveglie quando glielo chiedi a voce. Senza registrazione, Apple Intelligence sul tuo iPhone ragiona, e Haru mostra prima su una scheda ciò che ha fatto, così nulla viene applicato finché non tocchi Esegui. Installa Haru PC sul computer per affidare e approvare dal telefono anche le attività del PC."
+  },
+  "75": {
+   "title": "LabelLens",
+   "headline": "La lista degli ingredienti, con una foto.",
+   "pitch": "Legge l'etichetta sul dispositivo e segna in rosso gli ingredienti che eviti.",
+   "summary": "Un'app che spiega a cosa serve ogni ingrediente di un cosmetico a partire da una foto del retro e indica se contiene qualcosa che eviti. Legge il testo dell'etichetta sul dispositivo, non il codice a barre, quindi funziona anche con i prodotti nuovi; 14 gruppi come profumo, etanolo e parabeni compaiono in rosso nel risultato.",
+   "why": "Un'app che spiega a cosa serve ogni ingrediente di un cosmetico con una sola foto del retro. Legge il testo dell'etichetta senza affidarsi a un database di prodotti, e la foto viene eliminata subito dopo il riconoscimento."
+  },
+  "76": {
+   "title": "Barunsem",
+   "headline": "La risposta, come sul libro.",
+   "pitch": "Mostra frazioni, radici e π in forma esatta invece che in decimali.",
+   "summary": "Una calcolatrice scientifica che mostra 1÷3+√8 come 1/3 + 2√2 e non come 3,16…. Calcola frazioni, radici e π nella forma del libro di testo, con il valore decimale subito sotto, e offre funzioni trigonometriche e logaritmiche, conversione di unità e calcolo in varie basi. Senza pubblicità né registrazione.",
+   "why": "Una calcolatrice scientifica che, digitando 1÷3+√8, restituisce 1/3 + 2√2 invece di un decimale. Calcola senza errori decimali, quindi 0,1+0,2 fa esattamente 0,3, e la cronologia resta solo sul dispositivo."
+  },
+  "77": {
+   "title": "Rehearse",
+   "headline": "Prova ad alta voce prima di partire.",
+   "pitch": "Esercita le situazioni quotidiane parlando e vedi quali parole sono state capite.",
+   "summary": "Un'app di conversazione per recitare 10 situazioni in inglese, giapponese e cinese, dall'ordinare al bar al controllo passaporti e ai colloqui. Parli con un interlocutore e vedi a colori quanto è arrivata chiara ogni parola; le frasi in cui ti sei inceppato tornano come schede di ripasso. Il riconoscimento vocale avviene sul dispositivo e nessuna registrazione viene salvata.",
+   "why": "Un'app di conversazione nata dall'idea che, se temi di bloccarti all'estero, conviene provare prima di partire. Trasforma situazioni reali in copioni da recitare con un interlocutore, senza account e tutto sul dispositivo."
+  },
+  "78": {
+   "title": "Invention Note",
+   "headline": "Rispondi alle domande, ottieni una bozza di brevetto.",
+   "pitch": "Dalla stesura delle rivendicazioni al confronto con lo stato della tecnica e ai termini di deposito, sul dispositivo.",
+   "summary": "Un'app che trasforma la tua idea di invenzione in una bozza di descrizione brevettuale con rivendicazioni mentre rispondi alle domande. Controlla la forma delle rivendicazioni, confronta i tuoi elementi con lo stato della tecnica e calcola i termini di deposito come il periodo di grazia, la priorità e la richiesta di esame. Non c'è alcun server e le tue idee restano solo su questo dispositivo.",
+   "why": "Un'app che organizza un'invenzione in una bozza di descrizione brevettuale. Perché le idee non ancora depositate non trapelino, non ha registrazione né server."
+  },
+  "79": {
+   "title": "PlainScan",
+   "headline": "Uno scanner che si cerca con le parole del documento.",
+   "pitch": "Legge il testo scansionato sul dispositivo: basta una parola per trovare il foglio.",
+   "summary": "Uno scanner che trasforma contratti e ricevute in PDF puliti e legge il testo sul dispositivo. Scrivi una parola come «affitto» e trova quel foglio, suggerisce un titolo dalla prima riga e condivide in PDF o JPG. Senza filigrana, senza registrazione e senza server.",
+   "why": "Capita spesso di scansionare contratti e ricevute e poi non ritrovarli. Per questo il testo viene letto sul dispositivo e un foglio si trova da una parola che contiene."
+  },
+  "80": {
+   "title": "Pill Time",
+   "headline": "Non perdere più l'orario della medicina.",
+   "pitch": "Ti avvisa in orario e registra l'assunzione direttamente dalla notifica.",
+   "summary": "Un'app di promemoria per i farmaci che avvisa agli orari impostati e registra «assunto» direttamente dalla notifica. Scala le compresse rimaste e avvisa prima che finiscano, con resoconti settimanali e mensili e una modalità semplice a caratteri grandi. Senza registrazione, tutti i dati restano sul dispositivo.",
+   "why": "Un'app di promemoria pensata per rendere il più semplice possibile ricordare quando prendere la medicina. Puoi registrare l'assunzione dalla notifica senza aprire l'app, e una modalità a caratteri grandi la rende comoda anche per gli anziani."
+  },
+  "81": {
+   "title": "Proof Workshop",
+   "headline": "Non limitarti a leggere le dimostrazioni: costruiscile.",
+   "pitch": "Ordina schede di passaggi mescolate e scarta le schede trappola.",
+   "summary": "Un'app di studio che insegna le dimostrazioni del corso di matematica assemblandole con schede di passaggi. Scarti le schede trappola, plausibili ma sbagliate, e la correzione indica il primo passaggio errato. Copre 8 materie come analisi e algebra lineare, e i concetti sbagliati tornano a intervalli crescenti per il ripasso.",
+   "why": "Un'app di studio nata dall'idea che leggere soltanto le dimostrazioni porta a bloccarsi agli esami. Le schede dei concetti, gli esempi e gli esercizi sono scritti da noi e, senza account, i progressi restano solo sul dispositivo."
+  },
+  "82": {
+   "title": "HomePath",
+   "headline": "Gli aiuti per la casa a cui puoi accedere, in un posto solo.",
+   "pitch": "Poche domande per una verifica preliminare e le scadenze dopo il contratto trasformate in date.",
+   "summary": "Una guida agli aiuti per la casa in Corea che, con poche domande, verifica in anticipo Happy Housing, alloggi in affitto nazionali, sussidio abitativo e sostegno mensile all'affitto per giovani, e trasforma in date le scadenze legali dopo la firma, come la dichiarazione di residenza e la data certa. Mostra i percorsi in base al permesso di soggiorno e segnala le prossime scadenze con widget per la schermata Home e di blocco. Senza registrazione, le risposte restano sul dispositivo.",
+   "why": "Una guida che riunisce in un solo posto gli aiuti disponibili per cercare casa in Corea e le cose da fare dopo il contratto. È pensata per cittadini coreani, giovani e stranieri residenti, in cinque lingue, e le risposte non vengono mai inviate a un server."
+  },
+  "83": {
+   "title": "Rensa Lab",
+   "headline": "Impara le catene con un problema al giorno.",
+   "pitch": "Se sbagli, mostra cosa è successo davvero sul tabellone.",
+   "summary": "Un'app per imparare i puzzle a catena con blocchi che cadono tramite una raccolta di problemi. Quando sbagli, mostra cosa è successo sul tabellone, come un gruppo fatto esplodere troppo presto, una catena fermata a 3 o dove si trovava il punto di partenza. Offre 210 problemi in 7 unità, un nuovo problema ogni giorno, uno schermo dai toni di carta riposante e un widget per la schermata Home.",
+   "why": "Un'app per imparare i puzzle a catena con i problemi invece che a intuito. Mostra sul tabellone perché hai sbagliato, e le spiegazioni vengono create sul dispositivo senza internet."
+  },
+  "84": {
+   "title": "Haruharu",
+   "headline": "Le tre cose più importanti di oggi.",
+   "pitch": "Guarda la giornata su un quadrante da 24 ore, con abitudini e diario in un'unica app.",
+   "summary": "Un'app di gestione personale che aiuta a concentrarsi ogni giorno sulle tre cose più importanti. Dispone sonno, esercizio e lavoro a colori su un quadrante circolare da 24 ore, e riunisce in un posto solo le spunte delle abitudini, l'umore con un breve diario e le statistiche settimanali e mensili. Funziona senza registrazione né internet e i dati restano sul dispositivo.",
+   "why": "Un'app di gestione personale nata dall'idea di scegliere solo le tre cose da fare oggi invece di accumulare compiti senza fine. I tuoi dati vengono gestiti solo sul tuo telefono, così ogni nuovo giorno può ripartire da zero."
   }
  },
  "categories": {
