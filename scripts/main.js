@@ -358,7 +358,7 @@ function shippedOf(categoryId) {
  * 앱 사진은 전부 실제 스토어 스크린샷을 줄인 것(assets/shots),
  * 영역 이미지는 tools/render-areas 로 렌더링한 것(assets/areas)이다.
  */
-const FEATURED_IDS = [1, 16];
+const FEATURED_IDS = [74, 1, 16, 6, 2]; // 하루 - AI 비서, 대한민국 달력, 수담, DailyMap, 오늘의 노래 (대표님 10/16 지시)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
 const LINEUP_LEAD = [15, 72, 41, 17, 34, 20, 18, 9, 2, 8, 4, 31, 14];
 
@@ -395,7 +395,23 @@ function tileLinks(project) {
     return `<p class="tile-links">
         <a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('more'))} ${ICONS.chevronSmall}</a>
         ${appStoreLink(project)}
-    </p>`;
+        ${playLink(project)}
+    </p>${krStoreNote(project)}`;
+}
+
+function playLink(project) {
+    const href = project.links && project.links.googleplay;
+    return href
+        ? `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer"
+              aria-label="${escapeHtml(project.title)} - Google Play">Google Play ${ICONS.chevronSmall}</a>`
+        : '';
+}
+
+/** 한국 스토어 주소(/kr/)만 있는 앱은 글로벌 출시처럼 보이지 않게 사실대로 밝힌다. */
+function krStoreNote(project) {
+    const href = (project.links && project.links.appstore) || '';
+    return /apps\.apple\.com\/kr\//.test(href)
+        ? `<p class="tile-note">${escapeHtml(t('note_kr_store'))}</p>` : '';
 }
 
 /**
