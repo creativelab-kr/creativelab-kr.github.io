@@ -683,6 +683,7 @@
   "headline": "동물 레이서와 달리는 3D 카트.",
   "pitch": "여덟 마리 동물 레이서 가운데 골라 코스를 달립니다. 드리프트와 아이템으로 순위를 뒤집어 보세요.",
   "icon": "assets/icons/tidalkart.png",
-  "links": {}
+  "links": {},
+  "shot": "assets/shots/tidalkart.webp"
  }
 ]
