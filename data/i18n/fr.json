@@ -23,15 +23,10 @@
   "lineup_sub": "Faites défiler sur le côté pour les découvrir un à un.",
   "areas_eyebrow": "Domaines d’activité",
   "areas_title": "Là où va la technologie.",
-  "vision_text": "Nous imaginons un monde décentralisé qui relie les personnes, les appareils, l'IA et le monde au sens large, afin que chacun puisse étendre librement son propre univers.",
-  "mission_text": "Nous concevons des technologies et des produits qui respectent la liberté humaine et la souveraineté de chacun sur son identité, ses données et l'IA, pour aider davantage de personnes à concrétiser leurs idées et leur potentiel.",
   "footer_links_label": "Liens externes",
-  "footer_social_label": "Réseaux sociaux",
   "footer_guide": "Guide des apps",
   "footer_contact": "Contact",
   "link_appstore": "Télécharger sur l’App Store",
-  "note_kr_store": "Disponible sur l’App Store coréen.",
-  "coming_soon": "Bientôt disponible",
   "link_googleplay": "Disponible sur Google Play",
   "link_web": "Voir sur le web",
   "more": "En savoir plus",
@@ -50,8 +45,14 @@
   "alt_screen": "Écran de l’app {name}",
   "alt_icon": "Icône de l’app {name}",
   "aria_appstore": "Voir {name} sur l’App Store",
+  "vision_text": "Nous imaginons un monde décentralisé qui relie les personnes, les appareils, l'IA et le monde au sens large, afin que chacun puisse étendre librement son propre univers.",
+  "mission_text": "Nous concevons des technologies et des produits qui respectent la liberté humaine et la souveraineté de chacun sur son identité, ses données et l'IA, pour aider davantage de personnes à concrétiser leurs idées et leur potentiel.",
+  "footer_social_label": "Réseaux sociaux",
+  "note_kr_store": "Disponible sur l’App Store coréen.",
+  "coming_soon": "Bientôt disponible",
   "service_platform": "Plateforme de services",
   "service_more": "En savoir plus",
+  "area_lineup_title": "Gamme de produits",
   "service_video": "Voir la vidéo"
  },
  "projects": {
@@ -100,12 +101,6 @@
    "headline": "Rédige vos réponses à votre place.",
    "summary": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Il s’appuie sur deux services d’IA gratuits qui se relaient, et si aucun n’est disponible, il bascule automatiquement sur un modèle de brouillon intégré à l’appareil.",
    "why": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Un modèle payant serait déficitaire à mesure que les utilisateurs augmentent : nous avons donc choisi de n’utiliser que des modèles de langage en offre gratuite et supprimé le service payant."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Une seule photo suffit pour une photo d'identité.",
-   "summary": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Il détecte le visage pour recadrer automatiquement, remplace l'arrière-plan par une couleur unie, puis vérifie 11 critères, dont la hauteur de la tête et celle des yeux, par rapport à la norme.",
-   "why": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Les formats sont gérés en millimètres, et les pixels ne sont calculés qu'à l'export."
   },
   "9": {
    "title": "Malmoi",
@@ -256,6 +251,12 @@
    "headline": "Confiez-le à la voix, confirmez sur une carte.",
    "pitch": "Confiez-lui agenda, tâches et dépenses. Rien ne change tant que vous n’avez pas appuyé.",
    "summary": "Un assistant qui s’occupe de votre agenda, de vos tâches, de vos dépenses, de vos brouillons d’e-mails et de vos alarmes quand vous le lui demandez à la voix. Sans inscription, c’est Apple Intelligence sur votre iPhone qui réfléchit, et Haru présente d’abord ce qu’il a fait sur une carte : rien n’est appliqué tant que vous n’avez pas appuyé sur Exécuter. Installez Haru PC sur votre ordinateur pour confier et approuver depuis votre téléphone des tâches sur le PC."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Une seule photo suffit pour une photo d'identité.",
+   "summary": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Il détecte le visage pour recadrer automatiquement, remplace l'arrière-plan par une couleur unie, puis vérifie 11 critères, dont la hauteur de la tête et celle des yeux, par rapport à la norme.",
+   "why": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Les formats sont gérés en millimètres, et les pixels ne sont calculés qu'à l'export."
   },
   "75": {
    "title": "LabelLens",

@@ -23,15 +23,10 @@
   "lineup_sub": "Swipe sideways to meet them one by one.",
   "areas_eyebrow": "Focus areas",
   "areas_title": "Where technology is headed.",
-  "vision_text": "We envision a decentralized world that connects people, devices, AI, and the wider world, empowering everyone to freely expand their own universe.",
-  "mission_text": "We build technology and products that respect human freedom and individual sovereignty over identity, data, and AI, helping more people turn their ideas and potential into reality.",
   "footer_links_label": "External links",
-  "footer_social_label": "Social media",
   "footer_guide": "App guide",
   "footer_contact": "Contact",
   "link_appstore": "Get it on the App Store",
-  "note_kr_store": "Available on the Korean App Store.",
-  "coming_soon": "Coming soon",
   "link_googleplay": "Get it on Google Play",
   "link_web": "View on the web",
   "more": "Learn more",
@@ -50,8 +45,14 @@
   "alt_screen": "{name} app screen",
   "alt_icon": "{name} app icon",
   "aria_appstore": "View {name} on the App Store",
+  "vision_text": "We envision a decentralized world that connects people, devices, AI, and the wider world, empowering everyone to freely expand their own universe.",
+  "mission_text": "We build technology and products that respect human freedom and individual sovereignty over identity, data, and AI, helping more people turn their ideas and potential into reality.",
+  "footer_social_label": "Social media",
+  "note_kr_store": "Available on the Korean App Store.",
+  "coming_soon": "Coming soon",
   "service_platform": "Service platform",
   "service_more": "Learn more",
+  "area_lineup_title": "Product lineup",
   "service_video": "Watch the video"
  },
  "projects": {
@@ -100,12 +101,6 @@
    "headline": "Drafts your replies for you.",
    "summary": "A tool that drafts a reply that fits the email you received. It uses two free AI services as backups for each other, and if neither is available, it switches automatically to an on-device draft template.",
    "why": "A tool that drafts a reply that fits the email you received. A paid model would run at a loss as users grow, so we chose to use only free-tier language models and removed the paid backend."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "One photo is all you need for an ID photo.",
-   "summary": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. It detects the face to crop automatically, swaps the background for a solid color, then checks 11 items such as head height and eye level against the standard.",
-   "why": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. Sizes are handled in millimeters, and pixels are calculated only at export."
   },
   "9": {
    "title": "Malmoi",
@@ -256,6 +251,12 @@
    "headline": "Hand it off by voice, confirm with a card.",
    "pitch": "Hand off your schedule, to-dos, and expenses. Nothing changes until you tap.",
    "summary": "An assistant that handles your schedule, to-dos, expense log, email drafts, and alarms when you ask by voice. With no sign-up, Apple Intelligence on your iPhone does the thinking, and Haru shows what it did on a card first, so nothing is applied until you tap Run. Install Haru PC on your computer to hand off and approve PC tasks from your phone."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "One photo is all you need for an ID photo.",
+   "summary": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. It detects the face to crop automatically, swaps the background for a solid color, then checks 11 items such as head height and eye level against the standard.",
+   "why": "An ID photo editor that turns one photo into dozens of standard sizes, such as 35×45mm and half-card. Sizes are handled in millimeters, and pixels are calculated only at export."
   },
   "75": {
    "title": "LabelLens",
