@@ -191,9 +191,6 @@ const ICONS = {
     health: svg('<path d="M3 12h4l2-5 3 10 2.5-6 1.5 3h5"/>'),
     money: svg('<path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/>'),
     infra: svg('<rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/>'),
-    language: svg('<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/>'),
-    media: svg('<circle cx="12" cy="12" r="9"/><path d="m10 8.8 5 3.2-5 3.2z"/>'),
-    care: svg('<path d="M12 20.5S4 15.6 4 9.8A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 8 2.2c0 5.8-8 10.7-8 10.7z"/>'),
     web: svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.8 2.6 15.2 0 18"/><path d="M12 3c-2.6 2.8-2.6 15.2 0 18"/>')
 };
 
@@ -346,7 +343,7 @@ function isComing(project) {
     return Boolean(project && project.status === '출시 준비 중');
 }
 
-/** 웹 서비스 플랫폼(스토어 앱이 아님). 앱 목록·회전 링에는 넣지 않고 사업 영역 맨 아래 '제품 라인업'에만 둔다. */
+/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록에만 올리고 회전 링·사업 영역 화면에는 넣지 않는다. */
 function isService(project) {
     return Boolean(project && project.status === '서비스' && project.links && project.links.web);
 }
@@ -525,7 +522,7 @@ function lineupProjects() {
     const rest = state.projects
         .filter(p => isShipped(p) && !seen.has(p.id))
         .sort((a, b) => (b.shot ? 1 : 0) - (a.shot ? 1 : 0) || a.id - b.id);
-    return lead.concat(rest, top);
+    return state.projects.filter(isService).concat(lead, rest, top);
 }
 
 /**
@@ -623,9 +620,9 @@ function renderLineup() {
  */
 function areaTile(category) {
     const names = worksOf(category.id).slice(0, 2).map(w => escapeHtml(w.name));
-    const glyph = ICONS[category.id] || ICONS.platform;
     return `<a class="atile" href="#/c/${encodeURIComponent(category.id)}">
-        <span class="atile-media"><span class="atile-glyph">${glyph}</span></span>
+        <span class="atile-media"><img src="${encodeURI(category.image)}" alt="" width="1440" height="900"
+            loading="lazy" decoding="async"></span>
         <span class="atile-copy">
             <span class="atile-name">${escapeHtml(category.name)}</span>
             <span class="atile-vision">${escapeHtml(category.vision)}</span>
@@ -646,24 +643,6 @@ function domains() {
 function renderAreas() {
     const host = document.getElementById('areaGrid');
     if (host) carousel(host, domains().map(areaTile).join(''), t('carousel_areas'));
-    renderAreaLineup();
-}
-
-/** 사업 영역 맨 아래 '제품 라인업' — 웹 서비스 플랫폼 카드(앱 아이콘 + 한 줄 설명 + 링크). */
-function renderAreaLineup() {
-    const host = document.getElementById('areaLineup');
-    if (!host) return;
-    const ext = (href, label) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ${ICONS.chevronSmall}</a>`;
-    host.innerHTML = state.projects.filter(isService).map(p => `<h3 class="area-lineup-title">${escapeHtml(t('area_lineup_title'))}</h3>
-        <article class="lineup-service">
-            <span class="lineup-service-icon"><img src="${encodeURI(p.icon)}" alt="${escapeHtml(t('alt_icon', {name: p.title}))}" width="96" height="96" loading="lazy" decoding="async"></span>
-            <div class="lineup-service-copy">
-                <p class="ccard-cat">${escapeHtml(t('service_platform'))}</p>
-                <h4 class="lineup-service-name">${escapeHtml(p.title)}</h4>
-                <p class="lineup-service-line">${escapeHtml(p.headline || '')}</p>
-                <p class="ccard-links lineup-service-links">${ext(p.links.web, t('service_more'))}${p.links.video ? ext(p.links.video, t('service_video')) : ''}</p>
-            </div>
-        </article>`).join('');
 }
 
 /**

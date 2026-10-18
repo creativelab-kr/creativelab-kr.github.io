@@ -23,10 +23,15 @@
   "lineup_sub": "Deslize para o lado e conheça um por um.",
   "areas_eyebrow": "Áreas de atuação",
   "areas_title": "Para onde a tecnologia caminha.",
+  "vision_text": "Imaginamos um mundo descentralizado que conecta pessoas, dispositivos, IA e o mundo em geral, para que cada pessoa possa expandir livremente o seu próprio universo.",
+  "mission_text": "Criamos tecnologia e produtos que respeitam a liberdade humana e a soberania de cada pessoa sobre identidade, dados e IA, ajudando mais pessoas a transformar suas ideias e seu potencial em realidade.",
   "footer_links_label": "Links externos",
+  "footer_social_label": "Redes sociais",
   "footer_guide": "Guia dos apps",
   "footer_contact": "Contato",
   "link_appstore": "Baixar na App Store",
+  "note_kr_store": "Disponível na App Store da Coreia.",
+  "coming_soon": "Em breve",
   "link_googleplay": "Baixar no Google Play",
   "link_web": "Ver na web",
   "more": "Saiba mais",
@@ -45,14 +50,8 @@
   "alt_screen": "Tela do app {name}",
   "alt_icon": "Ícone do app {name}",
   "aria_appstore": "Ver {name} na App Store",
-  "vision_text": "Imaginamos um mundo descentralizado que conecta pessoas, dispositivos, IA e o mundo em geral, para que cada pessoa possa expandir livremente o seu próprio universo.",
-  "mission_text": "Criamos tecnologia e produtos que respeitam a liberdade humana e a soberania de cada pessoa sobre identidade, dados e IA, ajudando mais pessoas a transformar suas ideias e seu potencial em realidade.",
-  "footer_social_label": "Redes sociais",
-  "note_kr_store": "Disponível na App Store da Coreia.",
-  "coming_soon": "Em breve",
   "service_platform": "Plataforma de serviços",
   "service_more": "Saiba mais",
-  "area_lineup_title": "Linha de produtos",
   "service_video": "Assistir ao vídeo"
  },
  "projects": {
@@ -101,6 +100,12 @@
    "headline": "Escreve rascunhos de resposta por você.",
    "summary": "Uma ferramenta que escreve um rascunho de resposta adequado ao e-mail recebido. Usa dois serviços de IA gratuitos, um como reserva do outro, e se nenhum estiver disponível, passa automaticamente para um modelo de rascunho no aparelho.",
    "why": "Uma ferramenta que escreve um rascunho de resposta adequado ao e-mail recebido. Um modelo pago daria prejuízo a cada novo usuário, então decidimos usar apenas modelos de linguagem de nível gratuito e removemos o backend pago."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Uma foto basta para a foto de documento.",
+   "summary": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Detecta o rosto para recortar automaticamente, troca o fundo por uma cor lisa e depois confere 11 itens, como a altura da cabeça e dos olhos, com a norma.",
+   "why": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Os tamanhos são tratados em milímetros e os pixels só são calculados na exportação."
   },
   "9": {
    "title": "Malmoi",
@@ -251,12 +256,6 @@
    "headline": "Peça por voz, confirme num cartão.",
    "pitch": "Entregue agenda, tarefas e finanças. Nada muda até você tocar.",
    "summary": "Um assistente que cuida de agenda, tarefas, controle de gastos, rascunhos de e-mail e alarmes quando você pede por voz. Sem cadastro, a Apple Intelligence do seu iPhone faz o raciocínio, e o Haru mostra primeiro o que fez em um cartão, então nada é aplicado até você tocar em Executar. Instale o Haru PC no computador para pedir e aprovar tarefas do PC pelo celular."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Uma foto basta para a foto de documento.",
-   "summary": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Detecta o rosto para recortar automaticamente, troca o fundo por uma cor lisa e depois confere 11 itens, como a altura da cabeça e dos olhos, com a norma.",
-   "why": "Um editor de fotos de documento que transforma uma foto em dezenas de tamanhos padrão, como 35×45 mm e meio cartão. Os tamanhos são tratados em milímetros e os pixels só são calculados na exportação."
   },
   "75": {
    "title": "LabelLens",

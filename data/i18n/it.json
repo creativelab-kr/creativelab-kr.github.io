@@ -23,10 +23,15 @@
   "lineup_sub": "Scorri di lato per scoprirli uno a uno.",
   "areas_eyebrow": "Aree di attività",
   "areas_title": "Dove va la tecnologia.",
+  "vision_text": "Immaginiamo un mondo decentralizzato che connette persone, dispositivi, IA e il mondo intero, in cui ognuno possa espandere liberamente il proprio universo.",
+  "mission_text": "Creiamo tecnologie e prodotti che rispettano la libertà umana e la sovranità di ciascuno su identità, dati e IA, aiutando sempre più persone a trasformare in realtà le proprie idee e il proprio potenziale.",
   "footer_links_label": "Link esterni",
+  "footer_social_label": "Social media",
   "footer_guide": "Guida alle app",
   "footer_contact": "Contatti",
   "link_appstore": "Scarica dall'App Store",
+  "note_kr_store": "Disponibile nell’App Store coreano.",
+  "coming_soon": "Prossimamente",
   "link_googleplay": "Scarica da Google Play",
   "link_web": "Apri sul web",
   "more": "Scopri di più",
@@ -45,14 +50,8 @@
   "alt_screen": "Schermata dell'app {name}",
   "alt_icon": "Icona dell'app {name}",
   "aria_appstore": "Vedi {name} sull'App Store",
-  "vision_text": "Immaginiamo un mondo decentralizzato che connette persone, dispositivi, IA e il mondo intero, in cui ognuno possa espandere liberamente il proprio universo.",
-  "mission_text": "Creiamo tecnologie e prodotti che rispettano la libertà umana e la sovranità di ciascuno su identità, dati e IA, aiutando sempre più persone a trasformare in realtà le proprie idee e il proprio potenziale.",
-  "footer_social_label": "Social media",
-  "note_kr_store": "Disponibile nell’App Store coreano.",
-  "coming_soon": "Prossimamente",
   "service_platform": "Piattaforma di servizi",
   "service_more": "Scopri di più",
-  "area_lineup_title": "Linea di prodotti",
   "service_video": "Guarda il video"
  },
  "projects": {
@@ -101,6 +100,12 @@
    "headline": "Scrive per te la bozza della risposta.",
    "summary": "Uno strumento che scrive una bozza di risposta adatta all'email ricevuta. Usa due servizi di intelligenza artificiale gratuiti che si sostituiscono a vicenda e, se nessuno dei due è disponibile, passa automaticamente a un modello di bozza sul dispositivo.",
    "why": "Uno strumento che scrive una bozza di risposta adatta all'email ricevuta. Un modello a pagamento andrebbe in perdita al crescere degli utenti, quindi abbiamo scelto di usare solo modelli linguistici di livello gratuito e abbiamo eliminato il backend a pagamento."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Basta una foto per la foto tessera.",
+   "summary": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. Riconosce il volto per ritagliare in automatico, sostituisce lo sfondo con un colore uniforme e poi verifica 11 voci, come l'altezza della testa e degli occhi, rispetto allo standard.",
+   "why": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. I formati sono gestiti in millimetri e i pixel vengono calcolati solo all'esportazione."
   },
   "9": {
    "title": "Malmoi",
@@ -251,12 +256,6 @@
    "headline": "Lo affidi con la voce, lo confermi con una scheda.",
    "pitch": "Affida impegni, cose da fare e spese. Niente cambia finché non tocchi.",
    "summary": "Un assistente che gestisce impegni, cose da fare, registro delle spese, bozze di email e sveglie quando glielo chiedi a voce. Senza registrazione, Apple Intelligence sul tuo iPhone ragiona, e Haru mostra prima su una scheda ciò che ha fatto, così nulla viene applicato finché non tocchi Esegui. Installa Haru PC sul computer per affidare e approvare dal telefono anche le attività del PC."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Basta una foto per la foto tessera.",
-   "summary": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. Riconosce il volto per ritagliare in automatico, sostituisce lo sfondo con un colore uniforme e poi verifica 11 voci, come l'altezza della testa e degli occhi, rispetto allo standard.",
-   "why": "Un editor di foto tessera che trasforma una foto in decine di formati standard, come 35×45 mm e mezza carta. I formati sono gestiti in millimetri e i pixel vengono calcolati solo all'esportazione."
   },
   "75": {
    "title": "LabelLens",
