@@ -49,6 +49,9 @@
   "why_title": "왜 만들었나",
   "alt_screen": "{name} 앱 화면",
   "alt_icon": "{name} 앱 아이콘",
-  "aria_appstore": "{name} App Store에서 보기"
+  "aria_appstore": "{name} App Store에서 보기",
+  "service_platform": "서비스 플랫폼",
+  "service_more": "자세히 보기",
+  "service_video": "영상 보기"
  }
 }

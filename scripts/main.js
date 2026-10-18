@@ -343,6 +343,11 @@ function isComing(project) {
     return Boolean(project && project.status === '출시 준비 중');
 }
 
+/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록에만 올리고 회전 링·사업 영역 화면에는 넣지 않는다. */
+function isService(project) {
+    return Boolean(project && project.status === '서비스' && project.links && project.links.web);
+}
+
 function isShipped(project) {
     return Boolean(project && project.status === '출시' && project.links && project.links.appstore);
 }
@@ -480,6 +485,20 @@ function productCard(project) {
         ? phone(project, { extra: 'phone-card' })
         : `<span class="ccard-icon"><img src="${encodeURI(project.icon)}" alt="${escapeHtml(t('alt_icon', {name: project.title}))}"
                width="132" height="132" loading="lazy" decoding="async"></span>`;
+    if (isService(project)) {
+        const ext = (href, label) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ${ICONS.chevronSmall}</a>`;
+        return `<article class="ccard ccard-iconic ccard-service">
+        <div class="ccard-hit">
+            <span class="ccard-media">${media}</span>
+            <span class="ccard-copy">
+                <span class="ccard-cat">${escapeHtml(t('service_platform'))}</span>
+                <span class="ccard-name">${escapeHtml(project.title)}</span>
+                <span class="ccard-line">${escapeHtml(project.headline || '')}</span>
+            </span>
+        </div>
+        <p class="ccard-links">${ext(project.links.web, t('service_more'))}${project.links.video ? ext(project.links.video, t('service_video')) : ''}</p>
+    </article>`;
+    }
     const soon = isComing(project);
     return `<article class="ccard ${project.shot ? '' : 'ccard-iconic'}">
         <${soon ? 'div' : 'a'} class="ccard-hit"${soon ? '' : ` href="#/p/${project.id}"`}>
@@ -503,7 +522,7 @@ function lineupProjects() {
     const rest = state.projects
         .filter(p => isShipped(p) && !seen.has(p.id))
         .sort((a, b) => (b.shot ? 1 : 0) - (a.shot ? 1 : 0) || a.id - b.id);
-    return lead.concat(rest, top);
+    return state.projects.filter(isService).concat(lead, rest, top);
 }
 
 /**

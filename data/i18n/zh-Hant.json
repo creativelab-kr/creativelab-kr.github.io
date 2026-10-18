@@ -49,7 +49,10 @@
   "why_title": "為什麼要做",
   "alt_screen": "{name} App 畫面",
   "alt_icon": "{name} App 圖示",
-  "aria_appstore": "在 App Store 查看{name}"
+  "aria_appstore": "在 App Store 查看{name}",
+  "service_platform": "服務平台",
+  "service_more": "了解詳情",
+  "service_video": "觀看影片"
  },
  "projects": {
   "1": {
@@ -329,6 +332,12 @@
    "headline": "化身動物車手，馳騁3D卡丁車。",
    "pitch": "從八位動物車手中任選一位上場。用飄移與道具扭轉名次。",
    "summary": "化身動物車手，馳騁3D卡丁車。 從八位動物車手中任選一位上場。用飄移與道具扭轉名次。"
+  },
+  "86": {
+   "title": "AI 開發工作室",
+   "headline": "由 AI 智慧代理把一句點子一路銜接到設計、程式碼、測試與建置的 AI 開發工作室。",
+   "pitch": "由 AI 智慧代理把一句點子一路銜接到設計、程式碼、測試與建置的 AI 開發工作室。",
+   "summary": "由 AI 智慧代理把一句點子一路銜接到設計、程式碼、測試與建置的 AI 開發工作室。"
   }
  },
  "categories": {

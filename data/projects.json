@@ -688,5 +688,19 @@
    "appstore": "https://apps.apple.com/app/id6823520840"
   },
   "shot": "assets/shots/tidalkart.webp"
+ },
+ {
+  "id": 86,
+  "title": "AI 개발 스튜디오",
+  "category": "platform",
+  "status": "서비스",
+  "summary": "아이디어 한 줄을 설계·코드·테스트·빌드까지 AI 에이전트가 이어 주는 AI 개발 스튜디오",
+  "headline": "아이디어 한 줄을 설계·코드·테스트·빌드까지 AI 에이전트가 이어 주는 AI 개발 스튜디오",
+  "pitch": "아이디어 한 줄을 설계·코드·테스트·빌드까지 AI 에이전트가 이어 주는 AI 개발 스튜디오",
+  "icon": "assets/icons/agentstudio.png",
+  "links": {
+   "web": "https://apps.creativelabai.kr/q-dev-ai/",
+   "video": "https://youtu.be/nVacW_G-EYI"
+  }
  }
 ]

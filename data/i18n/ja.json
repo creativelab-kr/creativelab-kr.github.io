@@ -49,7 +49,10 @@
   "why_title": "作った理由",
   "alt_screen": "{name} の画面",
   "alt_icon": "{name} のアプリアイコン",
-  "aria_appstore": "{name} を App Store で見る"
+  "aria_appstore": "{name} を App Store で見る",
+  "service_platform": "サービスプラットフォーム",
+  "service_more": "詳しく見る",
+  "service_video": "動画を見る"
  },
  "projects": {
   "1": {
@@ -329,6 +332,12 @@
    "headline": "動物レーサーで走る3Dカート。",
    "pitch": "8匹の動物レーサーから選んでコースへ。ドリフトとアイテムで順位をひっくり返そう。",
    "summary": "動物レーサーで走る3Dカート。 8匹の動物レーサーから選んでコースへ。ドリフトとアイテムで順位をひっくり返そう。"
+  },
+  "86": {
+   "title": "AI開発スタジオ",
+   "headline": "アイデアの一行を、AIエージェントが設計・コード・テスト・ビルドまでつなぐAI開発スタジオ。",
+   "pitch": "アイデアの一行を、AIエージェントが設計・コード・テスト・ビルドまでつなぐAI開発スタジオ。",
+   "summary": "アイデアの一行を、AIエージェントが設計・コード・テスト・ビルドまでつなぐAI開発スタジオ。"
   }
  },
  "categories": {

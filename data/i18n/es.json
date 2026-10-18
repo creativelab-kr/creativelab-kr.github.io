@@ -49,7 +49,10 @@
   "why_title": "Por qué lo creamos",
   "alt_screen": "Pantalla de la app {name}",
   "alt_icon": "Icono de la app {name}",
-  "aria_appstore": "Ver {name} en el App Store"
+  "aria_appstore": "Ver {name} en el App Store",
+  "service_platform": "Plataforma de servicios",
+  "service_more": "Más información",
+  "service_video": "Ver el vídeo"
  },
  "projects": {
   "1": {
@@ -329,6 +332,12 @@
    "headline": "Karts 3D con pilotos animales.",
    "pitch": "Elige uno de ocho pilotos animales y sal a la pista. Derrapa y usa objetos para remontar.",
    "summary": "Karts 3D con pilotos animales. Elige uno de ocho pilotos animales y sal a la pista. Derrapa y usa objetos para remontar."
+  },
+  "86": {
+   "title": "Estudio de desarrollo de IA",
+   "headline": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación.",
+   "pitch": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación.",
+   "summary": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación."
   }
  },
  "categories": {

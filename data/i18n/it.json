@@ -49,7 +49,10 @@
   "why_title": "Perché l'abbiamo creata",
   "alt_screen": "Schermata dell'app {name}",
   "alt_icon": "Icona dell'app {name}",
-  "aria_appstore": "Vedi {name} sull'App Store"
+  "aria_appstore": "Vedi {name} sull'App Store",
+  "service_platform": "Piattaforma di servizi",
+  "service_more": "Scopri di più",
+  "service_video": "Guarda il video"
  },
  "projects": {
   "1": {
@@ -329,6 +332,12 @@
    "headline": "Kart 3D con piloti animali.",
    "pitch": "Scegli uno degli otto piloti animali e vai in pista. Derapa e usa gli oggetti per ribaltare la gara.",
    "summary": "Kart 3D con piloti animali. Scegli uno degli otto piloti animali e vai in pista. Derapa e usa gli oggetti per ribaltare la gara."
+  },
+  "86": {
+   "title": "Studio di sviluppo IA",
+   "headline": "Uno studio di sviluppo IA in cui agenti IA portano un’idea di una riga fino a progettazione, codice, test e build.",
+   "pitch": "Uno studio di sviluppo IA in cui agenti IA portano un’idea di una riga fino a progettazione, codice, test e build.",
+   "summary": "Uno studio di sviluppo IA in cui agenti IA portano un’idea di una riga fino a progettazione, codice, test e build."
   }
  },
  "categories": {
