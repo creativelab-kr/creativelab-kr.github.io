@@ -363,7 +363,7 @@ function shippedOf(categoryId) {
  * 앱 사진은 전부 실제 스토어 스크린샷을 줄인 것(assets/shots),
  * 영역 이미지는 tools/render-areas 로 렌더링한 것(assets/areas)이다.
  */
-const FEATURED_IDS = [74, 41, 20, 1, 2, 16, 6, 85]; // 하루 AI, 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap, Tidal Kart(출시 준비 중) (대표님 10/16 최종)
+const FEATURED_IDS = [74, 41, 20, 1, 2, 16, 6, 85]; // 하루 AI, 군웅천하, Q-City, 달력, 오늘의 노래, 수담, DailyMap, Tidal Kart (대표님 10/16 최종)
 /** 캐러셀 앞쪽 순서. 화면 사진이 있는 것을 먼저, 나머지는 아이콘 카드로 뒤에 붙는다. */
 /** 아래 "모든 제품" 목록 맨 끝 8개(대표님 10/16 22:5x). */
 const LINEUP_TOP = [74, 41, 20, 1, 2, 16, 6, 85];
@@ -1157,7 +1157,10 @@ function getDefaultProjects() {
           icon: 'assets/icons/chainlab.png', links: {'appstore':'https://apps.apple.com/app/id6818004063'} },
         { id: 84, title: '하루하루', category: 'health', status: '출시',
           summary: '매일 가장 중요한 3가지에 집중하도록 돕는 자기관리 앱. 수면·운동·업무를 원형 24시간 다이얼에 색으로 배치하고, 습관 체크와 기분·짧은 회고, 주간·월간 통계를 한곳에서 봅니다. 가입 없이 인터넷 없이 동작하고 기록은 기기 안에만 저장됩니다.',
-          icon: 'assets/icons/haruharu.png', links: {'appstore':'https://apps.apple.com/app/id6816329716'} }
+          icon: 'assets/icons/haruharu.png', links: {'appstore':'https://apps.apple.com/app/id6816329716'} },
+        { id: 85, title: 'Tidal Kart', category: 'game', status: '출시',
+          summary: '동물 레이서와 달리는 3D 카트. 여덟 마리 동물 레이서 가운데 골라 코스를 달리고, 드리프트와 아이템으로 순위를 뒤집어 봅니다.',
+          icon: 'assets/icons/tidalkart.png', links: {'appstore':'https://apps.apple.com/app/id6823520840'} }
     ];
 }
 

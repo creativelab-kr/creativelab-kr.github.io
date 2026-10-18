@@ -679,12 +679,14 @@
   "id": 85,
   "title": "Tidal Kart",
   "category": "game",
-  "status": "출시 준비 중",
+  "status": "출시",
   "summary": "동물 레이서와 달리는 3D 카트. 여덟 마리 동물 레이서 가운데 골라 코스를 달리고, 드리프트와 아이템으로 순위를 뒤집어 봅니다.",
   "headline": "동물 레이서와 달리는 3D 카트.",
   "pitch": "여덟 마리 동물 레이서 가운데 골라 코스를 달립니다. 드리프트와 아이템으로 순위를 뒤집어 보세요.",
   "icon": "assets/icons/tidalkart.png",
-  "links": {},
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6823520840"
+  },
   "shot": "assets/shots/tidalkart.webp"
  }
 ]
