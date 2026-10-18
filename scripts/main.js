@@ -97,7 +97,14 @@ function applyStatic() {
     const vid = document.getElementById('brandVideo');
     if (vid) {
         const src = state.lang === 'ko' ? vid.dataset.srcKo : vid.dataset.srcEn;
-        if (vid.getAttribute('src') !== src) vid.setAttribute('src', src);
+        if (vid.getAttribute('src') !== src) {
+            // 화면 근처에 올 때까지 유튜브를 부르지 않는다(첫 로딩에 ~1MB 절약).
+            const load = () => vid.setAttribute('src', src);
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver((es) => { if (es.some(e => e.isIntersecting)) { io.disconnect(); load(); } }, { rootMargin: '120px 0px' });
+                io.observe(vid);
+            } else load();
+        }
     }
     document.title = t('page_title');
     const setMeta = (sel, v) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', v); };
@@ -348,7 +355,7 @@ function isComing(project) {
     return Boolean(project && project.status === '출시 준비 중');
 }
 
-/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록·회전 링에는 넣지 않고 사업 영역 카드 줄 맨 끝에만 둔다. */
+/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록·회전 링에는 넣지 않고 사업 영역 카드 줄 맨 앞에만 둔다. */
 function isService(project) {
     return Boolean(project && project.status === '서비스' && project.links && project.links.web);
 }
@@ -392,9 +399,13 @@ function categoryOf(project) {
 }
 
 /** 아이폰 모양 틀 안에 실제 화면 한 장. eager 는 첫 화면에 보이는 것만. */
+/** 작은 화면용 변형(-360 / -720)이 있는 그림은 srcset 으로 알맞은 크기만 받게 한다. */
+function variant(path, w) { return encodeURI(path.replace(/\.webp$/, '-' + w + '.webp')); }
+
 function phone(project, { eager = false, extra = '' } = {}) {
     return `<figure class="phone ${extra}">
         <span class="phone-screen"><img src="${encodeURI(project.shot)}"
+            srcset="${variant(project.shot, 360)} 360w, ${encodeURI(project.shot)} 600w" sizes="(max-width: 767px) 210px, 340px"
             alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="600" height="1304"
             ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></span>
     </figure>`;
@@ -626,7 +637,8 @@ function renderLineup() {
 function areaTile(category) {
     const names = worksOf(category.id).slice(0, 2).map(w => escapeHtml(w.name));
     return `<a class="atile" href="#/c/${encodeURIComponent(category.id)}">
-        <span class="atile-media"><img src="${encodeURI(category.image)}" alt="" width="1440" height="900"
+        <span class="atile-media"><img src="${encodeURI(category.image)}"
+            srcset="${variant(category.image, 720)} 720w, ${encodeURI(category.image)} 1440w" sizes="(max-width: 767px) 300px, 380px" alt="" width="1440" height="900"
             loading="lazy" decoding="async"></span>
         <span class="atile-copy">
             <span class="atile-name">${escapeHtml(category.name)}</span>
@@ -647,21 +659,22 @@ function domains() {
  */
 function renderAreas() {
     const host = document.getElementById('areaGrid');
-    if (host) carousel(host, domains().map(areaTile).join('') + state.projects.filter(isService).map(serviceTile).join(''), t('carousel_areas'));
+    if (host) carousel(host, state.projects.filter(isService).map(serviceTile).join('') + domains().map(areaTile).join(''), t('carousel_areas'));
 }
 
 /** 사업 영역 줄의 서비스 플랫폼 카드 — 영역 타일과 같은 틀, 그림은 실제 서비스 화면. 링크는 바깥 서비스 페이지·영상. */
 function serviceTile(project) {
-    const ext = (href, label) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ${ICONS.chevronSmall}</a>`;
+    const ext = (href, label, name) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer" >${escapeHtml(label)}<span class="sr-only"> - ${escapeHtml(name)}</span> ${ICONS.chevronSmall}</a>`;
     const shot = project.shotWide || project.icon;
     return `<article class="atile atile-service">
-        <span class="atile-media"><img src="${encodeURI(shot)}" alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="1440" height="900"
+        <span class="atile-media"><img src="${encodeURI(shot)}"
+            srcset="${variant(shot, 720)} 720w, ${encodeURI(shot)} 1440w" sizes="(max-width: 767px) 300px, 380px" alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="1440" height="900"
             loading="lazy" decoding="async"></span>
         <span class="atile-copy">
             <span class="atile-name">${escapeHtml(t('service_platform'))}</span>
             <span class="atile-vision">${escapeHtml(project.title)}</span>
             <span class="atile-works">${escapeHtml(project.headline || '')}</span>
-            <span class="atile-links">${ext(project.links.web, t('service_more'))}${project.links.video ? ext(project.links.video, t('service_video')) : ''}</span>
+            <span class="atile-links">${ext(project.links.web, t('service_more'), project.title)}${project.links.video ? ext(project.links.video, t('service_video'), project.title) : ''}</span>
         </span>
     </article>`;
 }

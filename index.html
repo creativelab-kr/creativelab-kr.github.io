@@ -25,20 +25,23 @@
 
     <title>CreativeLab</title>
 
-    <!-- Pretendard Font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Pretendard — 쓰는 글자 조각만 받는 dynamic-subset. 화면을 막지 않게 비동기로 불러온다(글꼴이 오기 전엔 시스템 글꼴). -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"></noscript>
 
     <!-- 워드마크 글꼴 — Montserrat(OFL), 로고 글자만 담은 부분 글꼴을 자체 호스팅(각 2KB) -->
     <link rel="preload" href="assets/brand/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/brand/fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin>
 
+    <!-- 첫 화면 회전 링 맨 앞 폰 사진(가장 큰 요소)을 미리 받는다. 링 맨 앞 앱을 바꾸면 여기도 같이 바꾼다. -->
+    <link rel="preload" as="image" href="assets/shots/singon.webp" imagesrcset="assets/shots/singon-360.webp 360w, assets/shots/singon.webp 600w" imagesizes="(max-width: 767px) 210px, 340px" fetchpriority="high">
+    <link rel="preload" href="data/projects.json?v=b6ad6f4aab" as="fetch" crossorigin>
+    <link rel="preload" href="data/categories.json?v=b6ad6f4aab" as="fetch" crossorigin>
+    <link rel="preload" href="data/works.json?v=b6ad6f4aab" as="fetch" crossorigin>
+    <link rel="preload" href="data/i18n/ko.json?v=b6ad6f4aab" as="fetch" crossorigin>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=d6d39e1a12">
+    <link rel="stylesheet" href="styles/main.css?v=b6ad6f4aab">
 </head>
 <body>
     <a href="#main" class="skip-link" data-i18n="skip">본문으로 건너뛰기</a>
@@ -171,6 +174,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="scripts/main.js?v=d6d39e1a12"></script>
+    <script src="scripts/main.js?v=b6ad6f4aab"></script>
 </body>
 </html>
