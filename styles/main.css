@@ -961,3 +961,8 @@ a { color: inherit; text-decoration: none; }
 
 .tile-soon { display: inline-block; margin-top: var(--sp-4); padding: 4px 14px; border-radius: var(--radius-full); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .ccard-links .tile-soon { margin-top: 0; }
+
+/* 사업 영역 줄의 서비스 플랫폼 카드: 설명 줄은 줄바꿈 허용, 링크는 나란히 */
+.atile-service .atile-works { display: block; line-height: 1.5; }
+.atile-links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; }
+.atile-links .tile-link { margin-top: 0; }

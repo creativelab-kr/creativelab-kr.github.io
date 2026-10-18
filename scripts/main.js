@@ -260,8 +260,13 @@ const REVEAL_SELECTOR = '.ftile-copy, .ftile-media, .lineup-head, .section-head,
 // DATA
 // =============================================
 
+// 공개본은 index.html 이 main.js?v=<해시> 로 부른다. 같은 값을 데이터 요청에도 붙여 배포마다 캐시를 새로 받는다.
+const ASSET_V = (() => {
+    try { return new URL(document.currentScript.src).searchParams.get('v') || ''; } catch (e) { return ''; }
+})();
+
 async function loadJson(path) {
-    const response = await fetch(path);
+    const response = await fetch(ASSET_V ? path + '?v=' + encodeURIComponent(ASSET_V) : path);
     if (!response.ok) throw new Error('HTTP ' + response.status + ' for ' + path);
     return response.json();
 }
@@ -343,7 +348,7 @@ function isComing(project) {
     return Boolean(project && project.status === '출시 준비 중');
 }
 
-/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록에만 올리고 회전 링·사업 영역 화면에는 넣지 않는다. */
+/** 웹 서비스 플랫폼(스토어 앱이 아님). 모든 제품 목록·회전 링에는 넣지 않고 사업 영역 카드 줄 맨 끝에만 둔다. */
 function isService(project) {
     return Boolean(project && project.status === '서비스' && project.links && project.links.web);
 }
@@ -522,7 +527,7 @@ function lineupProjects() {
     const rest = state.projects
         .filter(p => isShipped(p) && !seen.has(p.id))
         .sort((a, b) => (b.shot ? 1 : 0) - (a.shot ? 1 : 0) || a.id - b.id);
-    return state.projects.filter(isService).concat(lead, rest, top);
+    return lead.concat(rest, top);
 }
 
 /**
@@ -642,7 +647,23 @@ function domains() {
  */
 function renderAreas() {
     const host = document.getElementById('areaGrid');
-    if (host) carousel(host, domains().map(areaTile).join(''), t('carousel_areas'));
+    if (host) carousel(host, domains().map(areaTile).join('') + state.projects.filter(isService).map(serviceTile).join(''), t('carousel_areas'));
+}
+
+/** 사업 영역 줄의 서비스 플랫폼 카드 — 영역 타일과 같은 틀, 그림은 실제 서비스 화면. 링크는 바깥 서비스 페이지·영상. */
+function serviceTile(project) {
+    const ext = (href, label) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ${ICONS.chevronSmall}</a>`;
+    const shot = project.shotWide || project.icon;
+    return `<article class="atile atile-service">
+        <span class="atile-media"><img src="${encodeURI(shot)}" alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="1440" height="900"
+            loading="lazy" decoding="async"></span>
+        <span class="atile-copy">
+            <span class="atile-name">${escapeHtml(t('service_platform'))}</span>
+            <span class="atile-vision">${escapeHtml(project.title)}</span>
+            <span class="atile-works">${escapeHtml(project.headline || '')}</span>
+            <span class="atile-links">${ext(project.links.web, t('service_more'))}${project.links.video ? ext(project.links.video, t('service_video')) : ''}</span>
+        </span>
+    </article>`;
 }
 
 /**
