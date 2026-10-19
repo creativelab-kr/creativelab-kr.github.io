@@ -504,15 +504,15 @@ function productCard(project) {
     if (isService(project)) {
         const ext = (href, label) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ${ICONS.chevronSmall}</a>`;
         return `<article class="ccard ccard-iconic ccard-service">
-        <div class="ccard-hit">
+        <a class="ccard-hit" href="#/p/${project.id}">
             <span class="ccard-media">${media}</span>
             <span class="ccard-copy">
                 <span class="ccard-cat">${escapeHtml(t('service_platform'))}</span>
                 <span class="ccard-name">${escapeHtml(project.title)}</span>
                 <span class="ccard-line">${escapeHtml(project.headline || '')}</span>
             </span>
-        </div>
-        <p class="ccard-links">${ext(project.links.web, t('service_more'))}${project.links.video ? ext(project.links.video, t('service_video')) : ''}</p>
+        </a>
+        <p class="ccard-links"><a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('service_more'))} ${ICONS.chevronSmall}</a>${project.links.video ? ext(project.links.video, t('service_video')) : ''}</p>
     </article>`;
     }
     const soon = isComing(project);
@@ -674,7 +674,7 @@ function serviceTile(project) {
             <span class="atile-name">${escapeHtml(t('service_platform'))}</span>
             <span class="atile-vision">${escapeHtml(project.title)}</span>
             <span class="atile-works">${escapeHtml(project.headline || '')}</span>
-            <span class="atile-links">${ext(project.links.web, t('service_more'), project.title)}${project.links.video ? ext(project.links.video, t('service_video'), project.title) : ''}</span>
+            <span class="atile-links"><a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('service_more'))}<span class="sr-only"> - ${escapeHtml(project.title)}</span> ${ICONS.chevronSmall}</a>${project.links.video ? ext(project.links.video, t('service_video'), project.title) : ''}</span>
         </span>
     </article>`;
 }
@@ -975,6 +975,7 @@ function workCard(work) {
 function renderProjectView(projectId) {
     const project = state.projects.find(p => p.id === projectId);
     const body = document.getElementById('projectBody');
+    if (isService(project) && body) return renderServiceView(project, body);
     if (!isShipped(project) || !body) return false;
 
     const category = categoryOf(project);
@@ -1019,6 +1020,35 @@ function renderProjectView(projectId) {
             ${prev ? `<a href="#/p/${prev.id}"><span class="pd-nav-label">${escapeHtml(t('prev'))}</span>${escapeHtml(prev.title)}</a>` : '<span></span>'}
             ${next ? `<a href="#/p/${next.id}" style="text-align:right"><span class="pd-nav-label">${escapeHtml(t('next'))}</span>${escapeHtml(next.title)}</a>` : '<span></span>'}
         </nav>
+    `;
+    return true;
+}
+
+/** 서비스 플랫폼(AI 개발 스튜디오 등)의 자세히 페이지 — 다른 제품처럼 홈페이지 안에서 연다(10/19 대표님). 바깥 서비스·영상은 버튼으로. */
+function renderServiceView(project, body) {
+    const links = project.links || {};
+    const shot = project.shotWide || project.icon;
+    body.innerHTML = `
+        <a class="back-link" href="#areas">${ICONS.arrowLeft} ${escapeHtml(t('back_home'))}</a>
+
+        <div class="pd-top">
+            <div class="pd-copy">
+                <header class="pd-head">
+                    <img class="pd-icon" src="${encodeURI(project.icon)}" alt="" width="76" height="76">
+                    <div>
+                        <h1 class="pd-title">${escapeHtml(project.title)}</h1>
+                        <p class="pd-badges"><span class="pd-cat">${escapeHtml(t('service_platform'))}</span></p>
+                    </div>
+                </header>
+                ${project.headline ? `<p class="pd-headline">${escapeHtml(project.headline)}</p>` : ''}
+                ${project.summary && project.summary !== project.headline ? `<p class="pd-lede">${escapeHtml(project.summary)}</p>` : ''}
+                <div class="pd-links">
+                    <a class="btn btn-primary" href="${encodeURI(links.web)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('link_web'))}</a>
+                    ${links.video ? `<a class="btn btn-ghost" href="${encodeURI(links.video)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t('service_video'))}</a>` : ''}
+                </div>
+            </div>
+        </div>
+        <figure class="pd-service-shot"><img src="${encodeURI(shot)}" alt="" width="1440" height="900" decoding="async"></figure>
     `;
     return true;
 }
