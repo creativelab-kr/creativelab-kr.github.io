@@ -667,6 +667,7 @@ function serviceTile(project) {
     const ext = (href, label, name) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer" >${escapeHtml(label)}<span class="sr-only"> - ${escapeHtml(name)}</span> ${ICONS.chevronSmall}</a>`;
     const shot = project.shotWide || project.icon;
     return `<article class="atile atile-service">
+        <a class="atile-cover" href="#/p/${project.id}" aria-label="${escapeHtml(project.title)} - ${escapeHtml(t('service_more'))}"></a>
         <span class="atile-media"><img src="${encodeURI(shot)}"
             srcset="${variant(shot, 720)} 720w, ${encodeURI(shot)} 1440w" sizes="(max-width: 767px) 300px, 380px" alt="" width="1440" height="900"
             loading="lazy" decoding="async"></span>
@@ -1024,20 +1025,22 @@ function renderProjectView(projectId) {
     return true;
 }
 
-/** 서비스 플랫폼(AI 개발 스튜디오 등)의 자세히 페이지 — 다른 제품처럼 홈페이지 안에서 연다(10/19 대표님). 바깥 서비스·영상은 버튼으로. */
+/**
+ * 서비스 플랫폼(AI 개발 스튜디오 등)의 자세히 페이지 — 다른 제품처럼 홈페이지 안에서 연다(10/19 대표님).
+ * 마크(아이콘) 없이 제목·문구·버튼, 그 아래 실제 화면(works.json 의 "studio"), 맨 아래 영상.
+ */
 function renderServiceView(project, body) {
     const links = project.links || {};
-    const shot = project.shotWide || project.icon;
+    const videoId = (String(links.video || '').match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/) || [])[1];
     body.innerHTML = `
         <a class="back-link" href="#areas">${ICONS.arrowLeft} ${escapeHtml(t('back_home'))}</a>
 
         <div class="pd-top">
             <div class="pd-copy">
-                <header class="pd-head">
-                    <img class="pd-icon" src="${encodeURI(project.icon)}" alt="" width="76" height="76">
+                <header class="pd-head pd-head-plain">
                     <div>
-                        <h1 class="pd-title">${escapeHtml(project.title)}</h1>
                         <p class="pd-badges"><span class="pd-cat">${escapeHtml(t('service_platform'))}</span></p>
+                        <h1 class="pd-title">${escapeHtml(project.title)}</h1>
                     </div>
                 </header>
                 ${project.headline ? `<p class="pd-headline">${escapeHtml(project.headline)}</p>` : ''}
@@ -1048,7 +1051,13 @@ function renderServiceView(project, body) {
                 </div>
             </div>
         </div>
-        <figure class="pd-service-shot"><img src="${encodeURI(shot)}" alt="" width="1440" height="900" decoding="async"></figure>
+
+        ${worksSection('studio')}
+
+        ${videoId ? `<section class="pd-service-video" aria-label="${escapeHtml(t('service_video'))}">
+            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${videoId}" title="${escapeHtml(project.title)}" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        </section>` : ''}
     `;
     return true;
 }

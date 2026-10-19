@@ -23,15 +23,10 @@
   "lineup_sub": "Seitlich wischen und eines nach dem anderen entdecken.",
   "areas_eyebrow": "Geschäftsfelder",
   "areas_title": "Wohin die Technik führt.",
-  "vision_text": "Wir streben eine dezentrale Welt an, die Menschen, Geräte, KI und die weite Welt miteinander verbindet und jedem Menschen ermöglicht, sein eigenes Universum frei zu erweitern.",
-  "mission_text": "Wir entwickeln Technologie und Produkte, die die Freiheit des Menschen und die persönliche Souveränität über Identität, Daten und KI respektieren, und helfen mehr Menschen dabei, ihre Ideen und ihr Potenzial Wirklichkeit werden zu lassen.",
   "footer_links_label": "Externe Links",
-  "footer_social_label": "Soziale Medien",
   "footer_guide": "App-Hilfe",
   "footer_contact": "Kontakt",
   "link_appstore": "Laden im App Store",
-  "note_kr_store": "Im koreanischen App Store erhältlich.",
-  "coming_soon": "Demnächst verfügbar",
   "link_googleplay": "Jetzt bei Google Play",
   "link_web": "Im Web ansehen",
   "more": "Mehr erfahren",
@@ -50,6 +45,11 @@
   "alt_screen": "Bildschirm der App {name}",
   "alt_icon": "App-Symbol von {name}",
   "aria_appstore": "{name} im App Store ansehen",
+  "vision_text": "Wir streben eine dezentrale Welt an, die Menschen, Geräte, KI und die weite Welt miteinander verbindet und jedem Menschen ermöglicht, sein eigenes Universum frei zu erweitern.",
+  "mission_text": "Wir entwickeln Technologie und Produkte, die die Freiheit des Menschen und die persönliche Souveränität über Identität, Daten und KI respektieren, und helfen mehr Menschen dabei, ihre Ideen und ihr Potenzial Wirklichkeit werden zu lassen.",
+  "footer_social_label": "Soziale Medien",
+  "note_kr_store": "Im koreanischen App Store erhältlich.",
+  "coming_soon": "Demnächst verfügbar",
   "service_platform": "Service-Plattform",
   "service_more": "Mehr erfahren",
   "service_video": "Video ansehen"
@@ -100,12 +100,6 @@
    "headline": "Schreibt Antwortentwürfe für Sie.",
    "summary": "Ein Werkzeug, das zur empfangenen E-Mail einen passenden Antwortentwurf schreibt. Zwei kostenlos nutzbare KI-Dienste sichern sich gegenseitig ab, und wenn beide ausfallen, wechselt die App automatisch zu einer Entwurfsvorlage auf dem Gerät.",
    "why": "Ein Werkzeug, das zur empfangenen E-Mail einen passenden Antwortentwurf schreibt. Ein kostenpflichtiges Modell würde mit wachsender Nutzerzahl Verluste machen. Deshalb setzen wir nur Sprachmodelle der kostenlosen Stufe ein und haben das kostenpflichtige Backend entfernt."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Ein Foto genügt für das Passbild.",
-   "summary": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Er erkennt das Gesicht und schneidet automatisch zu, ersetzt den Hintergrund durch eine einfarbige Fläche und prüft anschließend 11 Punkte wie Kopfhöhe und Augenhöhe anhand der Norm.",
-   "why": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Die Formate werden in Millimetern verarbeitet, Pixel werden erst beim Export berechnet."
   },
   "9": {
    "title": "Malmoi",
@@ -256,6 +250,12 @@
    "headline": "Per Sprache beauftragen, per Karte bestätigen.",
    "pitch": "Übergeben Sie Termine, Aufgaben und Ausgaben. Nichts ändert sich, bevor Sie tippen.",
    "summary": "Ein Assistent, der auf Zuruf Termine, Aufgaben, Haushaltsbuch, E-Mail-Entwürfe und Wecker erledigt. Ohne Registrierung denkt Apple Intelligence auf Ihrem iPhone mit, und Haru zeigt zuerst auf einer Karte, was es getan hat. Erst wenn Sie auf Ausführen tippen, wird etwas übernommen. Wenn Sie Haru PC auf Ihrem Computer installieren, können Sie auch PC-Aufgaben vom Telefon aus übergeben und freigeben."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Ein Foto genügt für das Passbild.",
+   "summary": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Er erkennt das Gesicht und schneidet automatisch zu, ersetzt den Hintergrund durch eine einfarbige Fläche und prüft anschließend 11 Punkte wie Kopfhöhe und Augenhöhe anhand der Norm.",
+   "why": "Ein Passbild-Editor, der aus einem Foto Dutzende Standardformate wie 35×45 mm oder Halbkarte erstellt. Die Formate werden in Millimetern verarbeitet, Pixel werden erst beim Export berechnet."
   },
   "75": {
    "title": "LabelLens",
@@ -597,6 +597,32 @@
     "title": "Gedächtnis und Konzentration, jeden Tag.",
     "body": "Eine Sammlung von Gehirntrainingsspielen für ältere Menschen. Mit großer Schrift und einfacher Bedienung neu gestaltet, Aufzeichnungen bleiben nur auf dem Gerät.",
     "alt": "Gehirntrainingsbildschirm von Ttorang"
+   }
+  ],
+  "studio": [
+   {
+    "name": "Idee eingeben",
+    "title": "Eine Zeile genügt für den Start.",
+    "body": "Beschreiben Sie in einer Zeile, was entstehen soll – Anforderungen, Entwurf, Oberfläche, Code, Tests und Deployment werden zuerst sichtbar. Ist die Idee noch vage, hilft der Planungsschritt beim Schärfen.",
+    "alt": "Ausführungsansicht des KI-Entwicklungsstudios – Ideeneingabe und Ablauf der Agenten"
+   },
+   {
+    "name": "Agenten-Schritte",
+    "title": "Sechs Agenten im Staffellauf.",
+    "body": "Von den Anforderungen über Systementwurf, UI/UX-Entwürfe, Code und Tests bis zur Deployment-Konfiguration. Jeder Schritt lässt sich wiederholen oder ab einem gewählten Schritt fortsetzen.",
+    "alt": "Projektansicht – sechs Agenten-Schritte mit Wiederholen- und Fortsetzen-Schaltflächen"
+   },
+   {
+    "name": "Die fertige App",
+    "title": "Ein Ergebnis zum sofort Ausprobieren.",
+    "body": "Fertige Apps laufen direkt in der Vorschau. Diese To-do-App entstand aus einer Zeile und kann Hinzufügen, Abhaken und Filtern.",
+    "alt": "To-do-Web-App, erstellt vom KI-Entwicklungsstudio"
+   },
+   {
+    "name": "Projektverwaltung",
+    "title": "Alles, was entsteht, bleibt.",
+    "body": "Jedes Projekt behält Dateien, Ausführungsverlauf und Änderungen – zum Herunterladen, Abgleichen mit GitHub und Weiterentwickeln.",
+    "alt": "Projektliste – Karten der erstellten Projekte"
    }
   ]
  }

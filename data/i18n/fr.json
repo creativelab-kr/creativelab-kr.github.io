@@ -23,15 +23,10 @@
   "lineup_sub": "Faites défiler sur le côté pour les découvrir un à un.",
   "areas_eyebrow": "Domaines d’activité",
   "areas_title": "Là où va la technologie.",
-  "vision_text": "Nous imaginons un monde décentralisé qui relie les personnes, les appareils, l'IA et le monde au sens large, afin que chacun puisse étendre librement son propre univers.",
-  "mission_text": "Nous concevons des technologies et des produits qui respectent la liberté humaine et la souveraineté de chacun sur son identité, ses données et l'IA, pour aider davantage de personnes à concrétiser leurs idées et leur potentiel.",
   "footer_links_label": "Liens externes",
-  "footer_social_label": "Réseaux sociaux",
   "footer_guide": "Guide des apps",
   "footer_contact": "Contact",
   "link_appstore": "Télécharger sur l’App Store",
-  "note_kr_store": "Disponible sur l’App Store coréen.",
-  "coming_soon": "Bientôt disponible",
   "link_googleplay": "Disponible sur Google Play",
   "link_web": "Voir sur le web",
   "more": "En savoir plus",
@@ -50,6 +45,11 @@
   "alt_screen": "Écran de l’app {name}",
   "alt_icon": "Icône de l’app {name}",
   "aria_appstore": "Voir {name} sur l’App Store",
+  "vision_text": "Nous imaginons un monde décentralisé qui relie les personnes, les appareils, l'IA et le monde au sens large, afin que chacun puisse étendre librement son propre univers.",
+  "mission_text": "Nous concevons des technologies et des produits qui respectent la liberté humaine et la souveraineté de chacun sur son identité, ses données et l'IA, pour aider davantage de personnes à concrétiser leurs idées et leur potentiel.",
+  "footer_social_label": "Réseaux sociaux",
+  "note_kr_store": "Disponible sur l’App Store coréen.",
+  "coming_soon": "Bientôt disponible",
   "service_platform": "Plateforme de services",
   "service_more": "En savoir plus",
   "service_video": "Voir la vidéo"
@@ -100,12 +100,6 @@
    "headline": "Rédige vos réponses à votre place.",
    "summary": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Il s’appuie sur deux services d’IA gratuits qui se relaient, et si aucun n’est disponible, il bascule automatiquement sur un modèle de brouillon intégré à l’appareil.",
    "why": "Un outil qui rédige un brouillon de réponse adapté au message reçu. Un modèle payant serait déficitaire à mesure que les utilisateurs augmentent : nous avons donc choisi de n’utiliser que des modèles de langage en offre gratuite et supprimé le service payant."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Une seule photo suffit pour une photo d'identité.",
-   "summary": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Il détecte le visage pour recadrer automatiquement, remplace l'arrière-plan par une couleur unie, puis vérifie 11 critères, dont la hauteur de la tête et celle des yeux, par rapport à la norme.",
-   "why": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Les formats sont gérés en millimètres, et les pixels ne sont calculés qu'à l'export."
   },
   "9": {
    "title": "Malmoi",
@@ -256,6 +250,12 @@
    "headline": "Confiez-le à la voix, confirmez sur une carte.",
    "pitch": "Confiez-lui agenda, tâches et dépenses. Rien ne change tant que vous n’avez pas appuyé.",
    "summary": "Un assistant qui s’occupe de votre agenda, de vos tâches, de vos dépenses, de vos brouillons d’e-mails et de vos alarmes quand vous le lui demandez à la voix. Sans inscription, c’est Apple Intelligence sur votre iPhone qui réfléchit, et Haru présente d’abord ce qu’il a fait sur une carte : rien n’est appliqué tant que vous n’avez pas appuyé sur Exécuter. Installez Haru PC sur votre ordinateur pour confier et approuver depuis votre téléphone des tâches sur le PC."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Une seule photo suffit pour une photo d'identité.",
+   "summary": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Il détecte le visage pour recadrer automatiquement, remplace l'arrière-plan par une couleur unie, puis vérifie 11 critères, dont la hauteur de la tête et celle des yeux, par rapport à la norme.",
+   "why": "Un éditeur de photos d'identité qui transforme une photo en dizaines de formats standard, comme 35×45 mm ou demi-carte. Les formats sont gérés en millimètres, et les pixels ne sont calculés qu'à l'export."
   },
   "75": {
    "title": "LabelLens",
@@ -597,6 +597,32 @@
     "title": "Mémoire et concentration, chaque jour.",
     "body": "Une collection de jeux d’entraînement cérébral pour les seniors. Repensée avec de grands caractères et des commandes simples, les résultats ne sont conservés que sur l’appareil.",
     "alt": "Écran d’entraînement cérébral de Ttorang"
+   }
+  ],
+  "studio": [
+   {
+    "name": "Saisir l'idée",
+    "title": "Une ligne suffit pour commencer.",
+    "body": "Décrivez en une ligne ce que vous voulez créer : le parcours — besoins, conception, interface, code, tests, déploiement — se déploie d'abord. Si l'idée est floue, l'étape de cadrage aide à la préciser.",
+    "alt": "Écran d'exécution du studio de développement IA — saisie de l'idée et parcours des agents"
+   },
+   {
+    "name": "Étapes des agents",
+    "title": "Six agents qui se relaient.",
+    "body": "Des besoins à l'architecture, des maquettes UI/UX au code et aux tests, jusqu'au déploiement. Relancez une étape ou reprenez à celle de votre choix.",
+    "alt": "Écran de projet — six étapes d'agents avec boutons relancer et reprendre"
+   },
+   {
+    "name": "L'app créée",
+    "title": "Un résultat à essayer tout de suite.",
+    "body": "Les apps créées se lancent aussitôt en aperçu. Cette liste de tâches est partie d'une seule ligne et gère l'ajout, la validation et le filtrage.",
+    "alt": "Application web de liste de tâches créée par le studio de développement IA"
+   },
+   {
+    "name": "Gestion des projets",
+    "title": "Tout ce que vous créez reste.",
+    "body": "Chaque projet garde ses fichiers, son historique et ses modifications : téléchargez-le, synchronisez-le avec GitHub et continuez à l'améliorer.",
+    "alt": "Liste des projets — cartes des projets créés"
    }
   ]
  }

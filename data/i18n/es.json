@@ -23,15 +23,10 @@
   "lineup_sub": "Deslice hacia los lados para conocerlos uno a uno.",
   "areas_eyebrow": "Áreas de negocio",
   "areas_title": "Hacia dónde va la tecnología.",
-  "vision_text": "Imaginamos un mundo descentralizado que conecta a las personas, los dispositivos, la IA y el mundo en general, y que permite a cada persona expandir libremente su propio universo.",
-  "mission_text": "Creamos tecnología y productos que respetan la libertad humana y la soberanía de cada persona sobre su identidad, sus datos y la IA, para ayudar a que más personas hagan realidad sus ideas y su potencial.",
   "footer_links_label": "Enlaces externos",
-  "footer_social_label": "Redes sociales",
   "footer_guide": "Guía de las apps",
   "footer_contact": "Contacto",
   "link_appstore": "Descargar en el App Store",
-  "note_kr_store": "Disponible en la App Store de Corea.",
-  "coming_soon": "Próximamente",
   "link_googleplay": "Disponible en Google Play",
   "link_web": "Ver en la web",
   "more": "Más información",
@@ -50,6 +45,11 @@
   "alt_screen": "Pantalla de la app {name}",
   "alt_icon": "Icono de la app {name}",
   "aria_appstore": "Ver {name} en el App Store",
+  "vision_text": "Imaginamos un mundo descentralizado que conecta a las personas, los dispositivos, la IA y el mundo en general, y que permite a cada persona expandir libremente su propio universo.",
+  "mission_text": "Creamos tecnología y productos que respetan la libertad humana y la soberanía de cada persona sobre su identidad, sus datos y la IA, para ayudar a que más personas hagan realidad sus ideas y su potencial.",
+  "footer_social_label": "Redes sociales",
+  "note_kr_store": "Disponible en la App Store de Corea.",
+  "coming_soon": "Próximamente",
   "service_platform": "Plataforma de servicios",
   "service_more": "Más información",
   "service_video": "Ver el vídeo"
@@ -100,12 +100,6 @@
    "headline": "Redacta sus borradores de respuesta.",
    "summary": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Usa dos servicios de inteligencia artificial gratuitos como respaldo mutuo y, si ninguno está disponible, cambia automáticamente a una plantilla de borrador del dispositivo.",
    "why": "Una herramienta que redacta un borrador de respuesta adecuado al correo recibido. Un modelo de pago generaría pérdidas a medida que crecieran los usuarios, así que decidimos usar solo modelos de lenguaje de nivel gratuito y eliminamos el servicio de pago."
-  },
-  "8": {
-   "title": "ID Photo Studio",
-   "headline": "Con una sola foto, tu foto de carné.",
-   "summary": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Detecta el rostro para recortar automáticamente, cambia el fondo por un color liso y luego comprueba 11 puntos, como la altura de la cabeza y de los ojos, frente a la norma.",
-   "why": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Los tamaños se manejan en milímetros y los píxeles solo se calculan al exportar."
   },
   "9": {
    "title": "Malmoi",
@@ -256,6 +250,12 @@
    "headline": "Encárguelo con la voz, confírmelo con una tarjeta.",
    "pitch": "Encargue su agenda, tareas y gastos. Nada cambia hasta que usted toque.",
    "summary": "Un asistente que se ocupa de su agenda, tareas, registro de gastos, borradores de correo y alarmas cuando se lo pide con la voz. Sin registro, Apple Intelligence en su iPhone se encarga de decidir, y Haru muestra primero en una tarjeta lo que hizo, de modo que nada se aplica hasta que toque «Ejecutar». Si instala Haru PC en su computadora, también puede encargar y aprobar desde el teléfono tareas del PC."
+  },
+  "8": {
+   "title": "ID Photo Studio",
+   "headline": "Con una sola foto, tu foto de carné.",
+   "summary": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Detecta el rostro para recortar automáticamente, cambia el fondo por un color liso y luego comprueba 11 puntos, como la altura de la cabeza y de los ojos, frente a la norma.",
+   "why": "Un editor de fotos de carné que convierte una foto en decenas de tamaños estándar, como 35×45 mm o media tarjeta. Los tamaños se manejan en milímetros y los píxeles solo se calculan al exportar."
   },
   "75": {
    "title": "LabelLens",
@@ -597,6 +597,32 @@
     "title": "Memoria y concentración, cada día.",
     "body": "Una colección de juegos de entrenamiento mental para personas mayores. Rediseñada con letra grande y controles sencillos, con los registros guardados solo en el dispositivo.",
     "alt": "Pantalla de entrenamiento mental de Ttorang"
+   }
+  ],
+  "studio": [
+   {
+    "name": "Escribir la idea",
+    "title": "Basta una línea para empezar.",
+    "body": "Escribe en una línea lo que quieres crear y el flujo — requisitos, diseño, interfaz, código, pruebas, despliegue — se despliega primero. Si la idea es vaga, el paso de planificación ayuda a concretarla.",
+    "alt": "Pantalla de ejecución del estudio de desarrollo con IA — entrada de la idea y flujo de agentes"
+   },
+   {
+    "name": "Pasos de los agentes",
+    "title": "Seis agentes en relevo.",
+    "body": "De los requisitos al diseño del sistema, de los bocetos UI/UX al código y las pruebas, hasta la configuración del despliegue. Repite cualquier paso o continúa desde el que elijas.",
+    "alt": "Pantalla de proyecto — seis pasos de agentes con botones de repetir y continuar"
+   },
+   {
+    "name": "La app creada",
+    "title": "Un resultado para probar al instante.",
+    "body": "Las apps creadas se ejecutan al momento en la vista previa. Esta lista de tareas nació de una sola línea y permite añadir, completar y filtrar.",
+    "alt": "App web de lista de tareas creada por el estudio de desarrollo con IA"
+   },
+   {
+    "name": "Gestión de proyectos",
+    "title": "Todo lo que creas se queda.",
+    "body": "Cada proyecto guarda sus archivos, historial de ejecuciones y cambios: descárgalo, sincronízalo con GitHub y sigue mejorándolo.",
+    "alt": "Lista de proyectos — tarjetas de proyectos creados"
    }
   ]
  }
