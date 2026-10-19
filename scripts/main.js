@@ -662,13 +662,13 @@ function renderAreas() {
     if (host) carousel(host, state.projects.filter(isService).map(serviceTile).join('') + domains().map(areaTile).join(''), t('carousel_areas'));
 }
 
-/** 사업 영역 줄의 서비스 플랫폼 카드 — 영역 타일과 같은 틀, 그림은 실제 서비스 화면. 링크는 바깥 서비스 페이지·영상. */
+/** 사업 영역 줄의 서비스 플랫폼 카드 — 영역 타일과 같은 틀, 그림도 같은 3D 렌더(tools/render-areas studio, 10/19 대표님). 링크는 바깥 서비스 페이지·영상. */
 function serviceTile(project) {
     const ext = (href, label, name) => `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer" >${escapeHtml(label)}<span class="sr-only"> - ${escapeHtml(name)}</span> ${ICONS.chevronSmall}</a>`;
     const shot = project.shotWide || project.icon;
     return `<article class="atile atile-service">
         <span class="atile-media"><img src="${encodeURI(shot)}"
-            srcset="${variant(shot, 720)} 720w, ${encodeURI(shot)} 1440w" sizes="(max-width: 767px) 300px, 380px" alt="${escapeHtml(t('alt_screen', {name: project.title}))}" width="1440" height="900"
+            srcset="${variant(shot, 720)} 720w, ${encodeURI(shot)} 1440w" sizes="(max-width: 767px) 300px, 380px" alt="" width="1440" height="900"
             loading="lazy" decoding="async"></span>
         <span class="atile-copy">
             <span class="atile-name">${escapeHtml(t('service_platform'))}</span>
