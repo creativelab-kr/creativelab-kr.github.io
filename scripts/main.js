@@ -976,6 +976,7 @@ function workCard(work) {
 function renderProjectView(projectId) {
     const project = state.projects.find(p => p.id === projectId);
     const body = document.getElementById('projectBody');
+    if (project && project.id === GAI_ID && body) return renderGaiView(project, body);
     if (isService(project) && body) return renderServiceView(project, body);
     if (!isShipped(project) || !body) return false;
 
@@ -1058,6 +1059,99 @@ function renderServiceView(project, body) {
             <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${videoId}" title="${escapeHtml(project.title)}" loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
         </section>` : ''}
+    `;
+    return true;
+}
+
+/**
+ * G-AI-Studio(정부지원사업 공고 분석·초안 작성 보조) 소개 — 한국어 전용 안내 페이지(10/20 대표님 승인).
+ * 문의는 메일 문의(주소는 글자로 보이지 않고 눌렀을 때만 만들어진다). 계좌번호는 싣지 않고 "문의 후 안내".
+ * 과장·선정 보장 금지, AI 초안 작성 보조 고지 포함. 가격은 시험 가격이며 바뀔 수 있다.
+ */
+const GAI_ID = 87;
+const GAI_PAGE = {
+    badge: '서비스 플랫폼',
+    lede: '평가 항목과 배점을 읽고, 공고 기준 목차를 잡고, 내 회사 자료에 근거한 초안과 도식을 만들어 드립니다. 한글(HWPX) 양식에 채우는 작업까지 돕습니다.',
+    notice: 'AI를 활용한 정부지원사업 사업계획서 초안 작성 보조 서비스입니다. 초안·구조화·서식을 돕고, 검토·사실 확인·수정과 최종 제출은 고객이 합니다. 선정을 보장하지 않으며, 법률·세무·회계 자문이나 선정 가능성 평가를 대신하지 않습니다.',
+    cta: '무료 체험 문의',
+    ctaNote: '무료 체험은 1회, 공고 1건에 대해 분석 요약과 목차, 샘플 항목 1개를 보여 드리며 추가 비용은 없습니다. 문의 메일에 적어 주신 정보는 답변과 견적에만 사용합니다.',
+    mailSubject: 'G-AI-Studio 무료 체험 문의',
+    mailBody: '아래 내용을 적어 보내 주세요.\n\n이름:\n회사/기관:\n유형(컨설팅사/기관/중소기업/예비창업자):\n관심 공고(공고 이름이나 주소, 선택):\n\n※ 주민등록번호·계좌번호 등 민감한 정보는 적지 말아 주세요.',
+    doTitle: '이런 일을 합니다',
+    does: [
+        ['공고 분석', '평가 항목·배점, 자격·결격, 가점, 제출 서류, 분량 제한을 공고명·출처와 함께 필요한 범위의 원문 인용으로 정리합니다.'],
+        ['공고 기준 목차', '배점이 높은 항목에 분량을 맞춰 목차와 분량 배분을 제안합니다.'],
+        ['근거 기반 초안', '올려 주신 회사 자료에서 사실을 가져오고, 자료에 없는 사실은 만들지 않고 [확인 필요]로 표시합니다.'],
+        ['도식 그림', '사업 모델, 추진 체계 같은 도식을 그려 문서에 넣습니다. 수치와 내용은 함께 검수합니다.'],
+        ['파일로 내보내기', '한글(HWPX) 양식 채우기, DOCX, PDF, 발표형 PPTX/PDF. 양식 구조에 따라 가능 여부가 달라지며 착수 전에 알려 드립니다.']
+    ],
+    stepsTitle: '진행 순서',
+    steps: ['무료 체험 문의', '공고와 회사 자료 전달', '샘플 확인', '견적 안내와 입금', '초안 전달', '수정 반영'],
+    priceTitle: '가격 안내',
+    priceNote: '현재는 시험 가격이며 바뀔 수 있습니다. 표시 금액은 개인·소규모 사업자 기준 부가세 포함, 기관·기업은 부가세 별도입니다. 공고 난이도(분량, 양식, 자료 양)에 따라 범위 안에서 견적하며, 포함된 수정 횟수를 넘는 요청은 건별로 협의합니다.',
+    prices: [
+        ['체험', '무료 1회', '공고 1건 분석 요약, 목차 제안, 샘플 항목 1개'],
+        ['초안', '9만 9천원부터', '공고 분석, 목차, 전체 항목 초안, 수정 1회 · 영업일 3~5일'],
+        ['표준', '29만 9천원부터', '초안 + 회사 자료 반영, 도식, 검토 1회, 가능한 경우 양식 채우기 · 영업일 5~7일'],
+        ['고급', '59만 9천원부터', '표준 + 발표형 문서, 검토 2회, 질문으로 자료 보강 · 영업일 7~10일'],
+        ['기관·컨설팅사', '협의', '컨설턴트 검수를 전제로 한 파일럿, 이후 월 이용권 49만원부터']
+    ],
+    pay: '결제는 문의 후 안내드리는 계좌이체와 세금계산서로 진행합니다.',
+    faqTitle: '자주 묻는 질문',
+    faq: [
+        ['직접 써 주는 서비스인가요?', '아닙니다. AI로 초안을 만들고 구조와 서식을 돕는 보조 서비스입니다. 내용의 사실 확인과 최종 제출은 고객이 합니다.'],
+        ['선정되나요?', '보장하지 않습니다. 선정 여부는 평가위원, 경쟁률 등 외부 요인에 달려 있습니다.'],
+        ['AI가 만든 글에 틀린 내용이 있을 수 있나요?', '있을 수 있습니다. 출처가 없는 수치는 [확인 필요]로 표시하니, 수치와 고유명사는 꼭 확인해 주세요.'],
+        ['내 자료는 어떻게 처리되나요?', '초안을 만들기 위해 자료 일부가 외부 AI 서비스로 전송될 수 있습니다. 보내 주신 문의 내용과 자료는 견적·작성·정산 목적으로만 쓰며, 주민등록번호·계좌번호·타인의 개인정보는 올리지 말아 주세요. 삭제를 원하시면 요청해 주세요.'],
+        ['공고에서 AI 사용을 제한하면요?', '공고마다 조건이 다릅니다. 신청 전에 공고의 AI 사용 조건을 확인해 주시고, 필요하면 함께 확인해 드립니다.'],
+        ['한글에서 잘 열리나요?', '착수 전에 양식 호환성을 안내하고, 납품 전에 파일 구조를 검증한 뒤 한글에서 열어 표·도식·서식을 확인합니다.']
+    ]
+};
+
+function renderGaiView(project, body) {
+    const G = GAI_PAGE;
+    const href = 'mailto:' + contactEmail() + '?subject=' + encodeURIComponent(G.mailSubject) + '&body=' + encodeURIComponent(G.mailBody);
+    body.innerHTML = `
+        <a class="back-link" href="#areas">${ICONS.arrowLeft} ${escapeHtml(t('back_home'))}</a>
+
+        <div class="pd-top">
+            <div class="pd-copy">
+                <header class="pd-head pd-head-plain">
+                    <div>
+                        <p class="pd-badges"><span class="pd-cat">${escapeHtml(G.badge)}</span></p>
+                        <h1 class="pd-title">${escapeHtml(project.title)}</h1>
+                    </div>
+                </header>
+                <p class="pd-headline">${escapeHtml(project.headline)}</p>
+                <p class="pd-lede">${escapeHtml(G.lede)}</p>
+                <div class="pd-links"><a class="btn btn-primary" href="${href}">${escapeHtml(G.cta)}</a></div>
+                <p class="gai-note">${escapeHtml(G.ctaNote)}</p>
+                <p class="gai-notice">${escapeHtml(G.notice)}</p>
+            </div>
+        </div>
+
+        <section class="gai-sec" aria-labelledby="gaiDo">
+            <h2 class="works-title" id="gaiDo">${escapeHtml(G.doTitle)}</h2>
+            <ul class="gai-grid">${G.does.map(d => `<li class="gai-card"><h3>${escapeHtml(d[0])}</h3><p>${escapeHtml(d[1])}</p></li>`).join('')}</ul>
+        </section>
+
+        <section class="gai-sec" aria-labelledby="gaiSteps">
+            <h2 class="works-title" id="gaiSteps">${escapeHtml(G.stepsTitle)}</h2>
+            <ol class="gai-steps">${G.steps.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ol>
+        </section>
+
+        <section class="gai-sec" aria-labelledby="gaiPrice">
+            <h2 class="works-title" id="gaiPrice">${escapeHtml(G.priceTitle)}</h2>
+            <p class="gai-note">${escapeHtml(G.priceNote)}</p>
+            <ul class="gai-prices">${G.prices.map(r => `<li><span class="gp-name">${escapeHtml(r[0])}</span><span class="gp-price">${escapeHtml(r[1])}</span><span class="gp-desc">${escapeHtml(r[2])}</span></li>`).join('')}</ul>
+            <p class="gai-note">${escapeHtml(G.pay)}</p>
+        </section>
+
+        <section class="gai-sec" aria-labelledby="gaiFaq">
+            <h2 class="works-title" id="gaiFaq">${escapeHtml(G.faqTitle)}</h2>
+            <div class="gai-faq">${G.faq.map(f => `<details><summary>${escapeHtml(f[0])}</summary><p>${escapeHtml(f[1])}</p></details>`).join('')}</div>
+            <div class="pd-links"><a class="btn btn-primary" href="${href}">${escapeHtml(G.cta)}</a></div>
+        </section>
     `;
     return true;
 }

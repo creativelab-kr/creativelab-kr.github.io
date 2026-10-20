@@ -1003,3 +1003,30 @@ a { color: inherit; text-decoration: none; }
 .atile-service .atile-links { position: relative; z-index: 2; }
 /* 서비스 플랫폼 자세히 페이지 */
 .pd-service-video { margin-top: clamp(48px, 6vw, 80px); }
+
+/* G-AI-Studio 소개 페이지 */
+.gai-note { margin: var(--sp-3) 0 0; max-width: var(--wrap-text); font-size: var(--fs-sm); line-height: 1.6; color: var(--text-muted); }
+.gai-notice { margin: var(--sp-4) 0 0; max-width: var(--wrap-text); padding: 14px 18px; border-radius: 14px; background: var(--accent-soft); color: var(--text-mid); font-size: var(--fs-sm); line-height: 1.6; }
+.gai-sec { margin-top: clamp(48px, 6vw, 80px); }
+.gai-grid { list-style: none; margin: var(--sp-4) 0 0; padding: 0; display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.gai-card { padding: 22px 22px 24px; border-radius: 18px; background: var(--surface-2); }
+.gai-card h3 { margin: 0 0 var(--sp-2); font-size: 1.125rem; font-weight: 600; letter-spacing: -.02em; }
+.gai-card p { margin: 0; font-size: var(--fs-sm); line-height: 1.6; color: var(--text-mid); }
+.gai-steps { list-style: none; counter-reset: gs; margin: var(--sp-4) 0 0; padding: 0; display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.gai-steps li { counter-increment: gs; padding: 16px 18px; border-radius: 14px; background: var(--surface-2); color: var(--text-mid); font-size: var(--fs-sm); line-height: 1.5; }
+.gai-steps li::before { content: counter(gs); display: block; margin-bottom: 4px; font-weight: 700; color: var(--accent); }
+.gai-prices { list-style: none; margin: var(--sp-4) 0 0; padding: 0; border-radius: 18px; background: var(--surface-2); overflow: hidden; }
+.gai-prices li { display: grid; grid-template-columns: 8.5rem 9rem minmax(0, 1fr); gap: var(--sp-3); padding: 16px 22px; align-items: baseline; }
+.gai-prices li + li { border-top: 1px solid var(--border); }
+.gp-name { font-weight: 600; }
+.gp-price { font-weight: 600; color: var(--accent); }
+.gp-desc { font-size: var(--fs-sm); line-height: 1.55; color: var(--text-mid); }
+.gai-faq { margin-top: var(--sp-4); max-width: var(--wrap-text); }
+.gai-faq details { border-top: 1px solid var(--border); padding: 4px 0; }
+.gai-faq details:last-child { border-bottom: 1px solid var(--border); }
+.gai-faq summary { cursor: pointer; padding: 14px 0; min-height: 44px; font-weight: 600; letter-spacing: -.012em; }
+.gai-faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gai-faq details p { margin: 0 0 var(--sp-3); font-size: var(--fs-sm); line-height: 1.65; color: var(--text-mid); }
+@media (max-width: 640px) {
+    .gai-prices li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
