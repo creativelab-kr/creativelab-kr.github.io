@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<!-- G-AI-Studio: 사업계획서 문서 + 평가 배점 막대 + 반짝임. 남색→파랑 -->
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset=".6" stop-color="#1D4ED8"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient>
+  <radialGradient id="hl" cx=".75" cy=".1" r=".9"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="doc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EAF2FF"/></linearGradient>
+  <linearGradient id="acc" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+  <filter id="sh" x="-30%" y="-20%" width="160%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#0B1B4D" flood-opacity=".4"/></filter>
+  <filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#fff" flood-opacity=".7"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<rect width="1024" height="1024" fill="url(#hl)"/>
+<!-- 뒤 문서 -->
+<rect x="318" y="206" width="440" height="580" rx="56" fill="#fff" opacity=".35" transform="rotate(8 538 496)"/>
+<!-- 앞 문서(접힌 모서리) -->
+<g filter="url(#sh)">
+  <path d="M322 224 H604 L722 342 V772 Q722 828 666 828 H322 Q266 828 266 772 V280 Q266 224 322 224 Z" fill="url(#doc)"/>
+</g>
+<path d="M604 224 V302 Q604 342 644 342 H722 Z" fill="#C9D9F7"/>
+<!-- 제목·본문 줄 -->
+<rect x="330" y="300" width="210" height="34" rx="17" fill="#1E3A8A"/>
+<rect x="330" y="372" width="324" height="22" rx="11" fill="#C3D0EA"/>
+<rect x="330" y="418" width="270" height="22" rx="11" fill="#C3D0EA"/>
+<!-- 배점 막대 -->
+<g fill="url(#acc)">
+  <rect x="338" y="620" width="58" height="140" rx="16"/>
+  <rect x="426" y="560" width="58" height="200" rx="16"/>
+  <rect x="514" y="500" width="58" height="260" rx="16"/>
+</g>
+<!-- 체크 -->
+<circle cx="640" cy="700" r="0" fill="none"/>
+<!-- 반짝임 -->
+<g filter="url(#gl)" fill="#fff">
+  <path d="M790 470 C803 540 827 564 897 577 C827 590 803 614 790 684 C777 614 753 590 683 577 C753 564 777 540 790 470 Z"/>
+  <path d="M168 150 C174 180 184 190 214 196 C184 202 174 212 168 242 C162 212 152 202 122 196 C152 190 162 180 168 150 Z" opacity=".85"/>
+</g>
+</svg>

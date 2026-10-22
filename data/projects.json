@@ -712,7 +712,7 @@
   "summary": "공고 분석부터 목차, 근거 기반 초안, 한글 양식 채우기까지 돕는 정부지원사업 사업계획서 초안 작성 보조",
   "headline": "공고문 한 건에서 사업계획서 초안까지, 평가 항목과 배점 기준으로 돕는 초안 작성 보조",
   "pitch": "공고 분석, 목차, 근거 기반 초안, 한글 양식 채우기를 돕는 사업계획서 초안 작성 보조",
-  "icon": "assets/icons/agentstudio.png",
+  "icon": "assets/icons/gaistudio.png",
   "shotWide": "assets/areas/gaistudio.webp",
   "links": {
    "web": "#/p/87"
