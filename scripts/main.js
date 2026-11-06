@@ -39,7 +39,8 @@ const DEVELOPER_PAGE = 'https://apps.apple.com/kr/developer/inphil-choi/id678576
 const LINK_LABELS = {
     appstore: 'link_appstore',
     googleplay: 'link_googleplay',
-    web: 'link_web'
+    web: 'link_web',
+    intro: 'link_intro'
 };
 
 // =============================================
@@ -425,7 +426,16 @@ function tileLinks(project) {
         <a class="tile-link" href="#/p/${project.id}">${escapeHtml(t('more'))} ${ICONS.chevronSmall}</a>
         ${appStoreLink(project)}
         ${playLink(project)}
+        ${introLink(project)}
     </p>${krStoreNote(project)}`;
+}
+
+function introLink(project) {
+    const href = project.links && project.links.intro;
+    return href
+        ? `<a class="tile-link" href="${encodeURI(href)}" target="_blank" rel="noopener noreferrer"
+              aria-label="${escapeHtml(project.title)} - ${escapeHtml(t('link_intro'))}">${escapeHtml(t('link_intro'))} ${ICONS.chevronSmall}</a>`
+        : '';
 }
 
 function playLink(project) {
@@ -1313,7 +1323,7 @@ function getDefaultProjects() {
           icon: 'assets/icons/unfold.png', links: {'appstore':'https://apps.apple.com/app/id6816378821'} },
         { id: 74, title: '하루 - AI 비서', category: 'work', status: '출시',
           summary: '말로 맡기면 일정·할 일·가계부·메일 초안·알람을 챙겨 주는 비서. 회원가입 없이 iPhone 안의 Apple Intelligence가 판단하고, 하루가 한 일은 카드로 먼저 보여 준 뒤 실행을 눌러야 반영됩니다. 컴퓨터에 하루 PC를 설치하면 폰에서 PC 작업도 맡기고 승인할 수 있습니다.',
-          icon: 'assets/icons/haru.png', links: {'appstore':'https://apps.apple.com/kr/app/id6816367324'} },
+          icon: 'assets/icons/haru.png', links: {'appstore':'https://apps.apple.com/kr/app/id6816367324','intro':'https://inphilchoi.github.io/haru/'} },
         { id: 75, title: '라벨렌즈', category: 'life', status: '출시',
           summary: '화장품 뒷면 전성분 사진 한 장으로 성분마다 하는 일을 풀어 주고, 내가 피하는 성분이 들어 있는지 알려 주는 앱. 바코드가 아니라 라벨 글자를 기기 안에서 읽어 신제품도 확인하고, 향료·에탄올·파라벤 등 14가지 그룹을 골라 결과에 빨갛게 표시합니다.',
           icon: 'assets/icons/labellens.png', links: {'appstore':'https://apps.apple.com/app/id6816317424'} },

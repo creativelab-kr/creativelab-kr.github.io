@@ -502,7 +502,8 @@
   "icon": "assets/icons/haru.png",
   "shot": "assets/shots/haru.webp",
   "links": {
-   "appstore": "https://apps.apple.com/kr/app/id6816367324"
+   "appstore": "https://apps.apple.com/kr/app/id6816367324",
+   "intro": "https://inphilchoi.github.io/haru/"
   }
  },
  {
