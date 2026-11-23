@@ -36,12 +36,12 @@
 
     <!-- 첫 화면 회전 링 맨 앞 폰 사진(가장 큰 요소)을 미리 받는다. 링 맨 앞 앱을 바꾸면 여기도 같이 바꾼다. -->
     <link rel="preload" as="image" href="assets/shots/singon.webp" imagesrcset="assets/shots/singon-360.webp 360w, assets/shots/singon.webp 600w" imagesizes="(max-width: 767px) 210px, 340px" fetchpriority="high">
-    <link rel="preload" href="data/projects.json?v=63016b015b" as="fetch" crossorigin>
-    <link rel="preload" href="data/categories.json?v=63016b015b" as="fetch" crossorigin>
-    <link rel="preload" href="data/works.json?v=63016b015b" as="fetch" crossorigin>
-    <link rel="preload" href="data/i18n/ko.json?v=63016b015b" as="fetch" crossorigin>
+    <link rel="preload" href="data/projects.json?v=805db466d3" as="fetch" crossorigin>
+    <link rel="preload" href="data/categories.json?v=805db466d3" as="fetch" crossorigin>
+    <link rel="preload" href="data/works.json?v=805db466d3" as="fetch" crossorigin>
+    <link rel="preload" href="data/i18n/ko.json?v=805db466d3" as="fetch" crossorigin>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=63016b015b">
+    <link rel="stylesheet" href="styles/main.css?v=805db466d3">
 </head>
 <body>
     <a href="#main" class="skip-link" data-i18n="skip">본문으로 건너뛰기</a>
@@ -141,6 +141,22 @@
                 <!-- 영역 타일은 좌우로 넘기는 한 줄. main.js 가 categories.json 의 domain 으로 채운다. -->
                 <div class="carousel carousel-areas" id="areaGrid"></div>
             </section>
+
+            <!-- 함께 만들기: 문의 섹션 -->
+            <section id="collab" class="section section-collab" aria-labelledby="collabTitle">
+                <div class="container">
+                    <header class="section-head">
+                        <p class="section-eyebrow" data-i18n="collab_eyebrow">함께 만들기</p>
+                        <h2 class="section-title" id="collabTitle" data-i18n="collab_title">아이디어를 함께 현실로.</h2>
+                        <p class="section-sub" data-i18n="collab_lead">직접 앱과 AI 도구를 만들고 운영해 온 경험으로, 작은 일부터 함께합니다.</p>
+                    </header>
+                    <div class="collab-grid"><div class="collab-card"><h3 data-i18n="collab_w1_t"></h3><p data-i18n="collab_w1_d"></p></div><div class="collab-card"><h3 data-i18n="collab_w2_t"></h3><p data-i18n="collab_w2_d"></p></div><div class="collab-card"><h3 data-i18n="collab_w3_t"></h3><p data-i18n="collab_w3_d"></p></div><div class="collab-card"><h3 data-i18n="collab_w4_t"></h3><p data-i18n="collab_w4_d"></p></div></div>
+                    <h3 class="collab-how" data-i18n="collab_how_title">진행 방식</h3>
+                    <ol class="collab-steps"><li data-i18n="collab_s1"></li><li data-i18n="collab_s2"></li><li data-i18n="collab_s3"></li><li data-i18n="collab_s4"></li></ol>
+                    <p class="collab-data" data-i18n="collab_data"></p>
+                    <a id="collabCta" class="btn btn-primary" hidden data-i18n="collab_cta">문의하기</a>
+                </div>
+            </section>
         </div>
 
         <!-- ==================== VIEW 2 : CATEGORY ==================== -->
@@ -174,6 +190,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="scripts/main.js?v=63016b015b"></script>
+    <script src="scripts/main.js?v=805db466d3"></script>
 </body>
 </html>

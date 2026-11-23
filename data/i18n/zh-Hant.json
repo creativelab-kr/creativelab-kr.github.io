@@ -53,7 +53,25 @@
   "coming_soon": "即將推出",
   "service_platform": "服務平台",
   "service_more": "了解詳情",
-  "service_video": "觀看影片"
+  "service_video": "觀看影片",
+  "collab_eyebrow": "一起創造",
+  "collab_title": "把想法，一起化為現實。",
+  "collab_lead": "我們自己開發並營運應用程式與 AI 工具，從小專案開始，與你一同完成。",
+  "collab_w1_t": "App 與網站",
+  "collab_w1_d": "把點子做成有實際畫面、可以順利使用的產品。",
+  "collab_w2_t": "裝置端 AI",
+  "collab_w2_d": "加入不會把個人資料傳出裝置的 AI 功能。",
+  "collab_w3_t": "工作自動化",
+  "collab_w3_d": "製作能減少重複工作的小工具。",
+  "collab_w4_t": "補助計畫與商業文件",
+  "collab_w4_d": "依照公告的格式，協助整理計畫書草稿。我們不保證一定獲選。",
+  "collab_how_title": "合作流程",
+  "collab_s1": "諮詢",
+  "collab_s2": "確認範圍與時程",
+  "collab_s3": "製作",
+  "collab_s4": "交付",
+  "collab_data": "您提供的資料僅用於該專案，並於交付後 30 天內刪除。",
+  "collab_cta": "聯絡我們"
  },
  "projects": {
   "1": {

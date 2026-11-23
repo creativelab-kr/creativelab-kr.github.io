@@ -53,6 +53,24 @@
   "coming_soon": "출시 준비 중",
   "service_platform": "서비스 플랫폼",
   "service_more": "자세히 보기",
-  "service_video": "영상 보기"
+  "service_video": "영상 보기",
+  "collab_eyebrow": "함께 만들기",
+  "collab_title": "아이디어를 함께 현실로.",
+  "collab_lead": "직접 앱과 AI 도구를 만들고 운영해 온 경험으로, 작은 일부터 함께합니다.",
+  "collab_w1_t": "앱과 웹",
+  "collab_w1_d": "아이디어를 화면과 동작이 있는 제품으로 만듭니다.",
+  "collab_w2_t": "온디바이스 AI",
+  "collab_w2_d": "개인 정보를 기기 밖으로 보내지 않는 AI 기능을 붙입니다.",
+  "collab_w3_t": "업무 자동화",
+  "collab_w3_d": "반복되는 일을 줄이는 작은 도구를 만듭니다.",
+  "collab_w4_t": "지원사업·사업 문서",
+  "collab_w4_d": "공고 양식에 맞춰 사업계획서 초안을 함께 정리합니다. 선정을 보장하지는 않습니다.",
+  "collab_how_title": "진행 방식",
+  "collab_s1": "문의",
+  "collab_s2": "범위·일정 합의",
+  "collab_s3": "작업",
+  "collab_s4": "전달",
+  "collab_data": "보내 주신 자료는 그 작업에만 쓰고, 전달 후 30일 안에 삭제합니다.",
+  "collab_cta": "문의하기"
  }
 }

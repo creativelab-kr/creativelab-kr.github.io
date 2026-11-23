@@ -53,7 +53,25 @@
   "coming_soon": "Coming soon",
   "service_platform": "Service platform",
   "service_more": "Learn more",
-  "service_video": "Watch the video"
+  "service_video": "Watch the video",
+  "collab_eyebrow": "Build with us",
+  "collab_title": "Turn ideas into reality, together.",
+  "collab_lead": "We build and run our own apps and AI tools, and we start small with you.",
+  "collab_w1_t": "Apps and web",
+  "collab_w1_d": "We turn an idea into a working product with real screens.",
+  "collab_w2_t": "On-device AI",
+  "collab_w2_d": "We add AI features that keep personal data on the device.",
+  "collab_w3_t": "Automation",
+  "collab_w3_d": "We build small tools that cut repetitive work.",
+  "collab_w4_t": "Grant and business documents",
+  "collab_w4_d": "We help shape a business-plan draft to the announcement's template. Selection is never guaranteed.",
+  "collab_how_title": "How we work",
+  "collab_s1": "Inquiry",
+  "collab_s2": "Agree scope and schedule",
+  "collab_s3": "Work",
+  "collab_s4": "Delivery",
+  "collab_data": "Your materials are used only for your project and deleted within 30 days after delivery.",
+  "collab_cta": "Contact"
  },
  "projects": {
   "1": {

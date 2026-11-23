@@ -53,7 +53,25 @@
   "coming_soon": "公開準備中",
   "service_platform": "サービスプラットフォーム",
   "service_more": "詳しく見る",
-  "service_video": "動画を見る"
+  "service_video": "動画を見る",
+  "collab_eyebrow": "一緒につくる",
+  "collab_title": "アイデアを、一緒に形に。",
+  "collab_lead": "自分たちでアプリやAIツールを作り、運営してきた経験をもとに、小さな案件から一緒に取り組みます。",
+  "collab_w1_t": "アプリとウェブ",
+  "collab_w1_d": "アイデアを、実際に動く画面のあるプロダクトにします。",
+  "collab_w2_t": "オンデバイスAI",
+  "collab_w2_d": "個人情報を端末の外に出さないAI機能を組み込みます。",
+  "collab_w3_t": "業務の自動化",
+  "collab_w3_d": "繰り返しの作業を減らす小さなツールを作ります。",
+  "collab_w4_t": "助成事業・事業書類",
+  "collab_w4_d": "公募の様式に沿って、事業計画書の草案づくりをお手伝いします。採択をお約束するものではありません。",
+  "collab_how_title": "進め方",
+  "collab_s1": "お問い合わせ",
+  "collab_s2": "範囲と日程の合意",
+  "collab_s3": "制作",
+  "collab_s4": "納品",
+  "collab_data": "お預かりした資料はその作業にのみ使い、納品後30日以内に削除します。",
+  "collab_cta": "お問い合わせ"
  },
  "projects": {
   "1": {

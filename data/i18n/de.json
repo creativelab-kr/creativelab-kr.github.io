@@ -53,7 +53,25 @@
   "coming_soon": "Demnächst verfügbar",
   "service_platform": "Service-Plattform",
   "service_more": "Mehr erfahren",
-  "service_video": "Video ansehen"
+  "service_video": "Video ansehen",
+  "collab_eyebrow": "Gemeinsam entwickeln",
+  "collab_title": "Ideen gemeinsam Wirklichkeit werden lassen.",
+  "collab_lead": "Wir entwickeln und betreiben eigene Apps und KI-Werkzeuge und beginnen gern mit kleinen Projekten.",
+  "collab_w1_t": "Apps und Web",
+  "collab_w1_d": "Wir machen aus einer Idee ein funktionierendes Produkt mit echten Bildschirmen.",
+  "collab_w2_t": "KI auf dem Gerät",
+  "collab_w2_d": "Wir bauen KI-Funktionen ein, bei denen persönliche Daten auf dem Gerät bleiben.",
+  "collab_w3_t": "Automatisierung",
+  "collab_w3_d": "Wir bauen kleine Werkzeuge, die wiederkehrende Arbeit verringern.",
+  "collab_w4_t": "Förder- und Geschäftsunterlagen",
+  "collab_w4_d": "Wir helfen, einen Entwurf für einen Businessplan nach der Vorlage der Ausschreibung zu erstellen. Eine Auswahl ist nie garantiert.",
+  "collab_how_title": "So arbeiten wir",
+  "collab_s1": "Anfrage",
+  "collab_s2": "Umfang und Zeitplan vereinbaren",
+  "collab_s3": "Umsetzung",
+  "collab_s4": "Übergabe",
+  "collab_data": "Ihre Unterlagen werden nur für Ihr Projekt verwendet und innerhalb von 30 Tagen nach der Übergabe gelöscht.",
+  "collab_cta": "Kontakt aufnehmen"
  },
  "projects": {
   "1": {

@@ -53,7 +53,25 @@
   "coming_soon": "Bientôt disponible",
   "service_platform": "Plateforme de services",
   "service_more": "En savoir plus",
-  "service_video": "Voir la vidéo"
+  "service_video": "Voir la vidéo",
+  "collab_eyebrow": "Créons ensemble",
+  "collab_title": "Donnons vie à vos idées, ensemble.",
+  "collab_lead": "Nous concevons et exploitons nos propres applications et outils d'IA, et nous commençons par de petits projets avec vous.",
+  "collab_w1_t": "Apps et web",
+  "collab_w1_d": "Nous transformons une idée en produit fonctionnel, avec de vrais écrans.",
+  "collab_w2_t": "IA sur l'appareil",
+  "collab_w2_d": "Nous ajoutons des fonctions d'IA qui gardent les données personnelles sur l'appareil.",
+  "collab_w3_t": "Automatisation",
+  "collab_w3_d": "Nous créons de petits outils qui réduisent les tâches répétitives.",
+  "collab_w4_t": "Dossiers de subvention et documents d'entreprise",
+  "collab_w4_d": "Nous aidons à préparer un brouillon de plan d'affaires selon le modèle de l'appel. La sélection n'est jamais garantie.",
+  "collab_how_title": "Notre façon de travailler",
+  "collab_s1": "Demande",
+  "collab_s2": "Accord sur le périmètre et le calendrier",
+  "collab_s3": "Travail",
+  "collab_s4": "Livraison",
+  "collab_data": "Vos documents ne servent qu'à votre projet et sont supprimés dans les 30 jours suivant la livraison.",
+  "collab_cta": "Nous contacter"
  },
  "projects": {
   "1": {

@@ -53,7 +53,25 @@
   "coming_soon": "Prossimamente",
   "service_platform": "Piattaforma di servizi",
   "service_more": "Scopri di più",
-  "service_video": "Guarda il video"
+  "service_video": "Guarda il video",
+  "collab_eyebrow": "Costruiamo insieme",
+  "collab_title": "Trasformiamo le idee in realtà, insieme.",
+  "collab_lead": "Creiamo e gestiamo le nostre app e i nostri strumenti di IA, e partiamo volentieri da piccoli progetti con te.",
+  "collab_w1_t": "App e web",
+  "collab_w1_d": "Trasformiamo un'idea in un prodotto funzionante, con schermate reali.",
+  "collab_w2_t": "IA sul dispositivo",
+  "collab_w2_d": "Aggiungiamo funzioni di IA che mantengono i dati personali sul dispositivo.",
+  "collab_w3_t": "Automazione",
+  "collab_w3_d": "Creiamo piccoli strumenti che riducono il lavoro ripetitivo.",
+  "collab_w4_t": "Bandi e documenti aziendali",
+  "collab_w4_d": "Aiutiamo a preparare una bozza di business plan seguendo il modello del bando. La selezione non è mai garantita.",
+  "collab_how_title": "Come lavoriamo",
+  "collab_s1": "Richiesta",
+  "collab_s2": "Accordo su ambito e tempi",
+  "collab_s3": "Lavoro",
+  "collab_s4": "Consegna",
+  "collab_data": "I tuoi materiali sono usati solo per il tuo progetto e vengono eliminati entro 30 giorni dalla consegna.",
+  "collab_cta": "Contattaci"
  },
  "projects": {
   "1": {

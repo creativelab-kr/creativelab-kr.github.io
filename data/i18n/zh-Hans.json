@@ -53,7 +53,25 @@
   "coming_soon": "即将上线",
   "service_platform": "服务平台",
   "service_more": "了解详情",
-  "service_video": "观看视频"
+  "service_video": "观看视频",
+  "collab_eyebrow": "一起创造",
+  "collab_title": "把想法，一起变成现实。",
+  "collab_lead": "我们自己开发并运营应用和 AI 工具，从小项目开始，和你一起做。",
+  "collab_w1_t": "应用与网站",
+  "collab_w1_d": "把想法做成有真实界面、能正常使用的产品。",
+  "collab_w2_t": "设备端 AI",
+  "collab_w2_d": "加入不会把个人信息传出设备的 AI 功能。",
+  "collab_w3_t": "工作自动化",
+  "collab_w3_d": "制作能减少重复劳动的小工具。",
+  "collab_w4_t": "扶持项目与商业文件",
+  "collab_w4_d": "按照公告的模板，协助整理商业计划书草稿。我们不保证一定入选。",
+  "collab_how_title": "合作方式",
+  "collab_s1": "咨询",
+  "collab_s2": "商定范围与时间",
+  "collab_s3": "制作",
+  "collab_s4": "交付",
+  "collab_data": "您提供的资料只用于该项目，并在交付后 30 天内删除。",
+  "collab_cta": "联系我们"
  },
  "projects": {
   "1": {

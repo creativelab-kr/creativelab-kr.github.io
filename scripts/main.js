@@ -1188,6 +1188,8 @@ function setupContact() {
     if (!link) return;
     link.href = 'mailto:' + contactEmail();
     link.hidden = false;
+    const cta = document.getElementById('collabCta');
+    if (cta) { cta.href = 'mailto:' + contactEmail(); cta.hidden = false; }
 }
 
 function escapeHtml(text) {
