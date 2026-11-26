@@ -1061,3 +1061,12 @@ a { color: inherit; text-decoration: none; }
     .book-inner { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); }
     .book-cover { max-width: 200px; }
 }
+
+/* 구매·문의 띠(첫 화면)와 #/links 화면 — 11/27 */
+.section-shop { padding-block: clamp(40px, 6vw, 72px); background: var(--surface-2); }
+.shop-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-5); }
+.shop-text { min-width: 0; flex: 1 1 320px; }
+.shop-text .section-eyebrow { margin-bottom: var(--sp-2); }
+.shop-title { margin: 0; font-size: clamp(1.25rem, 2.4vw, 1.625rem); font-weight: 600; line-height: 1.4; letter-spacing: -.015em; color: var(--text); overflow-wrap: anywhere; }
+.shop-actions { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+.links-top { padding-top: var(--sp-6); }

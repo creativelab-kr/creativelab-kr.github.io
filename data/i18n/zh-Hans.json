@@ -83,7 +83,11 @@
   "book_note": "购买和付款在 Gumroad 销售页面完成。",
   "book_url": "https://creativelabkr.gumroad.com/l/launch-zh-hans",
   "book_cover": "assets/books/cover-zh-Hans.webp",
-  "book_cover_alt": "《上线篇：App Store 审核被拒案例集》封面"
+  "book_cover_alt": "《上线篇：App Store 审核被拒案例集》封面",
+  "nav_links": "购买·咨询",
+  "shop_lead": "案例集购买与合作咨询，都集中在这一页。",
+  "shop_btn": "查看购买与咨询",
+  "shop_book_btn": "购买案例集"
  },
  "projects": {
   "1": {

@@ -327,6 +327,13 @@ function route() {
 
     if (category && renderCategoryView(category[1])) return showView('viewCategory');
     if (project && renderProjectView(Number(project[1]))) return showView('viewProject');
+    // 구매·문의 화면(#/links). 예전 주소 #book·#collab 도 이 화면의 해당 구역으로 보낸다(11/27).
+    if (hash === '#/links' || hash === '#book' || hash === '#collab') {
+        showView('viewLinks');
+        const target = hash === '#/links' ? null : document.querySelector(hash);
+        if (target) target.scrollIntoView({ block: 'start' });
+        return;
+    }
 
     showView('viewHome');
     // Anchor links on the home page (#products, #lineup, #areas) still scroll.
@@ -335,7 +342,7 @@ function route() {
 }
 
 function showView(id) {
-    ['viewHome', 'viewCategory', 'viewProject'].forEach(viewId => {
+    ['viewHome', 'viewCategory', 'viewProject', 'viewLinks'].forEach(viewId => {
         const el = document.getElementById(viewId);
         if (el) el.hidden = viewId !== id;
     });

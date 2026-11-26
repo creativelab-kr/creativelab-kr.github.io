@@ -83,7 +83,11 @@
   "book_note": "購入と決済は Gumroad の販売ページで行われます。",
   "book_url": "https://creativelabkr.gumroad.com/l/launch-ja",
   "book_cover": "assets/books/cover-ja.webp",
-  "book_cover_alt": "『ローンチ編：App Store リジェクト事例集』表紙"
+  "book_cover_alt": "『ローンチ編：App Store リジェクト事例集』表紙",
+  "nav_links": "購入・お問い合わせ",
+  "shop_lead": "事例集の購入と共同制作のお問い合わせを一か所にまとめました。",
+  "shop_btn": "購入・お問い合わせを見る",
+  "shop_book_btn": "事例集を購入"
  },
  "projects": {
   "1": {

@@ -83,6 +83,10 @@
   "book_note": "구매와 결제는 판매 플랫폼 Gumroad의 판매 페이지에서 이루어집니다.",
   "book_url": "https://creativelabkr.gumroad.com/l/launch-ko",
   "book_cover": "assets/books/cover-ko.webp",
-  "book_cover_alt": "『출시: 심사 반려 사례집』 표지"
+  "book_cover_alt": "『출시: 심사 반려 사례집』 표지",
+  "nav_links": "구매·문의",
+  "shop_lead": "사례집 구매와 함께 만들기 문의를 한곳에 모았습니다.",
+  "shop_btn": "구매·문의 보기",
+  "shop_book_btn": "사례집 구매"
  }
 }

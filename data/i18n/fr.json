@@ -83,7 +83,11 @@
   "book_note": "L’achat et le paiement se font sur la page de vente Gumroad.",
   "book_url": "https://creativelabkr.gumroad.com/l/launch-en",
   "book_cover": "assets/books/cover-en.webp",
-  "book_cover_alt": "Couverture de Responding to App Store Rejections: A Casebook"
+  "book_cover_alt": "Couverture de Responding to App Store Rejections: A Casebook",
+  "nav_links": "Achat et contact",
+  "shop_lead": "Achetez notre recueil de cas ou parlez-nous d’un projet commun, au même endroit.",
+  "shop_btn": "Achat et contact",
+  "shop_book_btn": "Acheter le recueil"
  },
  "projects": {
   "1": {

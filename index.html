@@ -36,12 +36,12 @@
 
     <!-- 첫 화면 회전 링 맨 앞 폰 사진(가장 큰 요소)을 미리 받는다. 링 맨 앞 앱을 바꾸면 여기도 같이 바꾼다. -->
     <link rel="preload" as="image" href="assets/shots/singon.webp" imagesrcset="assets/shots/singon-360.webp 360w, assets/shots/singon.webp 600w" imagesizes="(max-width: 767px) 210px, 340px" fetchpriority="high">
-    <link rel="preload" href="data/projects.json?v=dd84c4c2b2" as="fetch" crossorigin>
-    <link rel="preload" href="data/categories.json?v=dd84c4c2b2" as="fetch" crossorigin>
-    <link rel="preload" href="data/works.json?v=dd84c4c2b2" as="fetch" crossorigin>
-    <link rel="preload" href="data/i18n/ko.json?v=dd84c4c2b2" as="fetch" crossorigin>
+    <link rel="preload" href="data/projects.json?v=8ed02e720f" as="fetch" crossorigin>
+    <link rel="preload" href="data/categories.json?v=8ed02e720f" as="fetch" crossorigin>
+    <link rel="preload" href="data/works.json?v=8ed02e720f" as="fetch" crossorigin>
+    <link rel="preload" href="data/i18n/ko.json?v=8ed02e720f" as="fetch" crossorigin>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=dd84c4c2b2">
+    <link rel="stylesheet" href="styles/main.css?v=8ed02e720f">
 </head>
 <body>
     <a href="#main" class="skip-link" data-i18n="skip">본문으로 건너뛰기</a>
@@ -59,7 +59,7 @@
                 <li><a href="#products" class="nav-link" data-i18n="nav_products">제품</a></li>
                 <li><a href="#areas" class="nav-link" data-i18n="nav_areas">사업 영역</a></li>
                 <li class="nav-apps"><a href="https://apps.creativelabai.kr/" class="nav-link" data-i18n="footer_guide">앱 안내</a></li>
-                <li class="nav-book"><a href="#book" class="nav-link" data-i18n="nav_book">책</a></li>
+                <li class="nav-book"><a href="#/links" class="nav-link" data-i18n="nav_links">구매·문의</a></li>
                 <li class="nav-lab"><a href="https://creativelabai.kr/ai-lab/" class="nav-link" data-i18n="nav_lab">연구소</a></li>
                 <li class="lang-item">
                     <label class="lang-switch">
@@ -145,6 +145,26 @@
                 <div class="carousel carousel-areas" id="areaGrid"></div>
             </section>
 
+            <!-- 구매·문의 안내 띠(11/27 대표님 "홈페이지가 길어지니 별도 링크 페이지"): 책·함께 만들기 전체 내용은 #/links 화면 -->
+            <section id="shop" class="section section-shop" aria-labelledby="shopTitle">
+                <div class="container shop-inner">
+                    <div class="shop-text">
+                        <p class="section-eyebrow" data-i18n="nav_links">구매·문의</p>
+                        <h2 class="shop-title" id="shopTitle" data-i18n="shop_lead">사례집 구매와 함께 만들기 문의를 한곳에 모았습니다.</h2>
+                    </div>
+                    <div class="shop-actions">
+                        <a class="btn btn-primary" href="#/links" data-i18n="shop_btn">구매·문의 보기</a>
+                        <a class="btn btn-ghost" href="https://creativelabkr.gumroad.com/l/launch-ko" target="_blank" rel="noopener noreferrer" data-i18n="shop_book_btn" data-i18n-attr="href:book_url">사례집 구매</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== VIEW 4 : LINKS (구매·문의, #/links) ==================== -->
+        <div class="view" id="viewLinks" hidden>
+            <div class="container links-top">
+                <a class="back-link" href="#home" data-i18n="back_home">홈으로</a>
+            </div>
             <!-- 책: 사례집 구매 안내(11/26 대표님 지시). 결제는 Gumroad 판매 페이지 — 언어별 주소·표지는 i18n book_url·book_cover -->
             <section id="book" class="section section-book" aria-labelledby="bookTitle">
                 <div class="container book-inner">
@@ -209,6 +229,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="scripts/main.js?v=dd84c4c2b2"></script>
+    <script src="scripts/main.js?v=8ed02e720f"></script>
 </body>
 </html>
