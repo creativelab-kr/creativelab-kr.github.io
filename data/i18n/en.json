@@ -73,7 +73,17 @@
   "collab_s3": "Work",
   "collab_s4": "Delivery",
   "collab_data": "Your materials are used only for your project and deleted within 30 days after delivery.",
-  "collab_cta": "Contact"
+  "collab_cta": "Contact",
+  "nav_book": "Book",
+  "footer_book": "Book",
+  "book_eyebrow": "Book",
+  "book_title": "Responding to App Store Rejections: A Casebook",
+  "book_lead": "A PDF casebook of 17 real App Store cases, with their causes and responses, plus a pre-submission checklist.",
+  "book_cta": "Details & purchase",
+  "book_note": "Purchase and payment are handled on the Gumroad sales page.",
+  "book_url": "https://creativelabkr.gumroad.com/l/launch-en",
+  "book_cover": "assets/books/cover-en.webp",
+  "book_cover_alt": "Cover of Responding to App Store Rejections: A Casebook"
  },
  "projects": {
   "1": {

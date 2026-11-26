@@ -73,7 +73,17 @@
   "collab_s3": "制作",
   "collab_s4": "納品",
   "collab_data": "お預かりした資料はその作業にのみ使い、納品後30日以内に削除します。",
-  "collab_cta": "お問い合わせ"
+  "collab_cta": "お問い合わせ",
+  "nav_book": "本",
+  "footer_book": "本",
+  "book_eyebrow": "本",
+  "book_title": "ローンチ編：App Store リジェクト事例集",
+  "book_lead": "App Store で実際に経験した17件の事例と、その対処をまとめた PDF の事例集です。提出前チェックリスト付き。",
+  "book_cta": "詳細・購入",
+  "book_note": "購入と決済は Gumroad の販売ページで行われます。",
+  "book_url": "https://creativelabkr.gumroad.com/l/launch-ja",
+  "book_cover": "assets/books/cover-ja.webp",
+  "book_cover_alt": "『ローンチ編：App Store リジェクト事例集』表紙"
  },
  "projects": {
   "1": {

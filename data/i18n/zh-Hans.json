@@ -73,7 +73,17 @@
   "collab_s3": "制作",
   "collab_s4": "交付",
   "collab_data": "您提供的资料只用于该项目，并在交付后 30 天内删除。",
-  "collab_cta": "联系我们"
+  "collab_cta": "联系我们",
+  "nav_book": "书",
+  "footer_book": "书",
+  "book_eyebrow": "书",
+  "book_title": "上线篇：App Store 审核被拒案例集",
+  "book_lead": "整理 17 个真实 App Store 案例与处理方法的 PDF 案例集，附提交前检查清单。",
+  "book_cta": "查看详情并购买",
+  "book_note": "购买和付款在 Gumroad 销售页面完成。",
+  "book_url": "https://creativelabkr.gumroad.com/l/launch-zh-hans",
+  "book_cover": "assets/books/cover-zh-Hans.webp",
+  "book_cover_alt": "《上线篇：App Store 审核被拒案例集》封面"
  },
  "projects": {
   "1": {

@@ -36,12 +36,12 @@
 
     <!-- 첫 화면 회전 링 맨 앞 폰 사진(가장 큰 요소)을 미리 받는다. 링 맨 앞 앱을 바꾸면 여기도 같이 바꾼다. -->
     <link rel="preload" as="image" href="assets/shots/singon.webp" imagesrcset="assets/shots/singon-360.webp 360w, assets/shots/singon.webp 600w" imagesizes="(max-width: 767px) 210px, 340px" fetchpriority="high">
-    <link rel="preload" href="data/projects.json?v=797b6f98f0" as="fetch" crossorigin>
-    <link rel="preload" href="data/categories.json?v=797b6f98f0" as="fetch" crossorigin>
-    <link rel="preload" href="data/works.json?v=797b6f98f0" as="fetch" crossorigin>
-    <link rel="preload" href="data/i18n/ko.json?v=797b6f98f0" as="fetch" crossorigin>
+    <link rel="preload" href="data/projects.json?v=b1c6e0d11f" as="fetch" crossorigin>
+    <link rel="preload" href="data/categories.json?v=b1c6e0d11f" as="fetch" crossorigin>
+    <link rel="preload" href="data/works.json?v=b1c6e0d11f" as="fetch" crossorigin>
+    <link rel="preload" href="data/i18n/ko.json?v=b1c6e0d11f" as="fetch" crossorigin>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=797b6f98f0">
+    <link rel="stylesheet" href="styles/main.css?v=b1c6e0d11f">
 </head>
 <body>
     <a href="#main" class="skip-link" data-i18n="skip">본문으로 건너뛰기</a>
@@ -59,6 +59,7 @@
                 <li><a href="#products" class="nav-link" data-i18n="nav_products">제품</a></li>
                 <li><a href="#areas" class="nav-link" data-i18n="nav_areas">사업 영역</a></li>
                 <li class="nav-apps"><a href="https://apps.creativelabai.kr/" class="nav-link" data-i18n="footer_guide">앱 안내</a></li>
+                <li class="nav-book"><a href="#book" class="nav-link" data-i18n="nav_book">책</a></li>
                 <li class="nav-lab"><a href="https://creativelabai.kr/ai-lab/" class="nav-link" data-i18n="nav_lab">연구소</a></li>
                 <li class="lang-item">
                     <label class="lang-switch">
@@ -144,6 +145,20 @@
                 <div class="carousel carousel-areas" id="areaGrid"></div>
             </section>
 
+            <!-- 책: 사례집 구매 안내(11/26 대표님 지시). 결제는 Gumroad 판매 페이지 — 언어별 주소·표지는 i18n book_url·book_cover -->
+            <section id="book" class="section section-book" aria-labelledby="bookTitle">
+                <div class="container book-inner">
+                    <img class="book-cover" src="assets/books/cover-ko.webp" width="480" height="680" decoding="async" alt="『출시: 심사 반려 사례집』 표지" data-i18n-attr="src:book_cover;alt:book_cover_alt">
+                    <div class="book-text">
+                        <p class="section-eyebrow" data-i18n="book_eyebrow">책</p>
+                        <h2 class="section-title" id="bookTitle" data-i18n="book_title">출시: 심사 반려 사례집</h2>
+                        <p class="section-sub" data-i18n="book_lead">App Store에서 실제로 겪은 사례 17건과 그 대응을 정리한 PDF 사례집입니다. 제출 전 점검표를 함께 담았습니다.</p>
+                        <a class="btn btn-primary" href="https://creativelabkr.gumroad.com/l/launch-ko" target="_blank" rel="noopener noreferrer" data-i18n="book_cta" data-i18n-attr="href:book_url">자세히 보기·구매</a>
+                        <p class="book-note" data-i18n="book_note">구매와 결제는 판매 플랫폼 Gumroad의 판매 페이지에서 이루어집니다.</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- 함께 만들기: 문의 섹션 -->
             <section id="collab" class="section section-collab" aria-labelledby="collabTitle">
                 <div class="container">
@@ -179,6 +194,7 @@
             <nav class="footer-links" aria-label="바깥 링크" data-i18n-attr="aria-label:footer_links_label">
                 <a href="https://apps.apple.com/kr/developer/inphil-choi/id6785766361" target="_blank" rel="noopener noreferrer">App Store</a>
                 <a href="https://apps.creativelabai.kr/" target="_blank" rel="noopener noreferrer" data-i18n="footer_guide">앱 안내</a>
+                <a href="https://creativelabkr.gumroad.com/l/launch-ko" target="_blank" rel="noopener noreferrer" data-i18n="footer_book" data-i18n-attr="href:book_url">책</a>
                 <a href="https://creativelabai.kr/ai-lab/" data-i18n="footer_lab">AI 연구소</a>
                 <a id="contactLink" hidden data-i18n="footer_contact">문의</a>
             </nav>
@@ -193,6 +209,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="scripts/main.js?v=797b6f98f0"></script>
+    <script src="scripts/main.js?v=b1c6e0d11f"></script>
 </body>
 </html>

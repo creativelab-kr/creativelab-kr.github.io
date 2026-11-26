@@ -982,7 +982,7 @@ a { color: inherit; text-decoration: none; }
     .ccard-line, .ring-line { line-height: 1.5; }
 }
 /* 폰·태블릿 세로 폭(900 이하)에서는 상단 막대에 항목을 더 둘 자리가 없다. 연구소·앱 안내는 푸터 링크로 간다. */
-@media (max-width: 900px) { .nav-menu .nav-lab, .nav-menu .nav-apps { display: none; } }
+@media (max-width: 900px) { .nav-menu .nav-lab, .nav-menu .nav-apps, .nav-menu .nav-book { display: none; } }
 /* 아주 좁은 폰(360~390)에서는 로고와 메뉴가 겹치지 않게 로고를 조금 줄인다. */
 @media (max-width: 420px) {
     .navbar-container { padding-inline: 14px; }
@@ -1048,3 +1048,16 @@ a { color: inherit; text-decoration: none; }
 .collab-steps li { padding: 8px 16px; border-radius: 999px; background: var(--surface-2); color: var(--text-mid); font-size: var(--fs-body); }
 .collab-steps li + li::before { content: none; }
 .collab-data { margin: 0 0 var(--sp-5); max-width: 56ch; font-size: var(--fs-body); line-height: 1.6; color: var(--text-muted); }
+
+
+/* ---------- 책(사례집 구매 안내, 11/26) ---------- */
+.section-book { background: var(--surface-2); }
+.book-inner { display: grid; grid-template-columns: minmax(140px, 240px) minmax(0, 1fr); gap: var(--sp-7); align-items: center; }
+.book-cover { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(15, 23, 42, .14); }
+.book-text .section-sub { margin-bottom: var(--sp-5); max-width: 56ch; }
+.book-text .btn { overflow-wrap: anywhere; }
+.book-note { margin: var(--sp-4) 0 0; max-width: 56ch; font-size: var(--fs-body); line-height: 1.6; color: var(--text-muted); }
+@media (max-width: 640px) {
+    .book-inner { grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); }
+    .book-cover { max-width: 200px; }
+}

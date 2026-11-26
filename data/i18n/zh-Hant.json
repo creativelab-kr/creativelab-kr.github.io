@@ -73,7 +73,17 @@
   "collab_s3": "製作",
   "collab_s4": "交付",
   "collab_data": "您提供的資料僅用於該專案，並於交付後 30 天內刪除。",
-  "collab_cta": "聯絡我們"
+  "collab_cta": "聯絡我們",
+  "nav_book": "書",
+  "footer_book": "書",
+  "book_eyebrow": "書",
+  "book_title": "上架篇：App Store 審查退件案例集",
+  "book_lead": "整理 17 件真實 App Store 案例與處理方式的 PDF 案例集，附提交前檢查清單。",
+  "book_cta": "查看詳情與購買",
+  "book_note": "購買與付款在 Gumroad 銷售頁面完成。",
+  "book_url": "https://creativelabkr.gumroad.com/l/launch-zh-hant",
+  "book_cover": "assets/books/cover-zh-Hant.webp",
+  "book_cover_alt": "《上架篇：App Store 審查退件案例集》封面"
  },
  "projects": {
   "1": {
