@@ -377,6 +377,13 @@
    "summary": "Una app para registrar rápido las comidas coreanas. Las combinaciones de arroz, sopa y acompañamientos que sueles comer juntas se agrupan en conjuntos que se registran de una vez, y el condimento y el aceite se ajustan en poco, normal o mucho. Incluye ideas de comida según las calorías que te quedan hoy, la tendencia del peso y widgets para la pantalla de inicio. La agrupación y las sugerencias se calculan solo en el dispositivo.",
    "why": "Si hay que buscar el arroz, la sopa y cada acompañamiento uno por uno, el diario de comidas dura poco. La hicimos para anotar de una vez la comida de siempre."
   },
+  "90": {
+   "title": "Dropfield: Offline 3D Survival Match",
+   "headline": "Salta con otros 29 y aguanta más que todos.",
+   "pitch": "Quédate hasta el final dentro de la zona segura que se reduce y ganas. Juega sin conexión contra jugadores de IA, sin registro. Una partida dura unos 8 minutos.",
+   "summary": "Una partida de supervivencia en 3D: 30 jugadores saltan a una misma arena y gana el último que queda dentro de la zona segura que se reduce. Juegas sin conexión contra hasta 29 jugadores de IA. Usa edificios y vehículos, y si te alcanza una bola de pintura puedes seguir viendo el resto de la partida. Una partida dura unos 8 minutos, no hace falta conexión a internet ni registro, no hay anuncios ni cajas de botín, y no se recogen datos personales.",
+   "why": "La partida se juega en el dispositivo contra jugadores de IA, así que se abre sin conexión a internet, sin registro y sin recoger datos personales."
+  },
   "89": {
    "title": "Levelshot: Site Photo Log",
    "headline": "Fotos de trabajo con la hora y el lugar.",

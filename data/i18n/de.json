@@ -377,6 +377,13 @@
    "summary": "Eine App, mit der sich koreanische Mahlzeiten schnell festhalten lassen. Kombinationen aus Reis, Suppe und Beilagen, die oft zusammen gegessen werden, werden zu Sets gebündelt und auf einmal eingetragen; Würze und Öl lassen sich auf wenig, normal oder viel stellen. Dazu kommen Vorschläge passend zu den heute verbleibenden Kalorien, ein Gewichtsverlauf und Widgets für den Home-Bildschirm. Bündelung und Vorschläge werden nur auf dem Gerät berechnet.",
    "why": "Wer Reis, Suppe und jede Beilage einzeln heraussuchen muss, hält ein Ernährungstagebuch selten lange durch. Deshalb lässt sich die gewohnte Mahlzeit hier in einem Zug eintragen."
   },
+  "90": {
+   "title": "Dropfield: Offline 3D Survival Match",
+   "headline": "Mit 29 anderen abspringen und am längsten durchhalten.",
+   "pitch": "Wer bis zum Ende in der schrumpfenden Sicherheitszone bleibt, gewinnt. Offline gegen KI-Spieler, ohne Anmeldung. Ein Spiel dauert etwa 8 Minuten.",
+   "summary": "Ein 3D-Survival-Match: 30 Spieler springen in einer Arena ab, und wer zuletzt in der schrumpfenden Sicherheitszone übrig bleibt, gewinnt. Du spielst offline gegen bis zu 29 KI-Spieler. Nutze Gebäude und Fahrzeuge, und wenn dich eine Farbkugel trifft, kannst du den Rest des Spiels weiter ansehen. Ein Spiel dauert etwa 8 Minuten, es braucht weder eine Internetverbindung noch eine Anmeldung, es gibt keine Werbung und keine Lootboxen, und es werden keine personenbezogenen Daten erhoben.",
+   "why": "Das Match läuft auf dem Gerät gegen KI-Spieler, daher startet es auch ohne Internetverbindung, ohne Anmeldung und ohne erhobene personenbezogene Daten."
+  },
   "89": {
    "title": "Levelshot: Site Photo Log",
    "headline": "Arbeitsfotos mit Zeit und Ort darauf.",

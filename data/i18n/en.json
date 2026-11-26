@@ -377,6 +377,13 @@
    "summary": "A fast way to log Korean meals. Combinations of rice, soup and side dishes you often eat together are grouped into sets you can log at once, and seasoning and oil can be set to less, normal or more. It includes meal ideas matched to the calories you have left today, a weight trend and Home Screen widgets. Grouping and recommendations are calculated only on the device.",
    "why": "When you have to look up rice, soup and each side dish one by one, a food diary rarely lasts. We built this so the meal you always eat can be written down in one go."
   },
+  "90": {
+   "title": "Dropfield: Offline 3D Survival Match",
+   "headline": "Drop in with 29 others and outlast them.",
+   "pitch": "Stay inside the shrinking safe zone to the end and you win. Play offline against AI players, with no sign-up. A match takes about 8 minutes.",
+   "summary": "A 3D survival match where 30 players drop into one arena and the last one standing inside the shrinking safe zone wins. You play offline against up to 29 AI players. Use buildings and vehicles, and if you are tagged by a paint round you can keep watching the rest of the match. A match takes about 8 minutes, no internet connection or sign-up is needed, there are no ads or loot boxes, and no personal data is collected.",
+   "why": "The match runs on the device against AI players, so it opens without an internet connection, and there is no sign-up and no personal data collected."
+  },
   "89": {
    "title": "Levelshot: Site Photo Log",
    "headline": "Work photos with the time and place on them.",
