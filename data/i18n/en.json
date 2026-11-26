@@ -357,6 +357,13 @@
    "headline": "An AI development studio where AI agents carry a one-line idea through design, code, testing and build.",
    "pitch": "An AI development studio where AI agents carry a one-line idea through design, code, testing and build.",
    "summary": "An AI development studio where AI agents carry a one-line idea through design, code, testing and build."
+  },
+  "88": {
+   "title": "Bapsang Note",
+   "headline": "Your usual meal, in one tap.",
+   "pitch": "The rice, soup and side dishes you often eat together become a set. Tap once and the meal is logged.",
+   "summary": "A fast way to log Korean meals. Combinations of rice, soup and side dishes you often eat together are grouped into sets you can log at once, and seasoning and oil can be set to less, normal or more. It includes meal ideas matched to the calories you have left today, a weight trend and Home Screen widgets. Grouping and recommendations are calculated only on the device.",
+   "why": "When you have to look up rice, soup and each side dish one by one, a food diary rarely lasts. We built this so the meal you always eat can be written down in one go."
   }
  },
  "categories": {

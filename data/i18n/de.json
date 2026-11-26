@@ -357,6 +357,13 @@
    "headline": "Ein KI-Entwicklungsstudio, in dem KI-Agenten eine Idee in einer Zeile bis zu Entwurf, Code, Tests und Build führen.",
    "pitch": "Ein KI-Entwicklungsstudio, in dem KI-Agenten eine Idee in einer Zeile bis zu Entwurf, Code, Tests und Build führen.",
    "summary": "Ein KI-Entwicklungsstudio, in dem KI-Agenten eine Idee in einer Zeile bis zu Entwurf, Code, Tests und Build führen."
+  },
+  "88": {
+   "title": "Bapsang Note",
+   "headline": "Die gewohnte Mahlzeit, mit einem Tipp.",
+   "pitch": "Reis, Suppe und Beilagen, die du oft zusammen isst, werden zu einem Set. Einmal tippen, und die Mahlzeit ist eingetragen.",
+   "summary": "Eine App, mit der sich koreanische Mahlzeiten schnell festhalten lassen. Kombinationen aus Reis, Suppe und Beilagen, die oft zusammen gegessen werden, werden zu Sets gebündelt und auf einmal eingetragen; Würze und Öl lassen sich auf wenig, normal oder viel stellen. Dazu kommen Vorschläge passend zu den heute verbleibenden Kalorien, ein Gewichtsverlauf und Widgets für den Home-Bildschirm. Bündelung und Vorschläge werden nur auf dem Gerät berechnet.",
+   "why": "Wer Reis, Suppe und jede Beilage einzeln heraussuchen muss, hält ein Ernährungstagebuch selten lange durch. Deshalb lässt sich die gewohnte Mahlzeit hier in einem Zug eintragen."
   }
  },
  "categories": {

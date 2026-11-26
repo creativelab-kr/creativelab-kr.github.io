@@ -691,6 +691,23 @@
   }
  },
  {
+  "id": 88,
+  "title": "밥상노트",
+  "category": "health",
+  "status": "출시",
+  "summary": "한식 식단을 빠르게 기록하는 앱. 자주 함께 먹은 밥·국·반찬 조합이 상차림으로 묶여 한 번에 기록되고, 양념과 기름은 적게·보통·많이로 조절합니다. 오늘 남은 열량에 맞춘 끼니 추천, 체중 추세, 홈 화면 위젯을 갖췄으며 묶는 계산과 추천은 기기 안에서만 이뤄집니다.",
+  "headline": "늘 먹는 한 상을, 한 번에.",
+  "pitch": "자주 함께 먹는 밥·국·반찬이 상차림으로 묶이고, 누르면 한 끼가 바로 기록됩니다.",
+  "icon": "assets/icons/bapsang.png",
+  "shot": "assets/shots/bapsang.webp",
+  "links": {
+   "appstore": "https://apps.apple.com/app/id6839073870"
+  },
+  "story": {
+   "why": "밥, 국, 반찬을 하나씩 찾아 넣다 보면 식단 기록은 오래가지 못합니다. 늘 먹는 한 상을 그대로 한 번에 적을 수 있게 만들었습니다."
+  }
+ },
+ {
   "id": 86,
   "title": "AI 개발 스튜디오",
   "category": "platform",

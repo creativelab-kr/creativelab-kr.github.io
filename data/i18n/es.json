@@ -357,6 +357,13 @@
    "headline": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación.",
    "pitch": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación.",
    "summary": "Un estudio de desarrollo de IA donde agentes de IA llevan una idea de una línea hasta el diseño, el código, las pruebas y la compilación."
+  },
+  "88": {
+   "title": "Bapsang Note",
+   "headline": "Tu comida de siempre, con un toque.",
+   "pitch": "El arroz, la sopa y los acompañamientos que sueles comer juntos forman un conjunto. Un toque y la comida queda registrada.",
+   "summary": "Una app para registrar rápido las comidas coreanas. Las combinaciones de arroz, sopa y acompañamientos que sueles comer juntas se agrupan en conjuntos que se registran de una vez, y el condimento y el aceite se ajustan en poco, normal o mucho. Incluye ideas de comida según las calorías que te quedan hoy, la tendencia del peso y widgets para la pantalla de inicio. La agrupación y las sugerencias se calculan solo en el dispositivo.",
+   "why": "Si hay que buscar el arroz, la sopa y cada acompañamiento uno por uno, el diario de comidas dura poco. La hicimos para anotar de una vez la comida de siempre."
   }
  },
  "categories": {

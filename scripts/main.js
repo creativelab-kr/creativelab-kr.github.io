@@ -1358,7 +1358,10 @@ function getDefaultProjects() {
           icon: 'assets/icons/haruharu.png', links: {'appstore':'https://apps.apple.com/app/id6816329716'} },
         { id: 85, title: 'Tidal Kart', category: 'game', status: '출시',
           summary: '동물 레이서와 달리는 3D 카트. 여덟 마리 동물 레이서 가운데 골라 코스를 달리고, 드리프트와 아이템으로 순위를 뒤집어 봅니다.',
-          icon: 'assets/icons/tidalkart.png', links: {'appstore':'https://apps.apple.com/app/id6823520840'} }
+          icon: 'assets/icons/tidalkart.png', links: {'appstore':'https://apps.apple.com/app/id6823520840'} },
+        { id: 88, title: '밥상노트', category: 'health', status: '출시',
+          summary: '한식 식단을 빠르게 기록하는 앱. 자주 함께 먹은 밥·국·반찬 조합이 상차림으로 묶여 한 번에 기록되고, 양념과 기름은 적게·보통·많이로 조절합니다. 오늘 남은 열량에 맞춘 끼니 추천, 체중 추세, 홈 화면 위젯을 갖췄으며 묶는 계산과 추천은 기기 안에서만 이뤄집니다.',
+          icon: 'assets/icons/bapsang.png', links: {'appstore':'https://apps.apple.com/app/id6839073870'} }
     ];
 }
 

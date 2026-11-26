@@ -357,6 +357,13 @@
    "headline": "Un studio de développement IA où des agents IA mènent une idée d’une ligne jusqu’à la conception, au code, aux tests et à la compilation.",
    "pitch": "Un studio de développement IA où des agents IA mènent une idée d’une ligne jusqu’à la conception, au code, aux tests et à la compilation.",
    "summary": "Un studio de développement IA où des agents IA mènent une idée d’une ligne jusqu’à la conception, au code, aux tests et à la compilation."
+  },
+  "88": {
+   "title": "Bapsang Note",
+   "headline": "Votre repas habituel, en un geste.",
+   "pitch": "Le riz, la soupe et les accompagnements que vous mangez souvent ensemble forment un ensemble. Un appui, et le repas est noté.",
+   "summary": "Une app pour noter rapidement ses repas coréens. Les combinaisons de riz, de soupe et d’accompagnements souvent mangées ensemble sont regroupées en ensembles à enregistrer d’un coup, et l’assaisonnement comme l’huile se règlent sur peu, normal ou beaucoup. Elle propose aussi des idées de repas selon les calories restantes du jour, une courbe de poids et des widgets pour l’écran d’accueil. Le regroupement et les suggestions sont calculés uniquement sur l’appareil.",
+   "why": "À chercher le riz, la soupe et chaque accompagnement un par un, on abandonne vite son journal alimentaire. Nous avons conçu cette app pour noter d’un seul coup le repas que l’on mange toujours."
   }
  },
  "categories": {

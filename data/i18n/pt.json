@@ -357,6 +357,13 @@
    "headline": "Um estúdio de desenvolvimento de IA em que agentes de IA levam uma ideia de uma linha até o projeto, o código, os testes e o build.",
    "pitch": "Um estúdio de desenvolvimento de IA em que agentes de IA levam uma ideia de uma linha até o projeto, o código, os testes e o build.",
    "summary": "Um estúdio de desenvolvimento de IA em que agentes de IA levam uma ideia de uma linha até o projeto, o código, os testes e o build."
+  },
+  "88": {
+   "title": "Bapsang Note",
+   "headline": "A sua refeição de sempre, com um toque.",
+   "pitch": "O arroz, a sopa e os acompanhamentos que você costuma comer juntos viram um conjunto. Um toque e a refeição fica registrada.",
+   "summary": "Um app para registrar rapidamente refeições coreanas. As combinações de arroz, sopa e acompanhamentos que você costuma comer juntas são agrupadas em conjuntos registrados de uma vez, e o tempero e o óleo podem ser ajustados em pouco, normal ou muito. Traz ideias de refeição de acordo com as calorias que restam hoje, a tendência do peso e widgets para a Tela de Início. O agrupamento e as sugestões são calculados apenas no aparelho.",
+   "why": "Procurando o arroz, a sopa e cada acompanhamento um por um, o diário alimentar dura pouco. Criamos este app para anotar de uma vez a refeição de sempre."
   }
  },
  "categories": {
