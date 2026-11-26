@@ -366,6 +366,13 @@
    "pitch": "Reis, Suppe und Beilagen, die du oft zusammen isst, werden zu einem Set. Einmal tippen, und die Mahlzeit ist eingetragen.",
    "summary": "Eine App, mit der sich koreanische Mahlzeiten schnell festhalten lassen. Kombinationen aus Reis, Suppe und Beilagen, die oft zusammen gegessen werden, werden zu Sets gebündelt und auf einmal eingetragen; Würze und Öl lassen sich auf wenig, normal oder viel stellen. Dazu kommen Vorschläge passend zu den heute verbleibenden Kalorien, ein Gewichtsverlauf und Widgets für den Home-Bildschirm. Bündelung und Vorschläge werden nur auf dem Gerät berechnet.",
    "why": "Wer Reis, Suppe und jede Beilage einzeln heraussuchen muss, hält ein Ernährungstagebuch selten lange durch. Deshalb lässt sich die gewohnte Mahlzeit hier in einem Zug eintragen."
+  },
+  "89": {
+   "title": "Levelshot: Site Photo Log",
+   "headline": "Arbeitsfotos mit Zeit und Ort darauf.",
+   "pitch": "Zeit, Ort, Wetter und Ihre Notiz werden in jedes Foto eingetragen, und die Prüfung zeigt, ob ein Foto danach verändert wurde.",
+   "summary": "Eine App, die Arbeitsfotos mit Zeit und Ort versieht, für Baudokumentation, Inspektionen, Reinigung, Gebäudeverwaltung und Außeneinsätze. Jedes Foto erhält Uhrzeit, Datum, GPS-Koordinaten, Wetter und eine Notiz, und die App bietet keine Möglichkeit, Zeit oder Ort zu ändern. Wählen Sie ein Foto, um zu sehen, ob dieses Telefon es aufgenommen hat und ob es sich seitdem verändert hat. Dazu wird der Datei-Fingerabdruck (SHA-256) mit dem Fotoprotokoll verglichen. Die Prüfung funktioniert nur auf dem Telefon, das das Foto aufgenommen hat. Keine Registrierung, keine Werbung; Fotos und Fotoprotokoll bleiben auf Ihrem Telefon.",
+   "why": "Die App bietet keine Möglichkeit, Zeit oder Ort eines Fotos zu ändern. Ein simulierter Standort oder eine Zeit vor dem vorherigen Foto wird auf dem Foto vermerkt, und ohne Standort wird nichts geraten."
   }
  },
  "categories": {

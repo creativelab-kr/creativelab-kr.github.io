@@ -366,6 +366,13 @@
    "pitch": "Riso, zuppa e contorni che mangi spesso insieme diventano un set. Un tocco e il pasto è registrato.",
    "summary": "Un’app per registrare in fretta i pasti coreani. Le combinazioni di riso, zuppa e contorni che mangi spesso insieme vengono raggruppate in set da registrare in una volta, e condimento e olio si regolano su poco, normale o tanto. Include idee per il pasto in base alle calorie rimaste oggi, l’andamento del peso e i widget per la schermata Home. Raggruppamento e suggerimenti sono calcolati solo sul dispositivo.",
    "why": "Cercando riso, zuppa e ogni contorno uno per uno, il diario alimentare dura poco. L’abbiamo creata per annotare in una volta il pasto di sempre."
+  },
+  "89": {
+   "title": "Levelshot: Site Photo Log",
+   "headline": "Foto di lavoro con ora e luogo.",
+   "pitch": "Ora, luogo, meteo e la tua nota finiscono su ogni foto, e la verifica mostra se una foto è cambiata dopo.",
+   "summary": "Un'app che applica a ogni foto di lavoro l'ora e il luogo, per registri di cantiere, ispezioni, pulizie, gestione immobili e visite sul campo. Ogni foto riceve ora, data, coordinate GPS, meteo e una nota, e l'app non permette di cambiare ora o luogo. Scegli una foto per vedere se questo telefono l'ha scattata e se è cambiata da allora, confrontando l'impronta del file (SHA-256) con il registro delle foto. La verifica funziona solo sul telefono che ha scattato la foto. Senza registrazione né pubblicità; foto e registro restano sul tuo telefono.",
+   "why": "L'app non permette di cambiare ora o luogo di una foto. Una posizione simulata, o un'ora precedente alla foto prima, viene annotata sulla foto, e senza posizione non si ipotizza nulla."
   }
  },
  "categories": {

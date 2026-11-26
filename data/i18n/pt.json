@@ -366,6 +366,13 @@
    "pitch": "O arroz, a sopa e os acompanhamentos que você costuma comer juntos viram um conjunto. Um toque e a refeição fica registrada.",
    "summary": "Um app para registrar rapidamente refeições coreanas. As combinações de arroz, sopa e acompanhamentos que você costuma comer juntas são agrupadas em conjuntos registrados de uma vez, e o tempero e o óleo podem ser ajustados em pouco, normal ou muito. Traz ideias de refeição de acordo com as calorias que restam hoje, a tendência do peso e widgets para a Tela de Início. O agrupamento e as sugestões são calculados apenas no aparelho.",
    "why": "Procurando o arroz, a sopa e cada acompanhamento um por um, o diário alimentar dura pouco. Criamos este app para anotar de uma vez a refeição de sempre."
+  },
+  "89": {
+   "title": "Levelshot: Site Photo Log",
+   "headline": "Fotos de trabalho com hora e local.",
+   "pitch": "Hora, local, clima e a sua nota entram em cada foto, e a verificação mostra se uma foto mudou depois.",
+   "summary": "Um app que marca fotos de trabalho com hora e local, para registros de obra, inspeções, limpeza, administração de imóveis e visitas de campo. Cada foto recebe hora, data, coordenadas GPS, clima e uma nota, e o app não tem como alterar a hora nem o local. Escolha uma foto para ver se este telefone a tirou e se ela mudou desde então, comparando a impressão digital do arquivo (SHA-256) com o registro de fotos. A verificação só funciona no telefone que tirou a foto. Sem cadastro nem anúncios; as fotos e o registro ficam no seu telefone.",
+   "why": "O app não tem como alterar a hora nem o local de uma foto. Um local simulado, ou uma hora anterior à da foto anterior, é anotado na foto, e se não houver local, nada é presumido."
   }
  },
  "categories": {

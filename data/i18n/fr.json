@@ -366,6 +366,13 @@
    "pitch": "Le riz, la soupe et les accompagnements que vous mangez souvent ensemble forment un ensemble. Un appui, et le repas est noté.",
    "summary": "Une app pour noter rapidement ses repas coréens. Les combinaisons de riz, de soupe et d’accompagnements souvent mangées ensemble sont regroupées en ensembles à enregistrer d’un coup, et l’assaisonnement comme l’huile se règlent sur peu, normal ou beaucoup. Elle propose aussi des idées de repas selon les calories restantes du jour, une courbe de poids et des widgets pour l’écran d’accueil. Le regroupement et les suggestions sont calculés uniquement sur l’appareil.",
    "why": "À chercher le riz, la soupe et chaque accompagnement un par un, on abandonne vite son journal alimentaire. Nous avons conçu cette app pour noter d’un seul coup le repas que l’on mange toujours."
+  },
+  "89": {
+   "title": "Levelshot: Site Photo Log",
+   "headline": "Des photos de travail avec l'heure et le lieu.",
+   "pitch": "L'heure, le lieu, la météo et votre note s'inscrivent sur chaque photo, et la vérification indique si une photo a changé depuis.",
+   "summary": "Une application qui marque les photos de travail avec l'heure et le lieu, pour les suivis de chantier, les inspections, le nettoyage, la gestion immobilière et les visites sur le terrain. Chaque photo reçoit l'heure, la date, les coordonnées GPS, la météo et une note, et l'application ne permet pas de modifier l'heure ni le lieu. Choisissez une photo pour voir si ce téléphone l'a prise et si elle a changé depuis, en comparant son empreinte de fichier (SHA-256) avec le journal des photos. La vérification ne fonctionne que sur le téléphone qui a pris la photo. Sans inscription ni publicité ; les photos et le journal restent sur votre téléphone.",
+   "why": "L'application ne permet pas de modifier l'heure ni le lieu d'une photo. Une position simulée, ou une heure antérieure à la photo précédente, est indiquée sur la photo, et sans position, rien n'est deviné."
   }
  },
  "categories": {

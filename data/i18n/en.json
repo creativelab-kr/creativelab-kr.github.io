@@ -366,6 +366,13 @@
    "pitch": "The rice, soup and side dishes you often eat together become a set. Tap once and the meal is logged.",
    "summary": "A fast way to log Korean meals. Combinations of rice, soup and side dishes you often eat together are grouped into sets you can log at once, and seasoning and oil can be set to less, normal or more. It includes meal ideas matched to the calories you have left today, a weight trend and Home Screen widgets. Grouping and recommendations are calculated only on the device.",
    "why": "When you have to look up rice, soup and each side dish one by one, a food diary rarely lasts. We built this so the meal you always eat can be written down in one go."
+  },
+  "89": {
+   "title": "Levelshot: Site Photo Log",
+   "headline": "Work photos with the time and place on them.",
+   "pitch": "Time, place, weather and your note go onto every photo, and Verify shows whether a photo changed afterwards.",
+   "summary": "An app that stamps work photos with the time and place, for construction records, inspections, cleaning, property management and field visits. Each photo gets the time, date, GPS coordinates, weather and a note, and the app has no way to change the time or place. Pick a photo to see whether this phone took it and whether it changed since, by comparing its file fingerprint (SHA-256) with the photo log. Verification works only on the phone that took the photo. No sign-up, no ads; photos and the photo log stay on your phone.",
+   "why": "The app has no way to change the time or place of a photo. A simulated location, or a time earlier than the previous photo, is noted on the photo, and if there is no location, nothing is guessed."
   }
  },
  "categories": {

@@ -1359,6 +1359,9 @@ function getDefaultProjects() {
         { id: 85, title: 'Tidal Kart', category: 'game', status: '출시',
           summary: '동물 레이서와 달리는 3D 카트. 여덟 마리 동물 레이서 가운데 골라 코스를 달리고, 드리프트와 아이템으로 순위를 뒤집어 봅니다.',
           icon: 'assets/icons/tidalkart.png', links: {'appstore':'https://apps.apple.com/app/id6823520840'} },
+        { id: 89, title: '현장 스탬프', category: 'work', status: '출시',
+          summary: '현장 사진에 시각과 위치를 찍어 남기는 앱. 공사 기록, 설비 점검, 청소, 시설 관리, 외근 방문에 씁니다. 사진마다 시각, 날짜, 좌표, 날씨, 메모가 들어가고 촬영 시각·장소를 바꾸는 기능은 없습니다. 사진을 고르면 파일 지문(SHA-256)과 촬영 기록을 대조해 이 폰으로 찍었는지, 찍은 뒤 바뀌었는지 확인할 수 있습니다. 확인은 사진을 찍은 폰에서만 됩니다. 가입·광고 없이, 사진과 촬영 기록은 내 폰에만 저장됩니다.',
+          icon: 'assets/icons/levelshot.png', links: {'appstore':'https://apps.apple.com/app/id6817639895'} },
         { id: 88, title: '밥상노트', category: 'health', status: '출시',
           summary: '한식 식단을 빠르게 기록하는 앱. 자주 함께 먹은 밥·국·반찬 조합이 상차림으로 묶여 한 번에 기록되고, 양념과 기름은 적게·보통·많이로 조절합니다. 오늘 남은 열량에 맞춘 끼니 추천, 체중 추세, 홈 화면 위젯을 갖췄으며 묶는 계산과 추천은 기기 안에서만 이뤄집니다.',
           icon: 'assets/icons/bapsang.png', links: {'appstore':'https://apps.apple.com/app/id6839073870'} }
