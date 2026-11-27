@@ -1075,3 +1075,15 @@ a { color: inherit; text-decoration: none; }
 .kit-inner .section-sub { margin-bottom: var(--sp-5); max-width: 56ch; }
 .kit-actions { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
 .kit-actions .btn { overflow-wrap: anywhere; }
+
+/* 큰 글자(글자 크기 키움)에서 상단 메뉴가 화면 밖으로 밀리지 않게: 자리가 모자라면 줄을 바꾸고 막대 높이가 늘어난다.
+   보통 글자에서는 한 줄에 들어가므로 모양 변화 없음(61, 11/27). */
+@media (max-width: 900px) {
+    .navbar { height: auto; min-height: var(--nav-h); }
+    .navbar-container { height: auto; min-height: calc(var(--nav-h) - 1px); flex-wrap: wrap; }
+    .nav-menu { flex-wrap: wrap; min-width: 0; flex: 0 1 auto; justify-content: flex-end; }
+}
+@media (max-width: 420px) {
+    /* 76px 고정 폭은 큰 글자에서 한 글자씩 끊긴다 → 글자 크기에 비례(보통 글자 14px에서 약 76px로 같음). */
+    .nav-link { max-width: 5.43em; }
+}
