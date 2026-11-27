@@ -36,12 +36,12 @@
 
     <!-- 첫 화면 회전 링 맨 앞 폰 사진(가장 큰 요소)을 미리 받는다. 링 맨 앞 앱을 바꾸면 여기도 같이 바꾼다. -->
     <link rel="preload" as="image" href="assets/shots/singon.webp" imagesrcset="assets/shots/singon-360.webp 360w, assets/shots/singon.webp 600w" imagesizes="(max-width: 767px) 210px, 340px" fetchpriority="high">
-    <link rel="preload" href="data/projects.json?v=8e90da7b68" as="fetch" crossorigin>
-    <link rel="preload" href="data/categories.json?v=8e90da7b68" as="fetch" crossorigin>
-    <link rel="preload" href="data/works.json?v=8e90da7b68" as="fetch" crossorigin>
-    <link rel="preload" href="data/i18n/ko.json?v=8e90da7b68" as="fetch" crossorigin>
+    <link rel="preload" href="data/projects.json?v=6ff08d4b23" as="fetch" crossorigin>
+    <link rel="preload" href="data/categories.json?v=6ff08d4b23" as="fetch" crossorigin>
+    <link rel="preload" href="data/works.json?v=6ff08d4b23" as="fetch" crossorigin>
+    <link rel="preload" href="data/i18n/ko.json?v=6ff08d4b23" as="fetch" crossorigin>
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=8e90da7b68">
+    <link rel="stylesheet" href="styles/main.css?v=6ff08d4b23">
 </head>
 <body>
     <a href="#main" class="skip-link" data-i18n="skip">본문으로 건너뛰기</a>
@@ -179,6 +179,20 @@
                 </div>
             </section>
 
+            <!-- 운영 키트: 한국어 화면에서만 보임(data-lang-only, 키트 영어판은 미공개). 61 11/27 대표님 "홈페이지에만 걸어" -->
+            <section id="kit" class="section section-kit" aria-labelledby="kitTitle" data-lang-only="ko">
+                <div class="container kit-inner">
+                    <p class="section-eyebrow">운영 키트</p>
+                    <h2 class="section-title" id="kitTitle">1인 AI 회사 운영 키트</h2>
+                    <p class="section-sub">운영 과정에서 겪은 문제와 개선 경험을 바탕으로 정리한 규칙·보고 양식·회의 절차·실수 장부를 묶은 디지털 키트입니다. 모듈 03(AI 회의 키트) 전체를 무료 견본으로 먼저 확인할 수 있습니다.</p>
+                    <div class="kit-actions">
+                        <a class="btn btn-primary" href="https://creativelabkr.gumroad.com/l/ai-company-kit-sample" target="_blank" rel="noopener noreferrer">무료 견본 받기</a>
+                        <a class="btn btn-ghost" href="https://creativelabkr.gumroad.com/l/ai-company-kit" target="_blank" rel="noopener noreferrer">키트 보기</a>
+                    </div>
+                    <p class="book-note">구매와 결제는 판매 플랫폼 Gumroad의 판매 페이지에서 이루어집니다.</p>
+                </div>
+            </section>
+
             <!-- 함께 만들기: 문의 섹션 -->
             <section id="collab" class="section section-collab" aria-labelledby="collabTitle">
                 <div class="container">
@@ -229,6 +243,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="scripts/main.js?v=8e90da7b68"></script>
+    <script src="scripts/main.js?v=6ff08d4b23"></script>
 </body>
 </html>

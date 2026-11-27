@@ -89,6 +89,8 @@ function t(key, vars) {
 function applyStatic() {
     document.documentElement.lang = state.lang;
     document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+    // 특정 언어 화면에서만 보이는 구역(예: 한국어판만 있는 운영 키트).
+    document.querySelectorAll('[data-lang-only]').forEach(el => { el.hidden = el.dataset.langOnly !== state.lang; });
     document.querySelectorAll('[data-i18n-attr]').forEach(el => {
         el.dataset.i18nAttr.split(';').forEach(pair => {
             const [attr, key] = pair.split(':');
