@@ -699,7 +699,7 @@
   "headline": "30명이 낙하하는 오프라인 서바이벌.",
   "pitch": "줄어드는 안전 구역 안에서 끝까지 남으면 우승합니다. 인터넷도 회원가입도 필요 없는 AI 대전, 한 경기 약 8분입니다.",
   "icon": "assets/icons/dropfield.png",
-  "shot": "assets/shots/dropfield.webp",
+  "shot": "assets/shots/dropfield-menu.webp",
   "links": {
    "appstore": "https://apps.apple.com/app/id6839493173"
   },
